@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<UserConfiguration xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <solutionFiles>
+    <solutionPath>..\Olden\src\CSharp\MST\MST.sln</solutionPath>
+	<instrumentedSolutionPath>..\Olden\output\CSharpCompilation\MST_SLN\MST.sln</instrumentedSolutionPath>
+    <executableProject>MST</executableProject>
+	<MSBuildCompilation>false</MSBuildCompilation>
+  </solutionFiles>
+  <criteria>
+    <mode>Normal</mode>
+	<lines>
+		<FileLine>
+			<file>MST.cs</file>
+			<line>56</line>
+		</FileLine>
+	</lines>
+    <runAutomatically>true</runAutomatically>
+    <fileTraceInput>true</fileTraceInput>
+  </criteria>
+  <results>
+    <name>MST</name>
+	<outputFolder>..\Olden\output\DynAbsResults\Clusters</outputFolder>
+    <resultFile>Results.txt</resultFile>
+	<filteredResultFile>FilteredResults.txt</filteredResultFile>
+	<summaryResultFile>Summary.txt</summaryResultFile>
+	<executedLinesFileForUser>ExecutedLines.txt</executedLinesFileForUser>
+  </results>
+  <customization>
+    <includeControlDependencies>true</includeControlDependencies>
+	<includeAllUses>true</includeAllUses>
+	<staticMode>false</staticMode>
+	<loopsOptimization>false</loopsOptimization>
+	<memoryModel>Clusters</memoryModel>
+  </customization>
+  <instances>
+	<Instance>
+      <parameters>
+		<string>-v 4</string>
+      </parameters>
+    </Instance>
+  </instances>
+</UserConfiguration>

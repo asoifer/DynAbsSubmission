@@ -1,0 +1,15 @@
+test_NamedPipe.cs:17
+test_NamedPipe.cs:21
+test_NamedPipe.cs:50
+test_NamedPipe.cs:52
+---- Last slice: [test_NamedPipe.cs - 21]
+test_NamedPipe.cs:18
+test_NamedPipe.cs:25
+test_NamedPipe.cs:50
+test_NamedPipe.cs:52
+---- Last slice: [test_NamedPipe.cs - 25]
+test_NamedPipe.cs:17
+test_NamedPipe.cs:28
+test_NamedPipe.cs:50
+test_NamedPipe.cs:52
+---- Last slice: [test_NamedPipe.cs - 28]

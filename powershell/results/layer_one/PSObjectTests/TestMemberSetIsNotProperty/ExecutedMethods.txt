@@ -1,0 +1,49 @@
+|||FirstProcess||OTHER|0|
+|System.Collections.Concurrent|ConcurrentDictionary|ctor||METHOD|1|FULL HAVOC
+|System.Collections.Generic|List|ctor||METHOD|1|Fresh.{Single{System.Array}}.{P}.{RV.?;RO.?}.{[RV, RO, ?]}<EOF>
+|System.Collections.Generic|List|Add|System.Func<object, System.Management.Automation.PSObject.AdapterSet> item|METHOD|1|Null.{}.{R;R.?;R.*.UntilType{System.Array}.OfType{System.Array}.?;P}.{R.?;R.*.UntilType{System.Array}.OfType{System.Array}.?}.{[R.*.UntilType{System.Array}.OfType{System.Array}, P, ?]}<EOF>
+|System.Management.Automation|PSTraceSource|GetTracer|string name,string description,bool traceHeaders|METHOD|1|FULL HAVOC
+|System.Runtime.CompilerServices|ConditionalWeakTable|ctor||METHOD|2|FULL HAVOC
+|System.Collections.ObjectModel|Collection|ctor||METHOD|9|FULL HAVOC
+|System.Collections.ObjectModel|Collection|Add|System.Management.Automation.CollectionEntry<System.Management.Automation.PSMemberInfo> item|METHOD|12|FULL HAVOC
+|System.Management.Automation|CollectionEntry|ctor|System.Management.Automation.CollectionEntry<System.Management.Automation.PSMethodInfo>.GetMembersDelegate getMembers,System.Management.Automation.CollectionEntry<System.Management.Automation.PSMethodInfo>.GetMemberDelegate getMember,System.Management.Automation.CollectionEntry<System.Management.Automation.PSMethodInfo>.GetFirstOrDefaultDelegate getFirstOrDefault,bool shouldReplicateWhenReturning,bool shouldCloneWhenReturning,string collectionNameForTracing|METHOD|2|FULL HAVOC
+|System.Management.Automation|DotNetAdapter|ctor||METHOD|2|FULL HAVOC
+|System.Management.Automation|BaseDotNetAdapterForAdaptedObjects|ctor||METHOD|1|FULL HAVOC
+|System.Management.Automation|PSMemberSetAdapter|ctor||METHOD|1|FULL HAVOC
+|System.Management.Automation|PSObjectAdapter|ctor||METHOD|1|FULL HAVOC
+|Microsoft.PowerShell.Cim|CimInstanceAdapter|ctor||METHOD|1|FULL HAVOC
+|System.Management.Automation|ThirdPartyAdapter|ctor|System.Type adaptedType,System.Management.Automation.PSPropertyAdapter externalAdapter|METHOD|1|FULL HAVOC
+|System.Management.Automation|ManagementObjectAdapter|ctor||METHOD|1|FULL HAVOC
+|System.Management.Automation|ManagementClassApdapter|ctor||METHOD|1|FULL HAVOC
+|System.Management.Automation|DirectoryEntryAdapter|ctor||METHOD|1|FULL HAVOC
+|System.Management.Automation|DataRowViewAdapter|ctor||METHOD|1|FULL HAVOC
+|System.Management.Automation|DataRowAdapter|ctor||METHOD|1|FULL HAVOC
+|System.Management.Automation|XmlNodeAdapter|ctor||METHOD|1|FULL HAVOC
+|System|Object|ctor||METHOD|2|Fresh.{}.{}.{RV.?}.{}<EOF>
+|System.Management.Automation|Diagnostics|Assert|bool condition,string whyThisShouldNeverHappen|METHOD|3|FULL HAVOC
+|System.Management.Automation.Runspaces|LocalPipeline|GetExecutionContextFromTLS||METHOD|6|FULL HAVOC
+|System|String|IsNullOrEmpty|string? value|METHOD|6|Null.{}.{R;P}.{}.{}<EOF>
+|System|String|Equals|string? a,string? b,System.StringComparison comparisonType|METHOD|25|Null.{}.{R;P}.{}.{}<EOF>
+|System|Enum|HasFlag|System.Enum flag|METHOD|4|Null.{}.{R;P}.{}.{}<EOF>
+|System.Runtime.CompilerServices|ConditionalWeakTable|GetValue|object key,System.Runtime.CompilerServices.ConditionalWeakTable<object, System.Management.Automation.PSMemberInfoInternalCollection<System.Management.Automation.PSMemberInfo>>.CreateValueCallback createValueCallback|METHOD|1|FULL HAVOC
+|System.Collections.Specialized|OrderedDictionary|ctor|System.Collections.IEqualityComparer comparer|METHOD|5|FULL HAVOC
+|System.Threading|Interlocked|CompareExchange|System.Collections.Specialized.OrderedDictionary location1,System.Collections.Specialized.OrderedDictionary value,System.Collections.Specialized.OrderedDictionary comparand|METHOD|5|FULL HAVOC
+|System.Collections.Specialized|OrderedDictionary|get_Item|object key|METHOD|8|FULL HAVOC
+|System.Management.Automation.Language|PSGetMemberBinder|SetHasInstanceMember|string memberName|METHOD|2|FULL HAVOC
+|System|Object|GetType||METHOD|3|Fresh.{}.{R}.{RV.?}.{}<EOF>
+|System.Management.Automation.Language|PSVariableAssignmentBinder|NoteTypeHasInstanceMemberOrTypeName|System.Type type|METHOD|2|FULL HAVOC
+|System.Management.Automation|PSMemberInfoCollection|MoveNext||PROPERTY|0|
+|System.Management.Automation|PSTraceSource|TraceScope|string msg|METHOD|4|FULL HAVOC
+|System.Management.Automation|PSMemberInfoInternalCollection|MoveNext||PROPERTY|0|
+|System.Linq|Enumerable|OfType|System.Collections.IEnumerable source|METHOD|3|FULL HAVOC
+|System.Linq|Enumerable|ToList|System.Collections.Generic.IEnumerable<T> source|METHOD|3|FULL HAVOC
+|System.Collections.Generic|List|GetEnumerator||METHOD|3|FULL HAVOC
+|System.Management.Automation|PSTraceSource|WriteLine|string format,object arg1|METHOD|4|FULL HAVOC
+|System.Management.Automation|MemberNamePredicate|Invoke|string memberName|METHOD|1|FULL HAVOC
+|System.Collections.ObjectModel|Collection|get_Item|int index|METHOD|3|FULL HAVOC
+|System.Management.Automation|GetFirstOrDefaultDelegate|Invoke|System.Management.Automation.PSObject obj,System.Management.Automation.MemberNamePredicate predicate|METHOD|3|FULL HAVOC
+|System.Collections.Concurrent|ConcurrentDictionary|TryGetValue|System.Type key,System.Management.Automation.PSObject.AdapterSet value|METHOD|1|FULL HAVOC
+|System|Func|Invoke|object arg|METHOD|1|FULL HAVOC
+|System.Collections.Concurrent|ConcurrentDictionary|GetOrAdd|System.Type key,System.Management.Automation.PSObject.AdapterSet value|METHOD|1|FULL HAVOC
+|System.Management.Automation|Adapter|BaseGetFirstMemberOrDefault|object obj,System.Management.Automation.MemberNamePredicate predicate|METHOD|1|FULL HAVOC
+|PSTests|CustomAssert|Null|object object|METHOD|1|FULL HAVOC

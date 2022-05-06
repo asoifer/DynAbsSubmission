@@ -1,0 +1,1 @@
+BindingTests_EnumNotMemberInConstructor||781|426|16|89.6089293||0.3176351|6717|2841||

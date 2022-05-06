@@ -1,0 +1,12 @@
+MshArgumentNullException.cs:72
+MshArgumentNullException.cs:137
+MshArgumentNullException.cs:138
+MshArgumentNullException.cs:153
+MshTraceSource.cs:236
+MshTraceSource.cs:237
+MshTraceSource.cs:239
+regex.cs:332
+regex.cs:334
+StringUtil.cs:18
+test_WildcardPattern.cs:76
+---- Last slice: [test_WildcardPattern.cs - 76]

@@ -1,0 +1,2 @@
+PlatformTests_TestIsCoreCLR||9|13|3|44.8938074||2.5071488|0|23||
+PlatformTests_TestIsCoreCLR||9|13|3|44.8938074||0.0070774|0|23||

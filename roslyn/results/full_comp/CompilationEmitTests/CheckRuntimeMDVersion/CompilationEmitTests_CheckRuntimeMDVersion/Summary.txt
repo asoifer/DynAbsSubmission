@@ -1,0 +1,4 @@
+CompilationEmitTests_CheckRuntimeMDVersion||98239|9302|6654|222.0905773||219.5752321|7293|266968||
+CompilationEmitTests_CheckRuntimeMDVersion||98243|9306|6656|222.0905773||219.6411539|7293|266978||
+CompilationEmitTests_CheckRuntimeMDVersion||98239|9302|6654|155.230955||108.5530732|7293|266968||
+CompilationEmitTests_CheckRuntimeMDVersion||98243|9306|6656|155.230955||108.6112341|7293|266978||

@@ -1,0 +1,3 @@
+|||FirstProcess||OTHER|0|||PSTests.Parallel|PSTypeExtensionsTests|TestIsNumeric||METHOD|1|
+|System.Collections.Generic|Dictionary|TryGetValue|string key,System.Management.Automation.PSTraceSource value|METHOD|196|FULL HAVOC||System.Management.Automation|ConversionTypePair|GetHashCode||METHOD|194|
+|System.Collections.Generic|Dictionary|Add|string key,string value|METHOD|230|Null.{}.{R;R.?;R.?.?.OfKind{DictInternal}.?;P}.{R.?.?.OfKind{DictInternal}.?}.{[R.?.?.OfKind{DictInternal}, P, ?]}<EOF>||System.Management.Automation|ConversionTypePair|GetHashCode||METHOD|194|

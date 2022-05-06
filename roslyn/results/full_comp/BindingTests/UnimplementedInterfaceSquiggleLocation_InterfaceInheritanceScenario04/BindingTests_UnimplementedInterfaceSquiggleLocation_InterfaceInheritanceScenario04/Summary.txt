@@ -1,0 +1,6 @@
+BindingTests_UnimplementedInterfaceSquiggleLocation_InterfaceInheritanceScenario04||98711|8391|5976|235.1182994||197.3395878|7033|258365||
+BindingTests_UnimplementedInterfaceSquiggleLocation_InterfaceInheritanceScenario04||98718|8399|5889|235.1182994||197.5117449|7033|258392||
+BindingTests_UnimplementedInterfaceSquiggleLocation_InterfaceInheritanceScenario04||98723|8399|5889|235.1182994||197.5721999|7033|258409||
+BindingTests_UnimplementedInterfaceSquiggleLocation_InterfaceInheritanceScenario04||98711|8391|5976|163.4935965||85.9598427|7033|258365||
+BindingTests_UnimplementedInterfaceSquiggleLocation_InterfaceInheritanceScenario04||98718|8399|5889|163.4935965||86.0493162|7033|258392||
+BindingTests_UnimplementedInterfaceSquiggleLocation_InterfaceInheritanceScenario04||98723|8399|5889|163.4935965||86.0958517|7033|258409||

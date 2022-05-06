@@ -1,0 +1,1 @@
+MshSnapinInfoTests_TestReadCoreEngineSnapIn||96|104|15|44.8938074||0.0473667|28|224||

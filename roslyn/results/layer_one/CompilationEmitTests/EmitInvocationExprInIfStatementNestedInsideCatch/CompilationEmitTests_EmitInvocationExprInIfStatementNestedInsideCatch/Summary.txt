@@ -1,0 +1,3 @@
+CompilationEmitTests_EmitInvocationExprInIfStatementNestedInsideCatch||259|247|196|89.6089293||0.3224815|10753|660||
+CompilationEmitTests_EmitInvocationExprInIfStatementNestedInsideCatch||261|250|255|89.6089293||0.3243658|10753|668||
+CompilationEmitTests_EmitInvocationExprInIfStatementNestedInsideCatch||3962|1362|11|89.6089293||1.6682995|10753|11070||

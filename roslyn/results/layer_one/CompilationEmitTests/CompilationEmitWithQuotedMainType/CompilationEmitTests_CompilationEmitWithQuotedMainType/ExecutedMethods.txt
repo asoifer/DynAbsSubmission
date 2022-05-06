@@ -1,0 +1,173 @@
+|||FirstProcess||OTHER|0|
+|Microsoft.CodeAnalysis.CSharp.Test.Utilities|CSharpTestSource|op_Implicit|string source|METHOD|4|FULL HAVOC
+|Microsoft.CodeAnalysis.CSharp|CSharpCompilationOptions|WithMainTypeName|string? name|METHOD|4|FULL HAVOC
+|System.Collections.Immutable|ImmutableArray|Create|Microsoft.CodeAnalysis.MetadataReference[]? items|METHOD|4|IsIn{R;R.*;P;P.*;RO}.{Many}.{R;R.?;R.*.?;P;P.?;P.*.?}.{RO.?}.{[RO, R;R.*;P;P.*;RO, ?]}<EOF>
+|Microsoft.CodeAnalysis.Text|SourceText|From|string text,System.Text.Encoding? encoding,Microsoft.CodeAnalysis.Text.SourceHashAlgorithm checksumAlgorithm|METHOD|4|FULL HAVOC
+|System.Threading|CancellationToken|.ctor||PROPERTY|28|FULL HAVOC
+|Microsoft.CodeAnalysis.CSharp|SyntaxFactory|ParseSyntaxTree|Microsoft.CodeAnalysis.Text.SourceText text,Microsoft.CodeAnalysis.ParseOptions? options,string path,System.Threading.CancellationToken cancellationToken|METHOD|4|FULL HAVOC
+|System.IO|MemoryStream|ctor||METHOD|4|FULL HAVOC
+|Microsoft.CodeAnalysis|SyntaxTree|GetRoot|System.Threading.CancellationToken cancellationToken|METHOD|4|IsIn{R;R.*;P;P.*;RO}.{Many}.{R;R.?;R.*.?;P;P.?;P.*.?}.{RO.?}.{[RO, R;R.*;P;P.*;RO, ?]}<EOF>
+|Microsoft.CodeAnalysis|SyntaxNode|SerializeTo|System.IO.Stream stream,System.Threading.CancellationToken cancellationToken|METHOD|4|IsIn{R;R.*;P;P.*;RO}.{Many}.{R;R.?;R.*.?;P;P.?;P.*.?}.{RO.?}.{[RO, R;R.*;P;P.*;RO, ?]}<EOF>
+|Microsoft.CodeAnalysis.CSharp|CSharpSyntaxNode|DeserializeFrom|System.IO.Stream stream,System.Threading.CancellationToken cancellationToken|METHOD|4|IsIn{R;R.*;P;P.*;RO}.{Many}.{R;R.?;R.*.?;P;P.?;P.*.?}.{RO.?}.{[RO, R;R.*;P;P.*;RO, ?]}<EOF>
+|System|Func|Invoke||METHOD|6|FULL HAVOC
+|System|Guid|NewGuid||METHOD|4|Fresh.{}.{P}.{RV.?}.{}<EOF>
+|System|Guid|ToString|string? format|METHOD|4|Null.{}.{R;R.?;P}.{}.{}<EOF>
+|System.Collections.Immutable|ImmutableArray|.ctor||PROPERTY|10|FULL HAVOC
+|System|Nullable|.ctor||PROPERTY|20|FULL HAVOC
+|Microsoft.CodeAnalysis.CSharp|CSharpCompilationOptions|ctor|Microsoft.CodeAnalysis.OutputKind outputKind,bool reportSuppressedDiagnostics,string? moduleName,string? mainTypeName,string? scriptClassName,System.Collections.Generic.IEnumerable<string>? usings,Microsoft.CodeAnalysis.OptimizationLevel optimizationLevel,bool checkOverflow,bool allowUnsafe,string? cryptoKeyContainer,string? cryptoKeyFile,System.Collections.Immutable.ImmutableArray<byte> cryptoPublicKey,bool? delaySign,Microsoft.CodeAnalysis.Platform platform,Microsoft.CodeAnalysis.ReportDiagnostic generalDiagnosticOption,int warningLevel,System.Collections.Generic.IEnumerable<System.Collections.Generic.KeyValuePair<string, Microsoft.CodeAnalysis.ReportDiagnostic>>? specificDiagnosticOptions,bool concurrentBuild,bool deterministic,Microsoft.CodeAnalysis.XmlReferenceResolver? xmlReferenceResolver,Microsoft.CodeAnalysis.SourceReferenceResolver? sourceReferenceResolver,Microsoft.CodeAnalysis.MetadataReferenceResolver? metadataReferenceResolver,Microsoft.CodeAnalysis.AssemblyIdentityComparer? assemblyIdentityComparer,Microsoft.CodeAnalysis.StrongNameProvider? strongNameProvider,bool publicSign,Microsoft.CodeAnalysis.MetadataImportOptions metadataImportOptions,Microsoft.CodeAnalysis.NullableContextOptions nullableContextOptions|METHOD|2|FULL HAVOC
+|Microsoft.CodeAnalysis.CSharp|CSharpCompilationOptions|WithReferencesSupersedeLowerVersions|bool value|METHOD|1|FULL HAVOC
+|Roslyn.Utilities|RoslynDebug|Assert|bool b|METHOD|137|FULL HAVOC
+|System.Diagnostics|Debug|Assert|bool condition|METHOD|270|Null.{}.{P}.{}.{}<EOF>
+|Microsoft.CodeAnalysis|Compilation|ValidateReferences|System.Collections.Generic.IEnumerable<Microsoft.CodeAnalysis.MetadataReference>? references|METHOD|4|FULL HAVOC
+|Microsoft.CodeAnalysis|CommonSyntaxAndDeclarationManager|ctor|System.Collections.Immutable.ImmutableArray<Microsoft.CodeAnalysis.SyntaxTree> externalSyntaxTrees,string scriptClassName,Microsoft.CodeAnalysis.SourceReferenceResolver resolver,Microsoft.CodeAnalysis.CommonMessageProvider messageProvider,bool isSubmission|METHOD|16|FULL HAVOC
+|Microsoft.CodeAnalysis|Compilation|SyntaxTreeCommonFeatures|System.Collections.Generic.IEnumerable<Microsoft.CodeAnalysis.SyntaxTree> trees|METHOD|8|FULL HAVOC
+|Microsoft.CodeAnalysis|Compilation|ctor|string? name,System.Collections.Immutable.ImmutableArray<Microsoft.CodeAnalysis.MetadataReference> references,System.Collections.Generic.IReadOnlyDictionary<string, string> features,bool isSubmission,Microsoft.CodeAnalysis.SemanticModelProvider? semanticModelProvider,Microsoft.CodeAnalysis.Diagnostics.AsyncQueue<Microsoft.CodeAnalysis.Diagnostics.CompilationEvent>? eventQueue|METHOD|16|FULL HAVOC
+|Microsoft.CodeAnalysis|DiagnosticBag|ctor||METHOD|12|FULL HAVOC
+|Microsoft.CodeAnalysis.CSharp|WellKnownMembersSignatureComparer|ctor|Microsoft.CodeAnalysis.CSharp.CSharpCompilation compilation|METHOD|8|FULL HAVOC
+|System|Lazy|ctor|System.Func<Microsoft.CodeAnalysis.CSharp.Symbols.ImplicitNamedTypeSymbol?> valueFactory|METHOD|36|FULL HAVOC
+|Microsoft.CodeAnalysis.CSharp.Symbols|AnonymousTypeManager|ctor|Microsoft.CodeAnalysis.CSharp.CSharpCompilation compilation|METHOD|8|FULL HAVOC
+|Microsoft.CodeAnalysis.CSharp|LanguageVersionFacts|MapSpecifiedToEffectiveVersion|Microsoft.CodeAnalysis.CSharp.LanguageVersion version|METHOD|4|FULL HAVOC
+|Microsoft.CodeAnalysis|Compilation|MakeSourceAssemblySimpleName||METHOD|4|FULL HAVOC
+|Microsoft.CodeAnalysis.CSharp|ReferenceManager|ctor|string simpleAssemblyName,Microsoft.CodeAnalysis.AssemblyIdentityComparer identityComparer,System.Collections.Generic.Dictionary<Microsoft.CodeAnalysis.MetadataReference, object>? observedMetadata|METHOD|4|FULL HAVOC
+|Roslyn.Utilities|EnumerableExtensions|IsEmpty|System.Collections.Generic.IEnumerable<Microsoft.CodeAnalysis.SyntaxTree> source|METHOD|4|FULL HAVOC
+|Microsoft.CodeAnalysis.PooledObjects|PooledHashSet|GetInstance||METHOD|4|FULL HAVOC
+|Roslyn.Utilities|ISetExtensions|AddAll|System.Collections.Generic.ISet<Microsoft.CodeAnalysis.SyntaxTree> set,System.Collections.Immutable.ImmutableArray<Microsoft.CodeAnalysis.SyntaxTree> values|METHOD|4|FULL HAVOC
+|System.Linq|Enumerable|Cast|System.Collections.IEnumerable source|METHOD|4|FULL HAVOC
+|System.Collections.Generic|HashSet|Contains|Microsoft.CodeAnalysis.SyntaxTree item|METHOD|4|FULL HAVOC
+|System.Collections.Generic|HashSet|Add|Microsoft.CodeAnalysis.SyntaxTree item|METHOD|4|FULL HAVOC
+|Microsoft.CodeAnalysis.PooledObjects|PooledHashSet|Free||METHOD|4|FULL HAVOC
+|System.Collections.Immutable|ImmutableArray|AddRange|System.Collections.Generic.IEnumerable<Microsoft.CodeAnalysis.SyntaxTree> items|METHOD|4|FULL HAVOC
+|Microsoft.CodeAnalysis|Compilation|get_SubmissionReturnType||METHOD|4|FULL HAVOC
+|Microsoft.CodeAnalysis|Compilation|get_HostObjectType||METHOD|4|FULL HAVOC
+|Microsoft.CodeAnalysis|CommonReferenceManager|AssertCanReuseForCompilation|Microsoft.CodeAnalysis.CSharp.CSharpCompilation compilation|METHOD|4|FULL HAVOC
+|Microsoft.CodeAnalysis.PooledObjects|ArrayBuilder|GetInstance||METHOD|24|FULL HAVOC
+|Microsoft.CodeAnalysis.PooledObjects|PooledDictionary|GetInstance||METHOD|16|FULL HAVOC
+|System.Collections.Generic|IDictionary|Add|Microsoft.CodeAnalysis.SyntaxTree key,System.Lazy<Microsoft.CodeAnalysis.CSharp.RootSingleNamespaceDeclaration> value|METHOD|8|FULL HAVOC
+|Microsoft.CodeAnalysis.CSharp|DeclarationTable|AddRootDeclaration|System.Lazy<Microsoft.CodeAnalysis.CSharp.RootSingleNamespaceDeclaration> lazyRootDeclaration|METHOD|4|FULL HAVOC
+|Microsoft.CodeAnalysis.PooledObjects|ArrayBuilder|Add|Microsoft.CodeAnalysis.SyntaxTree item|METHOD|62|FULL HAVOC
+|Microsoft.CodeAnalysis.PooledObjects|ArrayBuilder|ToImmutableAndFree||METHOD|4|IsIn{R;R.*;P;P.*;RO}.{Many}.{R;R.?;R.*.?;P;P.?;P.*.?}.{RO.?}.{[RO, R;R.*;P;P.*;RO, ?]}<EOF>
+|Microsoft.CodeAnalysis.PooledObjects|PooledDictionary|ToImmutableDictionaryAndFree||METHOD|16|FULL HAVOC
+|System.Linq|ImmutableArrayExtensions|All|System.Collections.Immutable.ImmutableArray<Microsoft.CodeAnalysis.SyntaxTree> immutableArray,System.Func<Microsoft.CodeAnalysis.SyntaxTree, bool> predicate|METHOD|4|FULL HAVOC
+|Microsoft.CodeAnalysis|ImmutableArrayExtensions|AsImmutable|System.Collections.Generic.IEnumerable<Microsoft.CodeAnalysis.SyntaxTree> items|METHOD|8|FULL HAVOC
+|Microsoft.CodeAnalysis|ImmutableArrayExtensions|SetEquals|System.Collections.Immutable.ImmutableArray<Microsoft.CodeAnalysis.SyntaxTree> array1,System.Collections.Immutable.ImmutableArray<Microsoft.CodeAnalysis.SyntaxTree> array2,System.Collections.Generic.IEqualityComparer<Microsoft.CodeAnalysis.SyntaxTree> comparer|METHOD|4|FULL HAVOC
+|System.Threading|Interlocked|CompareExchange|Microsoft.CodeAnalysis.CSharp.SyntaxAndDeclarationManager.State? location1,Microsoft.CodeAnalysis.CSharp.SyntaxAndDeclarationManager.State? value,Microsoft.CodeAnalysis.CSharp.SyntaxAndDeclarationManager.State? comparand|METHOD|27|FULL HAVOC
+|System.Collections.Immutable|ImmutableArray|get_Item|int index|METHOD|133|FULL HAVOC
+|Microsoft.CodeAnalysis.CSharp|CSharpParseOptions|IsFeatureEnabled|Microsoft.CodeAnalysis.CSharp.MessageID feature|METHOD|12|FULL HAVOC
+|Microsoft.CodeAnalysis|DiagnosticBag|GetInstance||METHOD|24|FULL HAVOC
+|Roslyn.Utilities|UICultureUtilities|WithCurrentUICulture|System.Action<int> action|METHOD|12|FULL HAVOC
+|Roslyn.Utilities|RoslynParallel|For|int fromInclusive,int toExclusive,System.Action<int> body,System.Threading.CancellationToken cancellationToken|METHOD|4|FULL HAVOC
+|System.Collections.Immutable|ImmutableDictionary|TryGetValue|Microsoft.CodeAnalysis.SyntaxTree key,System.Collections.Immutable.ImmutableArray<Microsoft.CodeAnalysis.LoadDirective> value|METHOD|4|FULL HAVOC
+|System.Collections.Generic|HashSet|ctor||METHOD|4|Fresh.{Many{|HashSet}}.{P}.{RV.?;RO.?}.{[RV, RO, ?], [RO, P, ?]}<EOF>
+|System.Threading|CancellationToken|ThrowIfCancellationRequested||METHOD|68|FULL HAVOC
+|Microsoft.CodeAnalysis|Compilation|CheckAssemblyName|Microsoft.CodeAnalysis.DiagnosticBag diagnostics|METHOD|4|FULL HAVOC
+|Microsoft.CodeAnalysis|DiagnosticBag|AddRange|System.Collections.Immutable.ImmutableArray<Microsoft.CodeAnalysis.Diagnostic> diagnostics|METHOD|26|FULL HAVOC
+|Microsoft.CodeAnalysis.CSharp|ReferenceManager|CreateSourceAssemblyForCompilation|Microsoft.CodeAnalysis.CSharp.CSharpCompilation compilation|METHOD|4|FULL HAVOC
+|System|Lazy|get_Value||METHOD|8|FULL HAVOC
+|Microsoft.CodeAnalysis.CSharp|Imports|FromGlobalUsings|Microsoft.CodeAnalysis.CSharp.CSharpCompilation compilation|METHOD|4|FULL HAVOC
+|Microsoft.CodeAnalysis.CSharp|Imports|Complete|System.Threading.CancellationToken cancellationToken|METHOD|4|FULL HAVOC
+|Microsoft.CodeAnalysis.CSharp|Symbol|ForceComplete|Microsoft.CodeAnalysis.SourceLocation locationOpt,System.Threading.CancellationToken cancellationToken|METHOD|4|FULL HAVOC
+|Microsoft.CodeAnalysis.CSharp|DeclarationTable|GetMergedRoot|Microsoft.CodeAnalysis.CSharp.CSharpCompilation compilation|METHOD|12|FULL HAVOC
+|Microsoft.CodeAnalysis|CommonReferenceManager|DeclarationsAccessibleWithoutAlias|int referencedAssemblyIndex|METHOD|70|FULL HAVOC
+|Microsoft.CodeAnalysis|Compilation|IsTypeMissing|Microsoft.CodeAnalysis.SpecialType type|METHOD|8|FULL HAVOC
+|Microsoft.CodeAnalysis.CSharp.Symbols|AssemblySymbol|GetSpecialType|Microsoft.CodeAnalysis.SpecialType type|METHOD|8|FULL HAVOC
+|System.Runtime.CompilerServices|Unsafe|AreSame|System.WeakReference<Microsoft.CodeAnalysis.CSharp.BinderFactory>[]? left,System.WeakReference<Microsoft.CodeAnalysis.CSharp.BinderFactory>[]? right|METHOD|8|FULL HAVOC
+|System.Collections.Immutable|ImmutableDictionary|ContainsKey|Microsoft.CodeAnalysis.SyntaxTree key|METHOD|8|FULL HAVOC
+|System.Collections.Immutable|ImmutableDictionary|get_Item|Microsoft.CodeAnalysis.SyntaxTree key|METHOD|8|FULL HAVOC
+|Microsoft.CodeAnalysis.CSharp|BinderFactory|ctor|Microsoft.CodeAnalysis.CSharp.CSharpCompilation compilation,Microsoft.CodeAnalysis.SyntaxTree syntaxTree,bool ignoreAccessibility|METHOD|7|FULL HAVOC
+|System|WeakReference|ctor|Microsoft.CodeAnalysis.CSharp.BinderFactory target|METHOD|7|FULL HAVOC
+|Microsoft.CodeAnalysis.CSharp|BinderFactory|GetBinder|Microsoft.CodeAnalysis.SyntaxNode node,Microsoft.CodeAnalysis.CSharp.CSharpSyntaxNode memberDeclarationOpt,Microsoft.CodeAnalysis.CSharp.Symbol memberOpt|METHOD|4|FULL HAVOC
+|Microsoft.CodeAnalysis.PooledObjects|ArrayBuilder|AddRange|System.Collections.Immutable.ImmutableArray<Microsoft.CodeAnalysis.CSharp.Symbols.ModuleSymbol> items|METHOD|24|FULL HAVOC
+|Microsoft.CodeAnalysis.CSharp.Symbols|NamespaceExtent|ctor|Microsoft.CodeAnalysis.CSharp.CSharpCompilation compilation|METHOD|4|FULL HAVOC
+|Microsoft.CodeAnalysis.PooledObjects|ArrayBuilder|SelectDistinct|System.Func<Microsoft.CodeAnalysis.CSharp.Symbols.ModuleSymbol, Microsoft.CodeAnalysis.CSharp.Symbols.NamespaceSymbol> selector|METHOD|4|FULL HAVOC
+|Microsoft.CodeAnalysis.CSharp.Symbols|MergedNamespaceSymbol|Create|Microsoft.CodeAnalysis.CSharp.Symbols.NamespaceExtent extent,Microsoft.CodeAnalysis.CSharp.Symbols.NamespaceSymbol containingNamespace,System.Collections.Immutable.ImmutableArray<Microsoft.CodeAnalysis.CSharp.Symbols.NamespaceSymbol> namespacesToMerge,string nameOpt|METHOD|4|FULL HAVOC
+|Microsoft.CodeAnalysis.PooledObjects|ArrayBuilder|Free||METHOD|20|FULL HAVOC
+|Microsoft.CodeAnalysis|Compilation|Feature|string p|METHOD|4|FULL HAVOC
+|Microsoft.CodeAnalysis.CSharp|CSharpSyntaxTree|IsNullableAnalysisEnabled|Microsoft.CodeAnalysis.Text.TextSpan span|METHOD|4|FULL HAVOC
+|System|WeakReference|TryGetTarget|Microsoft.CodeAnalysis.CSharp.BinderFactory target|METHOD|7|FULL HAVOC
+|System.Linq|ImmutableArrayExtensions|FirstOrDefault|System.Collections.Immutable.ImmutableArray<Microsoft.CodeAnalysis.SyntaxTree> immutableArray|METHOD|12|FULL HAVOC
+|Microsoft.CodeAnalysis|ThreeStateHelpers|HasValue|Microsoft.CodeAnalysis.ThreeState value|METHOD|28|FULL HAVOC
+|System.Collections.Generic|IReadOnlyDictionary|ContainsKey|string key|METHOD|4|FULL HAVOC
+|Microsoft.CodeAnalysis|ThreeStateHelpers|ToThreeState|bool value|METHOD|4|FULL HAVOC
+|Microsoft.CodeAnalysis|ThreeStateHelpers|Value|Microsoft.CodeAnalysis.ThreeState value|METHOD|28|FULL HAVOC
+|Microsoft.CodeAnalysis|DiagnosticBag|AsEnumerable||METHOD|4|FULL HAVOC
+|System.Collections.Concurrent|ConcurrentQueue|ctor||METHOD|4|FULL HAVOC
+|Microsoft.CodeAnalysis.CSharp|CSharpSymbolVisitor|ctor||METHOD|24|FULL HAVOC
+|System.Collections.Concurrent|ConcurrentDictionary|ctor|System.Collections.Generic.IEqualityComparer<Microsoft.CodeAnalysis.CSharp.Symbol>? comparer|METHOD|4|FULL HAVOC
+|System.Collections.Concurrent|ConcurrentStack|ctor||METHOD|8|FULL HAVOC
+|Microsoft.CodeAnalysis.CSharp|CSharpSymbolVisitor|Visit|Microsoft.CodeAnalysis.CSharp.Symbol symbol|METHOD|12|FULL HAVOC
+|System.Collections.Concurrent|ConcurrentDictionary|TryGetValue|Microsoft.CodeAnalysis.CSharp.Symbol key,Microsoft.CodeAnalysis.CSharp.ClsComplianceChecker.Compliance value|METHOD|16|FULL HAVOC
+|Microsoft.CodeAnalysis.CSharp|Symbol|GetAttributes||METHOD|12|FULL HAVOC
+|System.Collections.Concurrent|ConcurrentDictionary|GetOrAdd|Microsoft.CodeAnalysis.CSharp.Symbol key,Microsoft.CodeAnalysis.CSharp.ClsComplianceChecker.Compliance value|METHOD|4|FULL HAVOC
+|Microsoft.CodeAnalysis.CSharp.Symbols|NamespaceOrTypeSymbol|GetMembersUnordered||METHOD|10|FULL HAVOC
+|System.Threading.Tasks|Task|Run|System.Action action,System.Threading.CancellationToken cancellationToken|METHOD|8|FULL HAVOC
+|System.Collections.Concurrent|ConcurrentStack|Push|System.Threading.Tasks.Task item|METHOD|8|FULL HAVOC
+|System.Collections.Concurrent|ConcurrentStack|TryPop|System.Threading.Tasks.Task result|METHOD|24|FULL HAVOC
+|System.Threading.Tasks|Task|GetAwaiter||METHOD|16|FULL HAVOC
+|System.Runtime.CompilerServices|TaskAwaiter|GetResult||METHOD|16|FULL HAVOC
+|Microsoft.CodeAnalysis|DiagnosticBag|ToReadOnlyAndFree||METHOD|12|FULL HAVOC
+|System.Collections.Immutable|ImmutableInterlocked|InterlockedInitialize|System.Collections.Immutable.ImmutableArray<Microsoft.CodeAnalysis.Diagnostic> location,System.Collections.Immutable.ImmutableArray<Microsoft.CodeAnalysis.Diagnostic> value|METHOD|4|FULL HAVOC
+|Microsoft.CodeAnalysis|ImmutableArrayExtensions|Concat|System.Collections.Immutable.ImmutableArray<Microsoft.CodeAnalysis.Diagnostic> first,System.Collections.Immutable.ImmutableArray<Microsoft.CodeAnalysis.Diagnostic> second|METHOD|4|FULL HAVOC
+|Microsoft.CodeAnalysis.CSharp.Symbols|SimpleProgramNamedTypeSymbol|GetSimpleProgramEntryPoint|Microsoft.CodeAnalysis.CSharp.CSharpCompilation compilation|METHOD|4|FULL HAVOC
+|Microsoft.CodeAnalysis|EnumBounds|IsApplication|Microsoft.CodeAnalysis.OutputKind kind|METHOD|4|FULL HAVOC
+|Roslyn.Utilities|StringExtensions|IsValidClrTypeName|string? name|METHOD|4|FULL HAVOC
+|Microsoft.CodeAnalysis|Compilation|CommonBindScriptClass||METHOD|4|FULL HAVOC
+|Microsoft.CodeAnalysis.CSharp.Symbols|SymbolExtensions|GetPublicSymbol|Microsoft.CodeAnalysis.CSharp.Symbols.ModuleSymbol? symbol|METHOD|4|FULL HAVOC
+|Microsoft.CodeAnalysis.CSharp.Symbols|SymbolExtensions|GetSymbol|Microsoft.CodeAnalysis.INamedTypeSymbol? symbol|METHOD|4|FULL HAVOC
+|System|String|Split|char separator,System.StringSplitOptions options|METHOD|4|Null.{}.{R;P}.{}.{}<EOF>
+|Microsoft.CodeAnalysis.CSharp.Symbols|NamespaceOrTypeSymbol|GetNamespaceOrTypeByQualifiedName|System.Collections.Generic.IEnumerable<string> qualifiedName|METHOD|4|FULL HAVOC
+|Microsoft.CodeAnalysis.CSharp.Symbols|SymbolExtensions|OfMinimalArity|System.Collections.Generic.IEnumerable<Microsoft.CodeAnalysis.CSharp.Symbols.NamespaceOrTypeSymbol> symbols|METHOD|4|FULL HAVOC
+|Microsoft.CodeAnalysis.CSharp.Symbols|TypeSymbolExtensions|IsVoidType|Microsoft.CodeAnalysis.CSharp.Symbols.TypeSymbol type|METHOD|2|FULL HAVOC
+|Microsoft.CodeAnalysis|DiagnosticBag|Free||METHOD|4|FULL HAVOC
+|Microsoft.CodeAnalysis.CSharp|MessageIDExtensions|RequiredVersion|Microsoft.CodeAnalysis.CSharp.MessageID feature|METHOD|2|FULL HAVOC
+|Microsoft.CodeAnalysis.CSharp.Symbols|MethodSymbol|GetUnmanagedCallersOnlyAttributeData|bool forceComplete|METHOD|2|FULL HAVOC
+|Microsoft.CodeAnalysis.PooledObjects|ArrayBuilder|get_Item|int index|METHOD|4|FULL HAVOC
+|Microsoft.CodeAnalysis.CSharp.Symbols|TypeSymbolExtensions|IsGenericTaskType|Microsoft.CodeAnalysis.CSharp.Symbols.TypeSymbol type,Microsoft.CodeAnalysis.CSharp.CSharpCompilation compilation|METHOD|2|FULL HAVOC
+|Microsoft.CodeAnalysis.CSharp.Symbols|TypeSymbolExtensions|IsNonGenericTaskType|Microsoft.CodeAnalysis.CSharp.Symbols.TypeSymbol type,Microsoft.CodeAnalysis.CSharp.CSharpCompilation compilation|METHOD|2|FULL HAVOC
+|Microsoft.CodeAnalysis.CSharp|Symbol|Accept|Microsoft.CodeAnalysis.CSharp.CSharpSymbolVisitor<Microsoft.CodeAnalysis.CSharp.TypeCompilationState, object> visitor,Microsoft.CodeAnalysis.CSharp.TypeCompilationState a|METHOD|20|FULL HAVOC
+|Microsoft.CodeAnalysis.CSharp.Symbols|SourceAssemblySymbol|GetUnusedFieldWarnings|System.Threading.CancellationToken cancellationToken|METHOD|4|FULL HAVOC
+|Microsoft.CodeAnalysis|EnumBounds|IsNetModule|Microsoft.CodeAnalysis.OutputKind kind|METHOD|4|FULL HAVOC
+|System|String|Format|string format,object?[] args|METHOD|4|Null.{}.{R;P}.{}.{}<EOF>
+|Microsoft.CodeAnalysis.CSharp.Symbols|NamespaceOrTypeSymbol|GetMembers||METHOD|8|IsIn{R;R.*;P;P.*;RO}.{Many}.{R;R.?;R.*.?;P;P.?;P.*.?}.{RO.?}.{[RO, R;R.*;P;P.*;RO, ?]}<EOF>
+|Microsoft.CodeAnalysis.CSharp.Symbols|SymbolExtensions|IsAccessor|Microsoft.CodeAnalysis.CSharp.Symbol symbol|METHOD|8|FULL HAVOC
+|Microsoft.CodeAnalysis.CSharp.Symbols|SymbolExtensions|IsPartialDefinition|Microsoft.CodeAnalysis.CSharp.Symbol member|METHOD|8|FULL HAVOC
+|Microsoft.CodeAnalysis|SyntaxReference|GetSyntax|System.Threading.CancellationToken cancellationToken|METHOD|8|FULL HAVOC
+|Microsoft.CodeAnalysis.CSharp|SourceDocumentationCommentUtils|GetDocumentationCommentTriviaFromSyntaxNode|Microsoft.CodeAnalysis.CSharp.CSharpSyntaxNode syntaxNode,Microsoft.CodeAnalysis.DiagnosticBag diagnostics|METHOD|8|FULL HAVOC
+|Microsoft.CodeAnalysis.CSharp.Symbols|NamedTypeSymbol|GetMembers||METHOD|4|FULL HAVOC
+|Microsoft.CodeAnalysis.CSharp|SyntaxExtensions|ReportDocumentationCommentDiagnostics|Microsoft.CodeAnalysis.SyntaxTree tree|METHOD|4|FULL HAVOC
+|Microsoft.CodeAnalysis|DiagnosticBag|AddRangeAndFree|Microsoft.CodeAnalysis.DiagnosticBag bag|METHOD|4|FULL HAVOC
+|Microsoft.CodeAnalysis|Compilation|FilterAndAppendAndFreeDiagnostics|Microsoft.CodeAnalysis.DiagnosticBag accumulator,Microsoft.CodeAnalysis.DiagnosticBag? incoming,System.Threading.CancellationToken cancellationToken|METHOD|4|FULL HAVOC
+|System.Linq|Enumerable|Any|System.Collections.Generic.IEnumerable<Microsoft.CodeAnalysis.Test.Utilities.DiagnosticDescription> source|METHOD|20|IsIn{R;R.*;P;P.*;RO}.{Many}.{R;R.?;R.*.?;P;P.?;P.*.?}.{RO.?}.{[RO, R;R.*;P;P.*;RO, ?]}<EOF>
+|System.Linq|Enumerable|Select|System.Collections.Generic.IEnumerable<Microsoft.CodeAnalysis.Diagnostic> source,System.Func<Microsoft.CodeAnalysis.Diagnostic, Microsoft.CodeAnalysis.Test.Utilities.DiagnosticDescription> selector|METHOD|10|Fresh.{}.{P}.{RV.?}.{[RV, P, ?]}<EOF>
+|System.Linq|Enumerable|ToList|System.Collections.Generic.IEnumerable<Microsoft.CodeAnalysis.Test.Utilities.DiagnosticDescription> source|METHOD|4|FULL HAVOC
+|System.Linq|Enumerable|OrderBy|System.Collections.Generic.IEnumerable<Microsoft.CodeAnalysis.Diagnostic> source,System.Func<Microsoft.CodeAnalysis.Diagnostic, Microsoft.CodeAnalysis.Text.LinePosition?> keySelector,System.Collections.Generic.IComparer<Microsoft.CodeAnalysis.Text.LinePosition?> comparer|METHOD|2|FULL HAVOC
+|System.Text|StringBuilder|ctor||METHOD|10|FULL HAVOC
+|System.Text|StringBuilder|AppendLine||METHOD|22|FULL HAVOC
+|System.Collections.Generic|IEnumerable|GetEnumerator||METHOD|10|FULL HAVOC
+|System.Collections|IEnumerator|MoveNext||METHOD|18|FULL HAVOC
+|System.Collections.Generic|List|ctor|System.Collections.Generic.IEnumerable<T> collection|METHOD|8|Fresh.{Single{System.Array}}.{P}.{RV.?;RO.?}.{[RV, RO, ?]}<EOF>
+|System.Collections.Generic|IEnumerable|ctor||PROPERTY|8|Fresh.{}.{P}.{RV.?}.{[RV, P, ?]}<EOF>
+|System.Linq|Enumerable|Reverse|System.Collections.Generic.IEnumerable<Microsoft.CodeAnalysis.Test.Utilities.DiffUtil.LongestCommonSubsequence<System.Collections.Generic.IList<T>>.Edit> source|METHOD|4|FULL HAVOC
+|System|String|Join|string? separator,System.Collections.Generic.IEnumerable<string?> values|METHOD|4|Null.{}.{R;P}.{}.{}<EOF>
+|System.Text|StringBuilder|Append|string? value|METHOD|82|FULL HAVOC
+|System.Text|StringBuilder|ToString||METHOD|10|FULL HAVOC
+|Roslyn.Test.Utilities|CustomAssert|True|bool condition,string userMessage|METHOD|6|Null.{}.{R;P}.{}.{}<EOF>
+|System|Object|GetType||METHOD|2|Fresh.{}.{R}.{RV.?}.{}<EOF>
+|Microsoft.CodeAnalysis.CSharp|DiagnosticBagExtensions|Add|Microsoft.CodeAnalysis.DiagnosticBag diagnostics,Microsoft.CodeAnalysis.CSharp.ErrorCode code,Microsoft.CodeAnalysis.Location location,object[] args|METHOD|2|FULL HAVOC
+|Microsoft.CodeAnalysis|Diagnostic|IsNotConfigurable||METHOD|2|FULL HAVOC
+|System.Linq|Enumerable|All|System.Collections.Generic.IEnumerable<Microsoft.CodeAnalysis.Test.Utilities.DiagnosticDescription> source,System.Func<Microsoft.CodeAnalysis.Test.Utilities.DiagnosticDescription, bool> predicate|METHOD|8|FULL HAVOC
+|Roslyn.Utilities|EnumerableExtensions|Contains|System.Collections.Generic.IEnumerable<string?> sequence,string? s|METHOD|4|FULL HAVOC
+|Microsoft.CodeAnalysis|Location|GetMappedLineSpan||METHOD|4|FULL HAVOC
+|System.Collections.Generic|List|IndexOf|Microsoft.CodeAnalysis.Test.Utilities.DiagnosticDescription item|METHOD|2|FULL HAVOC
+|System|Object|Equals|object? obj|METHOD|4|FULL HAVOC
+|System.Linq|Enumerable|SequenceEqual|System.Collections.Generic.IEnumerable<string> first,System.Collections.Generic.IEnumerable<string> second|METHOD|4|FULL HAVOC
+|System.Collections.Generic|List|RemoveAt|int index|METHOD|2|FULL HAVOC
+|System.Linq|Enumerable|First|System.Collections.Generic.IEnumerable<Microsoft.CodeAnalysis.Diagnostic> source|METHOD|2|IsIn{R.*.OfType{Object};P.*}.{}.{R.?;R.*.?;P.?;P.*.?}.{}.{}<EOF>
+|System|Enum|GetName|System.Type enumType,object value|METHOD|6|Null.{}.{R;P}.{}.{}<EOF>
+|Microsoft.CodeAnalysis|Diagnostic|ToString||METHOD|4|FULL HAVOC
+|System.Text.RegularExpressions|Regex|Match|string input,string pattern|METHOD|2|FULL HAVOC
+|System|Array|IndexOf|Microsoft.CodeAnalysis.Test.Utilities.DiagnosticDescription[] array,Microsoft.CodeAnalysis.Test.Utilities.DiagnosticDescription value|METHOD|2|FULL HAVOC
+|System.Collections.Generic|IList|get_Item|int index|METHOD|6|IsIn{R.*.UntilType{@RV}.OfType{@RV}}.{}.{R;R.?;R.?.?;P}.{}.{}<EOF>
+|System.Collections.Generic|IEqualityComparer|Equals|T x,T y|METHOD|2|FULL HAVOC
+|System|Math|Min|int val1,int val2|METHOD|4|Null.{}.{R;P}.{}.{}<EOF>
+|System.Collections.Generic|IEnumerable|Add||PROPERTY|4|Null.{}.{P}.{R.?}.{[R, P, ?]}<EOF>
+|Microsoft.CodeAnalysis|Compilation|GetUnreferencedAssemblyIdentities|Microsoft.CodeAnalysis.Diagnostic diagnostic|METHOD|2|FULL HAVOC

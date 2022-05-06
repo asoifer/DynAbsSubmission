@@ -1,0 +1,41 @@
+Welcome to DynAbs, the Abstract Dynamic Slicer for C#.
+
+Folders:
+
+** src: DynAbs source code with several unit tests for covering most of the syntax structures and representative cases of C#.
+
+** Olden: it contains the source code for C# and Java (analyzed with Javaslicer)
+Also:
+-- JavaSlicerRunner.sh --> script with the parameters
+-- config: configurations for DynAbs
+// we changed the paths for anonymizing the submission, hence, 
+// they should be modified for executing again
+-- output 
+	--> DynAbs compilations + traces (in instrumented folder)
+	--> Javaslicer results
+	--> DynAbs results
+
+** ROSLYN AND POWERSHELL
+The repositories are too heavy for uploading to this server.
+For that reason, we anonymized our repositories.
+There are 4 repositories:
+
+Powershell - Used version (Non-Instrumented): https://anonymous.4open.science/r/PowerShell-F1F2/README.md
+Powershell - Instrumented: https://anonymous.4open.science/r/PowerShell-DB54/README.md
+
+Roslyn - Used version (Non-Instrumented): https://anonymous.4open.science/r/roslyn-51AD/README.md
+Roslyn - Instrumented: https://anonymous.4open.science/r/roslyn-660D/README.md
+
+On the other hand...
+Powershell traces and results are located in powershell folder.
+Roslyn traces (just StatementParsingTest and TypeTests due to their huge size) and results (all of them) are in roslyn folder.
+
+** Example
+Finally, there is an (old) available example but representative of our work. 
+It can be found on: https://anonymous.4open.science/r/abstract_dynamic_slicer_demo-02AD/README.md
+
+In the future, full source code will be available for the community,
+
+** Note:
+For replicate all of the experiments several configuration files are needed.
+In the final version of the public repository of DynAbs those configuration files will be available.

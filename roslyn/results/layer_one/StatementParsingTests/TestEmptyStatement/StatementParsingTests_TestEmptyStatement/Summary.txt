@@ -1,0 +1,7 @@
+StatementParsingTests_TestEmptyStatement||17110|749|239|89.6089293||3.073933|1378|49616||
+StatementParsingTests_TestEmptyStatement||17112|752|241|89.6089293||3.0754519|1378|49624||
+StatementParsingTests_TestEmptyStatement||17121|759|246|89.6089293||3.0793859|1378|49652||
+StatementParsingTests_TestEmptyStatement||17127|768|5|89.6089293||3.0865418|1378|49674||
+StatementParsingTests_TestEmptyStatement||17128|769|239|89.6089293||3.0867518|1378|49675||
+StatementParsingTests_TestEmptyStatement||17130|770|253|89.6089293||3.0883022|1378|49681||
+StatementParsingTests_TestEmptyStatement||17132|771|254|89.6089293||3.0895927|1378|49686||

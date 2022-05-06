@@ -1,0 +1,2 @@
+BindingTests_NamespaceQualifiedGenericTypeName||87392|8421|16|235.1182994||155.019689|6111|224002||
+BindingTests_NamespaceQualifiedGenericTypeName||87392|8421|16|163.4935965||66.249932|6111|224002||

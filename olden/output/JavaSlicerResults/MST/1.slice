@@ -1,0 +1,484 @@
+ 0.0% done, time left: unknown                               100.0% done, time left: unknown  finished
+The dynamic slice for criterion [MST.main:57:{slicingVariable1}]:
+BlueReturn.vert:223 ALOAD 0
+BlueReturn.vert:223 GETFIELD BlueReturn.vert LVertex;
+BlueReturn.vert:223 ARETURN
+BlueReturn.setVert:228 ALOAD 0
+BlueReturn.setVert:228 ALOAD 1
+BlueReturn.setVert:228 PUTFIELD BlueReturn.vert LVertex;
+BlueReturn.dist:233 ALOAD 0
+BlueReturn.dist:233 GETFIELD BlueReturn.dist I
+BlueReturn.dist:233 IRETURN
+BlueReturn.setDist:238 ALOAD 0
+BlueReturn.setDist:238 ILOAD 1
+BlueReturn.setDist:238 PUTFIELD BlueReturn.dist I
+Graph.<init>:23 ALOAD 0
+Graph.<init>:23 ILOAD 1
+Graph.<init>:23 ANEWARRAY Vertex
+Graph.<init>:23 PUTFIELD Graph.nodes [LVertex;
+Graph.<init>:24 ACONST_NULL
+Graph.<init>:24 ASTORE 2
+Graph.<init>:26 ILOAD 1
+Graph.<init>:26 ICONST_1
+Graph.<init>:26 ISUB
+Graph.<init>:26 ISTORE 3
+Graph.<init>:26 ILOAD 3
+Graph.<init>:26 IFLT L1
+Graph.<init>:26 IINC 3 -1
+Graph.<init>:28 ALOAD 0
+Graph.<init>:28 GETFIELD Graph.nodes [LVertex;
+Graph.<init>:28 ILOAD 3
+Graph.<init>:28 NEW Vertex
+Graph.<init>:28 DUP
+Graph.<init>:28 ALOAD 2
+Graph.<init>:28 ILOAD 1
+Graph.<init>:28 INVOKESPECIAL Vertex.<init>(LVertex;I)V
+Graph.<init>:28 DUP_X2
+Graph.<init>:28 AASTORE
+Graph.<init>:28 ASTORE 4
+Graph.<init>:29 ALOAD 4
+Graph.<init>:29 ASTORE 2
+Graph.<init>:31 ALOAD 0
+Graph.<init>:31 ILOAD 1
+Graph.<init>:31 INVOKESPECIAL Graph.addEdges(I)V
+Graph.firstNode:59 ALOAD 0
+Graph.firstNode:59 GETFIELD Graph.nodes [LVertex;
+Graph.firstNode:59 ICONST_0
+Graph.firstNode:59 AALOAD
+Graph.firstNode:59 ARETURN
+Graph.addEdges:69 ICONST_0
+Graph.addEdges:69 ISTORE 2
+Graph.addEdges:70 ALOAD 0
+Graph.addEdges:70 GETFIELD Graph.nodes [LVertex;
+Graph.addEdges:70 ICONST_0
+Graph.addEdges:70 AALOAD
+Graph.addEdges:70 ASTORE 3
+Graph.addEdges:70 ALOAD 3
+Graph.addEdges:70 IFNULL L4
+Graph.addEdges:70 ALOAD 3
+Graph.addEdges:70 INVOKEVIRTUAL Vertex.next()LVertex;
+Graph.addEdges:70 ASTORE 3
+Graph.addEdges:72 ALOAD 3
+Graph.addEdges:72 INVOKEVIRTUAL Vertex.neighbors()LHashtable;
+Graph.addEdges:72 ASTORE 4
+Graph.addEdges:73 ICONST_0
+Graph.addEdges:73 ISTORE 5
+Graph.addEdges:73 ILOAD 5
+Graph.addEdges:73 ILOAD 1
+Graph.addEdges:73 IF_ICMPGE L3
+Graph.addEdges:73 IINC 5 1
+Graph.addEdges:75 ILOAD 5
+Graph.addEdges:75 ILOAD 2
+Graph.addEdges:75 IF_ICMPEQ L2
+Graph.addEdges:77 ILOAD 5
+Graph.addEdges:77 ILOAD 2
+Graph.addEdges:77 ILOAD 1
+Graph.addEdges:77 INVOKESPECIAL Graph.computeDist(III)I
+Graph.addEdges:77 ISTORE 6
+Graph.addEdges:78 ALOAD 4
+Graph.addEdges:78 ALOAD 0
+Graph.addEdges:78 GETFIELD Graph.nodes [LVertex;
+Graph.addEdges:78 ILOAD 5
+Graph.addEdges:78 AALOAD
+Graph.addEdges:78 NEW java/lang/Integer
+Graph.addEdges:78 DUP
+Graph.addEdges:78 ILOAD 6
+Graph.addEdges:78 INVOKESPECIAL java/lang/Integer.<init>(I)V
+Graph.addEdges:78 INVOKEVIRTUAL Hashtable.put(Ljava/lang/Object;Ljava/lang/Object;)V
+Graph.addEdges:81 IINC 2 1
+Graph.computeDist:93 ILOAD 1
+Graph.computeDist:93 ILOAD 2
+Graph.computeDist:93 IF_ICMPGE L0
+Graph.computeDist:95 ILOAD 1
+Graph.computeDist:95 ISTORE 4
+Graph.computeDist:96 ILOAD 2
+Graph.computeDist:96 ISTORE 5
+Graph.computeDist:100 ILOAD 2
+Graph.computeDist:100 ISTORE 4
+Graph.computeDist:101 ILOAD 1
+Graph.computeDist:101 ISTORE 5
+Graph.computeDist:103 ILOAD 4
+Graph.computeDist:103 ILOAD 3
+Graph.computeDist:103 IMUL
+Graph.computeDist:103 ILOAD 5
+Graph.computeDist:103 IADD
+Graph.computeDist:103 INVOKESTATIC Graph.random(I)I
+Graph.computeDist:103 SIPUSH 2048
+Graph.computeDist:103 IREM
+Graph.computeDist:103 ICONST_1
+Graph.computeDist:103 IADD
+Graph.computeDist:103 IRETURN
+Graph.mult:112 ILOAD 0
+Graph.mult:112 SIPUSH 10000
+Graph.mult:112 IDIV
+Graph.mult:112 ISTORE 2
+Graph.mult:113 ILOAD 0
+Graph.mult:113 SIPUSH 10000
+Graph.mult:113 IREM
+Graph.mult:113 ISTORE 3
+Graph.mult:114 ILOAD 1
+Graph.mult:114 SIPUSH 10000
+Graph.mult:114 IDIV
+Graph.mult:114 ISTORE 4
+Graph.mult:115 ILOAD 1
+Graph.mult:115 SIPUSH 10000
+Graph.mult:115 IREM
+Graph.mult:115 ISTORE 5
+Graph.mult:116 ILOAD 3
+Graph.mult:116 ILOAD 4
+Graph.mult:116 IMUL
+Graph.mult:116 ILOAD 2
+Graph.mult:116 ILOAD 5
+Graph.mult:116 IMUL
+Graph.mult:116 IADD
+Graph.mult:116 SIPUSH 10000
+Graph.mult:116 IREM
+Graph.mult:116 SIPUSH 10000
+Graph.mult:116 IMUL
+Graph.mult:116 ILOAD 3
+Graph.mult:116 ILOAD 5
+Graph.mult:116 IMUL
+Graph.mult:116 IADD
+Graph.mult:116 IRETURN
+Graph.random:121 ILOAD 0
+Graph.random:121 LDC 31415821
+Graph.random:121 INVOKESTATIC Graph.mult(II)I
+Graph.random:121 ICONST_1
+Graph.random:121 IADD
+Graph.random:121 IRETURN
+HashEntry.<init>:63 ALOAD 0
+HashEntry.<init>:63 ALOAD 1
+HashEntry.<init>:63 PUTFIELD HashEntry.key Ljava/lang/Object;
+HashEntry.<init>:64 ALOAD 0
+HashEntry.<init>:64 ALOAD 2
+HashEntry.<init>:64 PUTFIELD HashEntry.entry Ljava/lang/Object;
+HashEntry.<init>:65 ALOAD 0
+HashEntry.<init>:65 ALOAD 3
+HashEntry.<init>:65 PUTFIELD HashEntry.next LHashEntry;
+HashEntry.key:70 ALOAD 0
+HashEntry.key:70 GETFIELD HashEntry.key Ljava/lang/Object;
+HashEntry.key:70 ARETURN
+HashEntry.entry:75 ALOAD 0
+HashEntry.entry:75 GETFIELD HashEntry.entry Ljava/lang/Object;
+HashEntry.entry:75 ARETURN
+HashEntry.next:80 ALOAD 0
+HashEntry.next:80 GETFIELD HashEntry.next LHashEntry;
+HashEntry.next:80 ARETURN
+Hashtable.<init>:9 ALOAD 0
+Hashtable.<init>:9 ILOAD 1
+Hashtable.<init>:9 PUTFIELD Hashtable.size I
+Hashtable.<init>:10 ALOAD 0
+Hashtable.<init>:10 ALOAD 0
+Hashtable.<init>:10 GETFIELD Hashtable.size I
+Hashtable.<init>:10 ANEWARRAY HashEntry
+Hashtable.<init>:10 PUTFIELD Hashtable.array [LHashEntry;
+Hashtable.hashMap:17 ALOAD 1
+Hashtable.hashMap:17 INVOKEVIRTUAL java/lang/Object.hashCode()I
+Hashtable.hashMap:17 ICONST_3
+Hashtable.hashMap:17 ISHR
+Hashtable.hashMap:17 ALOAD 0
+Hashtable.hashMap:17 GETFIELD Hashtable.size I
+Hashtable.hashMap:17 IREM
+Hashtable.hashMap:17 IRETURN
+Hashtable.get:22 ALOAD 0
+Hashtable.get:22 ALOAD 1
+Hashtable.get:22 INVOKESPECIAL Hashtable.hashMap(Ljava/lang/Object;)I
+Hashtable.get:22 ISTORE 2
+Hashtable.get:26 ALOAD 0
+Hashtable.get:26 GETFIELD Hashtable.array [LHashEntry;
+Hashtable.get:26 ILOAD 2
+Hashtable.get:26 AALOAD
+Hashtable.get:26 ASTORE 3
+Hashtable.get:26 ALOAD 3
+Hashtable.get:26 IFNULL L1
+Hashtable.get:26 ALOAD 3
+Hashtable.get:26 INVOKEVIRTUAL HashEntry.key()Ljava/lang/Object;
+Hashtable.get:26 ALOAD 1
+Hashtable.get:26 IF_ACMPEQ L1
+Hashtable.get:26 ALOAD 3
+Hashtable.get:26 INVOKEVIRTUAL HashEntry.next()LHashEntry;
+Hashtable.get:26 ASTORE 3
+Hashtable.get:28 ALOAD 3
+Hashtable.get:28 IFNULL L2
+Hashtable.get:29 ALOAD 3
+Hashtable.get:29 INVOKEVIRTUAL HashEntry.entry()Ljava/lang/Object;
+Hashtable.get:29 ARETURN
+Hashtable.put:35 ALOAD 0
+Hashtable.put:35 ALOAD 1
+Hashtable.put:35 INVOKESPECIAL Hashtable.hashMap(Ljava/lang/Object;)I
+Hashtable.put:35 ISTORE 3
+Hashtable.put:36 NEW HashEntry
+Hashtable.put:36 DUP
+Hashtable.put:36 ALOAD 1
+Hashtable.put:36 ALOAD 2
+Hashtable.put:36 ALOAD 0
+Hashtable.put:36 GETFIELD Hashtable.array [LHashEntry;
+Hashtable.put:36 ILOAD 3
+Hashtable.put:36 AALOAD
+Hashtable.put:36 INVOKESPECIAL HashEntry.<init>(Ljava/lang/Object;Ljava/lang/Object;LHashEntry;)V
+Hashtable.put:36 ASTORE 4
+Hashtable.put:37 ALOAD 0
+Hashtable.put:37 GETFIELD Hashtable.array [LHashEntry;
+Hashtable.put:37 ILOAD 3
+Hashtable.put:37 ALOAD 4
+Hashtable.put:37 AASTORE
+MST.main:32 ALOAD 0
+MST.main:32 INVOKESTATIC MST.parseCmdLine([Ljava/lang/String;)V
+MST.main:37 NEW Graph
+MST.main:37 DUP
+MST.main:37 GETSTATIC MST.vertices I
+MST.main:37 INVOKESPECIAL Graph.<init>(I)V
+MST.main:37 ASTORE 3
+MST.main:43 ALOAD 3
+MST.main:43 GETSTATIC MST.vertices I
+MST.main:43 INVOKESTATIC MST.computeMST(LGraph;I)I
+MST.main:43 ISTORE 8
+MST.main:56 ILOAD 8
+MST.main:56 ISTORE 11
+MST.computeMST:68 ICONST_0
+MST.computeMST:68 ISTORE 2
+MST.computeMST:71 ALOAD 0
+MST.computeMST:71 INVOKEVIRTUAL Graph.firstNode()LVertex;
+MST.computeMST:71 ASTORE 3
+MST.computeMST:72 ALOAD 3
+MST.computeMST:72 INVOKEVIRTUAL Vertex.next()LVertex;
+MST.computeMST:72 ASTORE 4
+MST.computeMST:73 ALOAD 4
+MST.computeMST:73 PUTSTATIC MST.MyVertexList LVertex;
+MST.computeMST:74 IINC 1 -1
+MST.computeMST:77 ILOAD 1
+MST.computeMST:77 IFEQ L1
+MST.computeMST:80 ALOAD 3
+MST.computeMST:80 INVOKESTATIC MST.doAllBlueRule(LVertex;)LBlueReturn;
+MST.computeMST:80 ASTORE 5
+MST.computeMST:81 ALOAD 5
+MST.computeMST:81 INVOKEVIRTUAL BlueReturn.vert()LVertex;
+MST.computeMST:81 ASTORE 3
+MST.computeMST:82 ALOAD 5
+MST.computeMST:82 INVOKEVIRTUAL BlueReturn.dist()I
+MST.computeMST:82 ISTORE 6
+MST.computeMST:83 IINC 1 -1
+MST.computeMST:84 ILOAD 2
+MST.computeMST:84 ILOAD 6
+MST.computeMST:84 IADD
+MST.computeMST:84 ISTORE 2
+MST.computeMST:86 ILOAD 2
+MST.computeMST:86 IRETURN
+MST.BlueRule:91 NEW BlueReturn
+MST.BlueRule:91 ASTORE 2
+MST.BlueRule:93 ALOAD 1
+MST.BlueRule:93 IFNONNULL L0
+MST.BlueRule:100 ALOAD 2
+MST.BlueRule:100 ALOAD 1
+MST.BlueRule:100 INVOKEVIRTUAL BlueReturn.setVert(LVertex;)V
+MST.BlueRule:101 ALOAD 2
+MST.BlueRule:101 ALOAD 1
+MST.BlueRule:101 INVOKEVIRTUAL Vertex.mindist()I
+MST.BlueRule:101 INVOKEVIRTUAL BlueReturn.setDist(I)V
+MST.BlueRule:102 ALOAD 1
+MST.BlueRule:102 INVOKEVIRTUAL Vertex.neighbors()LHashtable;
+MST.BlueRule:102 ASTORE 4
+MST.BlueRule:103 ALOAD 4
+MST.BlueRule:103 ALOAD 0
+MST.BlueRule:103 INVOKEVIRTUAL Hashtable.get(Ljava/lang/Object;)Ljava/lang/Object;
+MST.BlueRule:103 ASTORE 5
+MST.BlueRule:104 ALOAD 5
+MST.BlueRule:104 IFNULL L2
+MST.BlueRule:106 ALOAD 5
+MST.BlueRule:106 INVOKEVIRTUAL java/lang/Integer.intValue()I
+MST.BlueRule:106 ISTORE 6
+MST.BlueRule:107 ILOAD 6
+MST.BlueRule:107 ALOAD 2
+MST.BlueRule:107 INVOKEVIRTUAL BlueReturn.dist()I
+MST.BlueRule:107 IF_ICMPGE L1
+MST.BlueRule:109 ALOAD 1
+MST.BlueRule:109 ILOAD 6
+MST.BlueRule:109 INVOKEVIRTUAL Vertex.setMindist(I)V
+MST.BlueRule:110 ALOAD 2
+MST.BlueRule:110 ILOAD 6
+MST.BlueRule:110 INVOKEVIRTUAL BlueReturn.setDist(I)V
+MST.BlueRule:118 ALOAD 1
+MST.BlueRule:118 INVOKEVIRTUAL Vertex.next()LVertex;
+MST.BlueRule:118 ASTORE 7
+MST.BlueRule:118 ALOAD 7
+MST.BlueRule:118 IFNULL L10
+MST.BlueRule:118 ALOAD 7
+MST.BlueRule:118 ASTORE 3
+MST.BlueRule:118 ALOAD 7
+MST.BlueRule:118 INVOKEVIRTUAL Vertex.next()LVertex;
+MST.BlueRule:118 ASTORE 7
+MST.BlueRule:121 ALOAD 7
+MST.BlueRule:121 ALOAD 0
+MST.BlueRule:121 IF_ACMPNE L5
+MST.BlueRule:123 ALOAD 7
+MST.BlueRule:123 INVOKEVIRTUAL Vertex.next()LVertex;
+MST.BlueRule:123 ASTORE 8
+MST.BlueRule:124 ALOAD 3
+MST.BlueRule:124 ALOAD 8
+MST.BlueRule:124 INVOKEVIRTUAL Vertex.setNext(LVertex;)V
+MST.BlueRule:128 ALOAD 7
+MST.BlueRule:128 INVOKEVIRTUAL Vertex.neighbors()LHashtable;
+MST.BlueRule:128 ASTORE 4
+MST.BlueRule:129 ALOAD 7
+MST.BlueRule:129 INVOKEVIRTUAL Vertex.mindist()I
+MST.BlueRule:129 ISTORE 8
+MST.BlueRule:130 ALOAD 4
+MST.BlueRule:130 ALOAD 0
+MST.BlueRule:130 INVOKEVIRTUAL Hashtable.get(Ljava/lang/Object;)Ljava/lang/Object;
+MST.BlueRule:130 ASTORE 5
+MST.BlueRule:131 ALOAD 5
+MST.BlueRule:131 IFNULL L7
+MST.BlueRule:133 ALOAD 5
+MST.BlueRule:133 INVOKEVIRTUAL java/lang/Integer.intValue()I
+MST.BlueRule:133 ISTORE 9
+MST.BlueRule:134 ILOAD 9
+MST.BlueRule:134 ILOAD 8
+MST.BlueRule:134 IF_ICMPGE L6
+MST.BlueRule:136 ALOAD 7
+MST.BlueRule:136 ILOAD 9
+MST.BlueRule:136 INVOKEVIRTUAL Vertex.setMindist(I)V
+MST.BlueRule:137 ILOAD 9
+MST.BlueRule:137 ISTORE 8
+MST.BlueRule:143 ILOAD 8
+MST.BlueRule:143 ALOAD 2
+MST.BlueRule:143 INVOKEVIRTUAL BlueReturn.dist()I
+MST.BlueRule:143 IF_ICMPGE L9
+MST.BlueRule:145 ALOAD 2
+MST.BlueRule:145 ALOAD 7
+MST.BlueRule:145 INVOKEVIRTUAL BlueReturn.setVert(LVertex;)V
+MST.BlueRule:146 ALOAD 2
+MST.BlueRule:146 ILOAD 8
+MST.BlueRule:146 INVOKEVIRTUAL BlueReturn.setDist(I)V
+MST.BlueRule:150 ALOAD 2
+MST.BlueRule:150 ARETURN
+MST.doAllBlueRule:157 ALOAD 0
+MST.doAllBlueRule:157 GETSTATIC MST.MyVertexList LVertex;
+MST.doAllBlueRule:157 IF_ACMPNE L0
+MST.doAllBlueRule:158 GETSTATIC MST.MyVertexList LVertex;
+MST.doAllBlueRule:158 INVOKEVIRTUAL Vertex.next()LVertex;
+MST.doAllBlueRule:158 PUTSTATIC MST.MyVertexList LVertex;
+MST.doAllBlueRule:159 ALOAD 0
+MST.doAllBlueRule:159 GETSTATIC MST.MyVertexList LVertex;
+MST.doAllBlueRule:159 INVOKESTATIC MST.BlueRule(LVertex;LVertex;)LBlueReturn;
+MST.doAllBlueRule:159 ARETURN
+MST.parseCmdLine:168 ICONST_0
+MST.parseCmdLine:168 ISTORE 1
+MST.parseCmdLine:170 ILOAD 1
+MST.parseCmdLine:170 ALOAD 0
+MST.parseCmdLine:170 ARRAYLENGTH
+MST.parseCmdLine:170 IF_ICMPGE L5
+MST.parseCmdLine:170 ALOAD 0
+MST.parseCmdLine:170 ILOAD 1
+MST.parseCmdLine:170 AALOAD
+MST.parseCmdLine:170 LDC "-"
+MST.parseCmdLine:170 INVOKEVIRTUAL java/lang/String.startsWith(Ljava/lang/String;)Z
+MST.parseCmdLine:170 IFEQ L5
+MST.parseCmdLine:172 ALOAD 0
+MST.parseCmdLine:172 ILOAD 1
+MST.parseCmdLine:172 IINC 1 1
+MST.parseCmdLine:172 AALOAD
+MST.parseCmdLine:172 ASTORE 2
+MST.parseCmdLine:173 ALOAD 2
+MST.parseCmdLine:173 LDC "-v"
+MST.parseCmdLine:173 INVOKEVIRTUAL java/lang/String.equals(Ljava/lang/Object;)Z
+MST.parseCmdLine:173 IFEQ L2
+MST.parseCmdLine:175 ILOAD 1
+MST.parseCmdLine:175 ALOAD 0
+MST.parseCmdLine:175 ARRAYLENGTH
+MST.parseCmdLine:175 IF_ICMPGE L1
+MST.parseCmdLine:177 NEW java/lang/Integer
+MST.parseCmdLine:177 DUP
+MST.parseCmdLine:177 ALOAD 0
+MST.parseCmdLine:177 ILOAD 1
+MST.parseCmdLine:177 AALOAD
+MST.parseCmdLine:177 INVOKESPECIAL java/lang/Integer.<init>(Ljava/lang/String;)V
+MST.parseCmdLine:177 INVOKEVIRTUAL java/lang/Integer.intValue()I
+MST.parseCmdLine:177 PUTSTATIC MST.vertices I
+Vertex.<init>:27 ALOAD 0
+Vertex.<init>:27 LDC 9999999
+Vertex.<init>:27 PUTFIELD Vertex.mindist I
+Vertex.<init>:28 ALOAD 0
+Vertex.<init>:28 ALOAD 1
+Vertex.<init>:28 PUTFIELD Vertex.next LVertex;
+Vertex.<init>:29 ALOAD 0
+Vertex.<init>:29 NEW Hashtable
+Vertex.<init>:29 DUP
+Vertex.<init>:29 ILOAD 2
+Vertex.<init>:29 ICONST_4
+Vertex.<init>:29 IDIV
+Vertex.<init>:29 INVOKESPECIAL Hashtable.<init>(I)V
+Vertex.<init>:29 PUTFIELD Vertex.neighbors LHashtable;
+Vertex.mindist:34 ALOAD 0
+Vertex.mindist:34 GETFIELD Vertex.mindist I
+Vertex.mindist:34 IRETURN
+Vertex.setMindist:39 ALOAD 0
+Vertex.setMindist:39 ILOAD 1
+Vertex.setMindist:39 PUTFIELD Vertex.mindist I
+Vertex.next:44 ALOAD 0
+Vertex.next:44 GETFIELD Vertex.next LVertex;
+Vertex.next:44 ARETURN
+Vertex.setNext:49 ALOAD 0
+Vertex.setNext:49 ALOAD 1
+Vertex.setNext:49 PUTFIELD Vertex.next LVertex;
+Vertex.neighbors:54 ALOAD 0
+Vertex.neighbors:54 GETFIELD Vertex.neighbors LHashtable;
+Vertex.neighbors:54 ARETURN
+java.lang.Character.digit:-1 ILOAD 0
+java.lang.Character.digit:-1 INVOKESTATIC java/lang/CharacterData.of(I)Ljava/lang/CharacterData;
+java.lang.Character.digit:-1 IRETURN
+java.lang.Character.digit:-1 ILOAD 0
+java.lang.Character.digit:-1 INVOKESTATIC java/lang/Character.digit(II)I
+java.lang.Character.digit:-1 IRETURN
+java.lang.CharacterData.of:-1 ILOAD 0
+java.lang.CharacterData.of:-1 BIPUSH 8
+java.lang.CharacterData.of:-1 IUSHR
+java.lang.CharacterData.of:-1 IFNE L0
+java.lang.CharacterData.of:-1 GETSTATIC java/lang/CharacterDataLatin1.instance Ljava/lang/CharacterDataLatin1;
+java.lang.CharacterData.of:-1 ARETURN
+java.lang.Integer.<init>:-1 ALOAD 0
+java.lang.Integer.<init>:-1 ILOAD 1
+java.lang.Integer.<init>:-1 PUTFIELD java/lang/Integer.value I
+java.lang.Integer.<init>:-1 ALOAD 0
+java.lang.Integer.<init>:-1 ALOAD 1
+java.lang.Integer.<init>:-1 BIPUSH 10
+java.lang.Integer.<init>:-1 INVOKESTATIC java/lang/Integer.parseInt(Ljava/lang/String;I)I
+java.lang.Integer.<init>:-1 PUTFIELD java/lang/Integer.value I
+java.lang.Integer.intValue:-1 ALOAD 0
+java.lang.Integer.intValue:-1 GETFIELD java/lang/Integer.value I
+java.lang.Integer.intValue:-1 IRETURN
+java.lang.Integer.parseInt:-1 ICONST_0
+java.lang.Integer.parseInt:-1 ISTORE 2
+java.lang.Integer.parseInt:-1 ICONST_0
+java.lang.Integer.parseInt:-1 ISTORE 3
+java.lang.Integer.parseInt:-1 ICONST_0
+java.lang.Integer.parseInt:-1 ISTORE 4
+java.lang.Integer.parseInt:-1 ALOAD 0
+java.lang.Integer.parseInt:-1 INVOKEVIRTUAL java/lang/String.length()I
+java.lang.Integer.parseInt:-1 ISTORE 5
+java.lang.Integer.parseInt:-1 ILOAD 5
+java.lang.Integer.parseInt:-1 IFLE L12
+java.lang.Integer.parseInt:-1 ILOAD 4
+java.lang.Integer.parseInt:-1 ILOAD 5
+java.lang.Integer.parseInt:-1 IF_ICMPGE L11
+java.lang.Integer.parseInt:-1 ALOAD 0
+java.lang.Integer.parseInt:-1 ILOAD 4
+java.lang.Integer.parseInt:-1 IINC 4 1
+java.lang.Integer.parseInt:-1 INVOKEVIRTUAL java/lang/String.charAt(I)C
+java.lang.Integer.parseInt:-1 INVOKESTATIC java/lang/Character.digit(CI)I
+java.lang.Integer.parseInt:-1 ISTORE 8
+java.lang.Integer.parseInt:-1 ILOAD 2
+java.lang.Integer.parseInt:-1 ILOAD 1
+java.lang.Integer.parseInt:-1 IMUL
+java.lang.Integer.parseInt:-1 ISTORE 2
+java.lang.Integer.parseInt:-1 ILOAD 2
+java.lang.Integer.parseInt:-1 ILOAD 8
+java.lang.Integer.parseInt:-1 ISUB
+java.lang.Integer.parseInt:-1 ISTORE 2
+java.lang.Integer.parseInt:-1 ILOAD 3
+java.lang.Integer.parseInt:-1 IFEQ L14
+java.lang.Integer.parseInt:-1 ILOAD 2
+java.lang.Integer.parseInt:-1 INEG
+java.lang.Integer.parseInt:-1 IRETURN
+
+Slice consists of 479 bytecode instructions.
+Computation took 0.42 seconds.

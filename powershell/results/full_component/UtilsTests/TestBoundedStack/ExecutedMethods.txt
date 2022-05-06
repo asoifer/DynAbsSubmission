@@ -1,0 +1,7 @@
+|||FirstProcess||OTHER|0|
+|System.Collections.Generic|LinkedList|ctor||METHOD|2|FULL HAVOC
+|PSTests|CustomAssert|Throws|System.Func<object> testCode|METHOD|2|FULL HAVOC
+|System|InvalidOperationException|ctor|string? message|METHOD|2|FULL HAVOC
+|System.Collections.Generic|LinkedList|AddFirst|T value|METHOD|20|FULL HAVOC
+|System.Collections.Generic|LinkedList|RemoveFirst||METHOD|20|FULL HAVOC
+|PSTests|CustomAssert|Equal|string expected,string actual|METHOD|20|FULL HAVOC

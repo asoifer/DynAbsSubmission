@@ -1,0 +1,10 @@
+CompilationEmitTests_WarnAsErrorDoesNotEmit_SpecificDiagnosticOption||78723|7560|5471|222.0905773||135.5458931|5708|199412||
+CompilationEmitTests_WarnAsErrorDoesNotEmit_SpecificDiagnosticOption||78724|7561|5471|222.0905773||135.5824586|5708|199415||
+CompilationEmitTests_WarnAsErrorDoesNotEmit_SpecificDiagnosticOption||78725|7562|5471|222.0905773||135.6358549|5708|199418||
+CompilationEmitTests_WarnAsErrorDoesNotEmit_SpecificDiagnosticOption||78726|7563|5471|222.0905773||135.6827891|5708|199421||
+CompilationEmitTests_WarnAsErrorDoesNotEmit_SpecificDiagnosticOption||81502|8076|5831|222.0905773||149.1155217|5708|207805||
+CompilationEmitTests_WarnAsErrorDoesNotEmit_SpecificDiagnosticOption||78723|7560|5471|155.230955||51.748872|5708|199412||
+CompilationEmitTests_WarnAsErrorDoesNotEmit_SpecificDiagnosticOption||78724|7561|5471|155.230955||51.7962883|5708|199415||
+CompilationEmitTests_WarnAsErrorDoesNotEmit_SpecificDiagnosticOption||78725|7562|5471|155.230955||51.8360607|5708|199418||
+CompilationEmitTests_WarnAsErrorDoesNotEmit_SpecificDiagnosticOption||78726|7563|5471|155.230955||51.8866559|5708|199421||
+CompilationEmitTests_WarnAsErrorDoesNotEmit_SpecificDiagnosticOption||81502|8076|5831|155.230955||58.489552|5708|207805||

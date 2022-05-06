@@ -1,0 +1,4 @@
+|||FirstProcess||OTHER|0|
+|Xunit|Skip|IfNot|bool condition,string reason|METHOD|1|FULL HAVOC
+|System.Management.Automation|Utils|IsWinPEHost||METHOD|1|FULL HAVOC
+|PSTests|CustomAssert|False|bool condition|METHOD|1|FULL HAVOC

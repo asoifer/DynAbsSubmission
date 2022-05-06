@@ -1,0 +1,3 @@
+CompilationEmitTests_EmitLambdaInConstructorInitializerAndBody||259|247|196|89.6089293||0.4057153|17962|660||
+CompilationEmitTests_EmitLambdaInConstructorInitializerAndBody||261|250|255|89.6089293||0.416682|17962|668||
+CompilationEmitTests_EmitLambdaInConstructorInitializerAndBody||8698|1419|11|89.6089293||3.0083671|17962|24667||

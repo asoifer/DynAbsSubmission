@@ -1,0 +1,3 @@
+CompilationEmitTests_EmitMetadataOnly_DisallowPdbs||17607|1045|648|173.3222298||3.1408376|1421|50924||
+CompilationEmitTests_EmitMetadataOnly_DisallowPdbs||17607|1045|648|222.0905773||13.2192037|1421|50924||
+CompilationEmitTests_EmitMetadataOnly_DisallowPdbs||17607|1045|648|155.230955||3.2342453|1421|50924||

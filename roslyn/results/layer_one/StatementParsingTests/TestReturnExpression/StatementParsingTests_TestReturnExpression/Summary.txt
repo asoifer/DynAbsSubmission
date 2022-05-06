@@ -1,0 +1,12 @@
+StatementParsingTests_TestReturnExpression||17653|995|417|89.6089293||3.3067898|1423|51165||
+StatementParsingTests_TestReturnExpression||17655|998|419|89.6089293||3.3090459|1423|51173||
+StatementParsingTests_TestReturnExpression||17692|1018|433|89.6089293||3.3285975|1423|51284||
+StatementParsingTests_TestReturnExpression||17698|1027|5|89.6089293||3.331832|1423|51306||
+StatementParsingTests_TestReturnExpression||17699|1028|417|89.6089293||3.3320936|1423|51307||
+StatementParsingTests_TestReturnExpression||17701|1029|440|89.6089293||3.3343673|1423|51313||
+StatementParsingTests_TestReturnExpression||17703|1030|441|89.6089293||3.3367751|1423|51318||
+StatementParsingTests_TestReturnExpression||17705|1031|442|89.6089293||3.3391514|1423|51323||
+StatementParsingTests_TestReturnExpression||17706|1036|443|89.6089293||3.3464746|1423|51345||
+StatementParsingTests_TestReturnExpression||17709|1039|446|89.6089293||3.3487842|1423|51357||
+StatementParsingTests_TestReturnExpression||17711|1040|444|89.6089293||3.3513499|1423|51363||
+StatementParsingTests_TestReturnExpression||17713|1041|445|89.6089293||3.3536632|1423|51368||

@@ -1,0 +1,39 @@
+|||FirstProcess||OTHER|0|
+|System.IO|Path|GetTempFileName||METHOD|1|FULL HAVOC
+|System.IO|File|Exists|string path|METHOD|1|FULL HAVOC
+|System.IO|File|Delete|string path|METHOD|1|FULL HAVOC
+|System.IO|File|AppendAllText|string path,string contents|METHOD|1|FULL HAVOC
+|System|Object|ctor||METHOD|5|Fresh.{}.{}.{RV.?}.{}<EOF>
+|System.Threading|ThreadLocal|ctor||METHOD|1|FULL HAVOC
+|System.Collections.Generic|Dictionary|ctor|System.Collections.Generic.IEqualityComparer<string>? comparer|METHOD|8|Fresh.{Many{|DictInternal}}.{P}.{RV.?;RO.?}.{[RV;RO, RO, ?], [RO, P, ?]}<EOF>
+|System|String|IsNullOrEmpty|string? value|METHOD|9|Null.{}.{R;P}.{}.{}<EOF>
+|System.Collections.Generic|Dictionary|TryGetValue|string key,System.Management.Automation.PSTraceSource value|METHOD|3|FULL HAVOC
+|System.Collections.Generic|Dictionary|ContainsKey|string key|METHOD|4|Null.{}.{R;R.?;R.?.?.OfKind{DictInternal}.?;P}.{}.{}<EOF>
+|System|String|Substring|int startIndex,int length|METHOD|1|Null.{}.{R;P}.{}.{}<EOF>
+|System|Environment|GetEnvironmentVariable|string variable|METHOD|3|Null.{}.{R;P}.{}.{}<EOF>
+|System|String|Equals|string? a,string? b,System.StringComparison comparisonType|METHOD|3|Null.{}.{R;P}.{}.{}<EOF>
+|System.IO|EnumerationOptions|ctor||METHOD|1|FULL HAVOC
+|PSTests|CustomAssert|Equal|string expected,string actual|METHOD|4|FULL HAVOC
+|System|Environment|GetFolderPath|System.Environment.SpecialFolder folder|METHOD|2|Null.{}.{R;P}.{}.{}<EOF>
+|System.Collections.Generic|List|ctor||METHOD|2|Fresh.{Single{System.Array}}.{P}.{RV.?;RO.?}.{[RV, RO, ?]}<EOF>
+|System.Collections.Generic|List|Add|string item|METHOD|12|Null.{}.{R;R.?;R.*.UntilType{System.Array}.OfType{System.Array}.?;P}.{R.?;R.*.UntilType{System.Array}.OfType{System.Array}.?}.{[R.*.UntilType{System.Array}.OfType{System.Array}, P, ?]}<EOF>
+|System.Runtime.InteropServices|RuntimeInformation|IsOSPlatform|System.Runtime.InteropServices.OSPlatform osPlatform|METHOD|1|FULL HAVOC
+|System.IO|DirectoryInfo|ctor|string path|METHOD|1|Fresh.{}.{P}.{RV.?}.{}<EOF>
+|System.Reflection|Assembly|GetEntryAssembly||METHOD|1|FULL HAVOC
+|System.IO|FileInfo|ctor|string fileName|METHOD|2|FULL HAVOC
+|System.Diagnostics|Process|GetCurrentProcess||METHOD|1|Fresh.{Many}.{}.{RV.?;RO.?}.{[RV;RO, RO, ?]}<EOF>
+|System.Collections.Concurrent|ConcurrentDictionary|ctor||METHOD|3|FULL HAVOC
+|System.Runtime.CompilerServices|ConditionalWeakTable|ctor||METHOD|2|FULL HAVOC
+|System.Collections.ObjectModel|Collection|ctor||METHOD|3|FULL HAVOC
+|System.Collections.ObjectModel|Collection|Add|System.Management.Automation.CollectionEntry<System.Management.Automation.PSMemberInfo> item|METHOD|9|FULL HAVOC
+|System.Management.Automation|CollectionEntry|ctor|System.Management.Automation.CollectionEntry<System.Management.Automation.PSMethodInfo>.GetMembersDelegate getMembers,System.Management.Automation.CollectionEntry<System.Management.Automation.PSMethodInfo>.GetMemberDelegate getMember,System.Management.Automation.CollectionEntry<System.Management.Automation.PSMethodInfo>.GetFirstOrDefaultDelegate getFirstOrDefault,bool shouldReplicateWhenReturning,bool shouldCloneWhenReturning,string collectionNameForTracing|METHOD|2|FULL HAVOC
+|System.Collections.Specialized|HybridDictionary|ctor||METHOD|1|FULL HAVOC
+|System.Collections.Generic|SortedDictionary|ctor||METHOD|1|FULL HAVOC
+|System|Enum|HasFlag|System.Enum flag|METHOD|3|Null.{}.{R;P}.{}.{}<EOF>
+|System|String|Replace|string oldValue,string? newValue|METHOD|5|Null.{}.{R;P}.{}.{}<EOF>
+|Microsoft.PowerShell.Commands|InternalSymbolicLinkLinkCodeMethods|CreateFile|string lpFileName,Microsoft.PowerShell.Commands.InternalSymbolicLinkLinkCodeMethods.FileDesiredAccess dwDesiredAccess,Microsoft.PowerShell.Commands.InternalSymbolicLinkLinkCodeMethods.FileShareMode dwShareMode,System.IntPtr lpSecurityAttributes,Microsoft.PowerShell.Commands.InternalSymbolicLinkLinkCodeMethods.FileCreationDisposition dwCreationDisposition,Microsoft.PowerShell.Commands.InternalSymbolicLinkLinkCodeMethods.FileAttributes dwFlagsAndAttributes,System.IntPtr hTemplateFile|METHOD|2|FULL HAVOC
+|Microsoft.Win32.SafeHandles|SafeFileHandle|ctor|System.IntPtr preexistingHandle,bool ownsHandle|METHOD|2|FULL HAVOC
+|System.Runtime.InteropServices|SafeHandle|DangerousAddRef|bool success|METHOD|2|FULL HAVOC
+|System.Runtime.InteropServices|SafeHandle|DangerousGetHandle||METHOD|2|FULL HAVOC
+|Microsoft.PowerShell.Commands|InternalSymbolicLinkLinkCodeMethods|GetFileInformationByHandle|System.IntPtr hFile,Microsoft.PowerShell.Commands.InternalSymbolicLinkLinkCodeMethods.BY_HANDLE_FILE_INFORMATION lpFileInformation|METHOD|2|FULL HAVOC
+|System.Runtime.InteropServices|SafeHandle|DangerousRelease||METHOD|2|FULL HAVOC

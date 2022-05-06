@@ -1,0 +1,842 @@
+ 0.0% done, time left: unknown                               100.0% done, time left: unknown  finished
+The dynamic slice for criterion [Voronoi.main:78:{slicingVariable6}]:
+Edge.<init>:43 ALOAD 0
+Edge.<init>:43 ALOAD 2
+Edge.<init>:43 PUTFIELD Edge.quadList [LEdge;
+Edge.<init>:44 ALOAD 0
+Edge.<init>:44 ILOAD 3
+Edge.<init>:44 PUTFIELD Edge.listPos I
+Edge.<init>:52 ALOAD 0
+Edge.<init>:52 ALOAD 1
+Edge.<init>:52 ILOAD 2
+Edge.<init>:52 INVOKESPECIAL Edge.<init>(LVertex;[LEdge;I)V
+Edge.makeEdge:68 ICONST_4
+Edge.makeEdge:68 ANEWARRAY Edge
+Edge.makeEdge:68 ASTORE 2
+Edge.makeEdge:69 ALOAD 2
+Edge.makeEdge:69 ICONST_0
+Edge.makeEdge:69 NEW Edge
+Edge.makeEdge:69 DUP
+Edge.makeEdge:69 ALOAD 2
+Edge.makeEdge:69 ICONST_0
+Edge.makeEdge:69 INVOKESPECIAL Edge.<init>([LEdge;I)V
+Edge.makeEdge:69 AASTORE
+Edge.makeEdge:70 ALOAD 2
+Edge.makeEdge:70 ICONST_1
+Edge.makeEdge:70 NEW Edge
+Edge.makeEdge:70 DUP
+Edge.makeEdge:70 ALOAD 2
+Edge.makeEdge:70 ICONST_1
+Edge.makeEdge:70 INVOKESPECIAL Edge.<init>([LEdge;I)V
+Edge.makeEdge:70 AASTORE
+Edge.makeEdge:71 ALOAD 2
+Edge.makeEdge:71 ICONST_2
+Edge.makeEdge:71 NEW Edge
+Edge.makeEdge:71 DUP
+Edge.makeEdge:71 ALOAD 2
+Edge.makeEdge:71 ICONST_2
+Edge.makeEdge:71 INVOKESPECIAL Edge.<init>([LEdge;I)V
+Edge.makeEdge:71 AASTORE
+Edge.makeEdge:72 ALOAD 2
+Edge.makeEdge:72 ICONST_3
+Edge.makeEdge:72 NEW Edge
+Edge.makeEdge:72 DUP
+Edge.makeEdge:72 ALOAD 2
+Edge.makeEdge:72 ICONST_3
+Edge.makeEdge:72 INVOKESPECIAL Edge.<init>([LEdge;I)V
+Edge.makeEdge:72 AASTORE
+Edge.makeEdge:74 ALOAD 2
+Edge.makeEdge:74 ICONST_0
+Edge.makeEdge:74 AALOAD
+Edge.makeEdge:74 ALOAD 2
+Edge.makeEdge:74 ICONST_0
+Edge.makeEdge:74 AALOAD
+Edge.makeEdge:74 PUTFIELD Edge.next LEdge;
+Edge.makeEdge:75 ALOAD 2
+Edge.makeEdge:75 ICONST_1
+Edge.makeEdge:75 AALOAD
+Edge.makeEdge:75 ALOAD 2
+Edge.makeEdge:75 ICONST_3
+Edge.makeEdge:75 AALOAD
+Edge.makeEdge:75 PUTFIELD Edge.next LEdge;
+Edge.makeEdge:76 ALOAD 2
+Edge.makeEdge:76 ICONST_2
+Edge.makeEdge:76 AALOAD
+Edge.makeEdge:76 ALOAD 2
+Edge.makeEdge:76 ICONST_2
+Edge.makeEdge:76 AALOAD
+Edge.makeEdge:76 PUTFIELD Edge.next LEdge;
+Edge.makeEdge:77 ALOAD 2
+Edge.makeEdge:77 ICONST_3
+Edge.makeEdge:77 AALOAD
+Edge.makeEdge:77 ALOAD 2
+Edge.makeEdge:77 ICONST_1
+Edge.makeEdge:77 AALOAD
+Edge.makeEdge:77 PUTFIELD Edge.next LEdge;
+Edge.makeEdge:79 ALOAD 2
+Edge.makeEdge:79 ICONST_0
+Edge.makeEdge:79 AALOAD
+Edge.makeEdge:79 ASTORE 3
+Edge.makeEdge:80 ALOAD 3
+Edge.makeEdge:80 ALOAD 0
+Edge.makeEdge:80 INVOKEVIRTUAL Edge.setOrig(LVertex;)V
+Edge.makeEdge:81 ALOAD 3
+Edge.makeEdge:81 ALOAD 1
+Edge.makeEdge:81 INVOKEVIRTUAL Edge.setDest(LVertex;)V
+Edge.makeEdge:82 ALOAD 3
+Edge.makeEdge:82 ARETURN
+Edge.setNext:87 ALOAD 0
+Edge.setNext:87 ALOAD 1
+Edge.setNext:87 PUTFIELD Edge.next LEdge;
+Edge.setOrig:95 ALOAD 0
+Edge.setOrig:95 ALOAD 1
+Edge.setOrig:95 PUTFIELD Edge.vertex LVertex;
+Edge.setDest:103 ALOAD 0
+Edge.setDest:103 INVOKEVIRTUAL Edge.symmetric()LEdge;
+Edge.setDest:103 ALOAD 1
+Edge.setDest:103 INVOKEVIRTUAL Edge.setOrig(LVertex;)V
+Edge.oNext:108 ALOAD 0
+Edge.oNext:108 GETFIELD Edge.next LEdge;
+Edge.oNext:108 ARETURN
+Edge.oPrev:113 ALOAD 0
+Edge.oPrev:113 INVOKEVIRTUAL Edge.rotate()LEdge;
+Edge.oPrev:113 INVOKEVIRTUAL Edge.oNext()LEdge;
+Edge.oPrev:113 INVOKEVIRTUAL Edge.rotate()LEdge;
+Edge.oPrev:113 ARETURN
+Edge.lNext:118 ALOAD 0
+Edge.lNext:118 INVOKEVIRTUAL Edge.rotateInv()LEdge;
+Edge.lNext:118 INVOKEVIRTUAL Edge.oNext()LEdge;
+Edge.lNext:118 INVOKEVIRTUAL Edge.rotate()LEdge;
+Edge.lNext:118 ARETURN
+Edge.rPrev:133 ALOAD 0
+Edge.rPrev:133 INVOKEVIRTUAL Edge.symmetric()LEdge;
+Edge.rPrev:133 INVOKEVIRTUAL Edge.oNext()LEdge;
+Edge.rPrev:133 ARETURN
+Edge.orig:148 ALOAD 0
+Edge.orig:148 GETFIELD Edge.vertex LVertex;
+Edge.orig:148 ARETURN
+Edge.dest:153 ALOAD 0
+Edge.dest:153 INVOKEVIRTUAL Edge.symmetric()LEdge;
+Edge.dest:153 INVOKEVIRTUAL Edge.orig()LVertex;
+Edge.dest:153 ARETURN
+Edge.symmetric:163 ALOAD 0
+Edge.symmetric:163 GETFIELD Edge.quadList [LEdge;
+Edge.symmetric:163 ALOAD 0
+Edge.symmetric:163 GETFIELD Edge.listPos I
+Edge.symmetric:163 ICONST_2
+Edge.symmetric:163 IADD
+Edge.symmetric:163 ICONST_4
+Edge.symmetric:163 IREM
+Edge.symmetric:163 AALOAD
+Edge.symmetric:163 ARETURN
+Edge.rotate:173 ALOAD 0
+Edge.rotate:173 GETFIELD Edge.quadList [LEdge;
+Edge.rotate:173 ALOAD 0
+Edge.rotate:173 GETFIELD Edge.listPos I
+Edge.rotate:173 ICONST_1
+Edge.rotate:173 IADD
+Edge.rotate:173 ICONST_4
+Edge.rotate:173 IREM
+Edge.rotate:173 AALOAD
+Edge.rotate:173 ARETURN
+Edge.rotateInv:183 ALOAD 0
+Edge.rotateInv:183 GETFIELD Edge.quadList [LEdge;
+Edge.rotateInv:183 ALOAD 0
+Edge.rotateInv:183 GETFIELD Edge.listPos I
+Edge.rotateInv:183 ICONST_3
+Edge.rotateInv:183 IADD
+Edge.rotateInv:183 ICONST_4
+Edge.rotateInv:183 IREM
+Edge.rotateInv:183 AALOAD
+Edge.rotateInv:183 ARETURN
+Edge.connectLeft:198 ALOAD 0
+Edge.connectLeft:198 INVOKEVIRTUAL Edge.dest()LVertex;
+Edge.connectLeft:198 ASTORE 2
+Edge.connectLeft:199 ALOAD 0
+Edge.connectLeft:199 INVOKEVIRTUAL Edge.lNext()LEdge;
+Edge.connectLeft:199 ASTORE 5
+Edge.connectLeft:200 ALOAD 1
+Edge.connectLeft:200 INVOKEVIRTUAL Edge.orig()LVertex;
+Edge.connectLeft:200 ASTORE 3
+Edge.connectLeft:201 ALOAD 2
+Edge.connectLeft:201 ALOAD 3
+Edge.connectLeft:201 INVOKESTATIC Edge.makeEdge(LVertex;LVertex;)LEdge;
+Edge.connectLeft:201 ASTORE 4
+Edge.connectLeft:202 ALOAD 4
+Edge.connectLeft:202 ALOAD 5
+Edge.connectLeft:202 INVOKEVIRTUAL Edge.splice(LEdge;)V
+Edge.connectLeft:203 ALOAD 4
+Edge.connectLeft:203 INVOKEVIRTUAL Edge.symmetric()LEdge;
+Edge.connectLeft:203 ALOAD 1
+Edge.connectLeft:203 INVOKEVIRTUAL Edge.splice(LEdge;)V
+Edge.connectLeft:204 ALOAD 4
+Edge.connectLeft:204 ARETURN
+Edge.connectRight:215 ALOAD 0
+Edge.connectRight:215 INVOKEVIRTUAL Edge.dest()LVertex;
+Edge.connectRight:215 ASTORE 2
+Edge.connectRight:216 ALOAD 1
+Edge.connectRight:216 INVOKEVIRTUAL Edge.orig()LVertex;
+Edge.connectRight:216 ASTORE 3
+Edge.connectRight:219 ALOAD 2
+Edge.connectRight:219 ALOAD 3
+Edge.connectRight:219 INVOKESTATIC Edge.makeEdge(LVertex;LVertex;)LEdge;
+Edge.connectRight:219 ASTORE 4
+Edge.connectRight:220 ALOAD 4
+Edge.connectRight:220 ALOAD 0
+Edge.connectRight:220 INVOKEVIRTUAL Edge.symmetric()LEdge;
+Edge.connectRight:220 INVOKEVIRTUAL Edge.splice(LEdge;)V
+Edge.connectRight:222 ALOAD 4
+Edge.connectRight:222 ARETURN
+Edge.splice:247 ALOAD 0
+Edge.splice:247 INVOKEVIRTUAL Edge.oNext()LEdge;
+Edge.splice:247 INVOKEVIRTUAL Edge.rotate()LEdge;
+Edge.splice:247 ASTORE 2
+Edge.splice:248 ALOAD 1
+Edge.splice:248 INVOKEVIRTUAL Edge.oNext()LEdge;
+Edge.splice:248 INVOKEVIRTUAL Edge.rotate()LEdge;
+Edge.splice:248 ASTORE 3
+Edge.splice:249 ALOAD 3
+Edge.splice:249 INVOKEVIRTUAL Edge.oNext()LEdge;
+Edge.splice:249 ASTORE 4
+Edge.splice:250 ALOAD 2
+Edge.splice:250 INVOKEVIRTUAL Edge.oNext()LEdge;
+Edge.splice:250 ASTORE 5
+Edge.splice:251 ALOAD 2
+Edge.splice:251 ALOAD 4
+Edge.splice:251 INVOKEVIRTUAL Edge.setNext(LEdge;)V
+Edge.splice:252 ALOAD 3
+Edge.splice:252 ALOAD 5
+Edge.splice:252 INVOKEVIRTUAL Edge.setNext(LEdge;)V
+Edge.splice:253 ALOAD 0
+Edge.splice:253 INVOKEVIRTUAL Edge.oNext()LEdge;
+Edge.splice:253 ASTORE 5
+Edge.splice:254 ALOAD 1
+Edge.splice:254 INVOKEVIRTUAL Edge.oNext()LEdge;
+Edge.splice:254 ASTORE 4
+Edge.splice:255 ALOAD 1
+Edge.splice:255 ALOAD 5
+Edge.splice:255 INVOKEVIRTUAL Edge.setNext(LEdge;)V
+Edge.splice:256 ALOAD 0
+Edge.splice:256 ALOAD 4
+Edge.splice:256 INVOKEVIRTUAL Edge.setNext(LEdge;)V
+Edge.valid:261 ALOAD 1
+Edge.valid:261 INVOKEVIRTUAL Edge.orig()LVertex;
+Edge.valid:261 ASTORE 2
+Edge.valid:262 ALOAD 1
+Edge.valid:262 INVOKEVIRTUAL Edge.dest()LVertex;
+Edge.valid:262 ASTORE 3
+Edge.valid:263 ALOAD 0
+Edge.valid:263 INVOKEVIRTUAL Edge.dest()LVertex;
+Edge.valid:263 ASTORE 4
+Edge.valid:264 ALOAD 2
+Edge.valid:264 ALOAD 4
+Edge.valid:264 ALOAD 3
+Edge.valid:264 INVOKEVIRTUAL Vertex.ccw(LVertex;LVertex;)Z
+Edge.valid:264 IRETURN
+Edge.doMerge:279 ALOAD 2
+Edge.doMerge:279 INVOKEVIRTUAL Edge.orig()LVertex;
+Edge.doMerge:279 ASTORE 4
+Edge.doMerge:280 ALOAD 1
+Edge.doMerge:280 INVOKEVIRTUAL Edge.orig()LVertex;
+Edge.doMerge:280 ASTORE 5
+Edge.doMerge:281 ALOAD 1
+Edge.doMerge:281 INVOKEVIRTUAL Edge.dest()LVertex;
+Edge.doMerge:281 ASTORE 6
+Edge.doMerge:283 ALOAD 5
+Edge.doMerge:283 ALOAD 6
+Edge.doMerge:283 ALOAD 4
+Edge.doMerge:283 INVOKEVIRTUAL Vertex.ccw(LVertex;LVertex;)Z
+Edge.doMerge:283 IFEQ L2
+Edge.doMerge:291 ALOAD 2
+Edge.doMerge:291 INVOKEVIRTUAL Edge.dest()LVertex;
+Edge.doMerge:291 ASTORE 6
+Edge.doMerge:293 ALOAD 6
+Edge.doMerge:293 ALOAD 4
+Edge.doMerge:293 ALOAD 5
+Edge.doMerge:293 INVOKEVIRTUAL Vertex.ccw(LVertex;LVertex;)Z
+Edge.doMerge:293 IFEQ L3
+Edge.doMerge:301 ALOAD 2
+Edge.doMerge:301 INVOKEVIRTUAL Edge.symmetric()LEdge;
+Edge.doMerge:301 ALOAD 1
+Edge.doMerge:301 INVOKEVIRTUAL Edge.connectLeft(LEdge;)LEdge;
+Edge.doMerge:301 ASTORE 4
+Edge.doMerge:303 ALOAD 4
+Edge.doMerge:303 INVOKEVIRTUAL Edge.rPrev()LEdge;
+Edge.doMerge:303 ASTORE 5
+Edge.doMerge:304 ALOAD 4
+Edge.doMerge:304 INVOKEVIRTUAL Edge.oPrev()LEdge;
+Edge.doMerge:304 ASTORE 6
+Edge.doMerge:315 ALOAD 5
+Edge.doMerge:315 INVOKEVIRTUAL Edge.oNext()LEdge;
+Edge.doMerge:315 ASTORE 9
+Edge.doMerge:316 ALOAD 9
+Edge.doMerge:316 ALOAD 4
+Edge.doMerge:316 INVOKEVIRTUAL Edge.valid(LEdge;)Z
+Edge.doMerge:316 IFEQ L7
+Edge.doMerge:335 ALOAD 6
+Edge.doMerge:335 INVOKEVIRTUAL Edge.oPrev()LEdge;
+Edge.doMerge:335 ASTORE 9
+Edge.doMerge:336 ALOAD 9
+Edge.doMerge:336 ALOAD 4
+Edge.doMerge:336 INVOKEVIRTUAL Edge.valid(LEdge;)Z
+Edge.doMerge:336 IFEQ L9
+Edge.doMerge:353 ALOAD 5
+Edge.doMerge:353 ALOAD 4
+Edge.doMerge:353 INVOKEVIRTUAL Edge.valid(LEdge;)Z
+Edge.doMerge:353 ISTORE 10
+Edge.doMerge:355 ALOAD 6
+Edge.doMerge:355 ALOAD 4
+Edge.doMerge:355 INVOKEVIRTUAL Edge.valid(LEdge;)Z
+Edge.doMerge:355 ISTORE 11
+Edge.doMerge:356 ILOAD 10
+Edge.doMerge:356 IFNE L10
+Edge.doMerge:356 ILOAD 11
+Edge.doMerge:356 IFNE L10
+Edge.doMerge:358 NEW EdgePair
+Edge.doMerge:358 DUP
+Edge.doMerge:358 ALOAD 0
+Edge.doMerge:358 ALOAD 3
+Edge.doMerge:358 INVOKESPECIAL EdgePair.<init>(LEdge;LEdge;)V
+Edge.doMerge:358 ARETURN
+Edge.doMerge:361 ALOAD 5
+Edge.doMerge:361 INVOKEVIRTUAL Edge.dest()LVertex;
+Edge.doMerge:361 ASTORE 12
+Edge.doMerge:362 ALOAD 5
+Edge.doMerge:362 INVOKEVIRTUAL Edge.orig()LVertex;
+Edge.doMerge:362 ASTORE 13
+Edge.doMerge:363 ALOAD 6
+Edge.doMerge:363 INVOKEVIRTUAL Edge.orig()LVertex;
+Edge.doMerge:363 ASTORE 14
+Edge.doMerge:364 ALOAD 6
+Edge.doMerge:364 INVOKEVIRTUAL Edge.dest()LVertex;
+Edge.doMerge:364 ASTORE 15
+Edge.doMerge:365 ILOAD 10
+Edge.doMerge:365 IFEQ L11
+Edge.doMerge:365 ILOAD 11
+Edge.doMerge:365 IFEQ L12
+Edge.doMerge:365 ALOAD 12
+Edge.doMerge:365 ALOAD 13
+Edge.doMerge:365 ALOAD 14
+Edge.doMerge:365 ALOAD 15
+Edge.doMerge:365 INVOKEVIRTUAL Vertex.incircle(LVertex;LVertex;LVertex;)Z
+Edge.doMerge:365 IFEQ L12
+Edge.doMerge:367 ALOAD 6
+Edge.doMerge:367 ALOAD 4
+Edge.doMerge:367 INVOKEVIRTUAL Edge.symmetric()LEdge;
+Edge.doMerge:367 INVOKEVIRTUAL Edge.connectLeft(LEdge;)LEdge;
+Edge.doMerge:367 ASTORE 4
+Edge.doMerge:368 ALOAD 4
+Edge.doMerge:368 INVOKEVIRTUAL Edge.symmetric()LEdge;
+Edge.doMerge:368 INVOKEVIRTUAL Edge.lNext()LEdge;
+Edge.doMerge:368 ASTORE 6
+Edge.doMerge:372 ALOAD 5
+Edge.doMerge:372 ALOAD 4
+Edge.doMerge:372 INVOKEVIRTUAL Edge.connectRight(LEdge;)LEdge;
+Edge.doMerge:372 INVOKEVIRTUAL Edge.symmetric()LEdge;
+Edge.doMerge:372 ASTORE 4
+Edge.doMerge:373 ALOAD 4
+Edge.doMerge:373 INVOKEVIRTUAL Edge.rPrev()LEdge;
+Edge.doMerge:373 ASTORE 5
+EdgePair.<init>:13 ALOAD 0
+EdgePair.<init>:13 ALOAD 1
+EdgePair.<init>:13 PUTFIELD EdgePair.left LEdge;
+EdgePair.<init>:14 ALOAD 0
+EdgePair.<init>:14 ALOAD 2
+EdgePair.<init>:14 PUTFIELD EdgePair.right LEdge;
+EdgePair.getLeft:19 ALOAD 0
+EdgePair.getLeft:19 GETFIELD EdgePair.left LEdge;
+EdgePair.getLeft:19 ARETURN
+EdgePair.getRight:24 ALOAD 0
+EdgePair.getRight:24 GETFIELD EdgePair.right LEdge;
+EdgePair.getRight:24 ARETURN
+MyDouble.<init>:12 ALOAD 0
+MyDouble.<init>:12 DLOAD 1
+MyDouble.<init>:12 PUTFIELD MyDouble.value D
+Vec2.X:28 ALOAD 0
+Vec2.X:28 GETFIELD Vec2.x D
+Vec2.X:28 DRETURN
+Vec2.Y:33 ALOAD 0
+Vec2.Y:33 GETFIELD Vec2.y D
+Vec2.Y:33 DRETURN
+Vec2.Norm:38 ALOAD 0
+Vec2.Norm:38 GETFIELD Vec2.norm D
+Vec2.Norm:38 DRETURN
+Vertex.getLeft:47 ALOAD 0
+Vertex.getLeft:47 GETFIELD Vertex.left LVertex;
+Vertex.getLeft:47 ARETURN
+Vertex.getRight:52 ALOAD 0
+Vertex.getRight:52 GETFIELD Vertex.right LVertex;
+Vertex.getRight:52 ARETURN
+Vertex.createPoints:60 ILOAD 0
+Vertex.createPoints:60 ICONST_1
+Vertex.createPoints:60 IF_ICMPGE L0
+Vertex.createPoints:65 NEW Vertex
+Vertex.createPoints:65 ASTORE 3
+Vertex.createPoints:67 ILOAD 0
+Vertex.createPoints:67 ICONST_2
+Vertex.createPoints:67 IDIV
+Vertex.createPoints:67 ALOAD 1
+Vertex.createPoints:67 ILOAD 2
+Vertex.createPoints:67 INVOKESTATIC Vertex.createPoints(ILMyDouble;I)LVertex;
+Vertex.createPoints:67 ASTORE 4
+Vertex.createPoints:68 ILOAD 2
+Vertex.createPoints:68 ILOAD 0
+Vertex.createPoints:68 ICONST_2
+Vertex.createPoints:68 IDIV
+Vertex.createPoints:68 ISUB
+Vertex.createPoints:68 ISTORE 2
+Vertex.createPoints:69 ALOAD 3
+Vertex.createPoints:69 ALOAD 1
+Vertex.createPoints:69 GETFIELD MyDouble.value D
+Vertex.createPoints:69 INVOKESTATIC Vertex.drand()D
+Vertex.createPoints:69 INVOKESTATIC java/lang/Math.log(D)D
+Vertex.createPoints:69 ILOAD 2
+Vertex.createPoints:69 I2D
+Vertex.createPoints:69 DDIV
+Vertex.createPoints:69 INVOKESTATIC java/lang/Math.exp(D)D
+Vertex.createPoints:69 DMUL
+Vertex.createPoints:69 PUTFIELD Vertex.x D
+Vertex.createPoints:70 ALOAD 3
+Vertex.createPoints:70 INVOKESTATIC Vertex.drand()D
+Vertex.createPoints:70 PUTFIELD Vertex.y D
+Vertex.createPoints:71 ALOAD 3
+Vertex.createPoints:71 ALOAD 3
+Vertex.createPoints:71 GETFIELD Vertex.x D
+Vertex.createPoints:71 ALOAD 3
+Vertex.createPoints:71 GETFIELD Vertex.x D
+Vertex.createPoints:71 DMUL
+Vertex.createPoints:71 ALOAD 3
+Vertex.createPoints:71 GETFIELD Vertex.y D
+Vertex.createPoints:71 ALOAD 3
+Vertex.createPoints:71 GETFIELD Vertex.y D
+Vertex.createPoints:71 DMUL
+Vertex.createPoints:71 DADD
+Vertex.createPoints:71 PUTFIELD Vertex.norm D
+Vertex.createPoints:72 ALOAD 3
+Vertex.createPoints:72 ALOAD 4
+Vertex.createPoints:72 PUTFIELD Vertex.right LVertex;
+Vertex.createPoints:73 ALOAD 1
+Vertex.createPoints:73 ALOAD 3
+Vertex.createPoints:73 INVOKEVIRTUAL Vertex.X()D
+Vertex.createPoints:73 PUTFIELD MyDouble.value D
+Vertex.createPoints:74 ILOAD 0
+Vertex.createPoints:74 ICONST_2
+Vertex.createPoints:74 IDIV
+Vertex.createPoints:74 ALOAD 1
+Vertex.createPoints:74 ILOAD 2
+Vertex.createPoints:74 ICONST_1
+Vertex.createPoints:74 ISUB
+Vertex.createPoints:74 INVOKESTATIC Vertex.createPoints(ILMyDouble;I)LVertex;
+Vertex.createPoints:74 ASTORE 5
+Vertex.createPoints:76 ALOAD 3
+Vertex.createPoints:76 ALOAD 5
+Vertex.createPoints:76 PUTFIELD Vertex.left LVertex;
+Vertex.createPoints:77 ALOAD 3
+Vertex.createPoints:77 ARETURN
+Vertex.buildDelaunayTriangulation:85 ALOAD 0
+Vertex.buildDelaunayTriangulation:85 ALOAD 1
+Vertex.buildDelaunayTriangulation:85 INVOKEVIRTUAL Vertex.buildDelaunay(LVertex;)LEdgePair;
+Vertex.buildDelaunayTriangulation:85 ASTORE 2
+Vertex.buildDelaunayTriangulation:86 ALOAD 2
+Vertex.buildDelaunayTriangulation:86 INVOKEVIRTUAL EdgePair.getLeft()LEdge;
+Vertex.buildDelaunayTriangulation:86 ARETURN
+Vertex.buildDelaunay:96 ALOAD 0
+Vertex.buildDelaunay:96 INVOKEVIRTUAL Vertex.getRight()LVertex;
+Vertex.buildDelaunay:96 IFNULL L4
+Vertex.buildDelaunay:96 ALOAD 0
+Vertex.buildDelaunay:96 INVOKEVIRTUAL Vertex.getLeft()LVertex;
+Vertex.buildDelaunay:96 IFNULL L4
+Vertex.buildDelaunay:99 ALOAD 0
+Vertex.buildDelaunay:99 INVOKEVIRTUAL Vertex.getLow()LVertex;
+Vertex.buildDelaunay:99 ASTORE 3
+Vertex.buildDelaunay:100 ALOAD 1
+Vertex.buildDelaunay:100 ASTORE 4
+Vertex.buildDelaunay:102 ALOAD 0
+Vertex.buildDelaunay:102 INVOKEVIRTUAL Vertex.getRight()LVertex;
+Vertex.buildDelaunay:102 ALOAD 1
+Vertex.buildDelaunay:102 INVOKEVIRTUAL Vertex.buildDelaunay(LVertex;)LEdgePair;
+Vertex.buildDelaunay:102 ASTORE 5
+Vertex.buildDelaunay:103 ALOAD 0
+Vertex.buildDelaunay:103 INVOKEVIRTUAL Vertex.getLeft()LVertex;
+Vertex.buildDelaunay:103 ALOAD 0
+Vertex.buildDelaunay:103 INVOKEVIRTUAL Vertex.buildDelaunay(LVertex;)LEdgePair;
+Vertex.buildDelaunay:103 ASTORE 6
+Vertex.buildDelaunay:105 ALOAD 6
+Vertex.buildDelaunay:105 INVOKEVIRTUAL EdgePair.getLeft()LEdge;
+Vertex.buildDelaunay:105 ALOAD 6
+Vertex.buildDelaunay:105 INVOKEVIRTUAL EdgePair.getRight()LEdge;
+Vertex.buildDelaunay:105 ALOAD 5
+Vertex.buildDelaunay:105 INVOKEVIRTUAL EdgePair.getLeft()LEdge;
+Vertex.buildDelaunay:105 ALOAD 5
+Vertex.buildDelaunay:105 INVOKEVIRTUAL EdgePair.getRight()LEdge;
+Vertex.buildDelaunay:105 INVOKESTATIC Edge.doMerge(LEdge;LEdge;LEdge;LEdge;)LEdgePair;
+Vertex.buildDelaunay:105 ASTORE 2
+Vertex.buildDelaunay:107 ALOAD 2
+Vertex.buildDelaunay:107 INVOKEVIRTUAL EdgePair.getLeft()LEdge;
+Vertex.buildDelaunay:107 ASTORE 7
+Vertex.buildDelaunay:108 ALOAD 7
+Vertex.buildDelaunay:108 INVOKEVIRTUAL Edge.orig()LVertex;
+Vertex.buildDelaunay:108 ALOAD 3
+Vertex.buildDelaunay:108 IF_ACMPEQ L1
+Vertex.buildDelaunay:112 ALOAD 2
+Vertex.buildDelaunay:112 INVOKEVIRTUAL EdgePair.getRight()LEdge;
+Vertex.buildDelaunay:112 ASTORE 8
+Vertex.buildDelaunay:113 ALOAD 8
+Vertex.buildDelaunay:113 INVOKEVIRTUAL Edge.orig()LVertex;
+Vertex.buildDelaunay:113 ALOAD 4
+Vertex.buildDelaunay:113 IF_ACMPEQ L3
+Vertex.buildDelaunay:118 NEW EdgePair
+Vertex.buildDelaunay:118 DUP
+Vertex.buildDelaunay:118 ALOAD 7
+Vertex.buildDelaunay:118 INVOKESPECIAL EdgePair.<init>(LEdge;LEdge;)V
+Vertex.buildDelaunay:118 ASTORE 2
+Vertex.buildDelaunay:121 ALOAD 0
+Vertex.buildDelaunay:121 INVOKEVIRTUAL Vertex.getLeft()LVertex;
+Vertex.buildDelaunay:121 IFNONNULL L5
+Vertex.buildDelaunay:124 ALOAD 0
+Vertex.buildDelaunay:124 ALOAD 1
+Vertex.buildDelaunay:124 INVOKESTATIC Edge.makeEdge(LVertex;LVertex;)LEdge;
+Vertex.buildDelaunay:124 ASTORE 3
+Vertex.buildDelaunay:125 NEW EdgePair
+Vertex.buildDelaunay:125 DUP
+Vertex.buildDelaunay:125 ALOAD 3
+Vertex.buildDelaunay:125 ALOAD 3
+Vertex.buildDelaunay:125 INVOKEVIRTUAL Edge.symmetric()LEdge;
+Vertex.buildDelaunay:125 INVOKESPECIAL EdgePair.<init>(LEdge;LEdge;)V
+Vertex.buildDelaunay:149 ALOAD 2
+Vertex.buildDelaunay:149 ARETURN
+Vertex.getLow:177 ALOAD 0
+Vertex.getLow:177 ASTORE 2
+Vertex.getLow:179 ALOAD 2
+Vertex.getLow:179 INVOKEVIRTUAL Vertex.getLeft()LVertex;
+Vertex.getLow:179 DUP
+Vertex.getLow:179 ASTORE 1
+Vertex.getLow:179 IFNULL L1
+Vertex.getLow:180 ALOAD 1
+Vertex.getLow:180 ASTORE 2
+Vertex.getLow:181 ALOAD 2
+Vertex.getLow:181 ARETURN
+Vertex.incircle:211 ALOAD 3
+Vertex.incircle:211 ASTORE 33
+Vertex.incircle:212 ALOAD 33
+Vertex.incircle:212 INVOKEVIRTUAL Vertex.X()D
+Vertex.incircle:212 DSTORE 16
+Vertex.incircle:213 ALOAD 33
+Vertex.incircle:213 INVOKEVIRTUAL Vertex.Y()D
+Vertex.incircle:213 DSTORE 18
+Vertex.incircle:214 ALOAD 33
+Vertex.incircle:214 INVOKEVIRTUAL Vertex.Norm()D
+Vertex.incircle:214 DSTORE 26
+Vertex.incircle:215 ALOAD 0
+Vertex.incircle:215 ASTORE 30
+Vertex.incircle:216 ALOAD 30
+Vertex.incircle:216 INVOKEVIRTUAL Vertex.X()D
+Vertex.incircle:216 DLOAD 16
+Vertex.incircle:216 DSUB
+Vertex.incircle:216 DSTORE 4
+Vertex.incircle:217 ALOAD 30
+Vertex.incircle:217 INVOKEVIRTUAL Vertex.Y()D
+Vertex.incircle:217 DLOAD 18
+Vertex.incircle:217 DSUB
+Vertex.incircle:217 DSTORE 6
+Vertex.incircle:218 ALOAD 30
+Vertex.incircle:218 INVOKEVIRTUAL Vertex.Norm()D
+Vertex.incircle:218 DSTORE 20
+Vertex.incircle:219 ALOAD 1
+Vertex.incircle:219 ASTORE 31
+Vertex.incircle:220 ALOAD 31
+Vertex.incircle:220 INVOKEVIRTUAL Vertex.X()D
+Vertex.incircle:220 DLOAD 16
+Vertex.incircle:220 DSUB
+Vertex.incircle:220 DSTORE 8
+Vertex.incircle:221 ALOAD 31
+Vertex.incircle:221 INVOKEVIRTUAL Vertex.Y()D
+Vertex.incircle:221 DLOAD 18
+Vertex.incircle:221 DSUB
+Vertex.incircle:221 DSTORE 10
+Vertex.incircle:222 ALOAD 31
+Vertex.incircle:222 INVOKEVIRTUAL Vertex.Norm()D
+Vertex.incircle:222 DSTORE 22
+Vertex.incircle:223 ALOAD 2
+Vertex.incircle:223 ASTORE 32
+Vertex.incircle:224 ALOAD 32
+Vertex.incircle:224 INVOKEVIRTUAL Vertex.X()D
+Vertex.incircle:224 DLOAD 16
+Vertex.incircle:224 DSUB
+Vertex.incircle:224 DSTORE 12
+Vertex.incircle:225 ALOAD 32
+Vertex.incircle:225 INVOKEVIRTUAL Vertex.Y()D
+Vertex.incircle:225 DLOAD 18
+Vertex.incircle:225 DSUB
+Vertex.incircle:225 DSTORE 14
+Vertex.incircle:226 ALOAD 32
+Vertex.incircle:226 INVOKEVIRTUAL Vertex.Norm()D
+Vertex.incircle:226 DSTORE 24
+Vertex.incircle:227 DLOAD 20
+Vertex.incircle:227 DLOAD 26
+Vertex.incircle:227 DSUB
+Vertex.incircle:227 DLOAD 8
+Vertex.incircle:227 DLOAD 14
+Vertex.incircle:227 DMUL
+Vertex.incircle:227 DLOAD 10
+Vertex.incircle:227 DLOAD 12
+Vertex.incircle:227 DMUL
+Vertex.incircle:227 DSUB
+Vertex.incircle:227 DMUL
+Vertex.incircle:227 DSTORE 28
+Vertex.incircle:228 DLOAD 28
+Vertex.incircle:228 DLOAD 22
+Vertex.incircle:228 DLOAD 26
+Vertex.incircle:228 DSUB
+Vertex.incircle:228 DLOAD 12
+Vertex.incircle:228 DLOAD 6
+Vertex.incircle:228 DMUL
+Vertex.incircle:228 DLOAD 14
+Vertex.incircle:228 DLOAD 4
+Vertex.incircle:228 DMUL
+Vertex.incircle:228 DSUB
+Vertex.incircle:228 DMUL
+Vertex.incircle:228 DADD
+Vertex.incircle:228 DSTORE 28
+Vertex.incircle:229 DLOAD 28
+Vertex.incircle:229 DLOAD 24
+Vertex.incircle:229 DLOAD 26
+Vertex.incircle:229 DSUB
+Vertex.incircle:229 DLOAD 4
+Vertex.incircle:229 DLOAD 10
+Vertex.incircle:229 DMUL
+Vertex.incircle:229 DLOAD 6
+Vertex.incircle:229 DLOAD 8
+Vertex.incircle:229 DMUL
+Vertex.incircle:229 DSUB
+Vertex.incircle:229 DMUL
+Vertex.incircle:229 DADD
+Vertex.incircle:229 DSTORE 28
+Vertex.incircle:230 DCONST_0
+Vertex.incircle:230 DLOAD 28
+Vertex.incircle:230 DCMPG
+Vertex.incircle:230 IFGE L0
+Vertex.incircle:230 ICONST_0
+Vertex.incircle:230 IRETURN
+Vertex.ccw:254 ALOAD 0
+Vertex.ccw:254 ASTORE 17
+Vertex.ccw:255 ALOAD 17
+Vertex.ccw:255 INVOKEVIRTUAL Vertex.X()D
+Vertex.ccw:255 DSTORE 5
+Vertex.ccw:256 ALOAD 17
+Vertex.ccw:256 INVOKEVIRTUAL Vertex.Y()D
+Vertex.ccw:256 DSTORE 7
+Vertex.ccw:257 ALOAD 1
+Vertex.ccw:257 ASTORE 18
+Vertex.ccw:258 ALOAD 18
+Vertex.ccw:258 INVOKEVIRTUAL Vertex.X()D
+Vertex.ccw:258 DSTORE 9
+Vertex.ccw:259 ALOAD 18
+Vertex.ccw:259 INVOKEVIRTUAL Vertex.Y()D
+Vertex.ccw:259 DSTORE 11
+Vertex.ccw:260 ALOAD 2
+Vertex.ccw:260 ASTORE 19
+Vertex.ccw:261 ALOAD 19
+Vertex.ccw:261 INVOKEVIRTUAL Vertex.X()D
+Vertex.ccw:261 DSTORE 13
+Vertex.ccw:262 ALOAD 19
+Vertex.ccw:262 INVOKEVIRTUAL Vertex.Y()D
+Vertex.ccw:262 DSTORE 15
+Vertex.ccw:263 DLOAD 5
+Vertex.ccw:263 DLOAD 13
+Vertex.ccw:263 DSUB
+Vertex.ccw:263 DLOAD 11
+Vertex.ccw:263 DLOAD 15
+Vertex.ccw:263 DSUB
+Vertex.ccw:263 DMUL
+Vertex.ccw:263 DLOAD 9
+Vertex.ccw:263 DLOAD 13
+Vertex.ccw:263 DSUB
+Vertex.ccw:263 DLOAD 7
+Vertex.ccw:263 DLOAD 15
+Vertex.ccw:263 DSUB
+Vertex.ccw:263 DMUL
+Vertex.ccw:263 DSUB
+Vertex.ccw:263 DSTORE 3
+Vertex.ccw:264 DLOAD 3
+Vertex.ccw:264 DCONST_0
+Vertex.ccw:264 DCMPL
+Vertex.ccw:264 IFLE L0
+Vertex.ccw:264 ICONST_1
+Vertex.ccw:264 ICONST_0
+Vertex.ccw:264 IRETURN
+Vertex.mult:276 SIPUSH 10000
+Vertex.mult:276 ISTORE 6
+Vertex.mult:278 ILOAD 0
+Vertex.mult:278 ILOAD 6
+Vertex.mult:278 IDIV
+Vertex.mult:278 ISTORE 2
+Vertex.mult:279 ILOAD 0
+Vertex.mult:279 ILOAD 6
+Vertex.mult:279 IREM
+Vertex.mult:279 ISTORE 3
+Vertex.mult:280 ILOAD 1
+Vertex.mult:280 ILOAD 6
+Vertex.mult:280 IDIV
+Vertex.mult:280 ISTORE 4
+Vertex.mult:281 ILOAD 1
+Vertex.mult:281 ILOAD 6
+Vertex.mult:281 IREM
+Vertex.mult:281 ISTORE 5
+Vertex.mult:282 ILOAD 3
+Vertex.mult:282 ILOAD 4
+Vertex.mult:282 IMUL
+Vertex.mult:282 ILOAD 2
+Vertex.mult:282 ILOAD 5
+Vertex.mult:282 IMUL
+Vertex.mult:282 IADD
+Vertex.mult:282 ILOAD 6
+Vertex.mult:282 IREM
+Vertex.mult:282 ILOAD 6
+Vertex.mult:282 IMUL
+Vertex.mult:282 ILOAD 3
+Vertex.mult:282 ILOAD 5
+Vertex.mult:282 IMUL
+Vertex.mult:282 IADD
+Vertex.mult:282 IRETURN
+Vertex.random:297 LDC 31415821
+Vertex.random:297 ISTORE 1
+Vertex.random:299 ILOAD 0
+Vertex.random:299 ILOAD 1
+Vertex.random:299 INVOKESTATIC Vertex.mult(II)I
+Vertex.random:299 ICONST_1
+Vertex.random:299 IADD
+Vertex.random:299 ISTORE 0
+Vertex.random:300 ILOAD 0
+Vertex.random:300 IRETURN
+Vertex.drand:305 GETSTATIC Vertex.seed I
+Vertex.drand:305 INVOKESTATIC Vertex.random(I)I
+Vertex.drand:305 DUP
+Vertex.drand:305 PUTSTATIC Vertex.seed I
+Vertex.drand:305 I2D
+Vertex.drand:305 LDC 2.147483647E9
+Vertex.drand:305 DDIV
+Vertex.drand:305 DSTORE 0
+Vertex.drand:306 DLOAD 0
+Vertex.drand:306 DRETURN
+Voronoi.main:44 ALOAD 0
+Voronoi.main:44 INVOKESTATIC Voronoi.parseCmdLine([Ljava/lang/String;)V
+Voronoi.main:50 SIPUSH 1023
+Voronoi.main:50 PUTSTATIC Vertex.seed I
+Voronoi.main:51 ICONST_1
+Voronoi.main:51 NEW MyDouble
+Voronoi.main:51 DUP
+Voronoi.main:51 DCONST_1
+Voronoi.main:51 INVOKESPECIAL MyDouble.<init>(D)V
+Voronoi.main:51 GETSTATIC Voronoi.points I
+Voronoi.main:51 INVOKESTATIC Vertex.createPoints(ILMyDouble;I)LVertex;
+Voronoi.main:51 ASTORE 3
+Voronoi.main:52 GETSTATIC Voronoi.points I
+Voronoi.main:52 ICONST_1
+Voronoi.main:52 ISUB
+Voronoi.main:52 NEW MyDouble
+Voronoi.main:52 DUP
+Voronoi.main:52 ALOAD 3
+Voronoi.main:52 INVOKEVIRTUAL Vertex.X()D
+Voronoi.main:52 INVOKESPECIAL MyDouble.<init>(D)V
+Voronoi.main:52 GETSTATIC Voronoi.points I
+Voronoi.main:52 ICONST_1
+Voronoi.main:52 ISUB
+Voronoi.main:52 INVOKESTATIC Vertex.createPoints(ILMyDouble;I)LVertex;
+Voronoi.main:52 ASTORE 4
+Voronoi.main:59 ALOAD 4
+Voronoi.main:59 ALOAD 3
+Voronoi.main:59 INVOKEVIRTUAL Vertex.buildDelaunayTriangulation(LVertex;)LEdge;
+Voronoi.main:59 ASTORE 9
+Voronoi.main:77 ALOAD 9
+Voronoi.main:77 GETFIELD Edge.next LEdge;
+Voronoi.main:77 ASTORE 17
+Voronoi.parseCmdLine:87 ICONST_0
+Voronoi.parseCmdLine:87 ISTORE 1
+Voronoi.parseCmdLine:90 ILOAD 1
+Voronoi.parseCmdLine:90 ALOAD 0
+Voronoi.parseCmdLine:90 ARRAYLENGTH
+Voronoi.parseCmdLine:90 IF_ICMPGE L5
+Voronoi.parseCmdLine:90 ALOAD 0
+Voronoi.parseCmdLine:90 ILOAD 1
+Voronoi.parseCmdLine:90 AALOAD
+Voronoi.parseCmdLine:90 LDC "-"
+Voronoi.parseCmdLine:90 INVOKEVIRTUAL java/lang/String.startsWith(Ljava/lang/String;)Z
+Voronoi.parseCmdLine:90 IFEQ L5
+Voronoi.parseCmdLine:92 ALOAD 0
+Voronoi.parseCmdLine:92 ILOAD 1
+Voronoi.parseCmdLine:92 IINC 1 1
+Voronoi.parseCmdLine:92 AALOAD
+Voronoi.parseCmdLine:92 ASTORE 2
+Voronoi.parseCmdLine:94 ALOAD 2
+Voronoi.parseCmdLine:94 LDC "-n"
+Voronoi.parseCmdLine:94 INVOKEVIRTUAL java/lang/String.equals(Ljava/lang/Object;)Z
+Voronoi.parseCmdLine:94 IFEQ L2
+Voronoi.parseCmdLine:96 ILOAD 1
+Voronoi.parseCmdLine:96 ALOAD 0
+Voronoi.parseCmdLine:96 ARRAYLENGTH
+Voronoi.parseCmdLine:96 IF_ICMPGE L1
+Voronoi.parseCmdLine:98 NEW java/lang/Integer
+Voronoi.parseCmdLine:98 DUP
+Voronoi.parseCmdLine:98 ALOAD 0
+Voronoi.parseCmdLine:98 ILOAD 1
+Voronoi.parseCmdLine:98 AALOAD
+Voronoi.parseCmdLine:98 INVOKESPECIAL java/lang/Integer.<init>(Ljava/lang/String;)V
+Voronoi.parseCmdLine:98 INVOKEVIRTUAL java/lang/Integer.intValue()I
+Voronoi.parseCmdLine:98 PUTSTATIC Voronoi.points I
+java.lang.Character.digit:-1 ILOAD 0
+java.lang.Character.digit:-1 INVOKESTATIC java/lang/CharacterData.of(I)Ljava/lang/CharacterData;
+java.lang.Character.digit:-1 IRETURN
+java.lang.Character.digit:-1 ILOAD 0
+java.lang.Character.digit:-1 INVOKESTATIC java/lang/Character.digit(II)I
+java.lang.Character.digit:-1 IRETURN
+java.lang.CharacterData.of:-1 ILOAD 0
+java.lang.CharacterData.of:-1 BIPUSH 8
+java.lang.CharacterData.of:-1 IUSHR
+java.lang.CharacterData.of:-1 IFNE L0
+java.lang.CharacterData.of:-1 GETSTATIC java/lang/CharacterDataLatin1.instance Ljava/lang/CharacterDataLatin1;
+java.lang.CharacterData.of:-1 ARETURN
+java.lang.Integer.<init>:-1 ALOAD 0
+java.lang.Integer.<init>:-1 ALOAD 1
+java.lang.Integer.<init>:-1 BIPUSH 10
+java.lang.Integer.<init>:-1 INVOKESTATIC java/lang/Integer.parseInt(Ljava/lang/String;I)I
+java.lang.Integer.<init>:-1 PUTFIELD java/lang/Integer.value I
+java.lang.Integer.intValue:-1 ALOAD 0
+java.lang.Integer.intValue:-1 GETFIELD java/lang/Integer.value I
+java.lang.Integer.intValue:-1 IRETURN
+java.lang.Integer.parseInt:-1 ICONST_0
+java.lang.Integer.parseInt:-1 ISTORE 2
+java.lang.Integer.parseInt:-1 ICONST_0
+java.lang.Integer.parseInt:-1 ISTORE 3
+java.lang.Integer.parseInt:-1 ICONST_0
+java.lang.Integer.parseInt:-1 ISTORE 4
+java.lang.Integer.parseInt:-1 ALOAD 0
+java.lang.Integer.parseInt:-1 INVOKEVIRTUAL java/lang/String.length()I
+java.lang.Integer.parseInt:-1 ISTORE 5
+java.lang.Integer.parseInt:-1 ILOAD 5
+java.lang.Integer.parseInt:-1 IFLE L12
+java.lang.Integer.parseInt:-1 ILOAD 4
+java.lang.Integer.parseInt:-1 ILOAD 5
+java.lang.Integer.parseInt:-1 IF_ICMPGE L11
+java.lang.Integer.parseInt:-1 ALOAD 0
+java.lang.Integer.parseInt:-1 ILOAD 4
+java.lang.Integer.parseInt:-1 IINC 4 1
+java.lang.Integer.parseInt:-1 INVOKEVIRTUAL java/lang/String.charAt(I)C
+java.lang.Integer.parseInt:-1 INVOKESTATIC java/lang/Character.digit(CI)I
+java.lang.Integer.parseInt:-1 ISTORE 8
+java.lang.Integer.parseInt:-1 ILOAD 2
+java.lang.Integer.parseInt:-1 ILOAD 1
+java.lang.Integer.parseInt:-1 IMUL
+java.lang.Integer.parseInt:-1 ISTORE 2
+java.lang.Integer.parseInt:-1 ILOAD 2
+java.lang.Integer.parseInt:-1 ILOAD 8
+java.lang.Integer.parseInt:-1 ISUB
+java.lang.Integer.parseInt:-1 ISTORE 2
+java.lang.Integer.parseInt:-1 ILOAD 3
+java.lang.Integer.parseInt:-1 IFEQ L14
+java.lang.Integer.parseInt:-1 ILOAD 2
+java.lang.Integer.parseInt:-1 INEG
+java.lang.Integer.parseInt:-1 IRETURN
+
+Slice consists of 837 bytecode instructions.
+Computation took 0.43 seconds.

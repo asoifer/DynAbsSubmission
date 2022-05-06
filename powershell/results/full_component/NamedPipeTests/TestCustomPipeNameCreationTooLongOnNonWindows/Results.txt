@@ -1,0 +1,9 @@
+CorePsPlatform.cs:50
+test_NamedPipe.cs:12
+test_NamedPipe.cs:34
+test_NamedPipe.cs:36
+test_NamedPipe.cs:44
+test_NamedPipe.cs:48
+test_NamedPipe.cs:50
+test_NamedPipe.cs:52
+---- Last slice: [test_NamedPipe.cs - 44]

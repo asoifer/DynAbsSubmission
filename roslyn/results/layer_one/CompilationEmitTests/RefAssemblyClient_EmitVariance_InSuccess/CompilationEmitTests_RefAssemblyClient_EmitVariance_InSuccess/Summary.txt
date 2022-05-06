@@ -1,0 +1,9 @@
+CompilationEmitTests_RefAssemblyClient_EmitVariance_InSuccess||1129|795|20|89.6089293||0.833024|18310|3035||
+CompilationEmitTests_RefAssemblyClient_EmitVariance_InSuccess||3433|1185|923|89.6089293||1.564929|18310|9469||
+CompilationEmitTests_RefAssemblyClient_EmitVariance_InSuccess||4761|1220|20|89.6089293||1.953361|18310|12971||
+CompilationEmitTests_RefAssemblyClient_EmitVariance_InSuccess||5853|1222|20|89.6089293||2.2662082|18310|15834||
+CompilationEmitTests_RefAssemblyClient_EmitVariance_InSuccess||7882|1250|992|89.6089293||2.8266284|18310|21537||
+CompilationEmitTests_RefAssemblyClient_EmitVariance_InSuccess||9210|1250|20|89.6089293||3.1892428|18310|25039||
+CompilationEmitTests_RefAssemblyClient_EmitVariance_InSuccess||10302|1252|20|89.6089293||3.4991996|18310|27902||
+CompilationEmitTests_RefAssemblyClient_EmitVariance_InSuccess||12642|1253|999|89.6089293||4.1360473|18310|34451||
+CompilationEmitTests_RefAssemblyClient_EmitVariance_InSuccess||13970|1253|20|89.6089293||4.5003804|18310|37953||

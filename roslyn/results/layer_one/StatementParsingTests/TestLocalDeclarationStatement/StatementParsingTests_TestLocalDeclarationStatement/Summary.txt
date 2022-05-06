@@ -1,0 +1,15 @@
+StatementParsingTests_TestLocalDeclarationStatement||17718|1039|449|89.6089293||3.257345|1428|51349||
+StatementParsingTests_TestLocalDeclarationStatement||17720|1042|451|89.6089293||3.2595141|1428|51357||
+StatementParsingTests_TestLocalDeclarationStatement||17754|1062|464|89.6089293||3.2689595|1428|51457||
+StatementParsingTests_TestLocalDeclarationStatement||17760|1071|5|89.6089293||3.2725806|1428|51479||
+StatementParsingTests_TestLocalDeclarationStatement||17761|1072|449|89.6089293||3.2728696|1428|51480||
+StatementParsingTests_TestLocalDeclarationStatement||17762|1073|471|89.6089293||3.2787298|1428|51482||
+StatementParsingTests_TestLocalDeclarationStatement||17763|1078|471|89.6089293||3.2831369|1428|51508||
+StatementParsingTests_TestLocalDeclarationStatement||17766|1081|474|89.6089293||3.2856497|1428|51521||
+StatementParsingTests_TestLocalDeclarationStatement||17767|1082|472|89.6089293||3.2886103|1428|51527||
+StatementParsingTests_TestLocalDeclarationStatement||17769|1083|473|89.6089293||3.2917368|1428|51535||
+StatementParsingTests_TestLocalDeclarationStatement||17773|1086|476|89.6089293||3.3058696|1428|51549||
+StatementParsingTests_TestLocalDeclarationStatement||17774|1087|477|89.6089293||3.307918|1428|51554||
+StatementParsingTests_TestLocalDeclarationStatement||17775|1088|478|89.6089293||3.3095922|1428|51559||
+StatementParsingTests_TestLocalDeclarationStatement||17777|1089|479|89.6089293||3.3120565|1428|51565||
+StatementParsingTests_TestLocalDeclarationStatement||17779|1090|480|89.6089293||3.3145066|1428|51570||

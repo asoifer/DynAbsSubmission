@@ -1,0 +1,6 @@
+|||FirstProcess||OTHER|0|
+|System.Management.Automation.Internal|BoundedStack|ctor|uint capacity|METHOD|1|FULL HAVOC
+|PSTests|CustomAssert|Throws|System.Func<object> testCode|METHOD|2|FULL HAVOC
+|System.Management.Automation.Internal|BoundedStack|Push|string item|METHOD|20|FULL HAVOC
+|System.Management.Automation.Internal|BoundedStack|Pop||METHOD|20|FULL HAVOC
+|PSTests|CustomAssert|Equal|string expected,string actual|METHOD|20|FULL HAVOC

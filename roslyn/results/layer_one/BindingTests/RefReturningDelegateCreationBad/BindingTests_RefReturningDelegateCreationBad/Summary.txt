@@ -1,0 +1,5 @@
+BindingTests_RefReturningDelegateCreationBad||1690|593|386|89.6089293||0.7133239|10682|5099||
+BindingTests_RefReturningDelegateCreationBad||3219|1030|709|89.6089293||0.9776222|10682|9305||
+BindingTests_RefReturningDelegateCreationBad||3224|1036|627|89.6089293||0.9827623|10682|9326||
+BindingTests_RefReturningDelegateCreationBad||4060|1039|722|89.6089293||1.1551005|10682|11323||
+BindingTests_RefReturningDelegateCreationBad||4065|1039|632|89.6089293||1.1600222|10682|11344||

@@ -1,0 +1,6 @@
+CompilationEmitTests_RefAssembly_ReferenceAssemblyAttributeAlsoInSource||261|249|196|89.6089293||0.3064598|10593|664||
+CompilationEmitTests_RefAssembly_ReferenceAssemblyAttributeAlsoInSource||262|250|8|89.6089293||0.3072676|10593|666||
+CompilationEmitTests_RefAssembly_ReferenceAssemblyAttributeAlsoInSource||3132|913|14|89.6089293||1.1245749|10593|8694||
+CompilationEmitTests_RefAssembly_ReferenceAssemblyAttributeAlsoInSource||3142|923|789|89.6089293||1.1341674|10593|8724||
+CompilationEmitTests_RefAssembly_ReferenceAssemblyAttributeAlsoInSource||3149|934|794|89.6089293||1.1403766|10593|8746||
+CompilationEmitTests_RefAssembly_ReferenceAssemblyAttributeAlsoInSource||3316|1000|11|89.6089293||1.2561405|10593|9189||

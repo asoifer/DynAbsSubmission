@@ -1,0 +1,21 @@
+|||FirstProcess||OTHER|0|
+|System.IO|Path|GetTempFileName||METHOD|1|FULL HAVOC
+|System.IO|File|Exists|string path|METHOD|1|FULL HAVOC
+|System.IO|File|Delete|string path|METHOD|1|FULL HAVOC
+|System.IO|File|AppendAllText|string path,string contents|METHOD|1|FULL HAVOC
+|System.Management.Automation|PSTraceSource|GetTracer|string name,string description|METHOD|1|FULL HAVOC
+|System.IO|EnumerationOptions|ctor||METHOD|1|FULL HAVOC
+|PSTests|CustomAssert|Equal|string expected,string actual|METHOD|4|FULL HAVOC
+|System.IO|DirectoryInfo|ctor|string path|METHOD|1|Fresh.{}.{P}.{RV.?}.{}<EOF>
+|System.Reflection|Assembly|GetEntryAssembly||METHOD|1|FULL HAVOC
+|System.IO|FileInfo|ctor|string fileName|METHOD|2|FULL HAVOC
+|System.Diagnostics|Process|GetCurrentProcess||METHOD|1|Fresh.{Many}.{}.{RV.?;RO.?}.{[RV;RO, RO, ?]}<EOF>
+|System.Management.Automation|PSObject|AsPSObject|object obj|METHOD|3|FULL HAVOC
+|System|Enum|HasFlag|System.Enum flag|METHOD|3|Null.{}.{R;P}.{}.{}<EOF>
+|System|String|Replace|string oldValue,string? newValue|METHOD|5|Null.{}.{R;P}.{}.{}<EOF>
+|Microsoft.PowerShell.Commands|InternalSymbolicLinkLinkCodeMethods|CreateFile|string lpFileName,Microsoft.PowerShell.Commands.InternalSymbolicLinkLinkCodeMethods.FileDesiredAccess dwDesiredAccess,Microsoft.PowerShell.Commands.InternalSymbolicLinkLinkCodeMethods.FileShareMode dwShareMode,System.IntPtr lpSecurityAttributes,Microsoft.PowerShell.Commands.InternalSymbolicLinkLinkCodeMethods.FileCreationDisposition dwCreationDisposition,Microsoft.PowerShell.Commands.InternalSymbolicLinkLinkCodeMethods.FileAttributes dwFlagsAndAttributes,System.IntPtr hTemplateFile|METHOD|2|FULL HAVOC
+|Microsoft.Win32.SafeHandles|SafeFileHandle|ctor|System.IntPtr preexistingHandle,bool ownsHandle|METHOD|2|FULL HAVOC
+|System.Runtime.InteropServices|SafeHandle|DangerousAddRef|bool success|METHOD|2|FULL HAVOC
+|System.Runtime.InteropServices|SafeHandle|DangerousGetHandle||METHOD|2|FULL HAVOC
+|Microsoft.PowerShell.Commands|InternalSymbolicLinkLinkCodeMethods|GetFileInformationByHandle|System.IntPtr hFile,Microsoft.PowerShell.Commands.InternalSymbolicLinkLinkCodeMethods.BY_HANDLE_FILE_INFORMATION lpFileInformation|METHOD|2|FULL HAVOC
+|System.Runtime.InteropServices|SafeHandle|DangerousRelease||METHOD|2|FULL HAVOC

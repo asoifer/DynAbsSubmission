@@ -1,0 +1,16 @@
+UtilsTests_TestHistoryStack||2|4|3|44.8938074||0.0088283|8|9||
+UtilsTests_TestHistoryStack||3|5|3|44.8938074||0.0090534|8|12||
+UtilsTests_TestHistoryStack||6|8|5|44.8938074||0.0096222|8|19||
+UtilsTests_TestHistoryStack||7|9|5|44.8938074||0.0098348|8|22||
+UtilsTests_TestHistoryStack||8|10|5|44.8938074||0.010169|8|25||
+UtilsTests_TestHistoryStack||9|11|6|44.8938074||0.0104516|8|28||
+UtilsTests_TestHistoryStack||10|12|7|44.8938074||0.0106732|8|31||
+UtilsTests_TestHistoryStack||11|13|7|44.8938074||0.0108537|8|34||
+UtilsTests_TestHistoryStack||12|14|7|44.8938074||0.0111297|8|37||
+UtilsTests_TestHistoryStack||13|15|8|44.8938074||0.0113185|8|40||
+UtilsTests_TestHistoryStack||14|16|8|44.8938074||0.0115|8|43||
+UtilsTests_TestHistoryStack||16|18|9|44.8938074||0.0118609|8|48||
+UtilsTests_TestHistoryStack||17|19|9|44.8938074||0.0120801|8|51||
+UtilsTests_TestHistoryStack||18|20|9|44.8938074||0.0129143|8|53||
+UtilsTests_TestHistoryStack||21|23|12|44.8938074||0.0135843|8|60||
+UtilsTests_TestHistoryStack||22|24|12|44.8938074||0.0144807|8|62||

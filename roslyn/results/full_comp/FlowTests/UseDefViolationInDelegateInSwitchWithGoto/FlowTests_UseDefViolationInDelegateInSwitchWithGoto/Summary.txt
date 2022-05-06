@@ -1,0 +1,9 @@
+FlowTests_UseDefViolationInDelegateInSwitchWithGoto||90956|8828|6305|230.9017171||143.2995258|6378|233447||
+FlowTests_UseDefViolationInDelegateInSwitchWithGoto||90963|8836|6223|230.9017171||143.4482812|6378|233474||
+FlowTests_UseDefViolationInDelegateInSwitchWithGoto||90968|8836|6223|230.9017171||143.5236863|6378|233491||
+FlowTests_UseDefViolationInDelegateInSwitchWithGoto||90956|8828|6305|163.4935965||62.0521877|6378|233447||
+FlowTests_UseDefViolationInDelegateInSwitchWithGoto||90963|8836|6223|163.4935965||62.146665|6378|233474||
+FlowTests_UseDefViolationInDelegateInSwitchWithGoto||90968|8836|6223|163.4935965||62.2113939|6378|233491||
+FlowTests_UseDefViolationInDelegateInSwitchWithGoto||90956|8828|6305|155.230955||62.0944401|6378|233447||
+FlowTests_UseDefViolationInDelegateInSwitchWithGoto||90963|8836|6223|155.230955||62.1934979|6378|233474||
+FlowTests_UseDefViolationInDelegateInSwitchWithGoto||90968|8836|6223|155.230955||62.2568446|6378|233491||

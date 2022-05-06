@@ -1,0 +1,49 @@
+|||FirstProcess||OTHER|0|
+|Microsoft.PowerShell.Commands|ConvertToJsonContext|ctor|int maxDepth,bool enumsAsStrings,bool compressOutput|METHOD|1|FULL HAVOC
+|System.Collections.Specialized|OrderedDictionary|ctor||METHOD|1|FULL HAVOC
+|System.Collections.Specialized|OrderedDictionary|Add|object key,object value|METHOD|3|FULL HAVOC
+|System|Object|ctor||METHOD|4|Fresh.{}.{}.{RV.?}.{}<EOF>
+|System.Threading|ThreadLocal|ctor||METHOD|1|FULL HAVOC
+|System.Collections.Generic|Dictionary|ctor|System.Collections.Generic.IEqualityComparer<string>? comparer|METHOD|12|Fresh.{Many{|DictInternal}}.{P}.{RV.?;RO.?}.{[RV;RO, RO, ?], [RO, P, ?]}<EOF>
+|System|String|IsNullOrEmpty|string? value|METHOD|10|Null.{}.{R;P}.{}.{}<EOF>
+|System.Collections.Generic|Dictionary|TryGetValue|string key,System.Management.Automation.PSTraceSource value|METHOD|201|FULL HAVOC
+|System.Collections.Generic|Dictionary|ContainsKey|string key|METHOD|3|Null.{}.{R;R.?;R.?.?.OfKind{DictInternal}.?;P}.{}.{}<EOF>
+|System|Environment|GetEnvironmentVariable|string variable|METHOD|3|Null.{}.{R;P}.{}.{}<EOF>
+|System|String|Equals|string? a,string? b,System.StringComparison comparisonType|METHOD|3|Null.{}.{R;P}.{}.{}<EOF>
+|System.Dynamic|ConvertBinder|ctor|System.Type type,bool explicit|METHOD|2|FULL HAVOC
+|System.Runtime.CompilerServices|CallSiteBinder|CacheTarget|System.Func<System.Runtime.CompilerServices.CallSite, object, System.Collections.IEnumerator> target|METHOD|6|FULL HAVOC
+|System.Runtime.CompilerServices|CallSite|Create|System.Runtime.CompilerServices.CallSiteBinder binder|METHOD|1|FULL HAVOC
+|System.Collections.Generic|Dictionary|Add|string key,string value|METHOD|232|Null.{}.{R;R.?;R.?.?.OfKind{DictInternal}.?;P}.{R.?.?.OfKind{DictInternal}.?}.{[R.?.?.OfKind{DictInternal}, P, ?]}<EOF>
+|System.Collections.Generic|Dictionary|Clear||METHOD|2|FULL HAVOC
+|System|Type|GetHashCode||METHOD|782|FULL HAVOC
+|Microsoft.PowerShell.Commands|JsonObject|ConvertToJson|object objectToProcess,Microsoft.PowerShell.Commands.JsonObject.ConvertToJsonContext context|METHOD|2|FULL HAVOC
+|System.Collections.Concurrent|ConcurrentDictionary|ctor||METHOD|3|FULL HAVOC
+|System.Collections.Generic|List|ctor||METHOD|2|Fresh.{Single{System.Array}}.{P}.{RV.?;RO.?}.{[RV, RO, ?]}<EOF>
+|System.Collections.Generic|List|Add|System.Func<object, System.Management.Automation.PSObject.AdapterSet> item|METHOD|2|Null.{}.{R;R.?;R.*.UntilType{System.Array}.OfType{System.Array}.?;P}.{R.?;R.*.UntilType{System.Array}.OfType{System.Array}.?}.{[R.*.UntilType{System.Array}.OfType{System.Array}, P, ?]}<EOF>
+|System.Runtime.CompilerServices|ConditionalWeakTable|ctor||METHOD|2|FULL HAVOC
+|System.Collections.ObjectModel|Collection|ctor||METHOD|3|FULL HAVOC
+|System.Collections.ObjectModel|Collection|Add|System.Management.Automation.CollectionEntry<System.Management.Automation.PSMemberInfo> item|METHOD|9|FULL HAVOC
+|System.Management.Automation|CollectionEntry|ctor|System.Management.Automation.CollectionEntry<System.Management.Automation.PSMethodInfo>.GetMembersDelegate getMembers,System.Management.Automation.CollectionEntry<System.Management.Automation.PSMethodInfo>.GetMemberDelegate getMember,System.Management.Automation.CollectionEntry<System.Management.Automation.PSMethodInfo>.GetFirstOrDefaultDelegate getFirstOrDefault,bool shouldReplicateWhenReturning,bool shouldCloneWhenReturning,string collectionNameForTracing|METHOD|2|FULL HAVOC
+|System.Collections.Specialized|HybridDictionary|ctor||METHOD|1|FULL HAVOC
+|System.Collections.Generic|SortedDictionary|ctor||METHOD|1|FULL HAVOC
+|PSTests|CustomAssert|Equal|string expected,string actual|METHOD|1|FULL HAVOC
+|System|Object|GetType||METHOD|3|Fresh.{}.{R}.{RV.?}.{}<EOF>
+|System|Type|IsAssignableFrom|System.Type? c|METHOD|5|FULL HAVOC
+|System|Nullable|GetUnderlyingType|System.Type nullableType|METHOD|1|Fresh.{}.{P;P.?}.{RV.?}.{}<EOF>
+|System|Type|GetTypeCode|System.Type? type|METHOD|1|FULL HAVOC
+|System.Management.Automation|PSConverter|Invoke|object valueToConvert,System.Type resultType,bool recurse,System.Management.Automation.PSObject originalValueToConvert,System.IFormatProvider formatProvider,System.Management.Automation.Runspaces.TypeTable backupTable|METHOD|1|FULL HAVOC
+|System|Convert|GetTypeCode|object? value|METHOD|1|FULL HAVOC
+|System.Management.Automation|GetEnumerableDelegate|Invoke|object obj|METHOD|1|FULL HAVOC
+|System|Func|Invoke|System.Runtime.CompilerServices.CallSite arg1,object arg2|METHOD|8|FULL HAVOC
+|System.Linq.Expressions|Expression|Constant|object value|METHOD|23|FULL HAVOC
+|System.Collections.Generic|Queue|ctor||METHOD|1|FULL HAVOC
+|System.Linq.Expressions|Expression|Empty||METHOD|1|FULL HAVOC
+|System|Type|GetConstructor|System.Type[] types|METHOD|14|FULL HAVOC
+|System|Type|GetMethod|string name,System.Type[] types|METHOD|153|FULL HAVOC
+|System|Type|GetProperty|string name|METHOD|13|FULL HAVOC
+|System|Type|GetField|string name,System.Reflection.BindingFlags bindingAttr|METHOD|10|FULL HAVOC
+|System.Linq.Expressions|Expression|Call|System.Reflection.MethodInfo method,System.Linq.Expressions.Expression[] arguments|METHOD|1|FULL HAVOC
+|System.Linq.Expressions|Expression|Field|System.Linq.Expressions.Expression expression,System.Reflection.FieldInfo field|METHOD|2|FULL HAVOC
+|System.Dynamic|DynamicMetaObject|ctor|System.Linq.Expressions.Expression expression,System.Dynamic.BindingRestrictions restrictions|METHOD|2|FULL HAVOC
+|System.Dynamic|BindingRestrictions|GetTypeRestriction|System.Linq.Expressions.Expression expression,System.Type type|METHOD|1|FULL HAVOC
+|System|Object|ToString||METHOD|1|Null.{}.{R}.{}.{}<EOF>

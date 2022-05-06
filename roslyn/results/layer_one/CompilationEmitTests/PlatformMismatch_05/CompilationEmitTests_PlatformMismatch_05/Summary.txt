@@ -1,0 +1,6 @@
+CompilationEmitTests_PlatformMismatch_05||1385|990|16|89.6089293||0.7362403|7131|3778||
+CompilationEmitTests_PlatformMismatch_05||2089|1046|828|89.6089293||1.0305904|7131|5673||
+CompilationEmitTests_PlatformMismatch_05||3937|1211|16|89.6089293||1.6995713|7131|10621||
+CompilationEmitTests_PlatformMismatch_05||5698|1214|16|89.6089293||2.2782207|7131|15337||
+CompilationEmitTests_PlatformMismatch_05||7309|1226|16|89.6089293||2.7918652|7131|19668||
+CompilationEmitTests_PlatformMismatch_05||8885|1228|16|89.6089293||3.2929476|7131|23897||

@@ -1,0 +1,6 @@
+|||FirstProcess||OTHER|0|
+|Microsoft.PowerShell.Commands|ConvertToJsonContext|ctor|int maxDepth,bool enumsAsStrings,bool compressOutput|METHOD|1|FULL HAVOC
+|System.Collections|Hashtable|ctor||METHOD|1|FULL HAVOC
+|System.Collections|Hashtable|Add|object key,object? value|METHOD|1|FULL HAVOC
+|Microsoft.PowerShell.Commands|JsonObject|ConvertToJson|object objectToProcess,Microsoft.PowerShell.Commands.JsonObject.ConvertToJsonContext context|METHOD|1|FULL HAVOC
+|PSTests|CustomAssert|Equal|string expected,string actual|METHOD|1|FULL HAVOC

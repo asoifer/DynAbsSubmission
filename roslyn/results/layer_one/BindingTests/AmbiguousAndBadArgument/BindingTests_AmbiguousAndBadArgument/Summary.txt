@@ -1,0 +1,3 @@
+BindingTests_AmbiguousAndBadArgument||2521|886|599|89.6089293||0.7703015|6674|7028||
+BindingTests_AmbiguousAndBadArgument||2526|892|510|89.6089293||0.774695|6674|7049||
+BindingTests_AmbiguousAndBadArgument||2529|892|510|89.6089293||0.7771628|6674|7060||

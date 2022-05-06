@@ -1,0 +1,6 @@
+CompilationEmitTests_CompilationEmitWithQuotedMainType||1369|880|16|89.6089293||0.7051359|10135|3703||
+CompilationEmitTests_CompilationEmitWithQuotedMainType||2958|1063|872|89.6089293||1.1237597|10135|7705||
+CompilationEmitTests_CompilationEmitWithQuotedMainType||2965|1068|801|89.6089293||1.1312068|10135|7732||
+CompilationEmitTests_CompilationEmitWithQuotedMainType||4296|1071|16|89.6089293||1.4778203|10135|11247||
+CompilationEmitTests_CompilationEmitWithQuotedMainType||5866|1074|892|89.6089293||1.874719|10135|15194||
+CompilationEmitTests_CompilationEmitWithQuotedMainType||5873|1074|811|89.6089293||1.880551|10135|15221||

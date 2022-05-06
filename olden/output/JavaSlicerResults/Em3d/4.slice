@@ -1,0 +1,305 @@
+ 0.0% done, time left: unknown                               100.0% done, time left: unknown  finished
+The dynamic slice for criterion [Em3d.main:79:{slicingVariable4}]:
+BiGraph.<init>:26 ALOAD 0
+BiGraph.<init>:26 ALOAD 1
+BiGraph.<init>:26 PUTFIELD BiGraph.eNodes LNode;
+BiGraph.create:43 ILOAD 0
+BiGraph.create:43 ILOAD 1
+BiGraph.create:43 INVOKESTATIC Node.fillTable(II)[LNode;
+BiGraph.create:43 ASTORE 3
+BiGraph.create:44 ILOAD 0
+BiGraph.create:44 INVOKESTATIC Node.fillTable(II)[LNode;
+BiGraph.create:44 ASTORE 4
+BiGraph.create:49 ALOAD 3
+BiGraph.create:49 ICONST_0
+BiGraph.create:49 AALOAD
+BiGraph.create:49 ASTORE 5
+BiGraph.create:50 ALOAD 5
+BiGraph.create:50 IFNULL L3
+BiGraph.create:52 ALOAD 5
+BiGraph.create:52 ALOAD 4
+BiGraph.create:52 INVOKEVIRTUAL Node.makeUniqueNeighbors([LNode;)V
+BiGraph.create:53 ALOAD 5
+BiGraph.create:53 GETFIELD Node.next LNode;
+BiGraph.create:53 ASTORE 5
+BiGraph.create:55 ALOAD 4
+BiGraph.create:55 ICONST_0
+BiGraph.create:55 AALOAD
+BiGraph.create:55 ASTORE 5
+BiGraph.create:56 ALOAD 5
+BiGraph.create:56 IFNULL L5
+BiGraph.create:59 ALOAD 5
+BiGraph.create:59 GETFIELD Node.next LNode;
+BiGraph.create:59 ASTORE 5
+BiGraph.create:66 ALOAD 3
+BiGraph.create:66 ICONST_0
+BiGraph.create:66 AALOAD
+BiGraph.create:66 ASTORE 5
+BiGraph.create:67 ALOAD 5
+BiGraph.create:67 IFNULL L8
+BiGraph.create:70 ALOAD 5
+BiGraph.create:70 GETFIELD Node.next LNode;
+BiGraph.create:70 ASTORE 5
+BiGraph.create:72 ALOAD 4
+BiGraph.create:72 ICONST_0
+BiGraph.create:72 AALOAD
+BiGraph.create:72 ASTORE 5
+BiGraph.create:73 ALOAD 5
+BiGraph.create:73 IFNULL L10
+BiGraph.create:76 ALOAD 5
+BiGraph.create:76 GETFIELD Node.next LNode;
+BiGraph.create:76 ASTORE 5
+BiGraph.create:80 ALOAD 3
+BiGraph.create:80 ICONST_0
+BiGraph.create:80 AALOAD
+BiGraph.create:80 ASTORE 5
+BiGraph.create:81 ALOAD 5
+BiGraph.create:81 IFNULL L12
+BiGraph.create:84 ALOAD 5
+BiGraph.create:84 GETFIELD Node.next LNode;
+BiGraph.create:84 ASTORE 5
+BiGraph.create:86 ALOAD 4
+BiGraph.create:86 ICONST_0
+BiGraph.create:86 AALOAD
+BiGraph.create:86 ASTORE 5
+BiGraph.create:87 ALOAD 5
+BiGraph.create:87 IFNULL L14
+BiGraph.create:90 ALOAD 5
+BiGraph.create:90 GETFIELD Node.next LNode;
+BiGraph.create:90 ASTORE 5
+BiGraph.create:93 NEW BiGraph
+BiGraph.create:93 DUP
+BiGraph.create:93 ALOAD 4
+BiGraph.create:93 ICONST_0
+BiGraph.create:93 AALOAD
+BiGraph.create:93 INVOKESPECIAL BiGraph.<init>(LNode;LNode;)V
+BiGraph.create:93 ASTORE 6
+BiGraph.create:94 ALOAD 6
+BiGraph.create:94 ARETURN
+Em3d.main:48 ALOAD 0
+Em3d.main:48 INVOKESTATIC Em3d.parseCmdLine([Ljava/lang/String;)V
+Em3d.main:53 GETSTATIC Em3d.numNodes I
+Em3d.main:53 GETSTATIC Em3d.numDegree I
+Em3d.main:53 INVOKESTATIC BiGraph.create(IIZ)LBiGraph;
+Em3d.main:53 ASTORE 3
+Em3d.main:60 ICONST_0
+Em3d.main:60 ISTORE 8
+Em3d.main:60 ILOAD 8
+Em3d.main:60 GETSTATIC Em3d.numIter I
+Em3d.main:60 IF_ICMPGE L3
+Em3d.main:60 IINC 8 1
+Em3d.main:77 ALOAD 3
+Em3d.main:77 GETFIELD BiGraph.eNodes LNode;
+Em3d.main:77 GETFIELD Node.fromCount I
+Em3d.main:77 ISTORE 15
+Em3d.parseCmdLine:88 ICONST_0
+Em3d.parseCmdLine:88 ISTORE 1
+Em3d.parseCmdLine:91 ILOAD 1
+Em3d.parseCmdLine:91 ALOAD 0
+Em3d.parseCmdLine:91 ARRAYLENGTH
+Em3d.parseCmdLine:91 IF_ICMPGE L9
+Em3d.parseCmdLine:91 ALOAD 0
+Em3d.parseCmdLine:91 ILOAD 1
+Em3d.parseCmdLine:91 AALOAD
+Em3d.parseCmdLine:91 LDC "-"
+Em3d.parseCmdLine:91 INVOKEVIRTUAL java/lang/String.startsWith(Ljava/lang/String;)Z
+Em3d.parseCmdLine:91 IFEQ L9
+Em3d.parseCmdLine:93 ALOAD 0
+Em3d.parseCmdLine:93 ILOAD 1
+Em3d.parseCmdLine:93 IINC 1 1
+Em3d.parseCmdLine:93 AALOAD
+Em3d.parseCmdLine:93 ASTORE 2
+Em3d.parseCmdLine:96 ALOAD 2
+Em3d.parseCmdLine:96 LDC "-n"
+Em3d.parseCmdLine:96 INVOKEVIRTUAL java/lang/String.equals(Ljava/lang/Object;)Z
+Em3d.parseCmdLine:96 IFEQ L2
+Em3d.parseCmdLine:98 ILOAD 1
+Em3d.parseCmdLine:98 ALOAD 0
+Em3d.parseCmdLine:98 ARRAYLENGTH
+Em3d.parseCmdLine:98 IF_ICMPGE L1
+Em3d.parseCmdLine:100 NEW java/lang/Integer
+Em3d.parseCmdLine:100 DUP
+Em3d.parseCmdLine:100 ALOAD 0
+Em3d.parseCmdLine:100 ILOAD 1
+Em3d.parseCmdLine:100 IINC 1 1
+Em3d.parseCmdLine:100 AALOAD
+Em3d.parseCmdLine:100 INVOKESPECIAL java/lang/Integer.<init>(Ljava/lang/String;)V
+Em3d.parseCmdLine:100 INVOKEVIRTUAL java/lang/Integer.intValue()I
+Em3d.parseCmdLine:100 PUTSTATIC Em3d.numNodes I
+Em3d.parseCmdLine:105 ALOAD 2
+Em3d.parseCmdLine:105 LDC "-d"
+Em3d.parseCmdLine:105 INVOKEVIRTUAL java/lang/String.equals(Ljava/lang/Object;)Z
+Em3d.parseCmdLine:105 IFEQ L4
+Em3d.parseCmdLine:107 ILOAD 1
+Em3d.parseCmdLine:107 ALOAD 0
+Em3d.parseCmdLine:107 ARRAYLENGTH
+Em3d.parseCmdLine:107 IF_ICMPGE L3
+Em3d.parseCmdLine:109 NEW java/lang/Integer
+Em3d.parseCmdLine:109 DUP
+Em3d.parseCmdLine:109 ALOAD 0
+Em3d.parseCmdLine:109 ILOAD 1
+Em3d.parseCmdLine:109 IINC 1 1
+Em3d.parseCmdLine:109 AALOAD
+Em3d.parseCmdLine:109 INVOKESPECIAL java/lang/Integer.<init>(Ljava/lang/String;)V
+Em3d.parseCmdLine:109 INVOKEVIRTUAL java/lang/Integer.intValue()I
+Em3d.parseCmdLine:109 PUTSTATIC Em3d.numDegree I
+Em3d.parseCmdLine:114 ALOAD 2
+Em3d.parseCmdLine:114 LDC "-i"
+Em3d.parseCmdLine:114 INVOKEVIRTUAL java/lang/String.equals(Ljava/lang/Object;)Z
+Em3d.parseCmdLine:114 IFEQ L6
+Em3d.parseCmdLine:116 ILOAD 1
+Em3d.parseCmdLine:116 ALOAD 0
+Em3d.parseCmdLine:116 ARRAYLENGTH
+Em3d.parseCmdLine:116 IF_ICMPGE L5
+Em3d.parseCmdLine:118 NEW java/lang/Integer
+Em3d.parseCmdLine:118 DUP
+Em3d.parseCmdLine:118 ALOAD 0
+Em3d.parseCmdLine:118 ILOAD 1
+Em3d.parseCmdLine:118 AALOAD
+Em3d.parseCmdLine:118 INVOKESPECIAL java/lang/Integer.<init>(Ljava/lang/String;)V
+Em3d.parseCmdLine:118 INVOKEVIRTUAL java/lang/Integer.intValue()I
+Em3d.parseCmdLine:118 PUTSTATIC Em3d.numIter I
+Node.<init>:49 ALOAD 0
+Node.<init>:49 ILOAD 1
+Node.<init>:49 ANEWARRAY Node
+Node.<init>:49 PUTFIELD Node.toNodes [LNode;
+Node.<init>:51 ALOAD 0
+Node.<init>:51 ACONST_NULL
+Node.<init>:51 PUTFIELD Node.next LNode;
+Node.<init>:54 ALOAD 0
+Node.<init>:54 ICONST_0
+Node.<init>:54 PUTFIELD Node.fromCount I
+Node.fillTable:67 ILOAD 0
+Node.fillTable:67 ANEWARRAY Node
+Node.fillTable:67 ASTORE 2
+Node.fillTable:69 NEW Node
+Node.fillTable:69 DUP
+Node.fillTable:69 ILOAD 1
+Node.fillTable:69 INVOKESPECIAL Node.<init>(I)V
+Node.fillTable:69 ASTORE 3
+Node.fillTable:70 ALOAD 2
+Node.fillTable:70 ICONST_0
+Node.fillTable:70 ALOAD 3
+Node.fillTable:70 AASTORE
+Node.fillTable:71 ICONST_1
+Node.fillTable:71 ISTORE 4
+Node.fillTable:71 ILOAD 4
+Node.fillTable:71 ILOAD 0
+Node.fillTable:71 IF_ICMPGE L1
+Node.fillTable:71 IINC 4 1
+Node.fillTable:73 NEW Node
+Node.fillTable:73 DUP
+Node.fillTable:73 ILOAD 1
+Node.fillTable:73 INVOKESPECIAL Node.<init>(I)V
+Node.fillTable:73 ASTORE 5
+Node.fillTable:75 ALOAD 3
+Node.fillTable:75 ALOAD 5
+Node.fillTable:75 PUTFIELD Node.next LNode;
+Node.fillTable:78 ALOAD 2
+Node.fillTable:78 ARETURN
+Node.makeUniqueNeighbors:90 ICONST_0
+Node.makeUniqueNeighbors:90 ISTORE 2
+Node.makeUniqueNeighbors:90 ILOAD 2
+Node.makeUniqueNeighbors:90 ALOAD 0
+Node.makeUniqueNeighbors:90 GETFIELD Node.toNodes [LNode;
+Node.makeUniqueNeighbors:90 ARRAYLENGTH
+Node.makeUniqueNeighbors:90 IF_ICMPGE L6
+Node.makeUniqueNeighbors:90 IINC 2 1
+Node.makeUniqueNeighbors:98 INVOKESTATIC RandomGenerator.Next()I
+Node.makeUniqueNeighbors:98 ISTORE 5
+Node.makeUniqueNeighbors:101 ILOAD 5
+Node.makeUniqueNeighbors:101 ALOAD 1
+Node.makeUniqueNeighbors:101 ARRAYLENGTH
+Node.makeUniqueNeighbors:101 IREM
+Node.makeUniqueNeighbors:101 ISTORE 5
+Node.makeUniqueNeighbors:104 ALOAD 1
+Node.makeUniqueNeighbors:104 ILOAD 5
+Node.makeUniqueNeighbors:104 AALOAD
+Node.makeUniqueNeighbors:104 ASTORE 4
+Node.makeUniqueNeighbors:106 ICONST_0
+Node.makeUniqueNeighbors:106 ISTORE 3
+Node.makeUniqueNeighbors:106 ILOAD 3
+Node.makeUniqueNeighbors:106 ILOAD 2
+Node.makeUniqueNeighbors:106 IF_ICMPGE L5
+Node.makeUniqueNeighbors:106 IINC 3 1
+Node.makeUniqueNeighbors:108 ALOAD 4
+Node.makeUniqueNeighbors:108 ALOAD 0
+Node.makeUniqueNeighbors:108 GETFIELD Node.toNodes [LNode;
+Node.makeUniqueNeighbors:108 ILOAD 2
+Node.makeUniqueNeighbors:108 AALOAD
+Node.makeUniqueNeighbors:108 IF_ACMPNE L4
+Node.makeUniqueNeighbors:111 ILOAD 3
+Node.makeUniqueNeighbors:111 ILOAD 2
+Node.makeUniqueNeighbors:111 IF_ICMPLT L1
+Node.makeUniqueNeighbors:117 ALOAD 4
+Node.makeUniqueNeighbors:117 DUP
+Node.makeUniqueNeighbors:117 GETFIELD Node.fromCount I
+Node.makeUniqueNeighbors:117 ICONST_1
+Node.makeUniqueNeighbors:117 IADD
+Node.makeUniqueNeighbors:117 PUTFIELD Node.fromCount I
+RandomGenerator.Next:17 GETSTATIC RandomGenerator.IntValues [I
+RandomGenerator.Next:17 GETSTATIC RandomGenerator.intValuesIndex I
+RandomGenerator.Next:17 DUP
+RandomGenerator.Next:17 ICONST_1
+RandomGenerator.Next:17 IADD
+RandomGenerator.Next:17 PUTSTATIC RandomGenerator.intValuesIndex I
+RandomGenerator.Next:17 BIPUSH 100
+RandomGenerator.Next:17 IREM
+RandomGenerator.Next:17 IALOAD
+RandomGenerator.Next:17 IRETURN
+java.lang.Character.digit:-1 ILOAD 0
+java.lang.Character.digit:-1 INVOKESTATIC java/lang/CharacterData.of(I)Ljava/lang/CharacterData;
+java.lang.Character.digit:-1 IRETURN
+java.lang.Character.digit:-1 ILOAD 0
+java.lang.Character.digit:-1 INVOKESTATIC java/lang/Character.digit(II)I
+java.lang.Character.digit:-1 IRETURN
+java.lang.CharacterData.of:-1 ILOAD 0
+java.lang.CharacterData.of:-1 BIPUSH 8
+java.lang.CharacterData.of:-1 IUSHR
+java.lang.CharacterData.of:-1 IFNE L0
+java.lang.CharacterData.of:-1 GETSTATIC java/lang/CharacterDataLatin1.instance Ljava/lang/CharacterDataLatin1;
+java.lang.CharacterData.of:-1 ARETURN
+java.lang.Integer.<init>:-1 ALOAD 0
+java.lang.Integer.<init>:-1 ALOAD 1
+java.lang.Integer.<init>:-1 BIPUSH 10
+java.lang.Integer.<init>:-1 INVOKESTATIC java/lang/Integer.parseInt(Ljava/lang/String;I)I
+java.lang.Integer.<init>:-1 PUTFIELD java/lang/Integer.value I
+java.lang.Integer.intValue:-1 ALOAD 0
+java.lang.Integer.intValue:-1 GETFIELD java/lang/Integer.value I
+java.lang.Integer.intValue:-1 IRETURN
+java.lang.Integer.parseInt:-1 ICONST_0
+java.lang.Integer.parseInt:-1 ISTORE 2
+java.lang.Integer.parseInt:-1 ICONST_0
+java.lang.Integer.parseInt:-1 ISTORE 3
+java.lang.Integer.parseInt:-1 ICONST_0
+java.lang.Integer.parseInt:-1 ISTORE 4
+java.lang.Integer.parseInt:-1 ALOAD 0
+java.lang.Integer.parseInt:-1 INVOKEVIRTUAL java/lang/String.length()I
+java.lang.Integer.parseInt:-1 ISTORE 5
+java.lang.Integer.parseInt:-1 ILOAD 5
+java.lang.Integer.parseInt:-1 IFLE L12
+java.lang.Integer.parseInt:-1 ILOAD 4
+java.lang.Integer.parseInt:-1 ILOAD 5
+java.lang.Integer.parseInt:-1 IF_ICMPGE L11
+java.lang.Integer.parseInt:-1 ALOAD 0
+java.lang.Integer.parseInt:-1 ILOAD 4
+java.lang.Integer.parseInt:-1 IINC 4 1
+java.lang.Integer.parseInt:-1 INVOKEVIRTUAL java/lang/String.charAt(I)C
+java.lang.Integer.parseInt:-1 INVOKESTATIC java/lang/Character.digit(CI)I
+java.lang.Integer.parseInt:-1 ISTORE 8
+java.lang.Integer.parseInt:-1 ILOAD 2
+java.lang.Integer.parseInt:-1 ILOAD 1
+java.lang.Integer.parseInt:-1 IMUL
+java.lang.Integer.parseInt:-1 ISTORE 2
+java.lang.Integer.parseInt:-1 ILOAD 2
+java.lang.Integer.parseInt:-1 ILOAD 8
+java.lang.Integer.parseInt:-1 ISUB
+java.lang.Integer.parseInt:-1 ISTORE 2
+java.lang.Integer.parseInt:-1 ILOAD 3
+java.lang.Integer.parseInt:-1 IFEQ L14
+java.lang.Integer.parseInt:-1 ILOAD 2
+java.lang.Integer.parseInt:-1 INEG
+java.lang.Integer.parseInt:-1 IRETURN
+
+Slice consists of 300 bytecode instructions.
+Computation took 0.42 seconds.

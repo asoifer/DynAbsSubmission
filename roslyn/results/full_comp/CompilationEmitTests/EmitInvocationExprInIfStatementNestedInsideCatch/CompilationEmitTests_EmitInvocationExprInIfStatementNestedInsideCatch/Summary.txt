@@ -1,0 +1,6 @@
+CompilationEmitTests_EmitInvocationExprInIfStatementNestedInsideCatch||28662|2179|1702|222.0905773||28.0465646|10753|81645||
+CompilationEmitTests_EmitInvocationExprInIfStatementNestedInsideCatch||28664|2182|1784|222.0905773||28.0667551|10753|81653||
+CompilationEmitTests_EmitInvocationExprInIfStatementNestedInsideCatch||149689|10045|11|222.0905773||365.5791784|10753|387375||
+CompilationEmitTests_EmitInvocationExprInIfStatementNestedInsideCatch||28662|2179|1702|155.230955||6.1635938|10753|81645||
+CompilationEmitTests_EmitInvocationExprInIfStatementNestedInsideCatch||28664|2182|1784|155.230955||6.1752147|10753|81653||
+CompilationEmitTests_EmitInvocationExprInIfStatementNestedInsideCatch||149689|10045|11|155.230955||142.0975328|10753|387375||

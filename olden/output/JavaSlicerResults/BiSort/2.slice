@@ -1,0 +1,287 @@
+ 0.0% done, time left: unknown                               100.0% done, time left: unknown  finished
+The dynamic slice for criterion [BiSort.main:89:{slicingVariable2}]:
+BiSort.main:40 ALOAD 0
+BiSort.main:40 INVOKESTATIC BiSort.parseCmdLine([Ljava/lang/String;)V
+BiSort.main:46 GETSTATIC BiSort.size I
+BiSort.main:46 LDC 12345768
+BiSort.main:46 INVOKESTATIC Value.createTree(II)LValue;
+BiSort.main:46 ASTORE 3
+BiSort.main:60 ALOAD 3
+BiSort.main:60 ICONST_0
+BiSort.main:60 INVOKEVIRTUAL Value.bisort(IZ)I
+BiSort.main:70 ALOAD 3
+BiSort.main:70 ICONST_1
+BiSort.main:70 INVOKEVIRTUAL Value.bisort(IZ)I
+BiSort.main:87 ALOAD 3
+BiSort.main:87 GETFIELD Value.value I
+BiSort.main:87 ISTORE 16
+BiSort.parseCmdLine:98 ICONST_0
+BiSort.parseCmdLine:98 ISTORE 1
+BiSort.parseCmdLine:101 ILOAD 1
+BiSort.parseCmdLine:101 ALOAD 0
+BiSort.parseCmdLine:101 ARRAYLENGTH
+BiSort.parseCmdLine:101 IF_ICMPGE L5
+BiSort.parseCmdLine:101 ALOAD 0
+BiSort.parseCmdLine:101 ILOAD 1
+BiSort.parseCmdLine:101 AALOAD
+BiSort.parseCmdLine:101 LDC "-"
+BiSort.parseCmdLine:101 INVOKEVIRTUAL java/lang/String.startsWith(Ljava/lang/String;)Z
+BiSort.parseCmdLine:101 IFEQ L5
+BiSort.parseCmdLine:103 ALOAD 0
+BiSort.parseCmdLine:103 ILOAD 1
+BiSort.parseCmdLine:103 IINC 1 1
+BiSort.parseCmdLine:103 AALOAD
+BiSort.parseCmdLine:103 ASTORE 2
+BiSort.parseCmdLine:106 ALOAD 2
+BiSort.parseCmdLine:106 LDC "-s"
+BiSort.parseCmdLine:106 INVOKEVIRTUAL java/lang/String.equals(Ljava/lang/Object;)Z
+BiSort.parseCmdLine:106 IFEQ L2
+BiSort.parseCmdLine:108 ILOAD 1
+BiSort.parseCmdLine:108 ALOAD 0
+BiSort.parseCmdLine:108 ARRAYLENGTH
+BiSort.parseCmdLine:108 IF_ICMPGE L1
+BiSort.parseCmdLine:109 NEW java/lang/Integer
+BiSort.parseCmdLine:109 DUP
+BiSort.parseCmdLine:109 ALOAD 0
+BiSort.parseCmdLine:109 ILOAD 1
+BiSort.parseCmdLine:109 AALOAD
+BiSort.parseCmdLine:109 INVOKESPECIAL java/lang/Integer.<init>(Ljava/lang/String;)V
+BiSort.parseCmdLine:109 INVOKEVIRTUAL java/lang/Integer.intValue()I
+BiSort.parseCmdLine:109 PUTSTATIC BiSort.size I
+Value.<init>:26 ALOAD 0
+Value.<init>:26 ILOAD 1
+Value.<init>:26 PUTFIELD Value.value I
+Value.createTree:40 ILOAD 0
+Value.createTree:40 ICONST_1
+Value.createTree:40 IF_ICMPLE L0
+Value.createTree:42 ILOAD 1
+Value.createTree:42 INVOKESTATIC Value.random(I)I
+Value.createTree:42 ISTORE 1
+Value.createTree:43 ILOAD 1
+Value.createTree:43 BIPUSH 100
+Value.createTree:43 IREM
+Value.createTree:43 ISTORE 2
+Value.createTree:45 NEW Value
+Value.createTree:45 DUP
+Value.createTree:45 ILOAD 2
+Value.createTree:45 INVOKESPECIAL Value.<init>(I)V
+Value.createTree:45 ASTORE 3
+Value.createTree:46 ALOAD 3
+Value.createTree:46 ILOAD 0
+Value.createTree:46 ICONST_2
+Value.createTree:46 IDIV
+Value.createTree:46 ILOAD 1
+Value.createTree:46 INVOKESTATIC Value.createTree(II)LValue;
+Value.createTree:46 PUTFIELD Value.left LValue;
+Value.createTree:47 ALOAD 3
+Value.createTree:47 ILOAD 0
+Value.createTree:47 ICONST_2
+Value.createTree:47 IDIV
+Value.createTree:47 ILOAD 1
+Value.createTree:47 ILOAD 0
+Value.createTree:47 ICONST_1
+Value.createTree:47 IADD
+Value.createTree:47 INVOKESTATIC Value.skiprand(II)I
+Value.createTree:47 INVOKESTATIC Value.createTree(II)LValue;
+Value.createTree:47 PUTFIELD Value.right LValue;
+Value.createTree:48 ALOAD 3
+Value.createTree:48 ARETURN
+Value.bisort:63 ALOAD 0
+Value.bisort:63 GETFIELD Value.left LValue;
+Value.bisort:63 IFNONNULL L2
+Value.bisort:65 ALOAD 0
+Value.bisort:65 GETFIELD Value.value I
+Value.bisort:65 ILOAD 1
+Value.bisort:65 IF_ICMPLE L0
+Value.bisort:65 ICONST_0
+Value.bisort:65 ILOAD 2
+Value.bisort:65 IXOR
+Value.bisort:65 IFEQ L5
+Value.bisort:67 ILOAD 1
+Value.bisort:67 ISTORE 3
+Value.bisort:69 ALOAD 0
+Value.bisort:69 ILOAD 3
+Value.bisort:69 PUTFIELD Value.value I
+Value.bisort:74 ALOAD 0
+Value.bisort:74 GETFIELD Value.value I
+Value.bisort:74 ISTORE 3
+Value.bisort:75 ALOAD 0
+Value.bisort:75 ALOAD 0
+Value.bisort:75 GETFIELD Value.left LValue;
+Value.bisort:75 ILOAD 3
+Value.bisort:75 ILOAD 2
+Value.bisort:75 INVOKEVIRTUAL Value.bisort(IZ)I
+Value.bisort:75 PUTFIELD Value.value I
+Value.bisort:77 ALOAD 0
+Value.bisort:77 GETFIELD Value.right LValue;
+Value.bisort:77 ISTORE 1
+Value.bisort:78 ALOAD 0
+Value.bisort:78 ILOAD 1
+Value.bisort:78 ILOAD 2
+Value.bisort:78 INVOKEVIRTUAL Value.bimerge(IZ)I
+Value.bimerge:92 ALOAD 0
+Value.bimerge:92 GETFIELD Value.value I
+Value.bimerge:92 ISTORE 3
+Value.bimerge:93 ALOAD 0
+Value.bimerge:93 GETFIELD Value.left LValue;
+Value.bimerge:93 ASTORE 4
+Value.bimerge:94 ALOAD 0
+Value.bimerge:94 GETFIELD Value.right LValue;
+Value.bimerge:94 ASTORE 5
+Value.bimerge:96 ILOAD 3
+Value.bimerge:96 ILOAD 1
+Value.bimerge:96 IF_ICMPLE L0
+Value.bimerge:96 ICONST_1
+Value.bimerge:96 ICONST_0
+Value.bimerge:96 ILOAD 2
+Value.bimerge:96 IXOR
+Value.bimerge:96 ISTORE 6
+Value.bimerge:97 ILOAD 6
+Value.bimerge:97 IFEQ L2
+Value.bimerge:99 ALOAD 0
+Value.bimerge:99 ILOAD 1
+Value.bimerge:99 PUTFIELD Value.value I
+Value.bimerge:103 ALOAD 4
+Value.bimerge:103 IFNULL L9
+Value.bimerge:105 ALOAD 4
+Value.bimerge:105 GETFIELD Value.value I
+Value.bimerge:105 ISTORE 7
+Value.bimerge:106 ALOAD 4
+Value.bimerge:106 GETFIELD Value.left LValue;
+Value.bimerge:106 ASTORE 8
+Value.bimerge:107 ALOAD 4
+Value.bimerge:107 GETFIELD Value.right LValue;
+Value.bimerge:107 ASTORE 9
+Value.bimerge:108 ALOAD 5
+Value.bimerge:108 GETFIELD Value.value I
+Value.bimerge:108 ISTORE 3
+Value.bimerge:112 ILOAD 7
+Value.bimerge:112 ILOAD 3
+Value.bimerge:112 IF_ICMPLE L3
+Value.bimerge:112 ICONST_0
+Value.bimerge:112 ILOAD 2
+Value.bimerge:112 IXOR
+Value.bimerge:112 ISTORE 12
+Value.bimerge:113 ILOAD 6
+Value.bimerge:113 IFEQ L6
+Value.bimerge:115 ILOAD 12
+Value.bimerge:115 IFEQ L5
+Value.bimerge:118 ALOAD 8
+Value.bimerge:118 ASTORE 4
+Value.bimerge:123 ALOAD 9
+Value.bimerge:123 ASTORE 4
+Value.bimerge:143 ALOAD 0
+Value.bimerge:143 GETFIELD Value.left LValue;
+Value.bimerge:143 IFNULL L10
+Value.bimerge:145 ALOAD 0
+Value.bimerge:145 ALOAD 0
+Value.bimerge:145 GETFIELD Value.left LValue;
+Value.bimerge:145 ALOAD 0
+Value.bimerge:145 GETFIELD Value.value I
+Value.bimerge:145 ILOAD 2
+Value.bimerge:145 INVOKEVIRTUAL Value.bimerge(IZ)I
+Value.bimerge:145 PUTFIELD Value.value I
+Value.mult:203 ILOAD 0
+Value.mult:203 SIPUSH 10000
+Value.mult:203 IDIV
+Value.mult:203 ISTORE 2
+Value.mult:204 ILOAD 0
+Value.mult:204 SIPUSH 10000
+Value.mult:204 IREM
+Value.mult:204 ISTORE 3
+Value.mult:205 ILOAD 1
+Value.mult:205 SIPUSH 10000
+Value.mult:205 IDIV
+Value.mult:205 ISTORE 4
+Value.mult:206 ILOAD 1
+Value.mult:206 SIPUSH 10000
+Value.mult:206 IREM
+Value.mult:206 ISTORE 5
+Value.mult:207 ILOAD 3
+Value.mult:207 ILOAD 4
+Value.mult:207 IMUL
+Value.mult:207 ILOAD 2
+Value.mult:207 ILOAD 5
+Value.mult:207 IMUL
+Value.mult:207 IADD
+Value.mult:207 SIPUSH 10000
+Value.mult:207 IREM
+Value.mult:207 SIPUSH 10000
+Value.mult:207 IMUL
+Value.mult:207 ILOAD 3
+Value.mult:207 ILOAD 5
+Value.mult:207 IMUL
+Value.mult:207 IADD
+Value.mult:207 IRETURN
+Value.skiprand:217 ILOAD 1
+Value.skiprand:217 IFEQ L1
+Value.skiprand:217 IINC 1 -1
+Value.skiprand:218 ILOAD 0
+Value.skiprand:218 INVOKESTATIC Value.random(I)I
+Value.skiprand:218 ISTORE 0
+Value.skiprand:219 ILOAD 0
+Value.skiprand:219 IRETURN
+Value.random:229 ILOAD 0
+Value.random:229 LDC 31415821
+Value.random:229 INVOKESTATIC Value.mult(II)I
+Value.random:229 ICONST_1
+Value.random:229 IADD
+Value.random:229 ISTORE 1
+Value.random:230 ILOAD 1
+Value.random:230 IRETURN
+java.lang.Character.digit:-1 ILOAD 0
+java.lang.Character.digit:-1 INVOKESTATIC java/lang/CharacterData.of(I)Ljava/lang/CharacterData;
+java.lang.Character.digit:-1 IRETURN
+java.lang.Character.digit:-1 ILOAD 0
+java.lang.Character.digit:-1 INVOKESTATIC java/lang/Character.digit(II)I
+java.lang.Character.digit:-1 IRETURN
+java.lang.CharacterData.of:-1 ILOAD 0
+java.lang.CharacterData.of:-1 BIPUSH 8
+java.lang.CharacterData.of:-1 IUSHR
+java.lang.CharacterData.of:-1 IFNE L0
+java.lang.CharacterData.of:-1 GETSTATIC java/lang/CharacterDataLatin1.instance Ljava/lang/CharacterDataLatin1;
+java.lang.CharacterData.of:-1 ARETURN
+java.lang.Integer.<init>:-1 ALOAD 0
+java.lang.Integer.<init>:-1 ALOAD 1
+java.lang.Integer.<init>:-1 BIPUSH 10
+java.lang.Integer.<init>:-1 INVOKESTATIC java/lang/Integer.parseInt(Ljava/lang/String;I)I
+java.lang.Integer.<init>:-1 PUTFIELD java/lang/Integer.value I
+java.lang.Integer.intValue:-1 ALOAD 0
+java.lang.Integer.intValue:-1 GETFIELD java/lang/Integer.value I
+java.lang.Integer.intValue:-1 IRETURN
+java.lang.Integer.parseInt:-1 ICONST_0
+java.lang.Integer.parseInt:-1 ISTORE 2
+java.lang.Integer.parseInt:-1 ICONST_0
+java.lang.Integer.parseInt:-1 ISTORE 3
+java.lang.Integer.parseInt:-1 ICONST_0
+java.lang.Integer.parseInt:-1 ISTORE 4
+java.lang.Integer.parseInt:-1 ALOAD 0
+java.lang.Integer.parseInt:-1 INVOKEVIRTUAL java/lang/String.length()I
+java.lang.Integer.parseInt:-1 ISTORE 5
+java.lang.Integer.parseInt:-1 ILOAD 5
+java.lang.Integer.parseInt:-1 IFLE L12
+java.lang.Integer.parseInt:-1 ILOAD 4
+java.lang.Integer.parseInt:-1 ILOAD 5
+java.lang.Integer.parseInt:-1 IF_ICMPGE L11
+java.lang.Integer.parseInt:-1 ALOAD 0
+java.lang.Integer.parseInt:-1 ILOAD 4
+java.lang.Integer.parseInt:-1 IINC 4 1
+java.lang.Integer.parseInt:-1 INVOKEVIRTUAL java/lang/String.charAt(I)C
+java.lang.Integer.parseInt:-1 INVOKESTATIC java/lang/Character.digit(CI)I
+java.lang.Integer.parseInt:-1 ISTORE 8
+java.lang.Integer.parseInt:-1 ILOAD 2
+java.lang.Integer.parseInt:-1 ILOAD 1
+java.lang.Integer.parseInt:-1 IMUL
+java.lang.Integer.parseInt:-1 ISTORE 2
+java.lang.Integer.parseInt:-1 ILOAD 2
+java.lang.Integer.parseInt:-1 ILOAD 8
+java.lang.Integer.parseInt:-1 ISUB
+java.lang.Integer.parseInt:-1 ISTORE 2
+java.lang.Integer.parseInt:-1 ILOAD 3
+java.lang.Integer.parseInt:-1 IFEQ L14
+java.lang.Integer.parseInt:-1 ILOAD 2
+java.lang.Integer.parseInt:-1 INEG
+java.lang.Integer.parseInt:-1 IRETURN
+
+Slice consists of 282 bytecode instructions.
+Computation took 0.41 seconds.

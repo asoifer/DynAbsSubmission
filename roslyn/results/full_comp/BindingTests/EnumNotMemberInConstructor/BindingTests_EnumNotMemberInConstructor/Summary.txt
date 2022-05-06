@@ -1,0 +1,2 @@
+BindingTests_EnumNotMemberInConstructor||95101|7642|16|235.1182994||155.0299771|6717|245807||
+BindingTests_EnumNotMemberInConstructor||95101|7642|16|163.4935965||71.1380926|6717|245807||

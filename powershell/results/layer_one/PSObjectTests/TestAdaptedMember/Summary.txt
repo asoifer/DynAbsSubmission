@@ -1,0 +1,2 @@
+PSObjectTests_TestAdaptedMember||398|276|76|44.8938074||0.1326615|51|862||
+PSObjectTests_TestAdaptedMember||400|277|77|44.8938074||0.1333619|51|868||

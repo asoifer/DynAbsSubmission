@@ -1,0 +1,18 @@
+|||FirstProcess||OTHER|0|
+|System|Object|GetType||METHOD|1|Fresh.{}.{R}.{RV.?}.{}<EOF>
+|System|Object|ctor||METHOD|1|Fresh.{}.{}.{RV.?}.{}<EOF>
+|System.Threading|ThreadLocal|ctor||METHOD|1|FULL HAVOC
+|System.Collections.Generic|Dictionary|ctor|System.Collections.Generic.IEqualityComparer<string>? comparer|METHOD|6|Fresh.{Many{|DictInternal}}.{P}.{RV.?;RO.?}.{[RV;RO, RO, ?], [RO, P, ?]}<EOF>
+|System|String|IsNullOrEmpty|string? value|METHOD|6|Null.{}.{R;P}.{}.{}<EOF>
+|System.Collections.Generic|Dictionary|TryGetValue|string key,System.Management.Automation.PSTraceSource value|METHOD|196|FULL HAVOC
+|System.Collections.Generic|Dictionary|ContainsKey|string key|METHOD|2|Null.{}.{R;R.?;R.?.?.OfKind{DictInternal}.?;P}.{}.{}<EOF>
+|System|Environment|GetEnvironmentVariable|string variable|METHOD|2|Null.{}.{R;P}.{}.{}<EOF>
+|System|String|Equals|string? a,string? b,System.StringComparison comparisonType|METHOD|2|Null.{}.{R;P}.{}.{}<EOF>
+|System.Dynamic|ConvertBinder|ctor|System.Type type,bool explicit|METHOD|2|FULL HAVOC
+|System.Runtime.CompilerServices|CallSiteBinder|CacheTarget|System.Func<System.Runtime.CompilerServices.CallSite, object, System.Collections.IEnumerator> target|METHOD|6|FULL HAVOC
+|System.Runtime.CompilerServices|CallSite|Create|System.Runtime.CompilerServices.CallSiteBinder binder|METHOD|1|FULL HAVOC
+|System.Collections.Generic|Dictionary|Add|string key,string value|METHOD|230|Null.{}.{R;R.?;R.?.?.OfKind{DictInternal}.?;P}.{R.?.?.OfKind{DictInternal}.?}.{[R.?.?.OfKind{DictInternal}, P, ?]}<EOF>
+|System.Collections.Generic|Dictionary|Clear||METHOD|2|FULL HAVOC
+|System|Type|GetHashCode||METHOD|776|FULL HAVOC
+|System|Type|GetTypeCode|System.Type? type|METHOD|1|FULL HAVOC
+|PSTests|CustomAssert|True|bool condition|METHOD|1|FULL HAVOC

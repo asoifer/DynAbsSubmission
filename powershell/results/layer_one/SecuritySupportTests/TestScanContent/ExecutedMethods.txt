@@ -1,0 +1,13 @@
+|||FirstProcess||OTHER|0|
+|System|Object|ctor||METHOD|1|Fresh.{}.{}.{RV.?}.{}<EOF>
+|System|String|IsNullOrEmpty|string? value|METHOD|1|Null.{}.{R;P}.{}.{}<EOF>
+|System.Management.Automation|Diagnostics|Assert|bool condition,string whyThisShouldNeverHappen|METHOD|1|FULL HAVOC
+|System.Diagnostics|Process|GetCurrentProcess||METHOD|1|Fresh.{Many}.{}.{RV.?;RO.?}.{[RV;RO, RO, ?]}<EOF>
+|System.Management.Automation|PsUtils|GetMainModule|System.Diagnostics.Process targetProcess|METHOD|1|FULL HAVOC
+|System|String|Concat|string? str0,string? str1,string? str2,string? str3|METHOD|1|Null.{}.{R;P}.{}.{}<EOF>
+|System.Management.Automation|AmsiNativeMethods|AmsiInitialize|string appName,System.IntPtr amsiContext|METHOD|1|FULL HAVOC
+|System.Management.Automation|Utils|Succeeded|int hresult|METHOD|4|FULL HAVOC
+|System.Management.Automation|AmsiNativeMethods|AmsiOpenSession|System.IntPtr amsiContext,System.IntPtr amsiSession|METHOD|1|FULL HAVOC
+|System|IntPtr|ctor|void* value|METHOD|1|FULL HAVOC
+|System.Management.Automation|AmsiNativeMethods|AmsiScanBuffer|System.IntPtr amsiContext,System.IntPtr buffer,uint length,string contentName,System.IntPtr amsiSession,System.Management.Automation.AmsiUtils.AmsiNativeMethods.AMSI_RESULT result|METHOD|1|FULL HAVOC
+|PSTests|CustomAssert|Equal|System.Management.Automation.AmsiUtils.AmsiNativeMethods.AMSI_RESULT expected,System.Management.Automation.AmsiUtils.AmsiNativeMethods.AMSI_RESULT actual|METHOD|1|FULL HAVOC

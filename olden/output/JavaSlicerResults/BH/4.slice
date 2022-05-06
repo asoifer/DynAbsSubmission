@@ -1,0 +1,1060 @@
+ 0.0% done, time left: unknown                               13.1% done, time left: unknown 42.1% done, time left: unknown 58.0% done, time left: unknown 100.0% done, time left: unknown  finished
+The dynamic slice for criterion [BH.main:90:{slicingVariable4}]:
+BH.main:44 ALOAD 0
+BH.main:44 INVOKESTATIC BH.parseCmdLine([Ljava/lang/String;)V
+BH.main:50 NEW Tree
+BH.main:50 DUP
+BH.main:50 INVOKESPECIAL Tree.<init>()V
+BH.main:50 ASTORE 3
+BH.main:51 ALOAD 3
+BH.main:51 GETSTATIC BH.nbody I
+BH.main:51 INVOKEVIRTUAL Tree.createTestData(I)V
+BH.main:57 DCONST_0
+BH.main:57 DSTORE 8
+BH.main:58 ICONST_0
+BH.main:58 ISTORE 10
+BH.main:59 DLOAD 8
+BH.main:59 GETSTATIC BH.TSTOP D
+BH.main:59 LDC 0.1
+BH.main:59 GETSTATIC BH.DTIME D
+BH.main:59 DMUL
+BH.main:59 DADD
+BH.main:59 DCMPG
+BH.main:59 IFGE L3
+BH.main:59 ILOAD 10
+BH.main:59 GETSTATIC BH.nsteps I
+BH.main:59 IF_ICMPGE L3
+BH.main:61 ALOAD 3
+BH.main:61 ILOAD 10
+BH.main:61 IINC 10 1
+BH.main:61 INVOKEVIRTUAL Tree.stepSystem(I)V
+BH.main:62 DLOAD 8
+BH.main:62 GETSTATIC BH.DTIME D
+BH.main:62 DADD
+BH.main:62 DSTORE 8
+BH.main:66 GETSTATIC BH.printResults Z
+BH.main:66 IFEQ L5
+BH.main:87 ALOAD 3
+BH.main:87 GETFIELD Tree.bodyTab LBody;
+BH.main:87 GETFIELD Body.vel LMathVector;
+BH.main:87 GETFIELD MathVector.data [D
+BH.main:87 ICONST_0
+BH.main:87 DALOAD
+BH.main:87 DSTORE 17
+BH.myRand:100 LDC 16807.0
+BH.myRand:100 DLOAD 0
+BH.myRand:100 DMUL
+BH.myRand:100 DCONST_1
+BH.myRand:100 DADD
+BH.myRand:100 DSTORE 2
+BH.myRand:102 DLOAD 2
+BH.myRand:102 LDC 2.147483647E9
+BH.myRand:102 DLOAD 2
+BH.myRand:102 LDC 2.147483647E9
+BH.myRand:102 DDIV
+BH.myRand:102 INVOKESTATIC java/lang/Math.floor(D)D
+BH.myRand:102 DMUL
+BH.myRand:102 DSUB
+BH.myRand:102 DSTORE 0
+BH.myRand:103 DLOAD 0
+BH.myRand:103 DRETURN
+BH.xRand:116 DLOAD 0
+BH.xRand:116 DLOAD 2
+BH.xRand:116 DLOAD 0
+BH.xRand:116 DSUB
+BH.xRand:116 DLOAD 4
+BH.xRand:116 DMUL
+BH.xRand:116 LDC 2.147483647E9
+BH.xRand:116 DDIV
+BH.xRand:116 DADD
+BH.xRand:116 DSTORE 6
+BH.xRand:117 DLOAD 6
+BH.xRand:117 DRETURN
+BH.parseCmdLine:126 ICONST_0
+BH.parseCmdLine:126 ISTORE 1
+BH.parseCmdLine:129 ILOAD 1
+BH.parseCmdLine:129 ALOAD 0
+BH.parseCmdLine:129 ARRAYLENGTH
+BH.parseCmdLine:129 IF_ICMPGE L7
+BH.parseCmdLine:129 ALOAD 0
+BH.parseCmdLine:129 ILOAD 1
+BH.parseCmdLine:129 AALOAD
+BH.parseCmdLine:129 LDC "-"
+BH.parseCmdLine:129 INVOKEVIRTUAL java/lang/String.startsWith(Ljava/lang/String;)Z
+BH.parseCmdLine:129 IFEQ L7
+BH.parseCmdLine:131 ALOAD 0
+BH.parseCmdLine:131 ILOAD 1
+BH.parseCmdLine:131 IINC 1 1
+BH.parseCmdLine:131 AALOAD
+BH.parseCmdLine:131 ASTORE 2
+BH.parseCmdLine:134 ALOAD 2
+BH.parseCmdLine:134 LDC "-b"
+BH.parseCmdLine:134 INVOKEVIRTUAL java/lang/String.equals(Ljava/lang/Object;)Z
+BH.parseCmdLine:134 IFEQ L2
+BH.parseCmdLine:136 ILOAD 1
+BH.parseCmdLine:136 ALOAD 0
+BH.parseCmdLine:136 ARRAYLENGTH
+BH.parseCmdLine:136 IF_ICMPGE L1
+BH.parseCmdLine:138 NEW java/lang/Integer
+BH.parseCmdLine:138 DUP
+BH.parseCmdLine:138 ALOAD 0
+BH.parseCmdLine:138 ILOAD 1
+BH.parseCmdLine:138 IINC 1 1
+BH.parseCmdLine:138 AALOAD
+BH.parseCmdLine:138 INVOKESPECIAL java/lang/Integer.<init>(Ljava/lang/String;)V
+BH.parseCmdLine:138 INVOKEVIRTUAL java/lang/Integer.intValue()I
+BH.parseCmdLine:138 PUTSTATIC BH.nbody I
+BH.parseCmdLine:145 ALOAD 2
+BH.parseCmdLine:145 LDC "-s"
+BH.parseCmdLine:145 INVOKEVIRTUAL java/lang/String.equals(Ljava/lang/Object;)Z
+BH.parseCmdLine:145 IFEQ L4
+BH.parseCmdLine:147 ILOAD 1
+BH.parseCmdLine:147 ALOAD 0
+BH.parseCmdLine:147 ARRAYLENGTH
+BH.parseCmdLine:147 IF_ICMPGE L3
+BH.parseCmdLine:149 NEW java/lang/Integer
+BH.parseCmdLine:149 DUP
+BH.parseCmdLine:149 ALOAD 0
+BH.parseCmdLine:149 ILOAD 1
+BH.parseCmdLine:149 AALOAD
+BH.parseCmdLine:149 INVOKESPECIAL java/lang/Integer.<init>(Ljava/lang/String;)V
+BH.parseCmdLine:149 INVOKEVIRTUAL java/lang/Integer.intValue()I
+BH.parseCmdLine:149 PUTSTATIC BH.nsteps I
+Body.<init>:20 ALOAD 0
+Body.<init>:20 INVOKESPECIAL Node.<init>()V
+Body.<init>:21 ALOAD 0
+Body.<init>:21 NEW MathVector
+Body.<init>:21 DUP
+Body.<init>:21 INVOKESPECIAL MathVector.<init>()V
+Body.<init>:21 PUTFIELD Body.vel LMathVector;
+Body.setNext:35 ALOAD 0
+Body.setNext:35 ALOAD 1
+Body.setNext:35 PUTFIELD Body.next LBody;
+Body.getNext:44 ALOAD 0
+Body.getNext:44 GETFIELD Body.next LBody;
+Body.getNext:44 ARETURN
+Body.setProcNext:53 ALOAD 0
+Body.setProcNext:53 ALOAD 1
+Body.setProcNext:53 PUTFIELD Body.procNext LBody;
+Body.getProcNext:62 ALOAD 0
+Body.getProcNext:62 GETFIELD Body.procNext LBody;
+Body.getProcNext:62 ARETURN
+Body.loadTree:143 NEW Cell
+Body.loadTree:143 DUP
+Body.loadTree:143 INVOKESPECIAL Cell.<init>()V
+Body.loadTree:143 ASTORE 5
+Body.loadTree:144 ALOAD 0
+Body.loadTree:144 ALOAD 4
+Body.loadTree:144 ILOAD 3
+Body.loadTree:144 INVOKEVIRTUAL Body.subindex(LTree;I)I
+Body.loadTree:144 ISTORE 6
+Body.loadTree:146 ALOAD 5
+Body.loadTree:146 GETFIELD Cell.subp [LNode;
+Body.loadTree:146 ILOAD 6
+Body.loadTree:146 ALOAD 0
+Body.loadTree:146 AASTORE
+Body.loadTree:149 INVOKESTATIC Body.oldSubindex(LMathVector;I)I
+Body.loadTree:149 ISTORE 6
+Body.loadTree:150 ALOAD 5
+Body.loadTree:150 GETFIELD Cell.subp [LNode;
+Body.loadTree:150 ILOAD 6
+Body.loadTree:150 AALOAD
+Body.loadTree:150 ASTORE 7
+Body.loadTree:151 ALOAD 7
+Body.loadTree:151 IFNULL L0
+Body.loadTree:154 ALOAD 5
+Body.loadTree:154 GETFIELD Cell.subp [LNode;
+Body.loadTree:154 ILOAD 6
+Body.loadTree:154 ALOAD 1
+Body.loadTree:154 AASTORE
+Body.loadTree:155 ALOAD 5
+Body.loadTree:155 ARETURN
+Body.subindex:174 NEW MathVector
+Body.subindex:174 DUP
+Body.subindex:174 INVOKESPECIAL MathVector.<init>()V
+Body.subindex:174 ASTORE 3
+Body.subindex:176 ALOAD 0
+Body.subindex:176 GETFIELD Body.pos LMathVector;
+Body.subindex:176 ICONST_0
+Body.subindex:176 INVOKEVIRTUAL MathVector.value(I)D
+Body.subindex:176 ALOAD 1
+Body.subindex:176 GETFIELD Tree.rmin LMathVector;
+Body.subindex:176 ICONST_0
+Body.subindex:176 INVOKEVIRTUAL MathVector.value(I)D
+Body.subindex:176 DSUB
+Body.subindex:176 ALOAD 1
+Body.subindex:176 GETFIELD Tree.rsize D
+Body.subindex:176 DDIV
+Body.subindex:176 DSTORE 4
+Body.subindex:177 ALOAD 3
+Body.subindex:177 ICONST_0
+Body.subindex:177 LDC 1.073741824E9
+Body.subindex:177 DLOAD 4
+Body.subindex:177 DMUL
+Body.subindex:177 INVOKESTATIC java/lang/Math.floor(D)D
+Body.subindex:177 INVOKEVIRTUAL MathVector.value(ID)V
+Body.subindex:179 ALOAD 0
+Body.subindex:179 GETFIELD Body.pos LMathVector;
+Body.subindex:179 ICONST_1
+Body.subindex:179 INVOKEVIRTUAL MathVector.value(I)D
+Body.subindex:179 ALOAD 1
+Body.subindex:179 GETFIELD Tree.rmin LMathVector;
+Body.subindex:179 ICONST_1
+Body.subindex:179 INVOKEVIRTUAL MathVector.value(I)D
+Body.subindex:179 DSUB
+Body.subindex:179 ALOAD 1
+Body.subindex:179 GETFIELD Tree.rsize D
+Body.subindex:179 DDIV
+Body.subindex:179 DSTORE 4
+Body.subindex:180 ALOAD 3
+Body.subindex:180 ICONST_1
+Body.subindex:180 LDC 1.073741824E9
+Body.subindex:180 DLOAD 4
+Body.subindex:180 DMUL
+Body.subindex:180 INVOKESTATIC java/lang/Math.floor(D)D
+Body.subindex:180 INVOKEVIRTUAL MathVector.value(ID)V
+Body.subindex:182 ALOAD 0
+Body.subindex:182 GETFIELD Body.pos LMathVector;
+Body.subindex:182 ICONST_2
+Body.subindex:182 INVOKEVIRTUAL MathVector.value(I)D
+Body.subindex:182 ALOAD 1
+Body.subindex:182 GETFIELD Tree.rmin LMathVector;
+Body.subindex:182 ICONST_2
+Body.subindex:182 INVOKEVIRTUAL MathVector.value(I)D
+Body.subindex:182 DSUB
+Body.subindex:182 ALOAD 1
+Body.subindex:182 GETFIELD Tree.rsize D
+Body.subindex:182 DDIV
+Body.subindex:182 DSTORE 4
+Body.subindex:183 ALOAD 3
+Body.subindex:183 ICONST_2
+Body.subindex:183 LDC 1.073741824E9
+Body.subindex:183 DLOAD 4
+Body.subindex:183 DMUL
+Body.subindex:183 INVOKESTATIC java/lang/Math.floor(D)D
+Body.subindex:183 INVOKEVIRTUAL MathVector.value(ID)V
+Body.subindex:185 ICONST_0
+Body.subindex:185 ISTORE 6
+Body.subindex:186 ICONST_0
+Body.subindex:186 ISTORE 7
+Body.subindex:186 ILOAD 7
+Body.subindex:186 ICONST_3
+Body.subindex:186 IF_ICMPGE L2
+Body.subindex:186 IINC 7 1
+Body.subindex:188 ALOAD 3
+Body.subindex:188 ILOAD 7
+Body.subindex:188 INVOKEVIRTUAL MathVector.value(I)D
+Body.subindex:188 D2I
+Body.subindex:188 ILOAD 2
+Body.subindex:188 IAND
+Body.subindex:188 IFEQ L1
+Body.subindex:189 ILOAD 6
+Body.subindex:189 BIPUSH 8
+Body.subindex:189 ILOAD 7
+Body.subindex:189 ICONST_1
+Body.subindex:189 IADD
+Body.subindex:189 ISHR
+Body.subindex:189 IADD
+Body.subindex:189 ISTORE 6
+Body.subindex:191 ILOAD 6
+Body.subindex:191 IRETURN
+Body.hackGravity:203 NEW HG
+Body.hackGravity:203 DUP
+Body.hackGravity:203 ALOAD 0
+Body.hackGravity:203 ALOAD 0
+Body.hackGravity:203 GETFIELD Body.pos LMathVector;
+Body.hackGravity:203 INVOKESPECIAL HG.<init>(LBody;LMathVector;)V
+Body.hackGravity:203 ASTORE 5
+Body.hackGravity:204 ALOAD 3
+Body.hackGravity:204 DLOAD 1
+Body.hackGravity:204 DLOAD 1
+Body.hackGravity:204 DMUL
+Body.hackGravity:204 ALOAD 5
+Body.hackGravity:204 INVOKEVIRTUAL Node.walkSubTree(DLHG;)LHG;
+Body.hackGravity:204 ASTORE 5
+Body.hackGravity:206 ALOAD 0
+Body.hackGravity:206 ALOAD 5
+Body.hackGravity:206 GETFIELD HG.acc0 LMathVector;
+Body.hackGravity:206 PUTFIELD Body.newAcc LMathVector;
+Body.walkSubTree:214 ALOAD 0
+Body.walkSubTree:214 ALOAD 3
+Body.walkSubTree:214 GETFIELD HG.pskip LBody;
+Body.walkSubTree:214 IF_ACMPEQ L0
+Body.walkSubTree:215 ALOAD 0
+Body.walkSubTree:215 ALOAD 3
+Body.walkSubTree:215 INVOKEVIRTUAL Body.gravSub(LHG;)LHG;
+Cell.<init>:20 ALOAD 0
+Cell.<init>:20 BIPUSH 8
+Cell.<init>:20 ANEWARRAY Node
+Cell.<init>:20 PUTFIELD Cell.subp [LNode;
+Cell.hackcofm:51 DCONST_0
+Cell.hackcofm:51 DSTORE 1
+Cell.hackcofm:52 NEW MathVector
+Cell.hackcofm:52 DUP
+Cell.hackcofm:52 INVOKESPECIAL MathVector.<init>()V
+Cell.hackcofm:52 ASTORE 3
+Cell.hackcofm:53 NEW MathVector
+Cell.hackcofm:53 DUP
+Cell.hackcofm:53 INVOKESPECIAL MathVector.<init>()V
+Cell.hackcofm:53 ASTORE 4
+Cell.hackcofm:54 ICONST_0
+Cell.hackcofm:54 ISTORE 5
+Cell.hackcofm:54 ILOAD 5
+Cell.hackcofm:54 BIPUSH 8
+Cell.hackcofm:54 IF_ICMPGE L2
+Cell.hackcofm:54 IINC 5 1
+Cell.hackcofm:56 ALOAD 0
+Cell.hackcofm:56 GETFIELD Cell.subp [LNode;
+Cell.hackcofm:56 ILOAD 5
+Cell.hackcofm:56 AALOAD
+Cell.hackcofm:56 ASTORE 6
+Cell.hackcofm:57 ALOAD 6
+Cell.hackcofm:57 IFNULL L1
+Cell.hackcofm:59 ALOAD 6
+Cell.hackcofm:59 DSTORE 7
+Cell.hackcofm:60 DLOAD 7
+Cell.hackcofm:60 DLOAD 1
+Cell.hackcofm:60 DADD
+Cell.hackcofm:60 DSTORE 1
+Cell.hackcofm:61 ALOAD 4
+Cell.hackcofm:61 ALOAD 6
+Cell.hackcofm:61 GETFIELD Node.pos LMathVector;
+Cell.hackcofm:61 DLOAD 7
+Cell.hackcofm:61 INVOKEVIRTUAL MathVector.multScalar(LMathVector;D)V
+Cell.hackcofm:62 ALOAD 3
+Cell.hackcofm:62 ALOAD 4
+Cell.hackcofm:62 INVOKEVIRTUAL MathVector.addition(LMathVector;)V
+Cell.hackcofm:65 ALOAD 0
+Cell.hackcofm:65 DLOAD 1
+Cell.hackcofm:65 PUTFIELD Cell.mass D
+Cell.hackcofm:66 ALOAD 0
+Cell.hackcofm:66 ALOAD 3
+Cell.hackcofm:66 PUTFIELD Cell.pos LMathVector;
+Cell.hackcofm:67 ALOAD 0
+Cell.hackcofm:67 GETFIELD Cell.pos LMathVector;
+Cell.hackcofm:67 ALOAD 0
+Cell.hackcofm:67 GETFIELD Cell.mass D
+Cell.hackcofm:67 INVOKEVIRTUAL MathVector.divScalar(D)V
+Cell.walkSubTree:77 ALOAD 0
+Cell.walkSubTree:77 DLOAD 1
+Cell.walkSubTree:77 ALOAD 3
+Cell.walkSubTree:77 INVOKEVIRTUAL Cell.subdivp(DLHG;)Z
+Cell.walkSubTree:77 IFEQ L3
+Cell.walkSubTree:79 ICONST_0
+Cell.walkSubTree:79 ISTORE 4
+Cell.walkSubTree:79 ILOAD 4
+Cell.walkSubTree:79 BIPUSH 8
+Cell.walkSubTree:79 IF_ICMPGE L2
+Cell.walkSubTree:79 IINC 4 1
+Cell.walkSubTree:81 ALOAD 0
+Cell.walkSubTree:81 GETFIELD Cell.subp [LNode;
+Cell.walkSubTree:81 ILOAD 4
+Cell.walkSubTree:81 AALOAD
+Cell.walkSubTree:81 ASTORE 5
+Cell.walkSubTree:82 ALOAD 5
+Cell.walkSubTree:82 IFNULL L1
+Cell.walkSubTree:83 ALOAD 5
+Cell.walkSubTree:83 ALOAD 3
+Cell.walkSubTree:83 INVOKEVIRTUAL Node.walkSubTree(DLHG;)LHG;
+Cell.walkSubTree:83 ASTORE 3
+Cell.walkSubTree:88 ALOAD 3
+Cell.walkSubTree:88 ARETURN
+Cell.subdivp:97 NEW MathVector
+Cell.subdivp:97 DUP
+Cell.subdivp:97 INVOKESPECIAL MathVector.<init>()V
+Cell.subdivp:97 ASTORE 4
+Cell.subdivp:98 ALOAD 4
+Cell.subdivp:98 ALOAD 0
+Cell.subdivp:98 GETFIELD Cell.pos LMathVector;
+Cell.subdivp:98 ALOAD 3
+Cell.subdivp:98 GETFIELD HG.pos0 LMathVector;
+Cell.subdivp:98 INVOKEVIRTUAL MathVector.subtraction(LMathVector;LMathVector;)V
+Cell.subdivp:99 ALOAD 4
+Cell.subdivp:99 INVOKEVIRTUAL MathVector.dotProduct()D
+Cell.subdivp:99 DSTORE 5
+Cell.subdivp:102 DLOAD 5
+Cell.subdivp:102 DLOAD 1
+Cell.subdivp:102 DCMPG
+Cell.subdivp:102 IFGE L0
+Cell.subdivp:102 ICONST_1
+Cell.subdivp:102 IRETURN
+HG.<init>:31 ALOAD 0
+HG.<init>:31 ALOAD 1
+HG.<init>:31 PUTFIELD HG.pskip LBody;
+HG.<init>:32 ALOAD 0
+HG.<init>:32 ALOAD 2
+HG.<init>:32 INVOKEVIRTUAL MathVector.clone()Ljava/lang/Object;
+HG.<init>:32 PUTFIELD HG.pos0 LMathVector;
+HG.<init>:34 ALOAD 0
+HG.<init>:34 NEW MathVector
+HG.<init>:34 DUP
+HG.<init>:34 INVOKESPECIAL MathVector.<init>()V
+HG.<init>:34 PUTFIELD HG.acc0 LMathVector;
+MathVector.<init>:24 ALOAD 0
+MathVector.<init>:24 ICONST_3
+MathVector.<init>:24 NEWARRAY T_DOUBLE
+MathVector.<init>:24 PUTFIELD MathVector.data [D
+MathVector.<init>:25 ICONST_0
+MathVector.<init>:25 ISTORE 1
+MathVector.<init>:25 ILOAD 1
+MathVector.<init>:25 ICONST_3
+MathVector.<init>:25 IF_ICMPGE L1
+MathVector.<init>:25 IINC 1 1
+MathVector.<init>:26 ALOAD 0
+MathVector.<init>:26 GETFIELD MathVector.data [D
+MathVector.<init>:26 ILOAD 1
+MathVector.<init>:26 DCONST_0
+MathVector.<init>:26 DASTORE
+MathVector.clone:37 NEW MathVector
+MathVector.clone:37 ASTORE 1
+MathVector.clone:38 ALOAD 1
+MathVector.clone:38 ICONST_3
+MathVector.clone:38 NEWARRAY T_DOUBLE
+MathVector.clone:38 PUTFIELD MathVector.data [D
+MathVector.clone:39 ICONST_0
+MathVector.clone:39 ISTORE 2
+MathVector.clone:39 ILOAD 2
+MathVector.clone:39 ICONST_3
+MathVector.clone:39 IF_ICMPGE L2
+MathVector.clone:39 IINC 2 1
+MathVector.clone:40 ALOAD 1
+MathVector.clone:40 GETFIELD MathVector.data [D
+MathVector.clone:40 ILOAD 2
+MathVector.clone:40 ALOAD 0
+MathVector.clone:40 GETFIELD MathVector.data [D
+MathVector.clone:40 ILOAD 2
+MathVector.clone:40 DALOAD
+MathVector.clone:40 DASTORE
+MathVector.clone:41 ALOAD 1
+MathVector.clone:41 ARETURN
+MathVector.value:56 ALOAD 0
+MathVector.value:56 GETFIELD MathVector.data [D
+MathVector.value:56 ILOAD 1
+MathVector.value:56 DALOAD
+MathVector.value:56 DRETURN
+MathVector.value:66 ALOAD 0
+MathVector.value:66 GETFIELD MathVector.data [D
+MathVector.value:66 ILOAD 1
+MathVector.value:66 DLOAD 2
+MathVector.value:66 DASTORE
+MathVector.addition:88 ICONST_0
+MathVector.addition:88 ISTORE 2
+MathVector.addition:88 ILOAD 2
+MathVector.addition:88 ICONST_3
+MathVector.addition:88 IF_ICMPGE L1
+MathVector.addition:88 IINC 2 1
+MathVector.addition:89 ALOAD 0
+MathVector.addition:89 GETFIELD MathVector.data [D
+MathVector.addition:89 ILOAD 2
+MathVector.addition:89 DUP2
+MathVector.addition:89 DALOAD
+MathVector.addition:89 ALOAD 1
+MathVector.addition:89 GETFIELD MathVector.data [D
+MathVector.addition:89 ILOAD 2
+MathVector.addition:89 DALOAD
+MathVector.addition:89 DADD
+MathVector.addition:89 DASTORE
+MathVector.subtraction:99 ICONST_0
+MathVector.subtraction:99 ISTORE 2
+MathVector.subtraction:99 ILOAD 2
+MathVector.subtraction:99 ICONST_3
+MathVector.subtraction:99 IF_ICMPGE L1
+MathVector.subtraction:99 IINC 2 1
+MathVector.subtraction:100 ALOAD 0
+MathVector.subtraction:100 GETFIELD MathVector.data [D
+MathVector.subtraction:100 ILOAD 2
+MathVector.subtraction:100 DUP2
+MathVector.subtraction:100 DALOAD
+MathVector.subtraction:100 ALOAD 1
+MathVector.subtraction:100 GETFIELD MathVector.data [D
+MathVector.subtraction:100 ILOAD 2
+MathVector.subtraction:100 DALOAD
+MathVector.subtraction:100 DSUB
+MathVector.subtraction:100 DASTORE
+MathVector.subtraction:110 ICONST_0
+MathVector.subtraction:110 ISTORE 3
+MathVector.subtraction:110 ILOAD 3
+MathVector.subtraction:110 ICONST_3
+MathVector.subtraction:110 IF_ICMPGE L1
+MathVector.subtraction:110 IINC 3 1
+MathVector.subtraction:111 ALOAD 0
+MathVector.subtraction:111 GETFIELD MathVector.data [D
+MathVector.subtraction:111 ILOAD 3
+MathVector.subtraction:111 ALOAD 1
+MathVector.subtraction:111 GETFIELD MathVector.data [D
+MathVector.subtraction:111 ILOAD 3
+MathVector.subtraction:111 DALOAD
+MathVector.subtraction:111 ALOAD 2
+MathVector.subtraction:111 GETFIELD MathVector.data [D
+MathVector.subtraction:111 ILOAD 3
+MathVector.subtraction:111 DALOAD
+MathVector.subtraction:111 DSUB
+MathVector.subtraction:111 DASTORE
+MathVector.multScalar:120 ICONST_0
+MathVector.multScalar:120 ISTORE 3
+MathVector.multScalar:120 ILOAD 3
+MathVector.multScalar:120 ICONST_3
+MathVector.multScalar:120 IF_ICMPGE L1
+MathVector.multScalar:120 IINC 3 1
+MathVector.multScalar:121 ALOAD 0
+MathVector.multScalar:121 GETFIELD MathVector.data [D
+MathVector.multScalar:121 ILOAD 3
+MathVector.multScalar:121 DUP2
+MathVector.multScalar:121 DALOAD
+MathVector.multScalar:121 DLOAD 1
+MathVector.multScalar:121 DMUL
+MathVector.multScalar:121 DASTORE
+MathVector.multScalar:131 ICONST_0
+MathVector.multScalar:131 ISTORE 4
+MathVector.multScalar:131 ILOAD 4
+MathVector.multScalar:131 ICONST_3
+MathVector.multScalar:131 IF_ICMPGE L1
+MathVector.multScalar:131 IINC 4 1
+MathVector.multScalar:132 ALOAD 0
+MathVector.multScalar:132 GETFIELD MathVector.data [D
+MathVector.multScalar:132 ILOAD 4
+MathVector.multScalar:132 ALOAD 1
+MathVector.multScalar:132 GETFIELD MathVector.data [D
+MathVector.multScalar:132 ILOAD 4
+MathVector.multScalar:132 DALOAD
+MathVector.multScalar:132 DLOAD 2
+MathVector.multScalar:132 DMUL
+MathVector.multScalar:132 DASTORE
+MathVector.divScalar:141 ICONST_0
+MathVector.divScalar:141 ISTORE 3
+MathVector.divScalar:141 ILOAD 3
+MathVector.divScalar:141 ICONST_3
+MathVector.divScalar:141 IF_ICMPGE L1
+MathVector.divScalar:141 IINC 3 1
+MathVector.divScalar:142 ALOAD 0
+MathVector.divScalar:142 GETFIELD MathVector.data [D
+MathVector.divScalar:142 ILOAD 3
+MathVector.divScalar:142 DUP2
+MathVector.divScalar:142 DALOAD
+MathVector.divScalar:142 DLOAD 1
+MathVector.divScalar:142 DDIV
+MathVector.divScalar:142 DASTORE
+MathVector.dotProduct:151 DCONST_0
+MathVector.dotProduct:151 DSTORE 1
+MathVector.dotProduct:152 ICONST_0
+MathVector.dotProduct:152 ISTORE 3
+MathVector.dotProduct:152 ILOAD 3
+MathVector.dotProduct:152 ICONST_3
+MathVector.dotProduct:152 IF_ICMPGE L1
+MathVector.dotProduct:152 IINC 3 1
+MathVector.dotProduct:153 DLOAD 1
+MathVector.dotProduct:153 ALOAD 0
+MathVector.dotProduct:153 GETFIELD MathVector.data [D
+MathVector.dotProduct:153 ILOAD 3
+MathVector.dotProduct:153 DALOAD
+MathVector.dotProduct:153 ALOAD 0
+MathVector.dotProduct:153 GETFIELD MathVector.data [D
+MathVector.dotProduct:153 ILOAD 3
+MathVector.dotProduct:153 DALOAD
+MathVector.dotProduct:153 DMUL
+MathVector.dotProduct:153 DADD
+MathVector.dotProduct:153 DSTORE 1
+MathVector.dotProduct:154 DLOAD 1
+MathVector.dotProduct:154 DRETURN
+Node.<init>:29 ALOAD 0
+Node.<init>:29 NEW MathVector
+Node.<init>:29 DUP
+Node.<init>:29 INVOKESPECIAL MathVector.<init>()V
+Node.<init>:29 PUTFIELD Node.pos LMathVector;
+Node.oldSubindex:38 ICONST_0
+Node.oldSubindex:38 ISTORE 2
+Node.oldSubindex:39 ICONST_0
+Node.oldSubindex:39 ISTORE 3
+Node.oldSubindex:39 ILOAD 3
+Node.oldSubindex:39 ICONST_3
+Node.oldSubindex:39 IF_ICMPGE L2
+Node.oldSubindex:39 IINC 3 1
+Node.oldSubindex:44 ILOAD 2
+Node.oldSubindex:44 IRETURN
+Node.gravSub:61 NEW MathVector
+Node.gravSub:61 DUP
+Node.gravSub:61 INVOKESPECIAL MathVector.<init>()V
+Node.gravSub:61 ASTORE 2
+Node.gravSub:62 ALOAD 2
+Node.gravSub:62 ALOAD 0
+Node.gravSub:62 GETFIELD Node.pos LMathVector;
+Node.gravSub:62 ALOAD 1
+Node.gravSub:62 GETFIELD HG.pos0 LMathVector;
+Node.gravSub:62 INVOKEVIRTUAL MathVector.subtraction(LMathVector;LMathVector;)V
+Node.gravSub:64 ALOAD 2
+Node.gravSub:64 INVOKEVIRTUAL MathVector.dotProduct()D
+Node.gravSub:64 LDC 0.0025000000000000005
+Node.gravSub:64 DADD
+Node.gravSub:64 DSTORE 3
+Node.gravSub:65 DLOAD 3
+Node.gravSub:65 INVOKESTATIC java/lang/Math.sqrt(D)D
+Node.gravSub:65 DSTORE 5
+Node.gravSub:67 ALOAD 0
+Node.gravSub:67 GETFIELD Node.mass D
+Node.gravSub:67 DLOAD 5
+Node.gravSub:67 DDIV
+Node.gravSub:67 DSTORE 7
+Node.gravSub:69 DLOAD 7
+Node.gravSub:69 DLOAD 3
+Node.gravSub:69 DDIV
+Node.gravSub:69 DSTORE 9
+Node.gravSub:70 ALOAD 2
+Node.gravSub:70 DLOAD 9
+Node.gravSub:70 INVOKEVIRTUAL MathVector.multScalar(D)V
+Node.gravSub:71 ALOAD 1
+Node.gravSub:71 GETFIELD HG.acc0 LMathVector;
+Node.gravSub:71 ALOAD 2
+Node.gravSub:71 INVOKEVIRTUAL MathVector.addition(LMathVector;)V
+Tree.<init>:30 ALOAD 0
+Tree.<init>:30 NEW MathVector
+Tree.<init>:30 DUP
+Tree.<init>:30 INVOKESPECIAL MathVector.<init>()V
+Tree.<init>:30 PUTFIELD Tree.rmin LMathVector;
+Tree.<init>:31 ALOAD 0
+Tree.<init>:31 LDC 4.0
+Tree.<init>:31 PUTFIELD Tree.rsize D
+Tree.<init>:36 ALOAD 0
+Tree.<init>:36 GETFIELD Tree.rmin LMathVector;
+Tree.<init>:36 ICONST_0
+Tree.<init>:36 LDC -2.0
+Tree.<init>:36 INVOKEVIRTUAL MathVector.value(ID)V
+Tree.<init>:37 ALOAD 0
+Tree.<init>:37 GETFIELD Tree.rmin LMathVector;
+Tree.<init>:37 ICONST_1
+Tree.<init>:37 LDC -2.0
+Tree.<init>:37 INVOKEVIRTUAL MathVector.value(ID)V
+Tree.<init>:38 ALOAD 0
+Tree.<init>:38 GETFIELD Tree.rmin LMathVector;
+Tree.<init>:38 ICONST_2
+Tree.<init>:38 LDC -2.0
+Tree.<init>:38 INVOKEVIRTUAL MathVector.value(ID)V
+Tree.createTestData:65 NEW MathVector
+Tree.createTestData:65 DUP
+Tree.createTestData:65 INVOKESPECIAL MathVector.<init>()V
+Tree.createTestData:65 ASTORE 2
+Tree.createTestData:66 NEW MathVector
+Tree.createTestData:66 DUP
+Tree.createTestData:66 INVOKESPECIAL MathVector.<init>()V
+Tree.createTestData:66 ASTORE 3
+Tree.createTestData:68 NEW Body
+Tree.createTestData:68 ASTORE 4
+Tree.createTestData:69 ALOAD 4
+Tree.createTestData:69 ASTORE 5
+Tree.createTestData:71 LDC 0.5890486225480862
+Tree.createTestData:71 DSTORE 6
+Tree.createTestData:72 DCONST_1
+Tree.createTestData:72 DLOAD 6
+Tree.createTestData:72 DDIV
+Tree.createTestData:72 INVOKESTATIC java/lang/Math.sqrt(D)D
+Tree.createTestData:72 DSTORE 8
+Tree.createTestData:73 LDC 123.0
+Tree.createTestData:73 DSTORE 10
+Tree.createTestData:75 ICONST_0
+Tree.createTestData:75 ISTORE 12
+Tree.createTestData:75 ILOAD 12
+Tree.createTestData:75 ILOAD 1
+Tree.createTestData:75 IF_ICMPGE L7
+Tree.createTestData:75 IINC 12 1
+Tree.createTestData:77 NEW Body
+Tree.createTestData:77 DUP
+Tree.createTestData:77 INVOKESPECIAL Body.<init>()V
+Tree.createTestData:77 ASTORE 13
+Tree.createTestData:78 ALOAD 5
+Tree.createTestData:78 ALOAD 13
+Tree.createTestData:78 INVOKEVIRTUAL Body.setNext(LBody;)V
+Tree.createTestData:79 ALOAD 13
+Tree.createTestData:79 ASTORE 5
+Tree.createTestData:80 ALOAD 13
+Tree.createTestData:80 DCONST_1
+Tree.createTestData:80 ILOAD 1
+Tree.createTestData:80 I2D
+Tree.createTestData:80 DDIV
+Tree.createTestData:80 PUTFIELD Body.mass D
+Tree.createTestData:82 DLOAD 10
+Tree.createTestData:82 INVOKESTATIC BH.myRand(D)D
+Tree.createTestData:82 DSTORE 10
+Tree.createTestData:87 LDC 4.0
+Tree.createTestData:87 DSTORE 18
+Tree.createTestData:88 ICONST_0
+Tree.createTestData:88 ISTORE 20
+Tree.createTestData:88 ILOAD 20
+Tree.createTestData:88 ICONST_3
+Tree.createTestData:88 IF_ICMPGE L2
+Tree.createTestData:88 IINC 20 1
+Tree.createTestData:90 DLOAD 10
+Tree.createTestData:90 INVOKESTATIC BH.myRand(D)D
+Tree.createTestData:90 DSTORE 10
+Tree.createTestData:91 DCONST_0
+Tree.createTestData:91 LDC 0.999
+Tree.createTestData:91 DLOAD 10
+Tree.createTestData:91 INVOKESTATIC BH.xRand(DDD)D
+Tree.createTestData:91 DSTORE 16
+Tree.createTestData:92 ALOAD 13
+Tree.createTestData:92 GETFIELD Body.pos LMathVector;
+Tree.createTestData:92 ILOAD 20
+Tree.createTestData:92 DLOAD 18
+Tree.createTestData:92 DLOAD 16
+Tree.createTestData:92 DMUL
+Tree.createTestData:92 INVOKEVIRTUAL MathVector.value(ID)V
+Tree.createTestData:95 ALOAD 2
+Tree.createTestData:95 ALOAD 13
+Tree.createTestData:95 GETFIELD Body.pos LMathVector;
+Tree.createTestData:95 INVOKEVIRTUAL MathVector.addition(LMathVector;)V
+Tree.createTestData:101 DLOAD 10
+Tree.createTestData:101 INVOKESTATIC BH.myRand(D)D
+Tree.createTestData:101 DSTORE 10
+Tree.createTestData:102 DCONST_0
+Tree.createTestData:102 DCONST_1
+Tree.createTestData:102 DLOAD 10
+Tree.createTestData:102 INVOKESTATIC BH.xRand(DDD)D
+Tree.createTestData:102 DSTORE 20
+Tree.createTestData:103 DLOAD 10
+Tree.createTestData:103 INVOKESTATIC BH.myRand(D)D
+Tree.createTestData:103 DSTORE 10
+Tree.createTestData:104 DCONST_0
+Tree.createTestData:104 LDC 0.1
+Tree.createTestData:104 DLOAD 10
+Tree.createTestData:104 INVOKESTATIC BH.xRand(DDD)D
+Tree.createTestData:104 DSTORE 22
+Tree.createTestData:105 DLOAD 22
+Tree.createTestData:105 DLOAD 20
+Tree.createTestData:105 DLOAD 20
+Tree.createTestData:105 DMUL
+Tree.createTestData:105 DCONST_1
+Tree.createTestData:105 DLOAD 20
+Tree.createTestData:105 DLOAD 20
+Tree.createTestData:105 DMUL
+Tree.createTestData:105 DSUB
+Tree.createTestData:105 LDC 3.5
+Tree.createTestData:105 INVOKESTATIC java/lang/Math.pow(DD)D
+Tree.createTestData:105 DMUL
+Tree.createTestData:105 DCMPL
+Tree.createTestData:105 IFGT L3
+Tree.createTestData:107 LDC 2.0
+Tree.createTestData:107 INVOKESTATIC java/lang/Math.sqrt(D)D
+Tree.createTestData:107 DLOAD 20
+Tree.createTestData:107 DMUL
+Tree.createTestData:107 DCONST_1
+Tree.createTestData:107 DLOAD 16
+Tree.createTestData:107 DLOAD 16
+Tree.createTestData:107 DMUL
+Tree.createTestData:107 DADD
+Tree.createTestData:107 LDC 0.25
+Tree.createTestData:107 INVOKESTATIC java/lang/Math.pow(DD)D
+Tree.createTestData:107 DDIV
+Tree.createTestData:107 DSTORE 24
+Tree.createTestData:109 DLOAD 8
+Tree.createTestData:109 DLOAD 24
+Tree.createTestData:109 DMUL
+Tree.createTestData:109 DSTORE 26
+Tree.createTestData:113 ICONST_0
+Tree.createTestData:113 ISTORE 30
+Tree.createTestData:113 ILOAD 30
+Tree.createTestData:113 ICONST_3
+Tree.createTestData:113 IF_ICMPGE L6
+Tree.createTestData:113 IINC 30 1
+Tree.createTestData:115 DLOAD 10
+Tree.createTestData:115 INVOKESTATIC BH.myRand(D)D
+Tree.createTestData:115 DSTORE 10
+Tree.createTestData:116 ALOAD 13
+Tree.createTestData:116 GETFIELD Body.vel LMathVector;
+Tree.createTestData:116 ILOAD 30
+Tree.createTestData:116 LDC -1.0
+Tree.createTestData:116 DCONST_1
+Tree.createTestData:116 DLOAD 10
+Tree.createTestData:116 INVOKESTATIC BH.xRand(DDD)D
+Tree.createTestData:116 INVOKEVIRTUAL MathVector.value(ID)V
+Tree.createTestData:118 ALOAD 13
+Tree.createTestData:118 GETFIELD Body.vel LMathVector;
+Tree.createTestData:118 INVOKEVIRTUAL MathVector.dotProduct()D
+Tree.createTestData:118 DSTORE 28
+Tree.createTestData:119 DLOAD 28
+Tree.createTestData:119 DCONST_1
+Tree.createTestData:119 DCMPL
+Tree.createTestData:119 IFGT L4
+Tree.createTestData:120 DLOAD 26
+Tree.createTestData:120 DLOAD 28
+Tree.createTestData:120 INVOKESTATIC java/lang/Math.sqrt(D)D
+Tree.createTestData:120 DDIV
+Tree.createTestData:120 DSTORE 30
+Tree.createTestData:121 ALOAD 13
+Tree.createTestData:121 GETFIELD Body.vel LMathVector;
+Tree.createTestData:121 DLOAD 30
+Tree.createTestData:121 INVOKEVIRTUAL MathVector.multScalar(D)V
+Tree.createTestData:122 ALOAD 3
+Tree.createTestData:122 ALOAD 13
+Tree.createTestData:122 GETFIELD Body.vel LMathVector;
+Tree.createTestData:122 INVOKEVIRTUAL MathVector.addition(LMathVector;)V
+Tree.createTestData:126 ALOAD 5
+Tree.createTestData:126 ACONST_NULL
+Tree.createTestData:126 INVOKEVIRTUAL Body.setNext(LBody;)V
+Tree.createTestData:128 ALOAD 0
+Tree.createTestData:128 ALOAD 4
+Tree.createTestData:128 INVOKEVIRTUAL Body.getNext()LBody;
+Tree.createTestData:128 PUTFIELD Tree.bodyTab LBody;
+Tree.createTestData:130 ALOAD 2
+Tree.createTestData:130 ILOAD 1
+Tree.createTestData:130 I2D
+Tree.createTestData:130 INVOKEVIRTUAL MathVector.divScalar(D)V
+Tree.createTestData:131 ALOAD 3
+Tree.createTestData:131 ILOAD 1
+Tree.createTestData:131 I2D
+Tree.createTestData:131 INVOKEVIRTUAL MathVector.divScalar(D)V
+Tree.createTestData:133 ACONST_NULL
+Tree.createTestData:133 ASTORE 5
+Tree.createTestData:135 ALOAD 0
+Tree.createTestData:135 GETFIELD Tree.bodyTab LBody;
+Tree.createTestData:135 ASTORE 12
+Tree.createTestData:136 ALOAD 12
+Tree.createTestData:136 IFNULL L9
+Tree.createTestData:138 ALOAD 12
+Tree.createTestData:138 GETFIELD Body.pos LMathVector;
+Tree.createTestData:138 ALOAD 2
+Tree.createTestData:138 INVOKEVIRTUAL MathVector.subtraction(LMathVector;)V
+Tree.createTestData:139 ALOAD 12
+Tree.createTestData:139 GETFIELD Body.vel LMathVector;
+Tree.createTestData:139 ALOAD 3
+Tree.createTestData:139 INVOKEVIRTUAL MathVector.subtraction(LMathVector;)V
+Tree.createTestData:140 ALOAD 12
+Tree.createTestData:140 ALOAD 5
+Tree.createTestData:140 INVOKEVIRTUAL Body.setProcNext(LBody;)V
+Tree.createTestData:141 ALOAD 12
+Tree.createTestData:141 ASTORE 5
+Tree.createTestData:142 ALOAD 12
+Tree.createTestData:142 INVOKEVIRTUAL Body.getNext()LBody;
+Tree.createTestData:142 ASTORE 12
+Tree.createTestData:146 ALOAD 0
+Tree.createTestData:146 ALOAD 5
+Tree.createTestData:146 PUTFIELD Tree.bodyTabRev LBody;
+Tree.stepSystem:156 ALOAD 0
+Tree.stepSystem:156 ACONST_NULL
+Tree.stepSystem:156 PUTFIELD Tree.root LNode;
+Tree.stepSystem:158 ALOAD 0
+Tree.stepSystem:158 INVOKESPECIAL Tree.makeTree(I)V
+Tree.stepSystem:161 ALOAD 0
+Tree.stepSystem:161 GETFIELD Tree.bodyTabRev LBody;
+Tree.stepSystem:161 ASTORE 2
+Tree.stepSystem:162 ALOAD 2
+Tree.stepSystem:162 IFNULL L1
+Tree.stepSystem:164 ALOAD 2
+Tree.stepSystem:164 ALOAD 0
+Tree.stepSystem:164 GETFIELD Tree.rsize D
+Tree.stepSystem:164 ALOAD 0
+Tree.stepSystem:164 GETFIELD Tree.root LNode;
+Tree.stepSystem:164 INVOKEVIRTUAL Body.hackGravity(DLNode;)V
+Tree.stepSystem:165 ALOAD 2
+Tree.stepSystem:165 INVOKEVIRTUAL Body.getProcNext()LBody;
+Tree.stepSystem:165 ASTORE 2
+Tree.stepSystem:168 ALOAD 0
+Tree.stepSystem:168 GETFIELD Tree.bodyTabRev LBody;
+Tree.stepSystem:168 ILOAD 1
+Tree.stepSystem:168 INVOKESTATIC Tree.vp(LBody;I)V
+Tree.makeTree:177 ALOAD 0
+Tree.makeTree:177 GETFIELD Tree.bodyTabRev LBody;
+Tree.makeTree:177 ASTORE 2
+Tree.makeTree:178 ALOAD 2
+Tree.makeTree:178 IFNULL L3
+Tree.makeTree:180 ALOAD 2
+Tree.makeTree:180 GETFIELD Body.mass D
+Tree.makeTree:180 DCONST_0
+Tree.makeTree:180 DCMPL
+Tree.makeTree:180 IFEQ L2
+Tree.makeTree:184 ALOAD 0
+Tree.makeTree:184 GETFIELD Tree.root LNode;
+Tree.makeTree:184 IFNONNULL L1
+Tree.makeTree:185 ALOAD 0
+Tree.makeTree:185 ALOAD 2
+Tree.makeTree:185 PUTFIELD Tree.root LNode;
+Tree.makeTree:187 ALOAD 0
+Tree.makeTree:187 ALOAD 0
+Tree.makeTree:187 GETFIELD Tree.root LNode;
+Tree.makeTree:187 ALOAD 2
+Tree.makeTree:187 LDC 536870912
+Tree.makeTree:187 ALOAD 0
+Tree.makeTree:187 INVOKEVIRTUAL Node.loadTree(LBody;LMathVector;ILTree;)LNode;
+Tree.makeTree:187 PUTFIELD Tree.root LNode;
+Tree.makeTree:189 ALOAD 2
+Tree.makeTree:189 INVOKEVIRTUAL Body.getProcNext()LBody;
+Tree.makeTree:189 ASTORE 2
+Tree.makeTree:191 ALOAD 0
+Tree.makeTree:191 GETFIELD Tree.root LNode;
+Tree.makeTree:191 INVOKEVIRTUAL Node.hackcofm()D
+Tree.vp:224 NEW MathVector
+Tree.vp:224 DUP
+Tree.vp:224 INVOKESPECIAL MathVector.<init>()V
+Tree.vp:224 ASTORE 2
+Tree.vp:225 NEW MathVector
+Tree.vp:225 DUP
+Tree.vp:225 INVOKESPECIAL MathVector.<init>()V
+Tree.vp:225 ASTORE 3
+Tree.vp:226 LDC 0.5
+Tree.vp:226 GETSTATIC BH.DTIME D
+Tree.vp:226 DMUL
+Tree.vp:226 DSTORE 4
+Tree.vp:228 ALOAD 0
+Tree.vp:228 ASTORE 6
+Tree.vp:229 ALOAD 6
+Tree.vp:229 IFNULL L2
+Tree.vp:231 ALOAD 6
+Tree.vp:231 GETFIELD Body.newAcc LMathVector;
+Tree.vp:231 INVOKEVIRTUAL MathVector.clone()Ljava/lang/Object;
+Tree.vp:231 ASTORE 7
+Tree.vp:232 ILOAD 1
+Tree.vp:232 IFLE L1
+Tree.vp:234 ALOAD 2
+Tree.vp:234 ALOAD 7
+Tree.vp:234 ALOAD 6
+Tree.vp:234 GETFIELD Body.acc LMathVector;
+Tree.vp:234 INVOKEVIRTUAL MathVector.subtraction(LMathVector;LMathVector;)V
+Tree.vp:235 ALOAD 3
+Tree.vp:235 ALOAD 2
+Tree.vp:235 DLOAD 4
+Tree.vp:235 INVOKEVIRTUAL MathVector.multScalar(LMathVector;D)V
+Tree.vp:236 ALOAD 3
+Tree.vp:236 ALOAD 6
+Tree.vp:236 GETFIELD Body.vel LMathVector;
+Tree.vp:236 INVOKEVIRTUAL MathVector.addition(LMathVector;)V
+Tree.vp:237 ALOAD 6
+Tree.vp:237 ALOAD 3
+Tree.vp:237 INVOKEVIRTUAL MathVector.clone()Ljava/lang/Object;
+Tree.vp:237 PUTFIELD Body.vel LMathVector;
+Tree.vp:239 ALOAD 6
+Tree.vp:239 ALOAD 7
+Tree.vp:239 INVOKEVIRTUAL MathVector.clone()Ljava/lang/Object;
+Tree.vp:239 PUTFIELD Body.acc LMathVector;
+Tree.vp:240 ALOAD 3
+Tree.vp:240 ALOAD 6
+Tree.vp:240 GETFIELD Body.acc LMathVector;
+Tree.vp:240 DLOAD 4
+Tree.vp:240 INVOKEVIRTUAL MathVector.multScalar(LMathVector;D)V
+Tree.vp:242 ALOAD 6
+Tree.vp:242 GETFIELD Body.vel LMathVector;
+Tree.vp:242 INVOKEVIRTUAL MathVector.clone()Ljava/lang/Object;
+Tree.vp:242 ASTORE 8
+Tree.vp:243 ALOAD 8
+Tree.vp:243 ALOAD 3
+Tree.vp:243 INVOKEVIRTUAL MathVector.addition(LMathVector;)V
+Tree.vp:244 ALOAD 8
+Tree.vp:244 INVOKEVIRTUAL MathVector.clone()Ljava/lang/Object;
+Tree.vp:244 ASTORE 9
+Tree.vp:245 ALOAD 9
+Tree.vp:245 GETSTATIC BH.DTIME D
+Tree.vp:245 INVOKEVIRTUAL MathVector.multScalar(D)V
+Tree.vp:246 ALOAD 9
+Tree.vp:246 ALOAD 6
+Tree.vp:246 GETFIELD Body.pos LMathVector;
+Tree.vp:246 INVOKEVIRTUAL MathVector.addition(LMathVector;)V
+Tree.vp:247 ALOAD 6
+Tree.vp:247 ALOAD 9
+Tree.vp:247 INVOKEVIRTUAL MathVector.clone()Ljava/lang/Object;
+Tree.vp:247 PUTFIELD Body.pos LMathVector;
+Tree.vp:248 ALOAD 8
+Tree.vp:248 ALOAD 3
+Tree.vp:248 INVOKEVIRTUAL MathVector.addition(LMathVector;)V
+Tree.vp:249 ALOAD 6
+Tree.vp:249 ALOAD 8
+Tree.vp:249 INVOKEVIRTUAL MathVector.clone()Ljava/lang/Object;
+Tree.vp:249 PUTFIELD Body.vel LMathVector;
+Tree.vp:250 ALOAD 6
+Tree.vp:250 INVOKEVIRTUAL Body.getProcNext()LBody;
+Tree.vp:250 ASTORE 6
+java.lang.Character.digit:-1 ILOAD 0
+java.lang.Character.digit:-1 INVOKESTATIC java/lang/CharacterData.of(I)Ljava/lang/CharacterData;
+java.lang.Character.digit:-1 IRETURN
+java.lang.Character.digit:-1 ILOAD 0
+java.lang.Character.digit:-1 INVOKESTATIC java/lang/Character.digit(II)I
+java.lang.Character.digit:-1 IRETURN
+java.lang.CharacterData.of:-1 ILOAD 0
+java.lang.CharacterData.of:-1 BIPUSH 8
+java.lang.CharacterData.of:-1 IUSHR
+java.lang.CharacterData.of:-1 IFNE L0
+java.lang.CharacterData.of:-1 GETSTATIC java/lang/CharacterDataLatin1.instance Ljava/lang/CharacterDataLatin1;
+java.lang.CharacterData.of:-1 ARETURN
+java.lang.Integer.<init>:-1 ALOAD 0
+java.lang.Integer.<init>:-1 ALOAD 1
+java.lang.Integer.<init>:-1 BIPUSH 10
+java.lang.Integer.<init>:-1 INVOKESTATIC java/lang/Integer.parseInt(Ljava/lang/String;I)I
+java.lang.Integer.<init>:-1 PUTFIELD java/lang/Integer.value I
+java.lang.Integer.intValue:-1 ALOAD 0
+java.lang.Integer.intValue:-1 GETFIELD java/lang/Integer.value I
+java.lang.Integer.intValue:-1 IRETURN
+java.lang.Integer.parseInt:-1 ICONST_0
+java.lang.Integer.parseInt:-1 ISTORE 2
+java.lang.Integer.parseInt:-1 ICONST_0
+java.lang.Integer.parseInt:-1 ISTORE 3
+java.lang.Integer.parseInt:-1 ICONST_0
+java.lang.Integer.parseInt:-1 ISTORE 4
+java.lang.Integer.parseInt:-1 ALOAD 0
+java.lang.Integer.parseInt:-1 INVOKEVIRTUAL java/lang/String.length()I
+java.lang.Integer.parseInt:-1 ISTORE 5
+java.lang.Integer.parseInt:-1 ILOAD 5
+java.lang.Integer.parseInt:-1 IFLE L12
+java.lang.Integer.parseInt:-1 ILOAD 4
+java.lang.Integer.parseInt:-1 ILOAD 5
+java.lang.Integer.parseInt:-1 IF_ICMPGE L11
+java.lang.Integer.parseInt:-1 ALOAD 0
+java.lang.Integer.parseInt:-1 ILOAD 4
+java.lang.Integer.parseInt:-1 IINC 4 1
+java.lang.Integer.parseInt:-1 INVOKEVIRTUAL java/lang/String.charAt(I)C
+java.lang.Integer.parseInt:-1 INVOKESTATIC java/lang/Character.digit(CI)I
+java.lang.Integer.parseInt:-1 ISTORE 8
+java.lang.Integer.parseInt:-1 ILOAD 2
+java.lang.Integer.parseInt:-1 ILOAD 1
+java.lang.Integer.parseInt:-1 IMUL
+java.lang.Integer.parseInt:-1 ISTORE 2
+java.lang.Integer.parseInt:-1 ILOAD 2
+java.lang.Integer.parseInt:-1 ILOAD 8
+java.lang.Integer.parseInt:-1 ISUB
+java.lang.Integer.parseInt:-1 ISTORE 2
+java.lang.Integer.parseInt:-1 ILOAD 3
+java.lang.Integer.parseInt:-1 IFEQ L14
+java.lang.Integer.parseInt:-1 ILOAD 2
+java.lang.Integer.parseInt:-1 INEG
+java.lang.Integer.parseInt:-1 IRETURN
+java.lang.StrictMath.floor:-1 DLOAD 0
+java.lang.StrictMath.floor:-1 DCONST_0
+java.lang.StrictMath.floor:-1 INVOKESTATIC java/lang/StrictMath.floorOrCeil(DDDD)D
+java.lang.StrictMath.floor:-1 DRETURN
+java.lang.StrictMath.floorOrCeil:-1 DLOAD 0
+java.lang.StrictMath.floorOrCeil:-1 INVOKESTATIC java/lang/Math.getExponent(D)I
+java.lang.StrictMath.floorOrCeil:-1 ISTORE 8
+java.lang.StrictMath.floorOrCeil:-1 ILOAD 8
+java.lang.StrictMath.floorOrCeil:-1 IFGE L3
+java.lang.StrictMath.floorOrCeil:-1 DLOAD 0
+java.lang.StrictMath.floorOrCeil:-1 DCONST_0
+java.lang.StrictMath.floorOrCeil:-1 DCMPL
+java.lang.StrictMath.floorOrCeil:-1 IFNE L0
+java.lang.StrictMath.floorOrCeil:-1 DLOAD 0
+java.lang.StrictMath.floorOrCeil:-1 DCONST_0
+java.lang.StrictMath.floorOrCeil:-1 DCMPG
+java.lang.StrictMath.floorOrCeil:-1 IFGE L1
+java.lang.StrictMath.floorOrCeil:-1 DLOAD 4
+java.lang.StrictMath.floorOrCeil:-1 DRETURN
+java.lang.StrictMath.floorOrCeil:-1 ILOAD 8
+java.lang.StrictMath.floorOrCeil:-1 BIPUSH 52
+java.lang.StrictMath.floorOrCeil:-1 IF_ICMPLT L4
+java.lang.StrictMath.floorOrCeil:-1 DLOAD 0
+java.lang.StrictMath.floorOrCeil:-1 INVOKESTATIC java/lang/Double.doubleToRawLongBits(D)J
+java.lang.StrictMath.floorOrCeil:-1 LSTORE 9
+java.lang.StrictMath.floorOrCeil:-1 LDC 4503599627370495
+java.lang.StrictMath.floorOrCeil:-1 ILOAD 8
+java.lang.StrictMath.floorOrCeil:-1 LSHR
+java.lang.StrictMath.floorOrCeil:-1 LSTORE 11
+java.lang.StrictMath.floorOrCeil:-1 LLOAD 11
+java.lang.StrictMath.floorOrCeil:-1 LLOAD 9
+java.lang.StrictMath.floorOrCeil:-1 LAND
+java.lang.StrictMath.floorOrCeil:-1 LCONST_0
+java.lang.StrictMath.floorOrCeil:-1 LCMP
+java.lang.StrictMath.floorOrCeil:-1 IFNE L7
+java.lang.StrictMath.floorOrCeil:-1 LLOAD 9
+java.lang.StrictMath.floorOrCeil:-1 LLOAD 11
+java.lang.StrictMath.floorOrCeil:-1 LDC -1
+java.lang.StrictMath.floorOrCeil:-1 LXOR
+java.lang.StrictMath.floorOrCeil:-1 LAND
+java.lang.StrictMath.floorOrCeil:-1 INVOKESTATIC java/lang/Double.longBitsToDouble(J)D
+java.lang.StrictMath.floorOrCeil:-1 DSTORE 13
+java.lang.StrictMath.floorOrCeil:-1 DLOAD 13
+java.lang.StrictMath.floorOrCeil:-1 DRETURN
+
+Slice consists of 1055 bytecode instructions.
+Computation took 0.44 seconds.

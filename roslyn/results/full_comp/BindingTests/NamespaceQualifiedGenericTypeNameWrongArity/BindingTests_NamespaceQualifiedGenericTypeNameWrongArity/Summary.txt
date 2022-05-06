@@ -1,0 +1,8 @@
+BindingTests_NamespaceQualifiedGenericTypeNameWrongArity||104295|8931|6516|235.1182994||210.7485108|7422|272650||
+BindingTests_NamespaceQualifiedGenericTypeNameWrongArity||104302|8939|6429|235.1182994||210.9454316|7422|272677||
+BindingTests_NamespaceQualifiedGenericTypeNameWrongArity||104307|8939|6429|235.1182994||211.0295742|7422|272694||
+BindingTests_NamespaceQualifiedGenericTypeNameWrongArity||104312|8939|6429|235.1182994||211.0995735|7422|272711||
+BindingTests_NamespaceQualifiedGenericTypeNameWrongArity||104295|8931|6516|163.4935965||93.1597377|7422|272650||
+BindingTests_NamespaceQualifiedGenericTypeNameWrongArity||104302|8939|6429|163.4935965||93.2508085|7422|272677||
+BindingTests_NamespaceQualifiedGenericTypeNameWrongArity||104307|8939|6429|163.4935965||93.3163698|7422|272694||
+BindingTests_NamespaceQualifiedGenericTypeNameWrongArity||104312|8939|6429|163.4935965||93.3755713|7422|272711||

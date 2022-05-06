@@ -1,0 +1,12 @@
+BindingTests_InterfaceWithPartialMethodExplicitImplementation||66338|6432|4876|235.1182994||117.3210615|7101|170459||
+BindingTests_InterfaceWithPartialMethodExplicitImplementation||99095|9042|6533|235.1182994||227.0771901|7101|260536||
+BindingTests_InterfaceWithPartialMethodExplicitImplementation||99102|9050|6441|235.1182994||227.256856|7101|260563||
+BindingTests_InterfaceWithPartialMethodExplicitImplementation||99107|9050|6441|235.1182994||227.3495747|7101|260580||
+BindingTests_InterfaceWithPartialMethodExplicitImplementation||99112|9050|6441|235.1182994||227.4049792|7101|260597||
+BindingTests_InterfaceWithPartialMethodExplicitImplementation||99117|9050|6441|235.1182994||227.4811426|7101|260614||
+BindingTests_InterfaceWithPartialMethodExplicitImplementation||66338|6432|4876|163.4935965||41.8367873|7101|170459||
+BindingTests_InterfaceWithPartialMethodExplicitImplementation||99095|9042|6533|163.4935965||105.2693248|7101|260536||
+BindingTests_InterfaceWithPartialMethodExplicitImplementation||99102|9050|6441|163.4935965||105.3646209|7101|260563||
+BindingTests_InterfaceWithPartialMethodExplicitImplementation||99107|9050|6441|163.4935965||105.4317476|7101|260580||
+BindingTests_InterfaceWithPartialMethodExplicitImplementation||99112|9050|6441|163.4935965||105.4901897|7101|260597||
+BindingTests_InterfaceWithPartialMethodExplicitImplementation||99117|9050|6441|163.4935965||105.5555392|7101|260614||

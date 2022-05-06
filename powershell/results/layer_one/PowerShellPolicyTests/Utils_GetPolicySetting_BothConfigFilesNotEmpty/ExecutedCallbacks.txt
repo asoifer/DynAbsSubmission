@@ -1,0 +1,12 @@
+|||FirstProcess||OTHER|0|||PSTests.Sequential|PowerShellPolicyFixture|ctor||METHOD|1|
+|||FirstProcess||OTHER|0|||PSTests.Sequential|PowerShellPolicyTests|ctor|PSTests.Sequential.PowerShellPolicyFixture fixture|METHOD|1|
+|||FirstProcess||OTHER|0|||PSTests.Sequential|PowerShellPolicyTests|Utils_GetPolicySetting_BothConfigFilesNotEmpty||METHOD|1|
+|System.Management.Automation|Utils|GetPolicySetting|System.Management.Automation.Configuration.ConfigScope[] preferenceOrder|METHOD|28|FULL HAVOC||System.Management.Automation.Configuration|PowerShellConfig|GetPowerShellPolicies|System.Management.Automation.Configuration.ConfigScope scope|METHOD|31|
+|Newtonsoft.Json.Linq|JToken|ToObject|Newtonsoft.Json.JsonSerializer jsonSerializer|METHOD|31|FULL HAVOC||System.Management.Automation.Configuration|PowerShellPolicies|||PROPERTY|31|
+|Newtonsoft.Json.Linq|JToken|ToObject|Newtonsoft.Json.JsonSerializer jsonSerializer|METHOD|31|FULL HAVOC||System.Management.Automation.Configuration|ScriptExecution|||PROPERTY|31|
+|Newtonsoft.Json.Linq|JToken|ToObject|Newtonsoft.Json.JsonSerializer jsonSerializer|METHOD|31|FULL HAVOC||System.Management.Automation.Configuration|ScriptBlockLogging|||PROPERTY|31|
+|Newtonsoft.Json.Linq|JToken|ToObject|Newtonsoft.Json.JsonSerializer jsonSerializer|METHOD|31|FULL HAVOC||System.Management.Automation.Configuration|ModuleLogging|||PROPERTY|31|
+|Newtonsoft.Json.Linq|JToken|ToObject|Newtonsoft.Json.JsonSerializer jsonSerializer|METHOD|31|FULL HAVOC||System.Management.Automation.Configuration|ProtectedEventLogging|||PROPERTY|31|
+|Newtonsoft.Json.Linq|JToken|ToObject|Newtonsoft.Json.JsonSerializer jsonSerializer|METHOD|31|FULL HAVOC||System.Management.Automation.Configuration|Transcription|||PROPERTY|17|
+|Newtonsoft.Json.Linq|JToken|ToObject|Newtonsoft.Json.JsonSerializer jsonSerializer|METHOD|31|FULL HAVOC||System.Management.Automation.Configuration|UpdatableHelp|||PROPERTY|17|
+|Newtonsoft.Json.Linq|JToken|ToObject|Newtonsoft.Json.JsonSerializer jsonSerializer|METHOD|31|FULL HAVOC||System.Management.Automation.Configuration|ConsoleSessionConfiguration|||PROPERTY|17|

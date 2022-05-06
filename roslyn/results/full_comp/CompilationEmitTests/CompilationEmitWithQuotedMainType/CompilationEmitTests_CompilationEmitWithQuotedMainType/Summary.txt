@@ -1,0 +1,12 @@
+CompilationEmitTests_CompilationEmitWithQuotedMainType||95584|7921|16|222.0905773||154.0636046|10135|239700||
+CompilationEmitTests_CompilationEmitWithQuotedMainType||111539|8194|5876|222.0905773||195.5714534|10135|282999||
+CompilationEmitTests_CompilationEmitWithQuotedMainType||111546|8199|5805|222.0905773||195.7088524|10135|283026||
+CompilationEmitTests_CompilationEmitWithQuotedMainType||128296|8216|16|222.0905773||243.1205258|10135|328616||
+CompilationEmitTests_CompilationEmitWithQuotedMainType||144010|8221|5946|222.0905773||288.6041865|10135|371235||
+CompilationEmitTests_CompilationEmitWithQuotedMainType||144017|8221|5865|222.0905773||288.701628|10135|371262||
+CompilationEmitTests_CompilationEmitWithQuotedMainType||95584|7921|16|155.230955||74.984152|10135|239700||
+CompilationEmitTests_CompilationEmitWithQuotedMainType||111539|8194|5876|155.230955||102.8482475|10135|282999||
+CompilationEmitTests_CompilationEmitWithQuotedMainType||111546|8199|5805|155.230955||102.9303126|10135|283026||
+CompilationEmitTests_CompilationEmitWithQuotedMainType||128296|8216|16|155.230955||129.8180486|10135|328616||
+CompilationEmitTests_CompilationEmitWithQuotedMainType||144010|8221|5946|155.230955||154.256442|10135|371235||
+CompilationEmitTests_CompilationEmitWithQuotedMainType||144017|8221|5865|155.230955||154.3144206|10135|371262||

@@ -1,0 +1,3 @@
+CompilationEmitTests_RefAssembly_CryptoHashFailedIsOnlyReportedOnce||979|758|648|89.6089293||0.7820334|15214|2646||
+CompilationEmitTests_RefAssembly_CryptoHashFailedIsOnlyReportedOnce||4850|1395|1156|89.6089293||1.969705|15214|13150||
+CompilationEmitTests_RefAssembly_CryptoHashFailedIsOnlyReportedOnce||7822|1470|1211|89.6089293||2.8593077|15214|21202||

@@ -1,0 +1,8 @@
+|||FirstProcess||OTHER|0|
+|System.IO|Path|GetTempFileName||METHOD|1|FULL HAVOC
+|System.IO|File|Exists|string path|METHOD|1|FULL HAVOC
+|System.IO|File|Delete|string path|METHOD|1|FULL HAVOC
+|System.IO|File|AppendAllText|string path,string contents|METHOD|1|FULL HAVOC
+|PSTests|CustomAssert|Throws|System.Action testCode|METHOD|1|FULL HAVOC
+|System|String|IsNullOrEmpty|string? value|METHOD|1|Null.{}.{R;P}.{}.{}<EOF>
+|System|ArgumentNullException|ctor|string? paramName|METHOD|1|FULL HAVOC

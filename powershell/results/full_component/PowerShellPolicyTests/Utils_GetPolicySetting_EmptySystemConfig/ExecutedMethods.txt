@@ -1,0 +1,43 @@
+|||FirstProcess||OTHER|0|
+|System.IO|Path|Combine|string path1,string path2|METHOD|6|FULL HAVOC
+|System.Collections.Concurrent|ConcurrentDictionary|ctor||METHOD|2|FULL HAVOC
+|System.Collections.Generic|Dictionary|ctor||METHOD|3|Fresh.{Many{|DictInternal}}.{P}.{RV.?;RO.?}.{[RV;RO, RO, ?], [RO, P, ?]}<EOF>
+|System.Collections.Generic|Dictionary|Add|string key,string value|METHOD|17|Null.{}.{R;R.?;R.?.?.OfKind{DictInternal}.?;P}.{R.?.?.OfKind{DictInternal}.?}.{[R.?.?.OfKind{DictInternal}, P, ?]}<EOF>
+|System.Collections.Generic|HashSet|ctor|System.Collections.Generic.IEqualityComparer<string>? comparer|METHOD|2|Fresh.{Many{|HashSet}}.{P}.{RV.?;RO.?}.{[RV, RO, ?], [RO, P, ?]}<EOF>
+|System.Collections.Generic|HashSet|Add|string item|METHOD|14|FULL HAVOC
+|System.Text|UTF32Encoding|ctor|bool bigEndian,bool byteOrderMark|METHOD|1|FULL HAVOC
+|System.Text|UTF8Encoding|ctor|bool encoderShouldEmitUTF8Identifier|METHOD|1|FULL HAVOC
+|System.IO|Path|GetDirectoryName|string? path|METHOD|2|FULL HAVOC
+|System|Environment|GetFolderPath|System.Environment.SpecialFolder folder|METHOD|2|Null.{}.{R;P}.{}.{}<EOF>
+|System.Collections.Generic|List|ctor||METHOD|1|Fresh.{Single{System.Array}}.{P}.{RV.?;RO.?}.{[RV, RO, ?]}<EOF>
+|System.Collections.Generic|List|Add|string item|METHOD|11|Null.{}.{R;R.?;R.*.UntilType{System.Array}.OfType{System.Array}.?;P}.{R.?;R.*.UntilType{System.Array}.OfType{System.Array}.?}.{[R.*.UntilType{System.Array}.OfType{System.Array}, P, ?]}<EOF>
+|System.IO|Directory|Exists|string path|METHOD|1|FULL HAVOC
+|System.IO|File|Exists|string path|METHOD|6|FULL HAVOC
+|System.IO|Path|GetTempPath||METHOD|1|FULL HAVOC
+|System|Guid|NewGuid||METHOD|1|Fresh.{}.{P}.{RV.?}.{}<EOF>
+|System|Guid|ToString||METHOD|1|Null.{}.{R;R.?;P}.{}.{}<EOF>
+|System.IO|File|Move|string sourceFileName,string destFileName|METHOD|1|FULL HAVOC
+|Newtonsoft.Json|JsonSerializerSettings|ctor||METHOD|2|FULL HAVOC
+|Newtonsoft.Json|JsonSerializer|Create|Newtonsoft.Json.JsonSerializerSettings? settings|METHOD|2|FULL HAVOC
+|System.IO|File|Create|string path|METHOD|1|FULL HAVOC
+|System.IO|Stream|Dispose||METHOD|1|FULL HAVOC
+|System.IO|StreamWriter|ctor|string path|METHOD|1|FULL HAVOC
+|Newtonsoft.Json|JsonSerializer|Serialize|System.IO.TextWriter textWriter,object? value|METHOD|1|FULL HAVOC
+|System|Type|GetField|string name,System.Reflection.BindingFlags bindingAttr|METHOD|1|FULL HAVOC
+|Newtonsoft.Json.Linq|JObject|ctor||METHOD|1|FULL HAVOC
+|System.Threading|ReaderWriterLockSlim|ctor||METHOD|1|FULL HAVOC
+|System.Reflection|FieldInfo|GetValue|object? obj|METHOD|1|FULL HAVOC
+|System.Collections.Generic|Dictionary|TryGetValue|string key,string value|METHOD|42|FULL HAVOC
+|System|String|Format|System.IFormatProvider? provider,string format,object? arg0|METHOD|42|Null.{}.{R;P}.{}.{}<EOF>
+|Microsoft.Win32|RegistryKey|OpenSubKey|string name|METHOD|42|FULL HAVOC
+|System.Threading|ReaderWriterLockSlim|EnterReadLock||METHOD|2|FULL HAVOC
+|System.IO|FileStream|ctor|string path,System.IO.FileMode mode,System.IO.FileAccess access,System.IO.FileShare share|METHOD|2|FULL HAVOC
+|System.IO|StreamReader|ctor|System.IO.Stream stream|METHOD|2|FULL HAVOC
+|Newtonsoft.Json|JsonTextReader|ctor|System.IO.TextReader reader|METHOD|2|FULL HAVOC
+|Newtonsoft.Json|JsonSerializer|Deserialize|Newtonsoft.Json.JsonReader reader|METHOD|2|FULL HAVOC
+|System.Threading|ReaderWriterLockSlim|ExitReadLock||METHOD|2|FULL HAVOC
+|System.Threading|Interlocked|CompareExchange|Newtonsoft.Json.Linq.JObject location1,Newtonsoft.Json.Linq.JObject value,Newtonsoft.Json.Linq.JObject comparand|METHOD|2|FULL HAVOC
+|PSTests|CustomAssert|Null|object object|METHOD|19|FULL HAVOC
+|Newtonsoft.Json.Linq|JObject|TryGetValue|string propertyName,System.StringComparison comparison,Newtonsoft.Json.Linq.JToken? value|METHOD|21|FULL HAVOC
+|Newtonsoft.Json.Linq|JToken|ToObject|Newtonsoft.Json.JsonSerializer jsonSerializer|METHOD|21|FULL HAVOC
+|PSTests|CustomAssert|Equal|bool? expected,bool? actual|METHOD|24|FULL HAVOC

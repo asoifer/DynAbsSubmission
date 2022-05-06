@@ -1,0 +1,6 @@
+MshMemberInfo.cs:5018
+MshObject.cs:2414
+test_PSObject.cs:17
+test_PSObject.cs:23
+test_PSObject.cs:24
+---- Last slice: [test_PSObject.cs - 24]

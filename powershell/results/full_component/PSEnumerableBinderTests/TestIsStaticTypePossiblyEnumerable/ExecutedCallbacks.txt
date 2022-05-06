@@ -1,0 +1,1 @@
+|||FirstProcess||OTHER|0|||PSTests.Parallel|PSEnumerableBinderTests|TestIsStaticTypePossiblyEnumerable||METHOD|1|

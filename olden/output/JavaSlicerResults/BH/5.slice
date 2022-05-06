@@ -1,0 +1,408 @@
+ 0.0% done, time left: unknown                                9.0% done, time left: unknown 42.1% done, time left: unknown 54.3% done, time left: unknown 100.0% done, time left: unknown  finished
+The dynamic slice for criterion [BH.main:90:{slicingVariable5}]:
+BH.main:44 ALOAD 0
+BH.main:44 INVOKESTATIC BH.parseCmdLine([Ljava/lang/String;)V
+BH.main:50 NEW Tree
+BH.main:50 ASTORE 3
+BH.main:51 ALOAD 3
+BH.main:51 GETSTATIC BH.nbody I
+BH.main:51 INVOKEVIRTUAL Tree.createTestData(I)V
+BH.main:57 DCONST_0
+BH.main:57 DSTORE 8
+BH.main:58 ICONST_0
+BH.main:58 ISTORE 10
+BH.main:59 DLOAD 8
+BH.main:59 GETSTATIC BH.TSTOP D
+BH.main:59 LDC 0.1
+BH.main:59 GETSTATIC BH.DTIME D
+BH.main:59 DMUL
+BH.main:59 DADD
+BH.main:59 DCMPG
+BH.main:59 IFGE L3
+BH.main:59 ILOAD 10
+BH.main:59 GETSTATIC BH.nsteps I
+BH.main:59 IF_ICMPGE L3
+BH.main:61 ALOAD 3
+BH.main:61 IINC 10 1
+BH.main:61 INVOKEVIRTUAL Tree.stepSystem(I)V
+BH.main:62 DLOAD 8
+BH.main:62 GETSTATIC BH.DTIME D
+BH.main:62 DADD
+BH.main:62 DSTORE 8
+BH.main:66 GETSTATIC BH.printResults Z
+BH.main:66 IFEQ L5
+BH.main:88 ALOAD 3
+BH.main:88 GETFIELD Tree.bodyTab LBody;
+BH.main:88 GETFIELD Body.acc LMathVector;
+BH.main:88 ASTORE 19
+BH.myRand:100 LDC 16807.0
+BH.myRand:100 DLOAD 0
+BH.myRand:100 DMUL
+BH.myRand:100 DCONST_1
+BH.myRand:100 DADD
+BH.myRand:100 DSTORE 2
+BH.myRand:102 DLOAD 2
+BH.myRand:102 LDC 2.147483647E9
+BH.myRand:102 DLOAD 2
+BH.myRand:102 LDC 2.147483647E9
+BH.myRand:102 DDIV
+BH.myRand:102 INVOKESTATIC java/lang/Math.floor(D)D
+BH.myRand:102 DMUL
+BH.myRand:102 DSUB
+BH.myRand:102 DSTORE 0
+BH.myRand:103 DLOAD 0
+BH.myRand:103 DRETURN
+BH.xRand:116 DLOAD 0
+BH.xRand:116 DLOAD 2
+BH.xRand:116 DLOAD 0
+BH.xRand:116 DSUB
+BH.xRand:116 DLOAD 4
+BH.xRand:116 DMUL
+BH.xRand:116 LDC 2.147483647E9
+BH.xRand:116 DDIV
+BH.xRand:116 DADD
+BH.xRand:116 DSTORE 6
+BH.xRand:117 DLOAD 6
+BH.xRand:117 DRETURN
+BH.parseCmdLine:126 ICONST_0
+BH.parseCmdLine:126 ISTORE 1
+BH.parseCmdLine:129 ILOAD 1
+BH.parseCmdLine:129 ALOAD 0
+BH.parseCmdLine:129 ARRAYLENGTH
+BH.parseCmdLine:129 IF_ICMPGE L7
+BH.parseCmdLine:129 ALOAD 0
+BH.parseCmdLine:129 ILOAD 1
+BH.parseCmdLine:129 AALOAD
+BH.parseCmdLine:129 LDC "-"
+BH.parseCmdLine:129 INVOKEVIRTUAL java/lang/String.startsWith(Ljava/lang/String;)Z
+BH.parseCmdLine:129 IFEQ L7
+BH.parseCmdLine:131 ALOAD 0
+BH.parseCmdLine:131 ILOAD 1
+BH.parseCmdLine:131 IINC 1 1
+BH.parseCmdLine:131 AALOAD
+BH.parseCmdLine:131 ASTORE 2
+BH.parseCmdLine:134 ALOAD 2
+BH.parseCmdLine:134 LDC "-b"
+BH.parseCmdLine:134 INVOKEVIRTUAL java/lang/String.equals(Ljava/lang/Object;)Z
+BH.parseCmdLine:134 IFEQ L2
+BH.parseCmdLine:136 ILOAD 1
+BH.parseCmdLine:136 ALOAD 0
+BH.parseCmdLine:136 ARRAYLENGTH
+BH.parseCmdLine:136 IF_ICMPGE L1
+BH.parseCmdLine:138 NEW java/lang/Integer
+BH.parseCmdLine:138 DUP
+BH.parseCmdLine:138 ALOAD 0
+BH.parseCmdLine:138 ILOAD 1
+BH.parseCmdLine:138 IINC 1 1
+BH.parseCmdLine:138 AALOAD
+BH.parseCmdLine:138 INVOKESPECIAL java/lang/Integer.<init>(Ljava/lang/String;)V
+BH.parseCmdLine:138 INVOKEVIRTUAL java/lang/Integer.intValue()I
+BH.parseCmdLine:138 PUTSTATIC BH.nbody I
+BH.parseCmdLine:145 ALOAD 2
+BH.parseCmdLine:145 LDC "-s"
+BH.parseCmdLine:145 INVOKEVIRTUAL java/lang/String.equals(Ljava/lang/Object;)Z
+BH.parseCmdLine:145 IFEQ L4
+BH.parseCmdLine:147 ILOAD 1
+BH.parseCmdLine:147 ALOAD 0
+BH.parseCmdLine:147 ARRAYLENGTH
+BH.parseCmdLine:147 IF_ICMPGE L3
+BH.parseCmdLine:149 NEW java/lang/Integer
+BH.parseCmdLine:149 DUP
+BH.parseCmdLine:149 ALOAD 0
+BH.parseCmdLine:149 ILOAD 1
+BH.parseCmdLine:149 AALOAD
+BH.parseCmdLine:149 INVOKESPECIAL java/lang/Integer.<init>(Ljava/lang/String;)V
+BH.parseCmdLine:149 INVOKEVIRTUAL java/lang/Integer.intValue()I
+BH.parseCmdLine:149 PUTSTATIC BH.nsteps I
+Body.<init>:21 ALOAD 0
+Body.<init>:21 NEW MathVector
+Body.<init>:21 DUP
+Body.<init>:21 INVOKESPECIAL MathVector.<init>()V
+Body.<init>:21 PUTFIELD Body.vel LMathVector;
+Body.setNext:35 ALOAD 0
+Body.setNext:35 ALOAD 1
+Body.setNext:35 PUTFIELD Body.next LBody;
+Body.getNext:44 ALOAD 0
+Body.getNext:44 GETFIELD Body.next LBody;
+Body.getNext:44 ARETURN
+Body.setProcNext:53 ALOAD 0
+Body.setProcNext:53 ALOAD 1
+Body.setProcNext:53 PUTFIELD Body.procNext LBody;
+Body.getProcNext:62 ALOAD 0
+Body.getProcNext:62 GETFIELD Body.procNext LBody;
+Body.getProcNext:62 ARETURN
+MathVector.<init>:24 ALOAD 0
+MathVector.<init>:24 ICONST_3
+MathVector.<init>:24 NEWARRAY T_DOUBLE
+MathVector.<init>:24 PUTFIELD MathVector.data [D
+MathVector.clone:37 NEW MathVector
+MathVector.clone:37 ASTORE 1
+MathVector.clone:39 ICONST_0
+MathVector.clone:39 ISTORE 2
+MathVector.clone:39 ILOAD 2
+MathVector.clone:39 ICONST_3
+MathVector.clone:39 IF_ICMPGE L2
+MathVector.clone:39 IINC 2 1
+MathVector.clone:41 ALOAD 1
+MathVector.clone:41 ARETURN
+MathVector.value:66 ALOAD 0
+MathVector.value:66 GETFIELD MathVector.data [D
+MathVector.value:66 ILOAD 1
+MathVector.value:66 DLOAD 2
+MathVector.value:66 DASTORE
+MathVector.dotProduct:151 DCONST_0
+MathVector.dotProduct:151 DSTORE 1
+MathVector.dotProduct:152 ICONST_0
+MathVector.dotProduct:152 ISTORE 3
+MathVector.dotProduct:152 ILOAD 3
+MathVector.dotProduct:152 ICONST_3
+MathVector.dotProduct:152 IF_ICMPGE L1
+MathVector.dotProduct:152 IINC 3 1
+MathVector.dotProduct:153 DLOAD 1
+MathVector.dotProduct:153 ALOAD 0
+MathVector.dotProduct:153 GETFIELD MathVector.data [D
+MathVector.dotProduct:153 ILOAD 3
+MathVector.dotProduct:153 DALOAD
+MathVector.dotProduct:153 ALOAD 0
+MathVector.dotProduct:153 GETFIELD MathVector.data [D
+MathVector.dotProduct:153 ILOAD 3
+MathVector.dotProduct:153 DALOAD
+MathVector.dotProduct:153 DMUL
+MathVector.dotProduct:153 DADD
+MathVector.dotProduct:153 DSTORE 1
+MathVector.dotProduct:154 DLOAD 1
+MathVector.dotProduct:154 DRETURN
+Tree.createTestData:68 NEW Body
+Tree.createTestData:68 ASTORE 4
+Tree.createTestData:69 ALOAD 4
+Tree.createTestData:69 ASTORE 5
+Tree.createTestData:73 LDC 123.0
+Tree.createTestData:73 DSTORE 10
+Tree.createTestData:75 ICONST_0
+Tree.createTestData:75 ISTORE 12
+Tree.createTestData:75 ILOAD 12
+Tree.createTestData:75 ILOAD 1
+Tree.createTestData:75 IF_ICMPGE L7
+Tree.createTestData:75 IINC 12 1
+Tree.createTestData:77 NEW Body
+Tree.createTestData:77 DUP
+Tree.createTestData:77 INVOKESPECIAL Body.<init>()V
+Tree.createTestData:77 ASTORE 13
+Tree.createTestData:78 ALOAD 5
+Tree.createTestData:78 ALOAD 13
+Tree.createTestData:78 INVOKEVIRTUAL Body.setNext(LBody;)V
+Tree.createTestData:79 ALOAD 13
+Tree.createTestData:79 ASTORE 5
+Tree.createTestData:82 DLOAD 10
+Tree.createTestData:82 INVOKESTATIC BH.myRand(D)D
+Tree.createTestData:82 DSTORE 10
+Tree.createTestData:88 ICONST_0
+Tree.createTestData:88 ISTORE 20
+Tree.createTestData:88 ILOAD 20
+Tree.createTestData:88 ICONST_3
+Tree.createTestData:88 IF_ICMPGE L2
+Tree.createTestData:88 IINC 20 1
+Tree.createTestData:90 DLOAD 10
+Tree.createTestData:90 INVOKESTATIC BH.myRand(D)D
+Tree.createTestData:90 DSTORE 10
+Tree.createTestData:101 DLOAD 10
+Tree.createTestData:101 INVOKESTATIC BH.myRand(D)D
+Tree.createTestData:101 DSTORE 10
+Tree.createTestData:102 DCONST_0
+Tree.createTestData:102 DCONST_1
+Tree.createTestData:102 DLOAD 10
+Tree.createTestData:102 INVOKESTATIC BH.xRand(DDD)D
+Tree.createTestData:102 DSTORE 20
+Tree.createTestData:103 DLOAD 10
+Tree.createTestData:103 INVOKESTATIC BH.myRand(D)D
+Tree.createTestData:103 DSTORE 10
+Tree.createTestData:104 DCONST_0
+Tree.createTestData:104 LDC 0.1
+Tree.createTestData:104 DLOAD 10
+Tree.createTestData:104 INVOKESTATIC BH.xRand(DDD)D
+Tree.createTestData:104 DSTORE 22
+Tree.createTestData:105 DLOAD 22
+Tree.createTestData:105 DLOAD 20
+Tree.createTestData:105 DLOAD 20
+Tree.createTestData:105 DMUL
+Tree.createTestData:105 DCONST_1
+Tree.createTestData:105 DLOAD 20
+Tree.createTestData:105 DLOAD 20
+Tree.createTestData:105 DMUL
+Tree.createTestData:105 DSUB
+Tree.createTestData:105 LDC 3.5
+Tree.createTestData:105 INVOKESTATIC java/lang/Math.pow(DD)D
+Tree.createTestData:105 DMUL
+Tree.createTestData:105 DCMPL
+Tree.createTestData:105 IFGT L3
+Tree.createTestData:113 ICONST_0
+Tree.createTestData:113 ISTORE 30
+Tree.createTestData:113 ILOAD 30
+Tree.createTestData:113 ICONST_3
+Tree.createTestData:113 IF_ICMPGE L6
+Tree.createTestData:113 IINC 30 1
+Tree.createTestData:115 DLOAD 10
+Tree.createTestData:115 INVOKESTATIC BH.myRand(D)D
+Tree.createTestData:115 DSTORE 10
+Tree.createTestData:116 ALOAD 13
+Tree.createTestData:116 GETFIELD Body.vel LMathVector;
+Tree.createTestData:116 ILOAD 30
+Tree.createTestData:116 LDC -1.0
+Tree.createTestData:116 DCONST_1
+Tree.createTestData:116 DLOAD 10
+Tree.createTestData:116 INVOKESTATIC BH.xRand(DDD)D
+Tree.createTestData:116 INVOKEVIRTUAL MathVector.value(ID)V
+Tree.createTestData:118 ALOAD 13
+Tree.createTestData:118 GETFIELD Body.vel LMathVector;
+Tree.createTestData:118 INVOKEVIRTUAL MathVector.dotProduct()D
+Tree.createTestData:118 DSTORE 28
+Tree.createTestData:119 DLOAD 28
+Tree.createTestData:119 DCONST_1
+Tree.createTestData:119 DCMPL
+Tree.createTestData:119 IFGT L4
+Tree.createTestData:126 ALOAD 5
+Tree.createTestData:126 ACONST_NULL
+Tree.createTestData:126 INVOKEVIRTUAL Body.setNext(LBody;)V
+Tree.createTestData:128 ALOAD 0
+Tree.createTestData:128 ALOAD 4
+Tree.createTestData:128 INVOKEVIRTUAL Body.getNext()LBody;
+Tree.createTestData:128 PUTFIELD Tree.bodyTab LBody;
+Tree.createTestData:133 ACONST_NULL
+Tree.createTestData:133 ASTORE 5
+Tree.createTestData:135 ALOAD 0
+Tree.createTestData:135 GETFIELD Tree.bodyTab LBody;
+Tree.createTestData:135 ASTORE 12
+Tree.createTestData:136 ALOAD 12
+Tree.createTestData:136 IFNULL L9
+Tree.createTestData:140 ALOAD 12
+Tree.createTestData:140 ALOAD 5
+Tree.createTestData:140 INVOKEVIRTUAL Body.setProcNext(LBody;)V
+Tree.createTestData:141 ALOAD 12
+Tree.createTestData:141 ASTORE 5
+Tree.createTestData:142 ALOAD 12
+Tree.createTestData:142 INVOKEVIRTUAL Body.getNext()LBody;
+Tree.createTestData:142 ASTORE 12
+Tree.createTestData:146 ALOAD 0
+Tree.createTestData:146 ALOAD 5
+Tree.createTestData:146 PUTFIELD Tree.bodyTabRev LBody;
+Tree.stepSystem:161 ALOAD 0
+Tree.stepSystem:161 GETFIELD Tree.bodyTabRev LBody;
+Tree.stepSystem:161 ASTORE 2
+Tree.stepSystem:162 ALOAD 2
+Tree.stepSystem:162 IFNULL L1
+Tree.stepSystem:165 ALOAD 2
+Tree.stepSystem:165 INVOKEVIRTUAL Body.getProcNext()LBody;
+Tree.stepSystem:165 ASTORE 2
+Tree.stepSystem:168 ALOAD 0
+Tree.stepSystem:168 GETFIELD Tree.bodyTabRev LBody;
+Tree.stepSystem:168 INVOKESTATIC Tree.vp(LBody;I)V
+Tree.vp:228 ALOAD 0
+Tree.vp:228 ASTORE 6
+Tree.vp:229 ALOAD 6
+Tree.vp:229 IFNULL L2
+Tree.vp:239 ALOAD 6
+Tree.vp:239 INVOKEVIRTUAL MathVector.clone()Ljava/lang/Object;
+Tree.vp:239 PUTFIELD Body.acc LMathVector;
+Tree.vp:250 ALOAD 6
+Tree.vp:250 INVOKEVIRTUAL Body.getProcNext()LBody;
+Tree.vp:250 ASTORE 6
+java.lang.Character.digit:-1 ILOAD 0
+java.lang.Character.digit:-1 INVOKESTATIC java/lang/CharacterData.of(I)Ljava/lang/CharacterData;
+java.lang.Character.digit:-1 IRETURN
+java.lang.Character.digit:-1 ILOAD 0
+java.lang.Character.digit:-1 INVOKESTATIC java/lang/Character.digit(II)I
+java.lang.Character.digit:-1 IRETURN
+java.lang.CharacterData.of:-1 ILOAD 0
+java.lang.CharacterData.of:-1 BIPUSH 8
+java.lang.CharacterData.of:-1 IUSHR
+java.lang.CharacterData.of:-1 IFNE L0
+java.lang.CharacterData.of:-1 GETSTATIC java/lang/CharacterDataLatin1.instance Ljava/lang/CharacterDataLatin1;
+java.lang.CharacterData.of:-1 ARETURN
+java.lang.Integer.<init>:-1 ALOAD 0
+java.lang.Integer.<init>:-1 ALOAD 1
+java.lang.Integer.<init>:-1 BIPUSH 10
+java.lang.Integer.<init>:-1 INVOKESTATIC java/lang/Integer.parseInt(Ljava/lang/String;I)I
+java.lang.Integer.<init>:-1 PUTFIELD java/lang/Integer.value I
+java.lang.Integer.intValue:-1 ALOAD 0
+java.lang.Integer.intValue:-1 GETFIELD java/lang/Integer.value I
+java.lang.Integer.intValue:-1 IRETURN
+java.lang.Integer.parseInt:-1 ICONST_0
+java.lang.Integer.parseInt:-1 ISTORE 2
+java.lang.Integer.parseInt:-1 ICONST_0
+java.lang.Integer.parseInt:-1 ISTORE 3
+java.lang.Integer.parseInt:-1 ICONST_0
+java.lang.Integer.parseInt:-1 ISTORE 4
+java.lang.Integer.parseInt:-1 ALOAD 0
+java.lang.Integer.parseInt:-1 INVOKEVIRTUAL java/lang/String.length()I
+java.lang.Integer.parseInt:-1 ISTORE 5
+java.lang.Integer.parseInt:-1 ILOAD 5
+java.lang.Integer.parseInt:-1 IFLE L12
+java.lang.Integer.parseInt:-1 ILOAD 4
+java.lang.Integer.parseInt:-1 ILOAD 5
+java.lang.Integer.parseInt:-1 IF_ICMPGE L11
+java.lang.Integer.parseInt:-1 ALOAD 0
+java.lang.Integer.parseInt:-1 ILOAD 4
+java.lang.Integer.parseInt:-1 IINC 4 1
+java.lang.Integer.parseInt:-1 INVOKEVIRTUAL java/lang/String.charAt(I)C
+java.lang.Integer.parseInt:-1 INVOKESTATIC java/lang/Character.digit(CI)I
+java.lang.Integer.parseInt:-1 ISTORE 8
+java.lang.Integer.parseInt:-1 ILOAD 2
+java.lang.Integer.parseInt:-1 ILOAD 1
+java.lang.Integer.parseInt:-1 IMUL
+java.lang.Integer.parseInt:-1 ISTORE 2
+java.lang.Integer.parseInt:-1 ILOAD 2
+java.lang.Integer.parseInt:-1 ILOAD 8
+java.lang.Integer.parseInt:-1 ISUB
+java.lang.Integer.parseInt:-1 ISTORE 2
+java.lang.Integer.parseInt:-1 ILOAD 3
+java.lang.Integer.parseInt:-1 IFEQ L14
+java.lang.Integer.parseInt:-1 ILOAD 2
+java.lang.Integer.parseInt:-1 INEG
+java.lang.Integer.parseInt:-1 IRETURN
+java.lang.StrictMath.floor:-1 DLOAD 0
+java.lang.StrictMath.floor:-1 DCONST_0
+java.lang.StrictMath.floor:-1 INVOKESTATIC java/lang/StrictMath.floorOrCeil(DDDD)D
+java.lang.StrictMath.floor:-1 DRETURN
+java.lang.StrictMath.floorOrCeil:-1 DLOAD 0
+java.lang.StrictMath.floorOrCeil:-1 INVOKESTATIC java/lang/Math.getExponent(D)I
+java.lang.StrictMath.floorOrCeil:-1 ISTORE 8
+java.lang.StrictMath.floorOrCeil:-1 ILOAD 8
+java.lang.StrictMath.floorOrCeil:-1 IFGE L3
+java.lang.StrictMath.floorOrCeil:-1 DLOAD 0
+java.lang.StrictMath.floorOrCeil:-1 DCONST_0
+java.lang.StrictMath.floorOrCeil:-1 DCMPL
+java.lang.StrictMath.floorOrCeil:-1 IFNE L0
+java.lang.StrictMath.floorOrCeil:-1 DLOAD 0
+java.lang.StrictMath.floorOrCeil:-1 DCONST_0
+java.lang.StrictMath.floorOrCeil:-1 DCMPG
+java.lang.StrictMath.floorOrCeil:-1 IFGE L1
+java.lang.StrictMath.floorOrCeil:-1 DLOAD 4
+java.lang.StrictMath.floorOrCeil:-1 DRETURN
+java.lang.StrictMath.floorOrCeil:-1 ILOAD 8
+java.lang.StrictMath.floorOrCeil:-1 BIPUSH 52
+java.lang.StrictMath.floorOrCeil:-1 IF_ICMPLT L4
+java.lang.StrictMath.floorOrCeil:-1 DLOAD 0
+java.lang.StrictMath.floorOrCeil:-1 INVOKESTATIC java/lang/Double.doubleToRawLongBits(D)J
+java.lang.StrictMath.floorOrCeil:-1 LSTORE 9
+java.lang.StrictMath.floorOrCeil:-1 LDC 4503599627370495
+java.lang.StrictMath.floorOrCeil:-1 ILOAD 8
+java.lang.StrictMath.floorOrCeil:-1 LSHR
+java.lang.StrictMath.floorOrCeil:-1 LSTORE 11
+java.lang.StrictMath.floorOrCeil:-1 LLOAD 11
+java.lang.StrictMath.floorOrCeil:-1 LLOAD 9
+java.lang.StrictMath.floorOrCeil:-1 LAND
+java.lang.StrictMath.floorOrCeil:-1 LCONST_0
+java.lang.StrictMath.floorOrCeil:-1 LCMP
+java.lang.StrictMath.floorOrCeil:-1 IFNE L7
+java.lang.StrictMath.floorOrCeil:-1 LLOAD 9
+java.lang.StrictMath.floorOrCeil:-1 LLOAD 11
+java.lang.StrictMath.floorOrCeil:-1 LDC -1
+java.lang.StrictMath.floorOrCeil:-1 LXOR
+java.lang.StrictMath.floorOrCeil:-1 LAND
+java.lang.StrictMath.floorOrCeil:-1 INVOKESTATIC java/lang/Double.longBitsToDouble(J)D
+java.lang.StrictMath.floorOrCeil:-1 DSTORE 13
+java.lang.StrictMath.floorOrCeil:-1 DLOAD 13
+java.lang.StrictMath.floorOrCeil:-1 DRETURN
+
+Slice consists of 403 bytecode instructions.
+Computation took 0.44 seconds.

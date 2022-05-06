@@ -1,0 +1,12 @@
+PSVersionInfo.cs:39
+PSVersionInfo.cs:114
+PSVersionInfo.cs:116
+PSVersionInfo.cs:121
+PSVersionInfo.cs:142
+PSVersionInfo.cs:144
+PSVersionInfo.cs:146
+PSVersionInfo.cs:147
+PSVersionInfo.cs:148
+PSVersionInfo.cs:150
+test_PSVersionInfo.cs:17
+---- Last slice: [test_PSVersionInfo.cs - 17]

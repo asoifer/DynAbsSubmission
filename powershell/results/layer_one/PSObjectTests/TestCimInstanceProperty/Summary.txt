@@ -1,0 +1,2 @@
+PSObjectTests_TestCimInstanceProperty||244|124|14|44.8938074||0.2138754|5364|567||
+PSObjectTests_TestCimInstanceProperty||657|417|246|44.8938074||0.3331725|5364|1619||

@@ -1,0 +1,3 @@
+|||FirstProcess||OTHER|0|||PSTests.Sequential|PowerShellPolicyFixture|ctor||METHOD|1|
+|||FirstProcess||OTHER|0|||PSTests.Sequential|PowerShellPolicyTests|ctor|PSTests.Sequential.PowerShellPolicyFixture fixture|METHOD|1|
+|||FirstProcess||OTHER|0|||PSTests.Sequential|PowerShellPolicyTests|PowerShellConfig_GetPowerShellPolicies_BothConfigFilesNotExist||METHOD|1|

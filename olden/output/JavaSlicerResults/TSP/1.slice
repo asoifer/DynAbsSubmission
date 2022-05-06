@@ -1,0 +1,172 @@
+ 0.0% done, time left: unknown                               100.0% done, time left: unknown  finished
+The dynamic slice for criterion [TSP.main:65:{slicingVariable1}]:
+RandomGenerator.NextDouble:13 GETSTATIC RandomGenerator.DoubleValues [D
+RandomGenerator.NextDouble:13 GETSTATIC RandomGenerator.doubleValuesIndex I
+RandomGenerator.NextDouble:13 DUP
+RandomGenerator.NextDouble:13 ICONST_1
+RandomGenerator.NextDouble:13 IADD
+RandomGenerator.NextDouble:13 PUTSTATIC RandomGenerator.doubleValuesIndex I
+RandomGenerator.NextDouble:13 BIPUSH 100
+RandomGenerator.NextDouble:13 IREM
+RandomGenerator.NextDouble:13 DALOAD
+RandomGenerator.NextDouble:13 DRETURN
+TSP.main:35 ALOAD 0
+TSP.main:35 INVOKESTATIC TSP.parseCmdLine([Ljava/lang/String;)V
+TSP.main:41 GETSTATIC TSP.cities I
+TSP.main:41 ICONST_0
+TSP.main:41 DCONST_0
+TSP.main:41 DCONST_1
+TSP.main:41 INVOKESTATIC Tree.buildTree(IZDDDD)LTree;
+TSP.main:41 ASTORE 3
+TSP.main:60 ALOAD 3
+TSP.main:60 GETFIELD Tree.x D
+TSP.main:60 DSTORE 10
+TSP.parseCmdLine:74 ICONST_0
+TSP.parseCmdLine:74 ISTORE 1
+TSP.parseCmdLine:77 ILOAD 1
+TSP.parseCmdLine:77 ALOAD 0
+TSP.parseCmdLine:77 ARRAYLENGTH
+TSP.parseCmdLine:77 IF_ICMPGE L5
+TSP.parseCmdLine:77 ALOAD 0
+TSP.parseCmdLine:77 ILOAD 1
+TSP.parseCmdLine:77 AALOAD
+TSP.parseCmdLine:77 LDC "-"
+TSP.parseCmdLine:77 INVOKEVIRTUAL java/lang/String.startsWith(Ljava/lang/String;)Z
+TSP.parseCmdLine:77 IFEQ L5
+TSP.parseCmdLine:79 ALOAD 0
+TSP.parseCmdLine:79 ILOAD 1
+TSP.parseCmdLine:79 IINC 1 1
+TSP.parseCmdLine:79 AALOAD
+TSP.parseCmdLine:79 ASTORE 2
+TSP.parseCmdLine:81 ALOAD 2
+TSP.parseCmdLine:81 LDC "-c"
+TSP.parseCmdLine:81 INVOKEVIRTUAL java/lang/String.equals(Ljava/lang/Object;)Z
+TSP.parseCmdLine:81 IFEQ L2
+TSP.parseCmdLine:83 ILOAD 1
+TSP.parseCmdLine:83 ALOAD 0
+TSP.parseCmdLine:83 ARRAYLENGTH
+TSP.parseCmdLine:83 IF_ICMPGE L1
+TSP.parseCmdLine:84 NEW java/lang/Integer
+TSP.parseCmdLine:84 DUP
+TSP.parseCmdLine:84 ALOAD 0
+TSP.parseCmdLine:84 ILOAD 1
+TSP.parseCmdLine:84 AALOAD
+TSP.parseCmdLine:84 INVOKESPECIAL java/lang/Integer.<init>(Ljava/lang/String;)V
+TSP.parseCmdLine:84 INVOKEVIRTUAL java/lang/Integer.intValue()I
+TSP.parseCmdLine:84 PUTSTATIC TSP.cities I
+Tree.<init>:56 ALOAD 0
+Tree.<init>:56 DLOAD 2
+Tree.<init>:56 PUTFIELD Tree.x D
+Tree.median:410 INVOKESTATIC RandomGenerator.NextDouble()D
+Tree.uniform:431 INVOKESTATIC RandomGenerator.NextDouble()D
+Tree.uniform:431 DSTORE 4
+Tree.uniform:432 DLOAD 4
+Tree.uniform:432 DLOAD 2
+Tree.uniform:432 DLOAD 0
+Tree.uniform:432 DSUB
+Tree.uniform:432 DMUL
+Tree.uniform:432 DSTORE 4
+Tree.uniform:433 DLOAD 4
+Tree.uniform:433 DLOAD 0
+Tree.uniform:433 DADD
+Tree.uniform:433 DRETURN
+Tree.buildTree:450 ILOAD 0
+Tree.buildTree:450 IFNE L0
+Tree.buildTree:457 ILOAD 1
+Tree.buildTree:457 IFEQ L3
+Tree.buildTree:459 ILOAD 1
+Tree.buildTree:459 IFNE L1
+Tree.buildTree:459 ICONST_0
+Tree.buildTree:459 ISTORE 1
+Tree.buildTree:460 INVOKESTATIC Tree.median(DDI)D
+Tree.buildTree:461 ILOAD 0
+Tree.buildTree:461 ICONST_2
+Tree.buildTree:461 IDIV
+Tree.buildTree:461 ILOAD 1
+Tree.buildTree:461 INVOKESTATIC Tree.buildTree(IZDDDD)LTree;
+Tree.buildTree:462 ILOAD 0
+Tree.buildTree:462 ICONST_2
+Tree.buildTree:462 IDIV
+Tree.buildTree:462 ILOAD 1
+Tree.buildTree:462 INVOKESTATIC Tree.buildTree(IZDDDD)LTree;
+Tree.buildTree:464 INVOKESTATIC Tree.uniform(DD)D
+Tree.buildTree:468 ILOAD 1
+Tree.buildTree:468 IFNE L4
+Tree.buildTree:468 ICONST_1
+Tree.buildTree:468 ISTORE 1
+Tree.buildTree:469 INVOKESTATIC Tree.median(DDI)D
+Tree.buildTree:470 ILOAD 0
+Tree.buildTree:470 ICONST_2
+Tree.buildTree:470 IDIV
+Tree.buildTree:470 ILOAD 1
+Tree.buildTree:470 INVOKESTATIC Tree.buildTree(IZDDDD)LTree;
+Tree.buildTree:471 ILOAD 0
+Tree.buildTree:471 ICONST_2
+Tree.buildTree:471 IDIV
+Tree.buildTree:471 ILOAD 1
+Tree.buildTree:471 INVOKESTATIC Tree.buildTree(IZDDDD)LTree;
+Tree.buildTree:473 DLOAD 2
+Tree.buildTree:473 DLOAD 4
+Tree.buildTree:473 INVOKESTATIC Tree.uniform(DD)D
+Tree.buildTree:473 DSTORE 12
+Tree.buildTree:475 NEW Tree
+Tree.buildTree:475 DUP
+Tree.buildTree:475 DLOAD 12
+Tree.buildTree:475 INVOKESPECIAL Tree.<init>(IDDLTree;LTree;)V
+Tree.buildTree:475 ARETURN
+java.lang.Character.digit:-1 ILOAD 0
+java.lang.Character.digit:-1 INVOKESTATIC java/lang/CharacterData.of(I)Ljava/lang/CharacterData;
+java.lang.Character.digit:-1 IRETURN
+java.lang.Character.digit:-1 ILOAD 0
+java.lang.Character.digit:-1 INVOKESTATIC java/lang/Character.digit(II)I
+java.lang.Character.digit:-1 IRETURN
+java.lang.CharacterData.of:-1 ILOAD 0
+java.lang.CharacterData.of:-1 BIPUSH 8
+java.lang.CharacterData.of:-1 IUSHR
+java.lang.CharacterData.of:-1 IFNE L0
+java.lang.CharacterData.of:-1 GETSTATIC java/lang/CharacterDataLatin1.instance Ljava/lang/CharacterDataLatin1;
+java.lang.CharacterData.of:-1 ARETURN
+java.lang.Integer.<init>:-1 ALOAD 0
+java.lang.Integer.<init>:-1 ALOAD 1
+java.lang.Integer.<init>:-1 BIPUSH 10
+java.lang.Integer.<init>:-1 INVOKESTATIC java/lang/Integer.parseInt(Ljava/lang/String;I)I
+java.lang.Integer.<init>:-1 PUTFIELD java/lang/Integer.value I
+java.lang.Integer.intValue:-1 ALOAD 0
+java.lang.Integer.intValue:-1 GETFIELD java/lang/Integer.value I
+java.lang.Integer.intValue:-1 IRETURN
+java.lang.Integer.parseInt:-1 ICONST_0
+java.lang.Integer.parseInt:-1 ISTORE 2
+java.lang.Integer.parseInt:-1 ICONST_0
+java.lang.Integer.parseInt:-1 ISTORE 3
+java.lang.Integer.parseInt:-1 ICONST_0
+java.lang.Integer.parseInt:-1 ISTORE 4
+java.lang.Integer.parseInt:-1 ALOAD 0
+java.lang.Integer.parseInt:-1 INVOKEVIRTUAL java/lang/String.length()I
+java.lang.Integer.parseInt:-1 ISTORE 5
+java.lang.Integer.parseInt:-1 ILOAD 5
+java.lang.Integer.parseInt:-1 IFLE L12
+java.lang.Integer.parseInt:-1 ILOAD 4
+java.lang.Integer.parseInt:-1 ILOAD 5
+java.lang.Integer.parseInt:-1 IF_ICMPGE L11
+java.lang.Integer.parseInt:-1 ALOAD 0
+java.lang.Integer.parseInt:-1 ILOAD 4
+java.lang.Integer.parseInt:-1 IINC 4 1
+java.lang.Integer.parseInt:-1 INVOKEVIRTUAL java/lang/String.charAt(I)C
+java.lang.Integer.parseInt:-1 INVOKESTATIC java/lang/Character.digit(CI)I
+java.lang.Integer.parseInt:-1 ISTORE 8
+java.lang.Integer.parseInt:-1 ILOAD 2
+java.lang.Integer.parseInt:-1 ILOAD 1
+java.lang.Integer.parseInt:-1 IMUL
+java.lang.Integer.parseInt:-1 ISTORE 2
+java.lang.Integer.parseInt:-1 ILOAD 2
+java.lang.Integer.parseInt:-1 ILOAD 8
+java.lang.Integer.parseInt:-1 ISUB
+java.lang.Integer.parseInt:-1 ISTORE 2
+java.lang.Integer.parseInt:-1 ILOAD 3
+java.lang.Integer.parseInt:-1 IFEQ L14
+java.lang.Integer.parseInt:-1 ILOAD 2
+java.lang.Integer.parseInt:-1 INEG
+java.lang.Integer.parseInt:-1 IRETURN
+
+Slice consists of 167 bytecode instructions.
+Computation took 0.43 seconds.

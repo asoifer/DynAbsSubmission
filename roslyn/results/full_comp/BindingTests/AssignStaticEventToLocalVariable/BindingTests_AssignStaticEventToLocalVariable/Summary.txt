@@ -1,0 +1,2 @@
+BindingTests_AssignStaticEventToLocalVariable||118004|8455|16|235.1182994||209.9344135|8290|303320||
+BindingTests_AssignStaticEventToLocalVariable||118004|8455|16|163.4935965||103.135374|8290|303320||

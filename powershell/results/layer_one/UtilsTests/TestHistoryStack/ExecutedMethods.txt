@@ -1,0 +1,7 @@
+|||FirstProcess||OTHER|0|
+|System.Management.Automation.Internal|HistoryStack|ctor|uint capacity|METHOD|1|FULL HAVOC
+|PSTests|CustomAssert|Equal|int expected,int actual|METHOD|14|FULL HAVOC
+|System.Management.Automation.Internal|HistoryStack|Push|string item|METHOD|3|FULL HAVOC
+|System.Management.Automation.Internal|HistoryStack|Undo|string currentItem|METHOD|4|FULL HAVOC
+|System.Management.Automation.Internal|HistoryStack|Redo|string currentItem|METHOD|1|FULL HAVOC
+|PSTests|CustomAssert|Throws|System.Func<object> testCode|METHOD|2|FULL HAVOC

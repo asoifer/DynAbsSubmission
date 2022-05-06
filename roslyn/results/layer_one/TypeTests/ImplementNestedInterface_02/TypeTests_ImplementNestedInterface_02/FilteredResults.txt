@@ -1,0 +1,14 @@
+DiagnosticDescription.cs:456
+DiagnosticDescription.cs:457
+DiagnosticDescription.cs:461
+DiagnosticDescription.cs:470
+DiagnosticDescription.cs:516
+DiagnosticDescription.cs:517
+DiagnosticDescription.cs:522
+DiagnosticExtensions.cs:48
+DiagnosticExtensions.cs:63
+DiagnosticExtensions.cs:100
+DiagnosticExtensions.cs:107
+DiffUtil.cs:85
+TypeTests.cs:2328
+---- Last slice: [DiagnosticExtensions.cs - 100]

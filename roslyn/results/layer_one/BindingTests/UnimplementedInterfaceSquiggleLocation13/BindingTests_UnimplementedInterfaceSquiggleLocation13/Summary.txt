@@ -1,0 +1,2 @@
+BindingTests_UnimplementedInterfaceSquiggleLocation13||3967|1235|886|89.6089293||1.5257258|7549|11718||
+BindingTests_UnimplementedInterfaceSquiggleLocation13||3972|1241|804|89.6089293||1.5388979|7549|11739||

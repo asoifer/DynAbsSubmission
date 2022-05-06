@@ -1,0 +1,212 @@
+ 0.0% done, time left: unknown                               100.0% done, time left: unknown  finished
+The dynamic slice for criterion [Health.main:81:{slicingVariable1}]:
+Health.main:44 ALOAD 0
+Health.main:44 INVOKESTATIC Health.parseCmdLine([Ljava/lang/String;)V
+Health.main:47 GETSTATIC Health.maxLevel I
+Health.main:47 INVOKESTATIC Village.createVillage(IILVillage;I)LVillage;
+Health.main:47 ASTORE 3
+Health.main:54 ICONST_0
+Health.main:54 ISTORE 8
+Health.main:54 ILOAD 8
+Health.main:54 GETSTATIC Health.maxTime I
+Health.main:54 IF_ICMPGE L3
+Health.main:54 IINC 8 1
+Health.main:61 ALOAD 3
+Health.main:61 INVOKEVIRTUAL Village.getResults()LResults;
+Health.main:61 ASTORE 8
+Health.main:78 ALOAD 8
+Health.main:78 GETFIELD Results.totalHospitals F
+Health.main:78 F2D
+Health.main:78 DSTORE 11
+Health.parseCmdLine:87 ICONST_0
+Health.parseCmdLine:87 ISTORE 2
+Health.parseCmdLine:88 ILOAD 2
+Health.parseCmdLine:88 ALOAD 0
+Health.parseCmdLine:88 ARRAYLENGTH
+Health.parseCmdLine:88 IF_ICMPGE L9
+Health.parseCmdLine:88 ALOAD 0
+Health.parseCmdLine:88 ILOAD 2
+Health.parseCmdLine:88 AALOAD
+Health.parseCmdLine:88 LDC "-"
+Health.parseCmdLine:88 INVOKEVIRTUAL java/lang/String.startsWith(Ljava/lang/String;)Z
+Health.parseCmdLine:88 IFEQ L9
+Health.parseCmdLine:90 ALOAD 0
+Health.parseCmdLine:90 ILOAD 2
+Health.parseCmdLine:90 IINC 2 1
+Health.parseCmdLine:90 AALOAD
+Health.parseCmdLine:90 ASTORE 1
+Health.parseCmdLine:93 ALOAD 1
+Health.parseCmdLine:93 LDC "-l"
+Health.parseCmdLine:93 INVOKEVIRTUAL java/lang/String.equals(Ljava/lang/Object;)Z
+Health.parseCmdLine:93 IFEQ L2
+Health.parseCmdLine:95 ILOAD 2
+Health.parseCmdLine:95 ALOAD 0
+Health.parseCmdLine:95 ARRAYLENGTH
+Health.parseCmdLine:95 IF_ICMPGE L1
+Health.parseCmdLine:96 NEW java/lang/Integer
+Health.parseCmdLine:96 DUP
+Health.parseCmdLine:96 ALOAD 0
+Health.parseCmdLine:96 ILOAD 2
+Health.parseCmdLine:96 IINC 2 1
+Health.parseCmdLine:96 AALOAD
+Health.parseCmdLine:96 INVOKESPECIAL java/lang/Integer.<init>(Ljava/lang/String;)V
+Health.parseCmdLine:96 INVOKEVIRTUAL java/lang/Integer.intValue()I
+Health.parseCmdLine:96 PUTSTATIC Health.maxLevel I
+Health.parseCmdLine:100 ALOAD 1
+Health.parseCmdLine:100 LDC "-t"
+Health.parseCmdLine:100 INVOKEVIRTUAL java/lang/String.equals(Ljava/lang/Object;)Z
+Health.parseCmdLine:100 IFEQ L4
+Health.parseCmdLine:102 ILOAD 2
+Health.parseCmdLine:102 ALOAD 0
+Health.parseCmdLine:102 ARRAYLENGTH
+Health.parseCmdLine:102 IF_ICMPGE L3
+Health.parseCmdLine:103 NEW java/lang/Integer
+Health.parseCmdLine:103 DUP
+Health.parseCmdLine:103 ALOAD 0
+Health.parseCmdLine:103 ILOAD 2
+Health.parseCmdLine:103 AALOAD
+Health.parseCmdLine:103 INVOKESPECIAL java/lang/Integer.<init>(Ljava/lang/String;)V
+Health.parseCmdLine:103 INVOKEVIRTUAL java/lang/Integer.intValue()I
+Health.parseCmdLine:103 PUTSTATIC Health.maxTime I
+List.<init>:14 ALOAD 0
+List.<init>:14 ACONST_NULL
+List.<init>:14 PUTFIELD List.head LListNode;
+Village.<init>:35 ALOAD 0
+Village.<init>:35 ICONST_4
+Village.<init>:35 ANEWARRAY Village
+Village.<init>:35 PUTFIELD Village.forward [LVillage;
+Village.<init>:38 ALOAD 0
+Village.<init>:38 NEW List
+Village.<init>:38 DUP
+Village.<init>:38 INVOKESPECIAL List.<init>()V
+Village.<init>:38 PUTFIELD Village.returned LList;
+Village.addVillage:50 ALOAD 0
+Village.addVillage:50 GETFIELD Village.forward [LVillage;
+Village.addVillage:50 ILOAD 1
+Village.addVillage:50 ALOAD 2
+Village.addVillage:50 AASTORE
+Village.createVillage:78 ILOAD 0
+Village.createVillage:78 IFNE L0
+Village.createVillage:82 NEW Village
+Village.createVillage:82 DUP
+Village.createVillage:82 INVOKESPECIAL Village.<init>(IILVillage;I)V
+Village.createVillage:82 ASTORE 4
+Village.createVillage:83 ICONST_3
+Village.createVillage:83 ISTORE 5
+Village.createVillage:83 ILOAD 5
+Village.createVillage:83 IFLT L2
+Village.createVillage:83 IINC 5 -1
+Village.createVillage:85 ILOAD 0
+Village.createVillage:85 ICONST_1
+Village.createVillage:85 ISUB
+Village.createVillage:85 ASTORE 6
+Village.createVillage:86 ALOAD 4
+Village.createVillage:86 ILOAD 5
+Village.createVillage:86 ALOAD 6
+Village.createVillage:86 INVOKEVIRTUAL Village.addVillage(ILVillage;)V
+Village.createVillage:88 ALOAD 4
+Village.createVillage:88 ARETURN
+Village.getResults:141 ICONST_4
+Village.getResults:141 ANEWARRAY Results
+Village.getResults:141 ASTORE 1
+Village.getResults:142 ICONST_3
+Village.getResults:142 ISTORE 2
+Village.getResults:142 ILOAD 2
+Village.getResults:142 IFLT L2
+Village.getResults:142 IINC 2 -1
+Village.getResults:144 ALOAD 0
+Village.getResults:144 GETFIELD Village.forward [LVillage;
+Village.getResults:144 ILOAD 2
+Village.getResults:144 AALOAD
+Village.getResults:144 ASTORE 3
+Village.getResults:145 ALOAD 3
+Village.getResults:145 IFNULL L1
+Village.getResults:146 ALOAD 1
+Village.getResults:146 ILOAD 2
+Village.getResults:146 ALOAD 3
+Village.getResults:146 INVOKEVIRTUAL Village.getResults()LResults;
+Village.getResults:146 AASTORE
+Village.getResults:149 NEW Results
+Village.getResults:149 ASTORE 2
+Village.getResults:150 ICONST_3
+Village.getResults:150 ISTORE 3
+Village.getResults:150 ILOAD 3
+Village.getResults:150 IFLT L5
+Village.getResults:150 IINC 3 -1
+Village.getResults:152 ALOAD 1
+Village.getResults:152 ILOAD 3
+Village.getResults:152 AALOAD
+Village.getResults:152 IFNULL L4
+Village.getResults:154 ALOAD 2
+Village.getResults:154 DUP
+Village.getResults:154 GETFIELD Results.totalHospitals F
+Village.getResults:154 ALOAD 1
+Village.getResults:154 ILOAD 3
+Village.getResults:154 AALOAD
+Village.getResults:154 GETFIELD Results.totalHospitals F
+Village.getResults:154 FADD
+Village.getResults:154 PUTFIELD Results.totalHospitals F
+Village.getResults:160 ALOAD 0
+Village.getResults:160 GETFIELD Village.returned LList;
+Village.getResults:160 GETFIELD List.head LListNode;
+Village.getResults:160 ASTORE 3
+Village.getResults:161 ALOAD 3
+Village.getResults:161 IFNULL L7
+Village.getResults:170 ALOAD 2
+Village.getResults:170 ARETURN
+java.lang.Character.digit:-1 ILOAD 0
+java.lang.Character.digit:-1 INVOKESTATIC java/lang/CharacterData.of(I)Ljava/lang/CharacterData;
+java.lang.Character.digit:-1 IRETURN
+java.lang.Character.digit:-1 ILOAD 0
+java.lang.Character.digit:-1 INVOKESTATIC java/lang/Character.digit(II)I
+java.lang.Character.digit:-1 IRETURN
+java.lang.CharacterData.of:-1 ILOAD 0
+java.lang.CharacterData.of:-1 BIPUSH 8
+java.lang.CharacterData.of:-1 IUSHR
+java.lang.CharacterData.of:-1 IFNE L0
+java.lang.CharacterData.of:-1 GETSTATIC java/lang/CharacterDataLatin1.instance Ljava/lang/CharacterDataLatin1;
+java.lang.CharacterData.of:-1 ARETURN
+java.lang.Integer.<init>:-1 ALOAD 0
+java.lang.Integer.<init>:-1 ALOAD 1
+java.lang.Integer.<init>:-1 BIPUSH 10
+java.lang.Integer.<init>:-1 INVOKESTATIC java/lang/Integer.parseInt(Ljava/lang/String;I)I
+java.lang.Integer.<init>:-1 PUTFIELD java/lang/Integer.value I
+java.lang.Integer.intValue:-1 ALOAD 0
+java.lang.Integer.intValue:-1 GETFIELD java/lang/Integer.value I
+java.lang.Integer.intValue:-1 IRETURN
+java.lang.Integer.parseInt:-1 ICONST_0
+java.lang.Integer.parseInt:-1 ISTORE 2
+java.lang.Integer.parseInt:-1 ICONST_0
+java.lang.Integer.parseInt:-1 ISTORE 3
+java.lang.Integer.parseInt:-1 ICONST_0
+java.lang.Integer.parseInt:-1 ISTORE 4
+java.lang.Integer.parseInt:-1 ALOAD 0
+java.lang.Integer.parseInt:-1 INVOKEVIRTUAL java/lang/String.length()I
+java.lang.Integer.parseInt:-1 ISTORE 5
+java.lang.Integer.parseInt:-1 ILOAD 5
+java.lang.Integer.parseInt:-1 IFLE L12
+java.lang.Integer.parseInt:-1 ILOAD 4
+java.lang.Integer.parseInt:-1 ILOAD 5
+java.lang.Integer.parseInt:-1 IF_ICMPGE L11
+java.lang.Integer.parseInt:-1 ALOAD 0
+java.lang.Integer.parseInt:-1 ILOAD 4
+java.lang.Integer.parseInt:-1 IINC 4 1
+java.lang.Integer.parseInt:-1 INVOKEVIRTUAL java/lang/String.charAt(I)C
+java.lang.Integer.parseInt:-1 INVOKESTATIC java/lang/Character.digit(CI)I
+java.lang.Integer.parseInt:-1 ISTORE 8
+java.lang.Integer.parseInt:-1 ILOAD 2
+java.lang.Integer.parseInt:-1 ILOAD 1
+java.lang.Integer.parseInt:-1 IMUL
+java.lang.Integer.parseInt:-1 ISTORE 2
+java.lang.Integer.parseInt:-1 ILOAD 2
+java.lang.Integer.parseInt:-1 ILOAD 8
+java.lang.Integer.parseInt:-1 ISUB
+java.lang.Integer.parseInt:-1 ISTORE 2
+java.lang.Integer.parseInt:-1 ILOAD 3
+java.lang.Integer.parseInt:-1 IFEQ L14
+java.lang.Integer.parseInt:-1 ILOAD 2
+java.lang.Integer.parseInt:-1 INEG
+java.lang.Integer.parseInt:-1 IRETURN
+
+Slice consists of 207 bytecode instructions.
+Computation took 0.44 seconds.

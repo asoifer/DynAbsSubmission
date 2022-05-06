@@ -1,0 +1,51 @@
+|||FirstProcess||OTHER|0|
+|System.Collections.Concurrent|ConcurrentDictionary|ctor||METHOD|7|FULL HAVOC
+|System.Collections.Generic|List|ctor||METHOD|1|Fresh.{Single{System.Array}}.{P}.{RV.?;RO.?}.{[RV, RO, ?]}<EOF>
+|System.Collections.Generic|List|Add|System.Func<object, System.Management.Automation.PSObject.AdapterSet> item|METHOD|2|Null.{}.{R;R.?;R.*.UntilType{System.Array}.OfType{System.Array}.?;P}.{R.?;R.*.UntilType{System.Array}.OfType{System.Array}.?}.{[R.*.UntilType{System.Array}.OfType{System.Array}, P, ?]}<EOF>
+|System|Object|ctor||METHOD|4|Fresh.{}.{}.{RV.?}.{}<EOF>
+|System.Threading|ThreadLocal|ctor||METHOD|1|FULL HAVOC
+|System.Collections.Generic|Dictionary|ctor|System.Collections.Generic.IEqualityComparer<string>? comparer|METHOD|12|Fresh.{Many{|DictInternal}}.{P}.{RV.?;RO.?}.{[RV;RO, RO, ?], [RO, P, ?]}<EOF>
+|System|String|IsNullOrEmpty|string? value|METHOD|8|Null.{}.{R;P}.{}.{}<EOF>
+|System.Collections.Generic|Dictionary|TryGetValue|string key,System.Management.Automation.PSTraceSource value|METHOD|3|FULL HAVOC
+|System.Collections.Generic|Dictionary|ContainsKey|string key|METHOD|2|Null.{}.{R;R.?;R.?.?.OfKind{DictInternal}.?;P}.{}.{}<EOF>
+|System|Environment|GetEnvironmentVariable|string variable|METHOD|2|Null.{}.{R;P}.{}.{}<EOF>
+|System|String|Equals|string? a,string? b,System.StringComparison comparisonType|METHOD|12|Null.{}.{R;P}.{}.{}<EOF>
+|System.Runtime.CompilerServices|ConditionalWeakTable|ctor||METHOD|2|FULL HAVOC
+|System.Collections.ObjectModel|Collection|ctor||METHOD|3|FULL HAVOC
+|System.Collections.ObjectModel|Collection|Add|System.Management.Automation.CollectionEntry<System.Management.Automation.PSMemberInfo> item|METHOD|9|FULL HAVOC
+|System.Management.Automation|CollectionEntry|ctor|System.Management.Automation.CollectionEntry<System.Management.Automation.PSMethodInfo>.GetMembersDelegate getMembers,System.Management.Automation.CollectionEntry<System.Management.Automation.PSMethodInfo>.GetMemberDelegate getMember,System.Management.Automation.CollectionEntry<System.Management.Automation.PSMethodInfo>.GetFirstOrDefaultDelegate getFirstOrDefault,bool shouldReplicateWhenReturning,bool shouldCloneWhenReturning,string collectionNameForTracing|METHOD|2|FULL HAVOC
+|System.Collections.Specialized|HybridDictionary|ctor||METHOD|1|FULL HAVOC
+|System.Collections.Generic|SortedDictionary|ctor||METHOD|1|FULL HAVOC
+|System|Enum|HasFlag|System.Enum flag|METHOD|2|Null.{}.{R;P}.{}.{}<EOF>
+|System.Runtime.CompilerServices|ConditionalWeakTable|GetValue|object key,System.Runtime.CompilerServices.ConditionalWeakTable<object, System.Management.Automation.PSMemberInfoInternalCollection<System.Management.Automation.PSMemberInfo>>.CreateValueCallback createValueCallback|METHOD|1|FULL HAVOC
+|System.Collections.Specialized|OrderedDictionary|ctor|System.Collections.IEqualityComparer comparer|METHOD|1|FULL HAVOC
+|System.Threading|Interlocked|CompareExchange|System.Collections.Specialized.OrderedDictionary location1,System.Collections.Specialized.OrderedDictionary value,System.Collections.Specialized.OrderedDictionary comparand|METHOD|1|FULL HAVOC
+|System.Collections.Specialized|OrderedDictionary|get_Item|object key|METHOD|1|FULL HAVOC
+|System.Management.Automation.Language|KeyComparer|ctor||METHOD|1|FULL HAVOC
+|System|Tuple|Create|string item1,System.Type item2,bool item3,bool item4|METHOD|6|FULL HAVOC
+|System.Dynamic|GetMemberBinder|ctor|string name,bool ignoreCase|METHOD|12|FULL HAVOC
+|System.Collections.Generic|Dictionary|Add|System.Tuple<string, System.Type, bool, bool> key,System.Management.Automation.Language.PSGetMemberBinder value|METHOD|23|Null.{}.{R;R.?;R.?.?.OfKind{DictInternal}.?;P}.{R.?.?.OfKind{DictInternal}.?}.{[R.?.?.OfKind{DictInternal}, P, ?]}<EOF>
+|System|StringComparer|GetHashCode|string obj|METHOD|7|FULL HAVOC
+|System|Boolean|GetHashCode||METHOD|14|FULL HAVOC
+|System.IO|Path|Combine|string path1,string path2|METHOD|1|FULL HAVOC
+|System.Collections.Generic|HashSet|ctor|System.Collections.Generic.IEqualityComparer<string>? comparer|METHOD|2|Fresh.{Many{|HashSet}}.{P}.{RV.?;RO.?}.{[RV, RO, ?], [RO, P, ?]}<EOF>
+|System.Collections.Generic|HashSet|Add|string item|METHOD|14|FULL HAVOC
+|System.Text|UTF32Encoding|ctor|bool bigEndian,bool byteOrderMark|METHOD|1|FULL HAVOC
+|System.Text|UTF8Encoding|ctor|bool encoderShouldEmitUTF8Identifier|METHOD|1|FULL HAVOC
+|System.Collections.Concurrent|ConcurrentDictionary|GetOrAdd|string key,System.Func<string, System.Collections.Generic.List<System.Management.Automation.Language.PSGetMemberBinder>> valueFactory|METHOD|2|FULL HAVOC
+|System.Linq|Enumerable|Any|System.Collections.Generic.IEnumerable<System.Management.Automation.Language.PSGetMemberBinder> source|METHOD|2|FULL HAVOC
+|System.Linq|Enumerable|All|System.Collections.Generic.IEnumerable<System.Management.Automation.Language.PSGetMemberBinder> source,System.Func<System.Management.Automation.Language.PSGetMemberBinder, bool> predicate|METHOD|2|FULL HAVOC
+|System|Object|GetType||METHOD|1|Fresh.{}.{R}.{RV.?}.{}<EOF>
+|System.Dynamic|DynamicMetaObjectBinder|ctor||METHOD|2|FULL HAVOC
+|System.Runtime.CompilerServices|CallSiteBinder|CacheTarget|System.Func<System.Runtime.CompilerServices.CallSite, object, object> target|METHOD|6|FULL HAVOC
+|System|Type|GetFields|System.Reflection.BindingFlags bindingAttr|METHOD|1|FULL HAVOC
+|System|Type|GetProperties|System.Reflection.BindingFlags bindingAttr|METHOD|1|Fresh.{Many{System.Reflection.PropertyInfo}}.{R;R.?}.{RV.?;RO.?}.{[RV, RO, ?]}<EOF>
+|System|Type|GetMethods|System.Reflection.BindingFlags bindingAttr|METHOD|1|FULL HAVOC
+|System.Collections.Concurrent|ConcurrentDictionary|TryAdd|System.Type key,bool value|METHOD|1|FULL HAVOC
+|System.Management.Automation|PSMemberInfoInternalCollection|MoveNext||PROPERTY|0|
+|System.Linq|Enumerable|OfType|System.Collections.IEnumerable source|METHOD|1|FULL HAVOC
+|System.Linq|Enumerable|ToList|System.Collections.Generic.IEnumerable<T> source|METHOD|1|FULL HAVOC
+|System.Collections.Generic|List|GetEnumerator||METHOD|1|FULL HAVOC
+|System.Management.Automation|MemberNamePredicate|Invoke|string memberName|METHOD|1|FULL HAVOC
+|PSTests|CustomAssert|NotNull|object object|METHOD|1|FULL HAVOC
+|PSTests|CustomAssert|Equal|string expected,string actual|METHOD|1|FULL HAVOC

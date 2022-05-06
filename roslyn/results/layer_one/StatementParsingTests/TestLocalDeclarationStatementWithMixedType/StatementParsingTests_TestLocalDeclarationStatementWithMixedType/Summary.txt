@@ -1,0 +1,15 @@
+StatementParsingTests_TestLocalDeclarationStatementWithMixedType||20467|1175|566|89.6089293||3.7409876|1656|58931||
+StatementParsingTests_TestLocalDeclarationStatementWithMixedType||20469|1178|568|89.6089293||3.7439492|1656|58939||
+StatementParsingTests_TestLocalDeclarationStatementWithMixedType||20670|1200|584|89.6089293||3.7846551|1656|59517||
+StatementParsingTests_TestLocalDeclarationStatementWithMixedType||20676|1209|5|89.6089293||3.7890992|1656|59539||
+StatementParsingTests_TestLocalDeclarationStatementWithMixedType||20677|1210|566|89.6089293||3.7895422|1656|59540||
+StatementParsingTests_TestLocalDeclarationStatementWithMixedType||20678|1211|591|89.6089293||3.7992944|1656|59542||
+StatementParsingTests_TestLocalDeclarationStatementWithMixedType||20679|1215|591|89.6089293||3.8040829|1656|59564||
+StatementParsingTests_TestLocalDeclarationStatementWithMixedType||20852|1216|592|89.6089293||3.8340274|1656|60061||
+StatementParsingTests_TestLocalDeclarationStatementWithMixedType||20853|1217|593|89.6089293||3.8379661|1656|60067||
+StatementParsingTests_TestLocalDeclarationStatementWithMixedType||20855|1218|594|89.6089293||3.8414097|1656|60075||
+StatementParsingTests_TestLocalDeclarationStatementWithMixedType||20859|1221|597|89.6089293||3.8490726|1656|60089||
+StatementParsingTests_TestLocalDeclarationStatementWithMixedType||20860|1222|598|89.6089293||3.8518696|1656|60094||
+StatementParsingTests_TestLocalDeclarationStatementWithMixedType||20861|1223|599|89.6089293||3.854525|1656|60099||
+StatementParsingTests_TestLocalDeclarationStatementWithMixedType||20863|1224|600|89.6089293||3.8574987|1656|60105||
+StatementParsingTests_TestLocalDeclarationStatementWithMixedType||20865|1225|601|89.6089293||3.8605944|1656|60110||

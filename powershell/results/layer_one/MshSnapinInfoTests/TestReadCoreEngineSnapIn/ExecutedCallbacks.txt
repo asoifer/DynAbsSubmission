@@ -1,0 +1,2 @@
+|||FirstProcess||OTHER|0|||PSTests.Parallel|MshSnapinInfoTests|||PROPERTY|1|
+|||FirstProcess||OTHER|0|||PSTests.Parallel|MshSnapinInfoTests|TestReadCoreEngineSnapIn||METHOD|1|

@@ -1,0 +1,4 @@
+CompilationEmitTests_EmitRefAssembly_PrivatePropertySetter||7393|1058|879|89.6089293||4.226669|16311|20603||
+CompilationEmitTests_EmitRefAssembly_PrivatePropertySetter||7471|1152|15|89.6089293||4.2517304|16311|20799||
+CompilationEmitTests_EmitRefAssembly_PrivatePropertySetter||7776|1188|927|89.6089293||4.3645014|16311|21522||
+CompilationEmitTests_EmitRefAssembly_PrivatePropertySetter||8182|1222|936|89.6089293||4.4824649|16311|22510||

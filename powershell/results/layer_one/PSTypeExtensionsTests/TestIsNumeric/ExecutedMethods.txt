@@ -1,0 +1,14 @@
+|||FirstProcess||OTHER|0|
+|System|Object|GetType||METHOD|1|Fresh.{}.{R}.{RV.?}.{}<EOF>
+|System|Object|ctor||METHOD|1|Fresh.{}.{}.{RV.?}.{}<EOF>
+|System.Threading|ThreadLocal|ctor||METHOD|1|FULL HAVOC
+|System.Collections.Generic|Dictionary|ctor|System.Collections.Generic.IEqualityComparer<string>? comparer|METHOD|2|Fresh.{Many{|DictInternal}}.{P}.{RV.?;RO.?}.{[RV;RO, RO, ?], [RO, P, ?]}<EOF>
+|System.Management.Automation|LanguagePrimitives|GetTypeCode|System.Type type|METHOD|1|FULL HAVOC
+|System|String|IsNullOrEmpty|string? value|METHOD|6|Null.{}.{R;P}.{}.{}<EOF>
+|System.Collections.Generic|Dictionary|TryGetValue|string key,System.Management.Automation.PSTraceSource value|METHOD|2|FULL HAVOC
+|System.Collections.Generic|Dictionary|ContainsKey|string key|METHOD|2|Null.{}.{R;R.?;R.?.?.OfKind{DictInternal}.?;P}.{}.{}<EOF>
+|System|Environment|GetEnvironmentVariable|string variable|METHOD|2|Null.{}.{R;P}.{}.{}<EOF>
+|System|String|Equals|string? a,string? b,System.StringComparison comparisonType|METHOD|2|Null.{}.{R;P}.{}.{}<EOF>
+|System|Type|GetTypeCode|System.Type? type|METHOD|1|FULL HAVOC
+|System.Management.Automation|LanguagePrimitives|IsNumeric|System.TypeCode typeCode|METHOD|1|FULL HAVOC
+|PSTests|CustomAssert|True|bool condition|METHOD|1|FULL HAVOC

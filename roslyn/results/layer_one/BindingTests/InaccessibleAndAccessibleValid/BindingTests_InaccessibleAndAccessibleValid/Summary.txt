@@ -1,0 +1,1 @@
+BindingTests_InaccessibleAndAccessibleValid||1785|973|16|89.6089293||0.69757|6887|5753||

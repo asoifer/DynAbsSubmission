@@ -1,0 +1,6 @@
+CompilationEmitTests_RefAssembly_StrongNameProvider_Arm64||65052|6099|16|222.0905773||91.2732954|14132|167616||
+CompilationEmitTests_RefAssembly_StrongNameProvider_Arm64||105397|7675|18|222.0905773||157.6639156|14132|281186||
+CompilationEmitTests_RefAssembly_StrongNameProvider_Arm64||161845|7701|18|222.0905773||274.1910406|14132|462995||
+CompilationEmitTests_RefAssembly_StrongNameProvider_Arm64||65052|6099|16|155.230955||33.9921367|14132|167616||
+CompilationEmitTests_RefAssembly_StrongNameProvider_Arm64||105397|7675|18|155.230955||77.9062742|14132|281186||
+CompilationEmitTests_RefAssembly_StrongNameProvider_Arm64||161845|7701|18|155.230955||155.269403|14132|462995||

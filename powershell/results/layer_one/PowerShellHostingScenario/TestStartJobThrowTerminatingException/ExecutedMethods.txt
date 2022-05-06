@@ -1,0 +1,79 @@
+|||FirstProcess||OTHER|0|
+|System.Collections.ObjectModel|Collection|ctor||METHOD|10|FULL HAVOC
+|System|Object|ctor||METHOD|19|Fresh.{}.{}.{RV.?}.{}<EOF>
+|System.Management.Automation|Diagnostics|Assert|bool condition,string whyThisShouldNeverHappen|METHOD|30|FULL HAVOC
+|System|Guid|NewGuid||METHOD|3|Fresh.{}.{P}.{RV.?}.{}<EOF>
+|System.Collections.Generic|List|ctor||METHOD|15|Fresh.{Single{System.Array}}.{P}.{RV.?;RO.?}.{[RV, RO, ?]}<EOF>
+|Microsoft.PowerShell.Telemetry|ApplicationInsightsTelemetry|SendTelemetryMetric|Microsoft.PowerShell.Telemetry.TelemetryType metricId,string data|METHOD|1|FULL HAVOC
+|System.Collections.Concurrent|ConcurrentDictionary|ctor||METHOD|1|FULL HAVOC
+|System.Collections.Generic|List|Add|System.Func<object, System.Management.Automation.PSObject.AdapterSet> item|METHOD|2|Null.{}.{R;R.?;R.*.UntilType{System.Array}.OfType{System.Array}.?;P}.{R.?;R.*.UntilType{System.Array}.OfType{System.Array}.?}.{[R.*.UntilType{System.Array}.OfType{System.Array}, P, ?]}<EOF>
+|System.Management.Automation|PSTraceSource|GetTracer|string name,string description,bool traceHeaders|METHOD|2|FULL HAVOC
+|System.Runtime.CompilerServices|ConditionalWeakTable|ctor||METHOD|2|FULL HAVOC
+|System.Management.Automation|CollectionEntry|ctor|System.Management.Automation.CollectionEntry<System.Management.Automation.PSMemberInfo>.GetMembersDelegate getMembers,System.Management.Automation.CollectionEntry<System.Management.Automation.PSMemberInfo>.GetMemberDelegate getMember,System.Management.Automation.CollectionEntry<System.Management.Automation.PSMemberInfo>.GetFirstOrDefaultDelegate getFirstOrDefault,bool shouldReplicateWhenReturning,bool shouldCloneWhenReturning,string collectionNameForTracing|METHOD|9|FULL HAVOC
+|System.Collections.ObjectModel|Collection|Add|System.Management.Automation.CollectionEntry<System.Management.Automation.PSMemberInfo> item|METHOD|12|FULL HAVOC
+|System.Management.Automation|DotNetAdapter|ctor||METHOD|2|FULL HAVOC
+|System.Management.Automation|BaseDotNetAdapterForAdaptedObjects|ctor||METHOD|1|FULL HAVOC
+|System.Management.Automation|PSMemberSetAdapter|ctor||METHOD|1|FULL HAVOC
+|System.Management.Automation|PSObjectAdapter|ctor||METHOD|1|FULL HAVOC
+|Microsoft.PowerShell.Cim|CimInstanceAdapter|ctor||METHOD|1|FULL HAVOC
+|System.Management.Automation|ThirdPartyAdapter|ctor|System.Type adaptedType,System.Management.Automation.PSPropertyAdapter externalAdapter|METHOD|1|FULL HAVOC
+|System.Management.Automation|ManagementObjectAdapter|ctor||METHOD|1|FULL HAVOC
+|System.Management.Automation|ManagementClassApdapter|ctor||METHOD|1|FULL HAVOC
+|System.Management.Automation|DirectoryEntryAdapter|ctor||METHOD|1|FULL HAVOC
+|System.Management.Automation|DataRowViewAdapter|ctor||METHOD|1|FULL HAVOC
+|System.Management.Automation|DataRowAdapter|ctor||METHOD|1|FULL HAVOC
+|System.Management.Automation|XmlNodeAdapter|ctor||METHOD|1|FULL HAVOC
+|System.Collections.Generic|SortedDictionary|ctor||METHOD|1|FULL HAVOC
+|System.Management.Automation|ScriptBlock|Create|string script|METHOD|1|FULL HAVOC
+|System|String|IsNullOrWhiteSpace|string? value|METHOD|1|Null.{}.{R;P}.{}.{}<EOF>
+|PSTests|CustomAssert|Throws|System.Func<object> testCode|METHOD|1|FULL HAVOC
+|System.Management.Automation.Internal|ObjectStream|ctor||METHOD|1|FULL HAVOC
+|System.Management.Automation.Internal|ObjectStreamBase|Close||METHOD|5|FULL HAVOC
+|System.Management.Automation.Internal|PSDataCollectionStream|ctor|System.Guid psInstanceId,System.Management.Automation.PSDataCollection<TOutput> storeToUse|METHOD|2|FULL HAVOC
+|System|EventArgs|ctor||METHOD|8|FULL HAVOC
+|System.Management.Automation|ExtensionMethods|SafeInvoke|System.EventHandler<System.Management.Automation.PSInvocationStateChangedEventArgs> eventHandler,object sender,System.Management.Automation.PSInvocationStateChangedEventArgs eventArgs|METHOD|3|FULL HAVOC
+|System.Management.Automation.Tracing|EtwActivity|GetActivityId||METHOD|1|FULL HAVOC
+|System.Management.Automation.Tracing|EtwActivity|CreateActivityId||METHOD|1|FULL HAVOC
+|System.Management.Automation.Tracing|EtwActivity|SetActivityId|System.Guid activityId|METHOD|1|FULL HAVOC
+|System.Management.Automation.Runspaces|InitialSessionState|CreateDefault||METHOD|1|FULL HAVOC
+|System.Management.Automation|Platform|GetFolderPath|System.Environment.SpecialFolder folder|METHOD|1|FULL HAVOC
+|System.IO|Path|Combine|string path1,string path2|METHOD|2|FULL HAVOC
+|System.Threading|Interlocked|Increment|int location|METHOD|2|FULL HAVOC
+|System|Int32|ToString|System.IFormatProvider? provider|METHOD|1|Null.{}.{R;P}.{}.{}<EOF>
+|System.Collections.Generic|Stack|ctor||METHOD|3|FULL HAVOC
+|System|WeakReference|ctor|System.Management.Automation.Runspaces.Runspace target|METHOD|1|FULL HAVOC
+|System.Collections.Generic|SortedDictionary|Add|int key,System.WeakReference<System.Management.Automation.Runspaces.Runspace> value|METHOD|1|FULL HAVOC
+|System.Collections.Generic|Queue|ctor||METHOD|3|FULL HAVOC
+|System.Threading|ManualResetEventSlim|ctor|bool initialState|METHOD|1|FULL HAVOC
+|System.Management.Automation.Runspaces|InitialSessionState|Clone||METHOD|1|FULL HAVOC
+|System.Diagnostics.Tracing|EventSource|IsEnabled||METHOD|1|FULL HAVOC
+|System.Collections.Generic|Queue|Enqueue|System.Management.Automation.Runspaces.RunspaceBase.RunspaceEventQueueItem item|METHOD|3|FULL HAVOC
+|System.Collections.Generic|Queue|Clear||METHOD|2|FULL HAVOC
+|System.Management.Automation|PSTraceSource|WriteLine|string format|METHOD|3|FULL HAVOC
+|System.Management.Automation|AutomationEngine|ctor|System.Management.Automation.Host.PSHost hostInterface,System.Management.Automation.Runspaces.InitialSessionState iss|METHOD|1|FULL HAVOC
+|System.Management.Automation.Remoting|ObjectRef|ctor|System.Management.Automation.Host.PSHost oldValue|METHOD|2|FULL HAVOC
+|System|Lazy|ctor|System.Func<System.Management.Automation.Configuration.Transcription> valueFactory,bool isThreadSafe|METHOD|1|FULL HAVOC
+|System|Guid|ctor|int a,short b,short c,byte d,byte e,byte f,byte g,byte h,byte i,byte j,byte k|METHOD|1|Fresh.{}.{}.{RV.?}.{}<EOF>
+|System.Management.Automation|MshLog|LogEngineLifecycleEvent|System.Management.Automation.ExecutionContext executionContext,System.Management.Automation.EngineState engineState|METHOD|1|FULL HAVOC
+|System|String|IsNullOrEmpty|string? value|METHOD|2|Null.{}.{R;P}.{}.{}<EOF>
+|System.Management.Automation|ValidateRangeAttribute|ctor|object minRange,object maxRange|METHOD|1|FULL HAVOC
+|System.Management.Automation|PSVariable|ctor|string name,object value,System.Management.Automation.ScopedItemOptions options,System.Collections.ObjectModel.Collection<System.Attribute> attributes|METHOD|1|FULL HAVOC
+|System.Management.Automation|SessionStateInternal|SetVariable|System.Management.Automation.PSVariable variable,bool force,System.Management.Automation.CommandOrigin origin|METHOD|1|FULL HAVOC
+|System.Management.Automation|JobRepository|ctor||METHOD|1|FULL HAVOC
+|System.Management.Automation|JobManager|ctor||METHOD|1|FULL HAVOC
+|System.Management.Automation|RunspaceRepository|ctor||METHOD|1|FULL HAVOC
+|System.Management.Automation|SessionStateInternal|InitializeFixedVariables||METHOD|1|FULL HAVOC
+|System.Threading|ManualResetEventSlim|Set||METHOD|1|FULL HAVOC
+|System.Management.Automation.Runspaces|InitialSessionState|BindRunspace|System.Management.Automation.Runspaces.Runspace initializedRunspace,System.Management.Automation.PSTraceSource runspaceInitTracer|METHOD|1|FULL HAVOC
+|System.Management.Automation|PSEventArgs|ctor|System.Management.Automation.Runspaces.Runspace args|METHOD|1|FULL HAVOC
+|System.Management.Automation|AmsiUtils|CloseSession||METHOD|1|FULL HAVOC
+|System.Threading|ManualResetEvent|ctor|bool initialState|METHOD|1|FULL HAVOC
+|System|Nullable|.ctor||PROPERTY|1|FULL HAVOC
+|System.Threading|Thread|ctor|System.Threading.ThreadStart start,int maxStackSize|METHOD|1|FULL HAVOC
+|System.Threading|Thread|Start||METHOD|1|FULL HAVOC
+|System.Threading|WaitHandle|WaitOne||METHOD|1|FULL HAVOC
+|System.Collections.Generic|Queue|Dequeue||METHOD|1|FULL HAVOC
+|System|EventHandler|Invoke|object? sender,System.Management.Automation.Runspaces.PipelineStateEventArgs e|METHOD|1|FULL HAVOC
+|System.Management.Automation.Runspaces|Pipeline|Dispose||METHOD|1|FULL HAVOC
+|PSTests|CustomAssert|IsType|object object|METHOD|1|FULL HAVOC
+|PSTests|CustomAssert|Equal|string expected,string actual|METHOD|1|FULL HAVOC

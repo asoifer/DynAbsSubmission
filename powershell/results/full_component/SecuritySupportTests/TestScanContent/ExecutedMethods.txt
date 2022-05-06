@@ -1,0 +1,18 @@
+|||FirstProcess||OTHER|0|
+|System|Object|ctor||METHOD|1|Fresh.{}.{}.{RV.?}.{}<EOF>
+|System|String|IsNullOrEmpty|string? value|METHOD|1|Null.{}.{R;P}.{}.{}<EOF>
+|System.Diagnostics|Process|GetCurrentProcess||METHOD|2|Fresh.{Many}.{}.{RV.?;RO.?}.{[RV;RO, RO, ?]}<EOF>
+|System|String|Concat|string? str0,string? str1,string? str2,string? str3|METHOD|1|Null.{}.{R;P}.{}.{}<EOF>
+|System.Management.Automation|AmsiNativeMethods|AmsiInitialize|string appName,System.IntPtr amsiContext|METHOD|1|FULL HAVOC
+|System.IO|Path|Combine|string path1,string path2|METHOD|1|FULL HAVOC
+|System.Collections.Concurrent|ConcurrentDictionary|ctor||METHOD|2|FULL HAVOC
+|System.Collections.Generic|Dictionary|ctor||METHOD|3|Fresh.{Many{|DictInternal}}.{P}.{RV.?;RO.?}.{[RV;RO, RO, ?], [RO, P, ?]}<EOF>
+|System.Collections.Generic|Dictionary|Add|string key,string value|METHOD|17|Null.{}.{R;R.?;R.?.?.OfKind{DictInternal}.?;P}.{R.?.?.OfKind{DictInternal}.?}.{[R.?.?.OfKind{DictInternal}, P, ?]}<EOF>
+|System.Collections.Generic|HashSet|ctor|System.Collections.Generic.IEqualityComparer<string>? comparer|METHOD|2|Fresh.{Many{|HashSet}}.{P}.{RV.?;RO.?}.{[RV, RO, ?], [RO, P, ?]}<EOF>
+|System.Collections.Generic|HashSet|Add|string item|METHOD|14|FULL HAVOC
+|System.Text|UTF32Encoding|ctor|bool bigEndian,bool byteOrderMark|METHOD|1|FULL HAVOC
+|System.Text|UTF8Encoding|ctor|bool encoderShouldEmitUTF8Identifier|METHOD|1|FULL HAVOC
+|System.Management.Automation|AmsiNativeMethods|AmsiOpenSession|System.IntPtr amsiContext,System.IntPtr amsiSession|METHOD|1|FULL HAVOC
+|System|IntPtr|ctor|void* value|METHOD|1|FULL HAVOC
+|System.Management.Automation|AmsiNativeMethods|AmsiScanBuffer|System.IntPtr amsiContext,System.IntPtr buffer,uint length,string contentName,System.IntPtr amsiSession,System.Management.Automation.AmsiUtils.AmsiNativeMethods.AMSI_RESULT result|METHOD|1|FULL HAVOC
+|PSTests|CustomAssert|Equal|System.Management.Automation.AmsiUtils.AmsiNativeMethods.AMSI_RESULT expected,System.Management.Automation.AmsiUtils.AmsiNativeMethods.AMSI_RESULT actual|METHOD|1|FULL HAVOC

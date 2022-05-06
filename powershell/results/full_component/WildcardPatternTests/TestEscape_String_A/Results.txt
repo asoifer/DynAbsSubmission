@@ -1,0 +1,3 @@
+test_WildcardPattern.cs:10
+test_WildcardPattern.cs:29
+---- Last slice: [test_WildcardPattern.cs - 29]

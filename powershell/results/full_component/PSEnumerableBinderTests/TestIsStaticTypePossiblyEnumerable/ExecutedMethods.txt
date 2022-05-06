@@ -1,0 +1,6 @@
+|||FirstProcess||OTHER|0|
+|System|Object|GetType||METHOD|1|Fresh.{}.{R}.{RV.?}.{}<EOF>
+|System.Dynamic|ConvertBinder|ctor|System.Type type,bool explicit|METHOD|2|FULL HAVOC
+|System.Runtime.CompilerServices|CallSiteBinder|CacheTarget|System.Func<System.Runtime.CompilerServices.CallSite, object, System.Collections.IEnumerator> target|METHOD|6|FULL HAVOC
+|System|Type|IsAssignableFrom|System.Type? c|METHOD|4|FULL HAVOC
+|PSTests|CustomAssert|False|bool condition|METHOD|1|FULL HAVOC

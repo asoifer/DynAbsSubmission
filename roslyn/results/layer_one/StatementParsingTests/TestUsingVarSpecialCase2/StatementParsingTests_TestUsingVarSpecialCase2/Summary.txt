@@ -1,0 +1,9 @@
+StatementParsingTests_TestUsingVarSpecialCase2||18617|1168|548|89.6089293||3.4541692|1541|53732||
+StatementParsingTests_TestUsingVarSpecialCase2||18619|1171|550|89.6089293||3.4568074|1541|53740||
+StatementParsingTests_TestUsingVarSpecialCase2||18718|1193|566|89.6089293||3.489805|1541|54041||
+StatementParsingTests_TestUsingVarSpecialCase2||18724|1202|5|89.6089293||3.4935808|1541|54063||
+StatementParsingTests_TestUsingVarSpecialCase2||18725|1203|548|89.6089293||3.4938523|1541|54064||
+StatementParsingTests_TestUsingVarSpecialCase2||18727|1204|573|89.6089293||3.4966202|1541|54070||
+StatementParsingTests_TestUsingVarSpecialCase2||18729|1205|574|89.6089293||3.5029694|1541|54075||
+StatementParsingTests_TestUsingVarSpecialCase2||18730|1206|575|89.6089293||3.5064894|1541|54081||
+StatementParsingTests_TestUsingVarSpecialCase2||18798|1207|576|89.6089293||3.5200432|1541|54289||

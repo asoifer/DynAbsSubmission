@@ -1,0 +1,14 @@
+StatementParsingTests_TestYieldBreakExpression||17494|901|390|89.6089293||3.1606058|1410|50633||
+StatementParsingTests_TestYieldBreakExpression||17496|904|392|89.6089293||3.1625972|1410|50641||
+StatementParsingTests_TestYieldBreakExpression||17536|924|408|89.6089293||3.1838672|1410|50763||
+StatementParsingTests_TestYieldBreakExpression||17542|933|5|89.6089293||3.1870939|1410|50785||
+StatementParsingTests_TestYieldBreakExpression||17543|934|390|89.6089293||3.1873148|1410|50786||
+StatementParsingTests_TestYieldBreakExpression||17545|935|415|89.6089293||3.1894244|1410|50792||
+StatementParsingTests_TestYieldBreakExpression||17547|936|416|89.6089293||3.1956466|1410|50797||
+StatementParsingTests_TestYieldBreakExpression||17549|937|417|89.6089293||3.1980667|1410|50802||
+StatementParsingTests_TestYieldBreakExpression||17551|938|418|89.6089293||3.2002677|1410|50808||
+StatementParsingTests_TestYieldBreakExpression||17553|939|419|89.6089293||3.2021396|1410|50813||
+StatementParsingTests_TestYieldBreakExpression||17555|940|420|89.6089293||3.2044193|1410|50818||
+StatementParsingTests_TestYieldBreakExpression||17556|941|421|89.6089293||3.2059673|1410|50821||
+StatementParsingTests_TestYieldBreakExpression||17558|942|421|89.6089293||3.2082077|1410|50827||
+StatementParsingTests_TestYieldBreakExpression||17560|943|422|89.6089293||3.219961|1410|50832||

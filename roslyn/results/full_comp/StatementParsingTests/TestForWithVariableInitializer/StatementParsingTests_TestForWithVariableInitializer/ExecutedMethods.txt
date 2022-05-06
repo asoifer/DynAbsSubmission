@@ -1,0 +1,94 @@
+|||FirstProcess||OTHER|0|
+|System.Runtime.CompilerServices|RuntimeHelpers|RunModuleConstructor|System.ModuleHandle module|METHOD|1|FULL HAVOC
+|System|Lazy|ctor|System.Func<Microsoft.CodeAnalysis.MetadataReference[]> valueFactory,System.Threading.LazyThreadSafetyMode mode|METHOD|32|FULL HAVOC
+|System.Reflection|AssemblyName|ctor|string assemblyName|METHOD|1|FULL HAVOC
+|Roslyn.Test.Utilities|TestMetadataReference|ctor|Microsoft.CodeAnalysis.Metadata metadata,string fullPath,string display|METHOD|1|FULL HAVOC
+|System.Collections.Immutable|ImmutableArray|Create|Microsoft.CodeAnalysis.MetadataReference item|METHOD|1|IsIn{R;R.*;P;P.*;RO}.{Many}.{R;R.?;R.*.?;P;P.?;P.*.?}.{RO.?}.{[RO, R;R.*;P;P.*;RO, ?]}<EOF>
+|Roslyn.Utilities|ObjectBinder|RegisterTypeReader|System.Type type,System.Func<Roslyn.Utilities.ObjectReader, Roslyn.Utilities.IObjectWritable> typeReader|METHOD|7|FULL HAVOC
+|System.Runtime.CompilerServices|ConditionalWeakTable|ctor||METHOD|1|FULL HAVOC
+|Microsoft.CodeAnalysis|GreenNode|ctor|ushort kind|METHOD|2480|FULL HAVOC
+|Microsoft.CodeAnalysis.Syntax.InternalSyntax|GreenStats|NoteGreen|Microsoft.CodeAnalysis.GreenNode node|METHOD|1240|FULL HAVOC
+|Microsoft.CodeAnalysis|GreenNodeExtensions|WithAnnotationsGreen|Microsoft.CodeAnalysis.CSharp.Syntax.InternalSyntax.SyntaxTrivia node,System.Collections.Generic.IEnumerable<Microsoft.CodeAnalysis.SyntaxAnnotation> annotations|METHOD|6|FULL HAVOC
+|Microsoft.CodeAnalysis|GreenNode|GetDiagnostics||METHOD|6|FULL HAVOC
+|Microsoft.CodeAnalysis|SyntaxToken|.ctor||PROPERTY|16|FULL HAVOC
+|Microsoft.CodeAnalysis|SyntaxTrivia|ctor|Microsoft.CodeAnalysis.SyntaxToken token,Microsoft.CodeAnalysis.GreenNode? triviaNode,int position,int index|METHOD|11|FULL HAVOC
+|Microsoft.CodeAnalysis.Text|SourceText|From|string text,System.Text.Encoding? encoding,Microsoft.CodeAnalysis.Text.SourceHashAlgorithm checksumAlgorithm|METHOD|1|FULL HAVOC
+|Microsoft.CodeAnalysis.Text|SourceText|GetSubText|int start|METHOD|1|FULL HAVOC
+|Roslyn.Utilities|ImmutableArrayExtensions|ToImmutableArrayOrEmpty|System.Collections.Generic.IEnumerable<string>? items|METHOD|2|FULL HAVOC
+|Microsoft.CodeAnalysis|ParseOptions|ctor|Microsoft.CodeAnalysis.SourceCodeKind kind,Microsoft.CodeAnalysis.DocumentationMode documentationMode|METHOD|2|FULL HAVOC
+|System.Collections.Immutable|ImmutableDictionary|ToImmutableDictionary|System.Collections.Generic.IEnumerable<System.Collections.Generic.KeyValuePair<string, string>> source|METHOD|1|FULL HAVOC
+|Microsoft.CodeAnalysis.PooledObjects|ObjectPool|ctor|Microsoft.CodeAnalysis.PooledObjects.ObjectPool<char[]>.Factory factory|METHOD|2|FULL HAVOC
+|Roslyn.Utilities|StringTable|GetInstance||METHOD|1|FULL HAVOC
+|Microsoft.CodeAnalysis.PooledObjects|ObjectPool|Allocate||METHOD|2|FULL HAVOC
+|Microsoft.CodeAnalysis.Syntax.InternalSyntax|SyntaxListBuilder|ctor|int size|METHOD|2|FULL HAVOC
+|System.Diagnostics|Debug|Assert|bool condition|METHOD|67|Null.{}.{P}.{}.{}<EOF>
+|System.Text|StringBuilder|ctor||METHOD|1|FULL HAVOC
+|Microsoft.CodeAnalysis|CachingIdentityFactory|CreatePool|int size,System.Func<string, Microsoft.CodeAnalysis.CSharp.SyntaxKind> valueFactory|METHOD|1|FULL HAVOC
+|Roslyn.Utilities|TextKeyedCache|GetInstance||METHOD|2|FULL HAVOC
+|System.Threading|CancellationToken|.ctor||PROPERTY|1|FULL HAVOC
+|Microsoft.CodeAnalysis.CSharp.Syntax.InternalSyntax|BlendedNode|.ctor||PROPERTY|3|FULL HAVOC
+|Microsoft.CodeAnalysis.CSharp.Syntax.InternalSyntax|Blender|.ctor||PROPERTY|1|FULL HAVOC
+|System|Math|Max|int val1,int val2|METHOD|1|Null.{}.{R;P}.{}.{}<EOF>
+|System|Math|Min|int val1,int val2|METHOD|2|Null.{}.{R;P}.{}.{}<EOF>
+|Microsoft.CodeAnalysis.CSharp.Syntax.InternalSyntax|Lexer|QuickScanSyntaxToken||METHOD|11|FULL HAVOC
+|Microsoft.CodeAnalysis.Syntax.InternalSyntax|SyntaxListBuilder|Clear||METHOD|20|FULL HAVOC
+|Microsoft.CodeAnalysis.Text|SourceText|CopyTo|int sourceIndex,char[] destination,int destinationIndex,int count|METHOD|1|FULL HAVOC
+|Microsoft.CodeAnalysis.CSharp.Syntax.InternalSyntax|TokenInfo|.ctor||PROPERTY|10|FULL HAVOC
+|Microsoft.CodeAnalysis.CSharp.Syntax.InternalSyntax|Lexer|ScanSyntaxToken|Microsoft.CodeAnalysis.CSharp.Syntax.InternalSyntax.Lexer.TokenInfo info|METHOD|10|FULL HAVOC
+|Microsoft.CodeAnalysis.CSharp.Syntax.InternalSyntax|Lexer|ScanIdentifier_FastPath|Microsoft.CodeAnalysis.CSharp.Syntax.InternalSyntax.Lexer.TokenInfo info|METHOD|2|FULL HAVOC
+|Roslyn.Utilities|StringTable|Add|char[] chars,int start,int len|METHOD|4|FULL HAVOC
+|Microsoft.CodeAnalysis|CachingIdentityFactory|GetOrMakeValue|string key|METHOD|2|FULL HAVOC
+|Microsoft.CodeAnalysis.Syntax.InternalSyntax|SyntaxListBuilder|ToListNode||METHOD|20|FULL HAVOC
+|Microsoft.CodeAnalysis|GreenNode|AdjustFlagsAndWidth|Microsoft.CodeAnalysis.GreenNode node|METHOD|1217|FULL HAVOC
+|Roslyn.Utilities|TextKeyedCache|FindItem|char[] chars,int start,int len,int hashCode|METHOD|8|FULL HAVOC
+|System|Func|Invoke||METHOD|8|FULL HAVOC
+|Roslyn.Utilities|TextKeyedCache|AddItem|char[] chars,int start,int len,int hashCode,Microsoft.CodeAnalysis.CSharp.Syntax.InternalSyntax.SyntaxToken item|METHOD|7|FULL HAVOC
+|Microsoft.CodeAnalysis.CSharp.Syntax.InternalSyntax|Lexer|ScanWhitespace||METHOD|4|FULL HAVOC
+|Microsoft.CodeAnalysis.Syntax.InternalSyntax|SyntaxListBuilder|Add|Microsoft.CodeAnalysis.GreenNode? item|METHOD|4|FULL HAVOC
+|Microsoft.CodeAnalysis.Text|SourceText|get_Item|int position|METHOD|1|FULL HAVOC
+|System.Text|StringBuilder|Clear||METHOD|1|FULL HAVOC
+|System.Text|StringBuilder|Append|char value|METHOD|1|FULL HAVOC
+|System|String|IsNullOrEmpty|string? value|METHOD|1|Null.{}.{R;P}.{}.{}<EOF>
+|System|UInt64|TryParse|string? s,System.Globalization.NumberStyles style,System.IFormatProvider? provider,ulong result|METHOD|1|FULL HAVOC
+|System.Globalization|CharUnicodeInfo|GetUnicodeCategory|char ch|METHOD|3|FULL HAVOC
+|Microsoft.CodeAnalysis.Syntax.InternalSyntax|SyntaxListPool|ctor||METHOD|1|FULL HAVOC
+|Microsoft.CodeAnalysis.CSharp.Syntax.InternalSyntax|SyntaxFactoryContext|ctor||METHOD|1|FULL HAVOC
+|Microsoft.CodeAnalysis.CSharp.Syntax.InternalSyntax|ContextAwareSyntax|.ctor||PROPERTY|1|FULL HAVOC
+|Microsoft.CodeAnalysis.Syntax.InternalSyntax|SyntaxListPool|Allocate||METHOD|3|FULL HAVOC
+|Microsoft.CodeAnalysis.Syntax.InternalSyntax|SyntaxListBuilder|ToList||METHOD|2|FULL HAVOC
+|Microsoft.CodeAnalysis.Syntax.InternalSyntax|SyntaxListPool|Free|Microsoft.CodeAnalysis.Syntax.InternalSyntax.SyntaxListBuilder item|METHOD|5|FULL HAVOC
+|Microsoft.CodeAnalysis.CSharp.Syntax.InternalSyntax|ResetPoint|ctor|int resetCount,Microsoft.CodeAnalysis.CSharp.Syntax.InternalSyntax.LexerMode mode,int position,Microsoft.CodeAnalysis.GreenNode prevTokenTrailingTrivia|METHOD|4|FULL HAVOC
+|Microsoft.CodeAnalysis|StackGuard|EnsureSufficientExecutionStack|int recursionDepth|METHOD|4|FULL HAVOC
+|Microsoft.CodeAnalysis.CSharp.Syntax.InternalSyntax|LanguageParser|ScanType|Microsoft.CodeAnalysis.CSharp.Syntax.InternalSyntax.LanguageParser.ParseTypeMode mode,Microsoft.CodeAnalysis.CSharp.Syntax.InternalSyntax.SyntaxToken lastTokenOfType|METHOD|2|FULL HAVOC
+|Microsoft.CodeAnalysis.Syntax.InternalSyntax|SyntaxListPool|AllocateSeparated||METHOD|2|FULL HAVOC
+|Microsoft.CodeAnalysis.CSharp.Syntax.InternalSyntax|LanguageParser|ParseForStatementExpressionList|Microsoft.CodeAnalysis.CSharp.Syntax.InternalSyntax.SyntaxToken startToken,Microsoft.CodeAnalysis.Syntax.InternalSyntax.SeparatedSyntaxListBuilder<Microsoft.CodeAnalysis.CSharp.Syntax.InternalSyntax.ExpressionSyntax> list|METHOD|1|FULL HAVOC
+|Microsoft.CodeAnalysis.CSharp.Syntax.InternalSyntax|SyntaxFactory|IdentifierName|Microsoft.CodeAnalysis.CSharp.Syntax.InternalSyntax.SyntaxToken identifier|METHOD|1|FULL HAVOC
+|Microsoft.CodeAnalysis.CSharp.Syntax.InternalSyntax|LanguageParser|ParsePostFixExpression|Microsoft.CodeAnalysis.CSharp.Syntax.InternalSyntax.ExpressionSyntax expr|METHOD|2|FULL HAVOC
+|Microsoft.CodeAnalysis.CSharp.Syntax.InternalSyntax|ContextAwareSyntax|LiteralExpression|Microsoft.CodeAnalysis.CSharp.SyntaxKind kind,Microsoft.CodeAnalysis.CSharp.Syntax.InternalSyntax.SyntaxToken token|METHOD|1|FULL HAVOC
+|Microsoft.CodeAnalysis.Syntax.InternalSyntax|SyntaxNodeCache|GetDefaultNodeFlags||METHOD|2|FULL HAVOC
+|Microsoft.CodeAnalysis.Syntax.InternalSyntax|SyntaxNodeCache|TryGetNode|int kind,Microsoft.CodeAnalysis.GreenNode? child1,Microsoft.CodeAnalysis.GreenNode.NodeFlags flags,int hash|METHOD|2|FULL HAVOC
+|Microsoft.CodeAnalysis.CSharp.Syntax.InternalSyntax|ContextAwareSyntax|AssignmentExpression|Microsoft.CodeAnalysis.CSharp.SyntaxKind kind,Microsoft.CodeAnalysis.CSharp.Syntax.InternalSyntax.ExpressionSyntax left,Microsoft.CodeAnalysis.CSharp.Syntax.InternalSyntax.SyntaxToken operatorToken,Microsoft.CodeAnalysis.CSharp.Syntax.InternalSyntax.ExpressionSyntax right|METHOD|1|FULL HAVOC
+|Microsoft.CodeAnalysis.CSharp.Syntax.InternalSyntax|ContextAwareSyntax|Block|Microsoft.CodeAnalysis.Syntax.InternalSyntax.SyntaxList<Microsoft.CodeAnalysis.CSharp.Syntax.InternalSyntax.AttributeListSyntax> attributeLists,Microsoft.CodeAnalysis.CSharp.Syntax.InternalSyntax.SyntaxToken openBraceToken,Microsoft.CodeAnalysis.Syntax.InternalSyntax.SyntaxList<Microsoft.CodeAnalysis.CSharp.Syntax.InternalSyntax.StatementSyntax> statements,Microsoft.CodeAnalysis.CSharp.Syntax.InternalSyntax.SyntaxToken closeBraceToken|METHOD|1|FULL HAVOC
+|Microsoft.CodeAnalysis.CSharp.Syntax.InternalSyntax|ContextAwareSyntax|ForStatement|Microsoft.CodeAnalysis.Syntax.InternalSyntax.SyntaxList<Microsoft.CodeAnalysis.CSharp.Syntax.InternalSyntax.AttributeListSyntax> attributeLists,Microsoft.CodeAnalysis.CSharp.Syntax.InternalSyntax.SyntaxToken forKeyword,Microsoft.CodeAnalysis.CSharp.Syntax.InternalSyntax.SyntaxToken openParenToken,Microsoft.CodeAnalysis.CSharp.Syntax.InternalSyntax.VariableDeclarationSyntax? declaration,Microsoft.CodeAnalysis.Syntax.InternalSyntax.SeparatedSyntaxList<Microsoft.CodeAnalysis.CSharp.Syntax.InternalSyntax.ExpressionSyntax> initializers,Microsoft.CodeAnalysis.CSharp.Syntax.InternalSyntax.SyntaxToken firstSemicolonToken,Microsoft.CodeAnalysis.CSharp.Syntax.InternalSyntax.ExpressionSyntax? condition,Microsoft.CodeAnalysis.CSharp.Syntax.InternalSyntax.SyntaxToken secondSemicolonToken,Microsoft.CodeAnalysis.Syntax.InternalSyntax.SeparatedSyntaxList<Microsoft.CodeAnalysis.CSharp.Syntax.InternalSyntax.ExpressionSyntax> incrementors,Microsoft.CodeAnalysis.CSharp.Syntax.InternalSyntax.SyntaxToken closeParenToken,Microsoft.CodeAnalysis.CSharp.Syntax.InternalSyntax.StatementSyntax statement|METHOD|1|FULL HAVOC
+|Microsoft.CodeAnalysis|GreenNode|CreateRed||METHOD|1|FULL HAVOC
+|Microsoft.CodeAnalysis|SyntaxNode|ctor|Microsoft.CodeAnalysis.GreenNode green,Microsoft.CodeAnalysis.SyntaxNode? parent,int position|METHOD|6|FULL HAVOC
+|Roslyn.Test.Utilities|CustomAssert|NotNull|object object|METHOD|2|Null.{}.{R;P}.{}.{}<EOF>
+|Roslyn.Test.Utilities|CustomAssert|Equal|Microsoft.CodeAnalysis.CSharp.SyntaxKind expected,Microsoft.CodeAnalysis.CSharp.SyntaxKind actual|METHOD|7|Null.{}.{R;P}.{}.{}<EOF>
+|Microsoft.CodeAnalysis|SyntaxNode|ToString||METHOD|2|FULL HAVOC
+|System.IO|TextWriter|Write|string? value|METHOD|19|FULL HAVOC
+|Microsoft.CodeAnalysis|GreenNode|WriteTo|System.IO.TextWriter writer,bool leading,bool trailing|METHOD|6|FULL HAVOC
+|Microsoft.CodeAnalysis.PooledObjects|ArrayBuilder|GetInstance||METHOD|1|FULL HAVOC
+|Microsoft.CodeAnalysis.Syntax.InternalSyntax|SyntaxDiagnosticInfoList|ctor|Microsoft.CodeAnalysis.GreenNode node|METHOD|1|FULL HAVOC
+|Microsoft.CodeAnalysis.PooledObjects|ArrayBuilder|ToImmutableAndFree||METHOD|1|IsIn{R;R.*;P;P.*;RO}.{Many}.{R;R.?;R.*.?;P;P.?;P.*.?}.{RO.?}.{[RO, R;R.*;P;P.*;RO, ?]}<EOF>
+|Microsoft.CodeAnalysis.CSharp.Syntax|ForStatementSyntax|get_ForKeyword||METHOD|3|FULL HAVOC
+|Roslyn.Test.Utilities|CustomAssert|NotEqual|Microsoft.CodeAnalysis.SyntaxToken expected,Microsoft.CodeAnalysis.SyntaxToken actual|METHOD|5|Null.{}.{R;P}.{}.{}<EOF>
+|Roslyn.Test.Utilities|CustomAssert|False|bool condition|METHOD|1|Null.{}.{R;P}.{}.{}<EOF>
+|Microsoft.CodeAnalysis.CSharp|CSharpExtensions|Kind|Microsoft.CodeAnalysis.SyntaxToken token|METHOD|1|FULL HAVOC
+|Microsoft.CodeAnalysis.CSharp.Syntax|ForStatementSyntax|get_OpenParenToken||METHOD|1|FULL HAVOC
+|Roslyn.Test.Utilities|CustomAssert|Null|object object|METHOD|2|Null.{}.{R;P}.{}.{}<EOF>
+|Microsoft.CodeAnalysis.CSharp.Syntax|ForStatementSyntax|get_Initializers||METHOD|1|FULL HAVOC
+|Microsoft.CodeAnalysis|SeparatedSyntaxList|get_Item|int index|METHOD|1|FULL HAVOC
+|Microsoft.CodeAnalysis.CSharp.Syntax|ForStatementSyntax|get_FirstSemicolonToken||METHOD|1|FULL HAVOC
+|Microsoft.CodeAnalysis.CSharp.Syntax|ForStatementSyntax|get_SecondSemicolonToken||METHOD|1|FULL HAVOC
+|Microsoft.CodeAnalysis.CSharp.Syntax|ForStatementSyntax|get_CloseParenToken||METHOD|1|FULL HAVOC
+|Microsoft.CodeAnalysis.CSharp.Syntax|ForStatementSyntax|get_Statement||METHOD|1|FULL HAVOC

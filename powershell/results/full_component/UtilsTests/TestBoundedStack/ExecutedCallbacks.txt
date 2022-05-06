@@ -1,0 +1,2 @@
+|||FirstProcess||OTHER|0|||PSTests.Parallel|UtilsTests|TestBoundedStack||METHOD|1|
+|PSTests|CustomAssert|Throws|System.Func<object> testCode|METHOD|2|FULL HAVOC||System.Management.Automation.Internal|BoundedStack|Pop||METHOD|2|

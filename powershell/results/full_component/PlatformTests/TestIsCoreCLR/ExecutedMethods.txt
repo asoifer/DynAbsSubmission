@@ -1,0 +1,5 @@
+|||FirstProcess||OTHER|0|
+|System|Environment|GetFolderPath|System.Environment.SpecialFolder folder|METHOD|2|Null.{}.{R;P}.{}.{}<EOF>
+|System.Collections.Generic|List|ctor||METHOD|1|Fresh.{Single{System.Array}}.{P}.{RV.?;RO.?}.{[RV, RO, ?]}<EOF>
+|System.Collections.Generic|List|Add|string item|METHOD|11|Null.{}.{R;R.?;R.*.UntilType{System.Array}.OfType{System.Array}.?;P}.{R.?;R.*.UntilType{System.Array}.OfType{System.Array}.?}.{[R.*.UntilType{System.Array}.OfType{System.Array}, P, ?]}<EOF>
+|PSTests|CustomAssert|True|bool condition|METHOD|1|FULL HAVOC

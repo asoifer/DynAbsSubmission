@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DirectedGraph Title="" xmlns="http://schemas.microsoft.com/vs/2009/dgml">
+<Nodes>
+<Node Id="1" Label="1141396" Category="EntryPoint" Style="Plain" />
+<Node Id="3" Label="1141622" Category="EntryPoint" Style="Plain" />
+<Node Id="2" Label="247279 - OBJECT - Default" Category="Vertex" Style="Plain" />
+<Node Id="5" Label="494685" Category="Cluster" Style="Plain" />
+<Node Id="6" Label="247458 - OBJECT - Default" Category="Vertex" Style="Plain" />
+<Node Id="4" Label="247416 - StatementParsingTests - Default" Category="Vertex" Style="Plain" />
+</Nodes>
+<Links>
+<Link Source="1" Target="2" Label="OBJECT - Default" />
+<Link Source="3" Target="4" Label="StatementParsingTests - Default" />
+<Link Source="2" Target="5" Label="Cluster" />
+<Link Source="5" Target="6" Label="OBJECT - Default | __SIGMA__ | OBJECT - Default" />
+<Link Source="5" Target="6" Label="OBJECT - Default | __SIGMA__ | SyntaxNode - Default" />
+<Link Source="5" Target="6" Label="OBJECT - Default | __SIGMA__ | OBJECT - DictInternal" />
+<Link Source="5" Target="6" Label="OBJECT - Default | __SIGMA__ | OBJECT - ALL" />
+<Link Source="5" Target="6" Label="OBJECT - Default | __SIGMA__ | SyntaxNodeOrToken - Default" />
+<Link Source="5" Target="6" Label="OBJECT - Default | __SIGMA__ | CSharpParseOptions - Default" />
+<Link Source="5" Target="6" Label="OBJECT - Default | __SIGMA__ | ImmutableDictionary - Default" />
+<Link Source="5" Target="6" Label="OBJECT - Default | __SIGMA__ | DirectiveStack - Default" />
+<Link Source="5" Target="6" Label="OBJECT - Default | __SIGMA__ | SlidingTextWindow - Default" />
+<Link Source="5" Target="6" Label="OBJECT - Default | __SIGMA__ | SyntaxListBuilder - Default" />
+<Link Source="5" Target="6" Label="OBJECT - Default | __SIGMA__ | StringBuilder - Default" />
+<Link Source="5" Target="6" Label="OBJECT - Default | __SIGMA__ | char[] - Default" />
+<Link Source="5" Target="6" Label="OBJECT - Default | __SIGMA__ | LexerCache - Default" />
+<Link Source="5" Target="6" Label="OBJECT - Default | __SIGMA__ | SourceText - Default" />
+<Link Source="5" Target="6" Label="OBJECT - Default | __SIGMA__ | StringTable - Default" />
+<Link Source="5" Target="6" Label="OBJECT - Default | __SIGMA__ | LanguageParser - Default" />
+<Link Source="5" Target="6" Label="OBJECT - Default | __SIGMA__ | Lexer - Default" />
+<Link Source="5" Target="6" Label="OBJECT - Default | __SIGMA__ | CancellationToken - Default" />
+<Link Source="5" Target="6" Label="OBJECT - Default | __SIGMA__ | BlendedNode - Default" />
+<Link Source="5" Target="6" Label="OBJECT - Default | __SIGMA__ | Blender - Default" />
+<Link Source="5" Target="6" Label="OBJECT - Default | __SIGMA__ | Microsoft.CodeAnalysis.ArrayElement<Microsoft.CodeAnalysis.CSharp.Syntax.InternalSyntax.SyntaxToken>[] - Default" />
+<Link Source="5" Target="6" Label="OBJECT - Default | __SIGMA__ | SyntaxListPool - Default" />
+<Link Source="5" Target="6" Label="OBJECT - Default | __SIGMA__ | SyntaxFactoryContext - Default" />
+<Link Source="5" Target="6" Label="OBJECT - Default | __SIGMA__ | ContextAwareSyntax - Default" />
+<Link Source="5" Target="6" Label="OBJECT - Default | __SIGMA__ | ImmutableArray - Default" />
+<Link Source="5" Target="6" Label="OBJECT - Default | __SIGMA__ | ImmutableDictionary - Default" />
+<Link Source="5" Target="6" Label="OBJECT - Default | __SIGMA__ | System.Collections.Generic.KeyValuePair<string, string>[] - Default" />
+<Link Source="5" Target="6" Label="OBJECT - Default | __SIGMA__ | KeyValuePair - Default" />
+<Link Source="5" Target="6" Label="OBJECT - Default | __SIGMA__ | TextKeyedCache - Default" />
+<Link Source="5" Target="6" Label="OBJECT - Default | __SIGMA__ | TextKeyedCache - Default" />
+<Link Source="5" Target="6" Label="OBJECT - Default | __SIGMA__ | CachingIdentityFactory - Default" />
+<Link Source="5" Target="6" Label="OBJECT - Default | __SIGMA__ | GreenNode - Default" />
+<Link Source="5" Target="6" Label="OBJECT - Default | __SIGMA__ | ResetPoint - Default" />
+<Link Source="5" Target="6" Label="OBJECT - Default | __SIGMA__ | ConsList - Default" />
+<Link Source="5" Target="6" Label="OBJECT - Default | __SIGMA__ | SyntaxTree - Default" />
+<Link Source="5" Target="6" Label="OBJECT - Default | __SIGMA__ | IEnumerator - Default" />
+<Link Source="6" Target="5" Label="Cluster" />
+<Link Source="4" Target="5" Label="Cluster" />
+</Links>
+<Categories>
+<Category Id="EntryPoint" Background="Black" />
+<Category Id="Vertex" Background="Grey" />
+<Category Id="Cluster" Background="White" />
+</Categories>
+</DirectedGraph>

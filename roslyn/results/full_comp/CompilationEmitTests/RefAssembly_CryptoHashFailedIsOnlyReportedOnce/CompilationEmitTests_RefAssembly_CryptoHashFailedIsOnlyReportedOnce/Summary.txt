@@ -1,0 +1,6 @@
+CompilationEmitTests_RefAssembly_CryptoHashFailedIsOnlyReportedOnce||20267|2723|1711|222.0905773||27.5591082|15214|58604||
+CompilationEmitTests_RefAssembly_CryptoHashFailedIsOnlyReportedOnce||188821|12906|9179|222.0905773||618.402108|15214|492089||
+CompilationEmitTests_RefAssembly_CryptoHashFailedIsOnlyReportedOnce||209026|13105|9375|222.0905773||776.304474|15214|557391||
+CompilationEmitTests_RefAssembly_CryptoHashFailedIsOnlyReportedOnce||20267|2723|1711|155.230955||5.9452152|15214|58604||
+CompilationEmitTests_RefAssembly_CryptoHashFailedIsOnlyReportedOnce||188821|12906|9179|155.230955||317.239266|15214|492089||
+CompilationEmitTests_RefAssembly_CryptoHashFailedIsOnlyReportedOnce||209026|13105|9375|155.230955||377.8759101|15214|557391||

@@ -1,0 +1,2 @@
+BindingTests_InaccessibleAndAccessibleValid||97330|8896|16|235.1182994||195.4909241|6887|252439||
+BindingTests_InaccessibleAndAccessibleValid||97330|8896|16|163.4935965||84.730269|6887|252439||

@@ -1,0 +1,10 @@
+|||FirstProcess||OTHER|0|
+|System.IO|Path|GetTempFileName||METHOD|1|FULL HAVOC
+|System.IO|File|Exists|string path|METHOD|1|FULL HAVOC
+|System.IO|File|Delete|string path|METHOD|1|FULL HAVOC
+|System.IO|File|AppendAllText|string path,string contents|METHOD|1|FULL HAVOC
+|System.Management.Automation|PSTraceSource|GetTracer|string name,string description|METHOD|2|FULL HAVOC
+|System.IO|EnumerationOptions|ctor||METHOD|1|FULL HAVOC
+|System|String|IsNullOrEmpty|string? value|METHOD|4|Null.{}.{R;P}.{}.{}<EOF>
+|PSTests|CustomAssert|Equal|string expected,string actual|METHOD|3|FULL HAVOC
+|System.Management.Automation|CmdletInfo|SplitCmdletName|string name,string verb,string noun|METHOD|1|FULL HAVOC

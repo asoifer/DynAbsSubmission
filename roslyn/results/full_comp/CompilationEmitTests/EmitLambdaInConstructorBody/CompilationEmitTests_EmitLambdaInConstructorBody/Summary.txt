@@ -1,0 +1,6 @@
+CompilationEmitTests_EmitLambdaInConstructorBody||35554|2318|1832|222.0905773||28.4594405|17502|101628||
+CompilationEmitTests_EmitLambdaInConstructorBody||35556|2321|1914|222.0905773||28.4978951|17502|101636||
+CompilationEmitTests_EmitLambdaInConstructorBody||230468|12553|11|222.0905773||745.6512854|17502|631323||
+CompilationEmitTests_EmitLambdaInConstructorBody||35554|2318|1832|155.230955||11.4058252|17502|101628||
+CompilationEmitTests_EmitLambdaInConstructorBody||35556|2321|1914|155.230955||11.4215647|17502|101636||
+CompilationEmitTests_EmitLambdaInConstructorBody||230468|12553|11|155.230955||416.3003423|17502|631323||

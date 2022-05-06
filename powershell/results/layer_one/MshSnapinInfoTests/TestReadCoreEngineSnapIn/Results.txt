@@ -1,0 +1,16 @@
+MshSnapinInfo.cs:76
+MshSnapinInfo.cs:81
+MshSnapinInfo.cs:144
+MshSnapinInfo.cs:154
+MshSnapinInfo.cs:159
+MshSnapinInfo.cs:170
+MshSnapinInfo.cs:176
+MshSnapinInfo.cs:181
+MshSnapinInfo.cs:193
+MshSnapinInfo.cs:961
+MshSnapinInfo.cs:966
+MshSnapinInfo.cs:989
+test_MshSnapinInfo.cs:11
+test_MshSnapinInfo.cs:28
+test_MshSnapinInfo.cs:29
+---- Last slice: [test_MshSnapinInfo.cs - 29]

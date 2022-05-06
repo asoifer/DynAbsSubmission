@@ -1,0 +1,18 @@
+|||FirstProcess||OTHER|0|
+|System|Version|ctor|int major,int minor|METHOD|18|FULL HAVOC
+|System|String|IsNullOrEmpty|string? value|METHOD|20|Null.{}.{R;P}.{}.{}<EOF>
+|System.Collections|Hashtable|ctor||METHOD|2|FULL HAVOC
+|System.Diagnostics|FileVersionInfo|GetVersionInfo|string fileName|METHOD|1|FULL HAVOC
+|System|String|IndexOf|char value|METHOD|3|Null.{}.{R;P}.{}.{}<EOF>
+|System|String|Substring|int startIndex,int length|METHOD|1|Null.{}.{R;P}.{}.{}<EOF>
+|System|String|Contains|string value|METHOD|1|Null.{}.{R;P}.{}.{}<EOF>
+|System|String|EndsWith|char value|METHOD|3|Null.{}.{R;P}.{}.{}<EOF>
+|System.Text.RegularExpressions|Regex|Match|string input,string pattern|METHOD|1|FULL HAVOC
+|System|Int32|TryParse|string? s,int result|METHOD|3|Null.{}.{R;P}.{}.{}<EOF>
+|System.Collections|Hashtable|Item||PROPERTY|1|FULL HAVOC
+|Microsoft.Win32|RegistryKey|OpenSubKey|string name|METHOD|1|FULL HAVOC
+|Microsoft.Win32|RegistryKey|GetValue|string name|METHOD|1|FULL HAVOC
+|System|String|Trim||METHOD|1|Null.{}.{R;P}.{}.{}<EOF>
+|System|Enum|ToString||METHOD|1|Null.{}.{R;P}.{}.{}<EOF>
+|System|String|ToString||METHOD|1|Null.{}.{R;P}.{}.{}<EOF>
+|PSTests|CustomAssert|NotNull|object object|METHOD|1|FULL HAVOC

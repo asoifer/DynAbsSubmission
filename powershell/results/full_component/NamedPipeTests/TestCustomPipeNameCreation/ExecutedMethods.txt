@@ -1,0 +1,40 @@
+|||FirstProcess||OTHER|0|
+|System.IO|Path|GetRandomFileName||METHOD|2|FULL HAVOC
+|System|Object|ctor||METHOD|4|Fresh.{}.{}.{RV.?}.{}<EOF>
+|System.Diagnostics|Process|GetCurrentProcess||METHOD|1|Fresh.{Many}.{}.{RV.?;RO.?}.{[RV;RO, RO, ?]}<EOF>
+|System|String|IsNullOrEmpty|string? value|METHOD|1|Null.{}.{R;P}.{}.{}<EOF>
+|System.Text|StringBuilder|ctor|int capacity|METHOD|1|FULL HAVOC
+|System.Text|StringBuilder|Append|string? value|METHOD|8|FULL HAVOC
+|System|DateTime|ToFileTime||METHOD|1|FULL HAVOC
+|System|Int64|ToString|System.IFormatProvider? provider|METHOD|1|FULL HAVOC
+|System|Int32|ToString|System.IFormatProvider? provider|METHOD|1|Null.{}.{R;P}.{}.{}<EOF>
+|System|String|Replace|string oldValue,string? newValue|METHOD|2|Null.{}.{R;P}.{}.{}<EOF>
+|System.Text|StringBuilder|ToString||METHOD|1|FULL HAVOC
+|System|Guid|ctor|string g|METHOD|1|Fresh.{}.{}.{RV.?}.{}<EOF>
+|System.Diagnostics.Eventing|EventDescriptor|ctor|int id,byte version,byte channel,byte level,byte opcode,int task,long keywords|METHOD|1|FULL HAVOC
+|System.Diagnostics.Eventing|EventProvider|ctor|System.Guid providerGuid|METHOD|2|FULL HAVOC
+|System.Security.Principal|SecurityIdentifier|ctor|System.Security.Principal.WellKnownSidType sidType,System.Security.Principal.SecurityIdentifier domainSid|METHOD|3|FULL HAVOC
+|System.Security.AccessControl|DiscretionaryAcl|ctor|bool isContainer,bool isDS,int capacity|METHOD|3|FULL HAVOC
+|System.Security.AccessControl|DiscretionaryAcl|AddAccess|System.Security.AccessControl.AccessControlType accessType,System.Security.Principal.SecurityIdentifier sid,int accessMask,System.Security.AccessControl.InheritanceFlags inheritanceFlags,System.Security.AccessControl.PropagationFlags propagationFlags|METHOD|3|FULL HAVOC
+|System.Security.AccessControl|CommonSecurityDescriptor|ctor|bool isContainer,bool isDS,System.Security.AccessControl.ControlFlags flags,System.Security.Principal.SecurityIdentifier owner,System.Security.Principal.SecurityIdentifier group,System.Security.AccessControl.SystemAcl systemAcl,System.Security.AccessControl.DiscretionaryAcl discretionaryAcl|METHOD|3|FULL HAVOC
+|System.Security.Principal|WindowsIdentity|GetCurrent||METHOD|3|FULL HAVOC
+|System.Security.Principal|WindowsPrincipal|ctor|System.Security.Principal.WindowsIdentity ntIdentity|METHOD|3|FULL HAVOC
+|System.Security.Principal|WindowsPrincipal|IsInRole|System.Security.Principal.WindowsBuiltInRole role|METHOD|3|FULL HAVOC
+|System.Security.AccessControl|GenericSecurityDescriptor|GetBinaryForm|byte[] binaryForm,int offset|METHOD|3|FULL HAVOC
+|System.Runtime.InteropServices|GCHandle|Alloc|object? value,System.Runtime.InteropServices.GCHandleType type|METHOD|3|FULL HAVOC
+|System.Runtime.InteropServices|Marshal|SizeOf|System.Management.Automation.Remoting.NamedPipeNative.SECURITY_ATTRIBUTES structure|METHOD|3|FULL HAVOC
+|System.Runtime.InteropServices|GCHandle|AddrOfPinnedObject||METHOD|3|FULL HAVOC
+|System.Management.Automation.Remoting|NamedPipeNative|CreateNamedPipe|string lpName,uint dwOpenMode,uint dwPipeMode,uint nMaxInstances,uint nOutBufferSize,uint nInBufferSize,uint nDefaultTimeOut,System.Management.Automation.Remoting.NamedPipeNative.SECURITY_ATTRIBUTES securityAttributes|METHOD|3|FULL HAVOC
+|System.Runtime.InteropServices|Marshal|GetLastWin32Error||METHOD|3|FULL HAVOC
+|System.Runtime.InteropServices|GCHandle|Free||METHOD|3|FULL HAVOC
+|System.IO.Pipes|NamedPipeServerStream|ctor|System.IO.Pipes.PipeDirection direction,bool isAsync,bool isConnected,Microsoft.Win32.SafeHandles.SafePipeHandle safePipeHandle|METHOD|3|FULL HAVOC
+|System.Threading|Thread|ctor|System.Threading.ParameterizedThreadStart start|METHOD|3|FULL HAVOC
+|System.Threading|Thread|Start|object? parameter|METHOD|3|FULL HAVOC
+|System|Environment|GetFolderPath|System.Environment.SpecialFolder folder|METHOD|2|Null.{}.{R;P}.{}.{}<EOF>
+|System.Collections.Generic|List|ctor||METHOD|1|Fresh.{Single{System.Array}}.{P}.{RV.?;RO.?}.{[RV, RO, ?]}<EOF>
+|System.Collections.Generic|List|Add|string item|METHOD|11|Null.{}.{R;R.?;R.*.UntilType{System.Array}.OfType{System.Array}.?;P}.{R.?;R.*.UntilType{System.Array}.OfType{System.Array}.?}.{[R.*.UntilType{System.Array}.OfType{System.Array}, P, ?]}<EOF>
+|System.Runtime.InteropServices|RuntimeInformation|IsOSPlatform|System.Runtime.InteropServices.OSPlatform osPlatform|METHOD|5|FULL HAVOC
+|System.IO|File|Exists|string path|METHOD|3|FULL HAVOC
+|PSTests|CustomAssert|True|bool condition|METHOD|2|FULL HAVOC
+|System.Management.Automation.Remoting|RemoteSessionNamedPipeServer|Dispose||METHOD|1|FULL HAVOC
+|PSTests|CustomAssert|False|bool condition|METHOD|1|FULL HAVOC

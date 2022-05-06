@@ -1,0 +1,9 @@
+Total lines: 591017
+Skipped lines: 5
+Skipped lines (percentage): 0%
+Total files with lines: 146
+Total executed files excluded: 1
+Total executed files excluded (percentage): 0.68
+Excluded folders: 
+C:\Users\alexd\Desktop\Slicer\Powershell\src\src\System.Management.Automation\CoreCLR\CorePsTypeCatalog.cs | 0 | 0%
+=========

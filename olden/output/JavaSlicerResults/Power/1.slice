@@ -1,0 +1,1304 @@
+ 0.0% done, time left: unknown                                0.2% done, time left: unknown  0.5% done, time left: unknown  6.7% done, time left: unknown 14.1% done, time left: unknown 24.1% done, time left: unknown 30.5% done, time left: unknown 41.3% done, time left: unknown 51.1% done, time left: unknown 57.3% done, time left:   0:00:00   69.8% done, time left:   0:00:00 76.2% done, time left:   0:00:00 85.3% done, time left:   0:00:00 95.2% done, time left:   0:00:00 95.8% done, time left:   0:00:00 96.9% done, time left:   0:00:00 100.0% done, time left:   0:00:00  finished
+The dynamic slice for criterion [Power.main:78:{slicingVariable1}]:
+Branch.<init>:16 ALOAD 0
+Branch.<init>:16 DCONST_0
+Branch.<init>:16 PUTFIELD Branch.alpha D
+Branch.<init>:17 ALOAD 0
+Branch.<init>:17 DCONST_0
+Branch.<init>:17 PUTFIELD Branch.beta D
+Branch.<init>:18 ALOAD 0
+Branch.<init>:18 LDC 1.0E-4
+Branch.<init>:18 PUTFIELD Branch.R D
+Branch.<init>:19 ALOAD 0
+Branch.<init>:19 LDC 2.0E-5
+Branch.<init>:19 PUTFIELD Branch.X D
+Branch.<init>:39 ALOAD 0
+Branch.<init>:39 NEW Demand
+Branch.<init>:39 PUTFIELD Branch.D LDemand;
+Branch.<init>:41 ILOAD 1
+Branch.<init>:41 ICONST_1
+Branch.<init>:41 IF_ICMPGT L0
+Branch.<init>:44 ALOAD 0
+Branch.<init>:44 NEW Branch
+Branch.<init>:44 DUP
+Branch.<init>:44 ILOAD 2
+Branch.<init>:44 INVOKESPECIAL Branch.<init>(II)V
+Branch.<init>:44 PUTFIELD Branch.nextBranch LBranch;
+Branch.<init>:47 ALOAD 0
+Branch.<init>:47 ILOAD 2
+Branch.<init>:47 ANEWARRAY Leaf
+Branch.<init>:47 PUTFIELD Branch.leaves [LLeaf;
+Branch.<init>:48 ICONST_0
+Branch.<init>:48 ISTORE 3
+Branch.<init>:48 ILOAD 3
+Branch.<init>:48 ILOAD 2
+Branch.<init>:48 IF_ICMPGE L3
+Branch.<init>:48 IINC 3 1
+Branch.<init>:49 ALOAD 0
+Branch.<init>:49 GETFIELD Branch.leaves [LLeaf;
+Branch.<init>:49 ILOAD 3
+Branch.<init>:49 NEW Leaf
+Branch.<init>:49 DUP
+Branch.<init>:49 INVOKESPECIAL Leaf.<init>()V
+Branch.<init>:49 AASTORE
+Branch.compute:62 DLOAD 5
+Branch.compute:62 ALOAD 0
+Branch.compute:62 GETFIELD Branch.alpha D
+Branch.compute:62 DLOAD 1
+Branch.compute:62 DLOAD 3
+Branch.compute:62 ALOAD 0
+Branch.compute:62 GETFIELD Branch.X D
+Branch.compute:62 DMUL
+Branch.compute:62 ALOAD 0
+Branch.compute:62 GETFIELD Branch.R D
+Branch.compute:62 DDIV
+Branch.compute:62 DADD
+Branch.compute:62 DMUL
+Branch.compute:62 DADD
+Branch.compute:62 DSTORE 9
+Branch.compute:63 DLOAD 7
+Branch.compute:63 ALOAD 0
+Branch.compute:63 GETFIELD Branch.beta D
+Branch.compute:63 DLOAD 3
+Branch.compute:63 DLOAD 1
+Branch.compute:63 ALOAD 0
+Branch.compute:63 GETFIELD Branch.R D
+Branch.compute:63 DMUL
+Branch.compute:63 ALOAD 0
+Branch.compute:63 GETFIELD Branch.X D
+Branch.compute:63 DDIV
+Branch.compute:63 DADD
+Branch.compute:63 DMUL
+Branch.compute:63 DADD
+Branch.compute:63 DSTORE 11
+Branch.compute:66 ALOAD 0
+Branch.compute:66 GETFIELD Branch.nextBranch LBranch;
+Branch.compute:66 IFNULL L0
+Branch.compute:67 ALOAD 0
+Branch.compute:67 GETFIELD Branch.nextBranch LBranch;
+Branch.compute:67 DLOAD 1
+Branch.compute:67 DLOAD 3
+Branch.compute:67 DLOAD 9
+Branch.compute:67 DLOAD 11
+Branch.compute:67 INVOKEVIRTUAL Branch.compute(DDDD)LDemand;
+Branch.compute:67 ASTORE 13
+Branch.compute:70 ALOAD 0
+Branch.compute:70 GETFIELD Branch.D LDemand;
+Branch.compute:70 INVOKEVIRTUAL Demand.reset()V
+Branch.compute:71 ICONST_0
+Branch.compute:71 ISTORE 14
+Branch.compute:71 ILOAD 14
+Branch.compute:71 ALOAD 0
+Branch.compute:71 GETFIELD Branch.leaves [LLeaf;
+Branch.compute:71 ARRAYLENGTH
+Branch.compute:71 IF_ICMPGE L2
+Branch.compute:71 IINC 14 1
+Branch.compute:72 ALOAD 0
+Branch.compute:72 GETFIELD Branch.D LDemand;
+Branch.compute:72 ALOAD 0
+Branch.compute:72 GETFIELD Branch.leaves [LLeaf;
+Branch.compute:72 ILOAD 14
+Branch.compute:72 AALOAD
+Branch.compute:72 DLOAD 9
+Branch.compute:72 DLOAD 11
+Branch.compute:72 INVOKEVIRTUAL Leaf.compute(DD)LDemand;
+Branch.compute:72 INVOKEVIRTUAL Demand.increment(LDemand;)V
+Branch.compute:74 ALOAD 0
+Branch.compute:74 GETFIELD Branch.nextBranch LBranch;
+Branch.compute:74 IFNULL L3
+Branch.compute:75 ALOAD 0
+Branch.compute:75 GETFIELD Branch.D LDemand;
+Branch.compute:75 ALOAD 13
+Branch.compute:75 INVOKEVIRTUAL Demand.increment(LDemand;)V
+Branch.compute:78 ALOAD 0
+Branch.compute:78 GETFIELD Branch.R D
+Branch.compute:78 ALOAD 0
+Branch.compute:78 GETFIELD Branch.R D
+Branch.compute:78 DMUL
+Branch.compute:78 ALOAD 0
+Branch.compute:78 GETFIELD Branch.X D
+Branch.compute:78 ALOAD 0
+Branch.compute:78 GETFIELD Branch.X D
+Branch.compute:78 DMUL
+Branch.compute:78 DADD
+Branch.compute:78 DSTORE 14
+Branch.compute:79 LDC 2.0
+Branch.compute:79 ALOAD 0
+Branch.compute:79 GETFIELD Branch.R D
+Branch.compute:79 DMUL
+Branch.compute:79 ALOAD 0
+Branch.compute:79 GETFIELD Branch.X D
+Branch.compute:79 DMUL
+Branch.compute:79 ALOAD 0
+Branch.compute:79 GETFIELD Branch.D LDemand;
+Branch.compute:79 GETFIELD Demand.Q D
+Branch.compute:79 DMUL
+Branch.compute:79 LDC 2.0
+Branch.compute:79 ALOAD 0
+Branch.compute:79 GETFIELD Branch.X D
+Branch.compute:79 DMUL
+Branch.compute:79 ALOAD 0
+Branch.compute:79 GETFIELD Branch.X D
+Branch.compute:79 DMUL
+Branch.compute:79 ALOAD 0
+Branch.compute:79 GETFIELD Branch.D LDemand;
+Branch.compute:79 GETFIELD Demand.P D
+Branch.compute:79 DMUL
+Branch.compute:79 DSUB
+Branch.compute:79 ALOAD 0
+Branch.compute:79 GETFIELD Branch.R D
+Branch.compute:79 DSUB
+Branch.compute:79 DSTORE 16
+Branch.compute:80 ALOAD 0
+Branch.compute:80 GETFIELD Branch.R D
+Branch.compute:80 ALOAD 0
+Branch.compute:80 GETFIELD Branch.D LDemand;
+Branch.compute:80 GETFIELD Demand.Q D
+Branch.compute:80 DMUL
+Branch.compute:80 ALOAD 0
+Branch.compute:80 GETFIELD Branch.X D
+Branch.compute:80 ALOAD 0
+Branch.compute:80 GETFIELD Branch.D LDemand;
+Branch.compute:80 GETFIELD Demand.P D
+Branch.compute:80 DMUL
+Branch.compute:80 DSUB
+Branch.compute:80 DSTORE 18
+Branch.compute:81 DLOAD 18
+Branch.compute:81 DLOAD 18
+Branch.compute:81 DMUL
+Branch.compute:81 ALOAD 0
+Branch.compute:81 GETFIELD Branch.R D
+Branch.compute:81 ALOAD 0
+Branch.compute:81 GETFIELD Branch.D LDemand;
+Branch.compute:81 GETFIELD Demand.P D
+Branch.compute:81 DMUL
+Branch.compute:81 DADD
+Branch.compute:81 DSTORE 18
+Branch.compute:82 DLOAD 16
+Branch.compute:82 DNEG
+Branch.compute:82 DLOAD 16
+Branch.compute:82 DLOAD 16
+Branch.compute:82 DMUL
+Branch.compute:82 LDC 4.0
+Branch.compute:82 DLOAD 14
+Branch.compute:82 DMUL
+Branch.compute:82 DLOAD 18
+Branch.compute:82 DMUL
+Branch.compute:82 DSUB
+Branch.compute:82 INVOKESTATIC java/lang/Math.sqrt(D)D
+Branch.compute:82 DSUB
+Branch.compute:82 LDC 2.0
+Branch.compute:82 DLOAD 14
+Branch.compute:82 DMUL
+Branch.compute:82 DDIV
+Branch.compute:82 DSTORE 20
+Branch.compute:83 ALOAD 0
+Branch.compute:83 GETFIELD Branch.D LDemand;
+Branch.compute:83 ALOAD 0
+Branch.compute:83 GETFIELD Branch.D LDemand;
+Branch.compute:83 GETFIELD Demand.Q D
+Branch.compute:83 DLOAD 20
+Branch.compute:83 ALOAD 0
+Branch.compute:83 GETFIELD Branch.D LDemand;
+Branch.compute:83 GETFIELD Demand.P D
+Branch.compute:83 DSUB
+Branch.compute:83 ALOAD 0
+Branch.compute:83 GETFIELD Branch.X D
+Branch.compute:83 DMUL
+Branch.compute:83 ALOAD 0
+Branch.compute:83 GETFIELD Branch.R D
+Branch.compute:83 DDIV
+Branch.compute:83 DADD
+Branch.compute:83 PUTFIELD Demand.Q D
+Branch.compute:84 ALOAD 0
+Branch.compute:84 GETFIELD Branch.D LDemand;
+Branch.compute:84 DLOAD 20
+Branch.compute:84 PUTFIELD Demand.P D
+Branch.compute:86 LDC 2.0
+Branch.compute:86 ALOAD 0
+Branch.compute:86 GETFIELD Branch.R D
+Branch.compute:86 DMUL
+Branch.compute:86 ALOAD 0
+Branch.compute:86 GETFIELD Branch.D LDemand;
+Branch.compute:86 GETFIELD Demand.P D
+Branch.compute:86 DMUL
+Branch.compute:86 DSTORE 14
+Branch.compute:87 LDC 2.0
+Branch.compute:87 ALOAD 0
+Branch.compute:87 GETFIELD Branch.X D
+Branch.compute:87 DMUL
+Branch.compute:87 ALOAD 0
+Branch.compute:87 GETFIELD Branch.D LDemand;
+Branch.compute:87 GETFIELD Demand.Q D
+Branch.compute:87 DMUL
+Branch.compute:87 DSTORE 16
+Branch.compute:88 ALOAD 0
+Branch.compute:88 DLOAD 14
+Branch.compute:88 DCONST_1
+Branch.compute:88 DLOAD 14
+Branch.compute:88 DSUB
+Branch.compute:88 DLOAD 16
+Branch.compute:88 DSUB
+Branch.compute:88 DDIV
+Branch.compute:88 PUTFIELD Branch.alpha D
+Branch.compute:89 ALOAD 0
+Branch.compute:89 DLOAD 16
+Branch.compute:89 DCONST_1
+Branch.compute:89 DLOAD 14
+Branch.compute:89 DSUB
+Branch.compute:89 DLOAD 16
+Branch.compute:89 DSUB
+Branch.compute:89 DDIV
+Branch.compute:89 PUTFIELD Branch.beta D
+Demand.<init>:28 ALOAD 0
+Demand.<init>:28 DLOAD 1
+Demand.<init>:28 PUTFIELD Demand.P D
+Demand.<init>:29 ALOAD 0
+Demand.<init>:29 DLOAD 3
+Demand.<init>:29 PUTFIELD Demand.Q D
+Demand.increment:47 ALOAD 0
+Demand.increment:47 DUP
+Demand.increment:47 GETFIELD Demand.P D
+Demand.increment:47 ALOAD 1
+Demand.increment:47 GETFIELD Demand.P D
+Demand.increment:47 DADD
+Demand.increment:47 PUTFIELD Demand.P D
+Demand.increment:48 ALOAD 0
+Demand.increment:48 DUP
+Demand.increment:48 GETFIELD Demand.Q D
+Demand.increment:48 ALOAD 1
+Demand.increment:48 GETFIELD Demand.Q D
+Demand.increment:48 DADD
+Demand.increment:48 PUTFIELD Demand.Q D
+Demand.reset:56 ALOAD 0
+Demand.reset:56 DCONST_0
+Demand.reset:56 PUTFIELD Demand.P D
+Demand.reset:57 ALOAD 0
+Demand.reset:57 DCONST_0
+Demand.reset:57 PUTFIELD Demand.Q D
+Demand.add:67 ALOAD 0
+Demand.add:67 ALOAD 1
+Demand.add:67 GETFIELD Demand.P D
+Demand.add:67 ALOAD 2
+Demand.add:67 GETFIELD Demand.P D
+Demand.add:67 DADD
+Demand.add:67 PUTFIELD Demand.P D
+Demand.add:68 ALOAD 0
+Demand.add:68 ALOAD 1
+Demand.add:68 GETFIELD Demand.Q D
+Demand.add:68 ALOAD 2
+Demand.add:68 GETFIELD Demand.Q D
+Demand.add:68 DADD
+Demand.add:68 PUTFIELD Demand.Q D
+Demand.assign:77 ALOAD 0
+Demand.assign:77 ALOAD 1
+Demand.assign:77 GETFIELD Demand.P D
+Demand.assign:77 PUTFIELD Demand.P D
+Demand.assign:78 ALOAD 0
+Demand.assign:78 ALOAD 1
+Demand.assign:78 GETFIELD Demand.Q D
+Demand.assign:78 PUTFIELD Demand.Q D
+Demand.optimizeNode:91 ICONST_2
+Demand.optimizeNode:91 NEWARRAY T_DOUBLE
+Demand.optimizeNode:91 ASTORE 5
+Demand.optimizeNode:92 ICONST_2
+Demand.optimizeNode:92 NEWARRAY T_DOUBLE
+Demand.optimizeNode:92 ASTORE 6
+Demand.optimizeNode:93 ICONST_2
+Demand.optimizeNode:93 NEWARRAY T_DOUBLE
+Demand.optimizeNode:93 ASTORE 7
+Demand.optimizeNode:94 ICONST_2
+Demand.optimizeNode:94 NEWARRAY T_DOUBLE
+Demand.optimizeNode:94 ASTORE 8
+Demand.optimizeNode:99 DCONST_0
+Demand.optimizeNode:104 ALOAD 0
+Demand.optimizeNode:104 INVOKESPECIAL Demand.findH()D
+Demand.optimizeNode:104 DSTORE 11
+Demand.optimizeNode:105 DLOAD 11
+Demand.optimizeNode:105 INVOKESTATIC java/lang/Math.abs(D)D
+Demand.optimizeNode:105 LDC 1.0E-6
+Demand.optimizeNode:105 DCMPL
+Demand.optimizeNode:105 IFLE L1
+Demand.optimizeNode:107 ALOAD 7
+Demand.optimizeNode:107 INVOKESPECIAL Demand.findGradientH([D)D
+Demand.optimizeNode:107 DSTORE 15
+Demand.optimizeNode:108 DLOAD 11
+Demand.optimizeNode:108 DLOAD 15
+Demand.optimizeNode:108 DDIV
+Demand.optimizeNode:108 DSTORE 13
+Demand.optimizeNode:109 ALOAD 0
+Demand.optimizeNode:109 DUP
+Demand.optimizeNode:109 GETFIELD Demand.P D
+Demand.optimizeNode:109 DLOAD 13
+Demand.optimizeNode:109 ALOAD 7
+Demand.optimizeNode:109 ICONST_0
+Demand.optimizeNode:109 DALOAD
+Demand.optimizeNode:109 DMUL
+Demand.optimizeNode:109 DSUB
+Demand.optimizeNode:109 PUTFIELD Demand.P D
+Demand.optimizeNode:110 ALOAD 0
+Demand.optimizeNode:110 DUP
+Demand.optimizeNode:110 GETFIELD Demand.Q D
+Demand.optimizeNode:110 DLOAD 13
+Demand.optimizeNode:110 ALOAD 7
+Demand.optimizeNode:110 ICONST_1
+Demand.optimizeNode:110 DALOAD
+Demand.optimizeNode:110 DMUL
+Demand.optimizeNode:110 DSUB
+Demand.optimizeNode:110 PUTFIELD Demand.Q D
+Demand.optimizeNode:114 ALOAD 0
+Demand.optimizeNode:114 INVOKESPECIAL Demand.findG()D
+Demand.optimizeNode:114 DSTORE 9
+Demand.optimizeNode:115 DLOAD 9
+Demand.optimizeNode:115 LDC 1.0E-6
+Demand.optimizeNode:115 DCMPL
+Demand.optimizeNode:115 IFLE L2
+Demand.optimizeNode:117 ALOAD 0
+Demand.optimizeNode:117 ALOAD 6
+Demand.optimizeNode:117 INVOKESPECIAL Demand.findGradientG([D)D
+Demand.optimizeNode:117 DSTORE 15
+Demand.optimizeNode:118 ALOAD 7
+Demand.optimizeNode:118 INVOKESPECIAL Demand.findGradientH([D)D
+Demand.optimizeNode:119 DLOAD 15
+Demand.optimizeNode:119 ALOAD 6
+Demand.optimizeNode:119 ALOAD 7
+Demand.optimizeNode:119 INVOKESPECIAL Demand.makeOrthogonal([D[D)D
+Demand.optimizeNode:119 DMUL
+Demand.optimizeNode:119 DSTORE 15
+Demand.optimizeNode:120 DLOAD 9
+Demand.optimizeNode:120 DLOAD 15
+Demand.optimizeNode:120 DDIV
+Demand.optimizeNode:120 DSTORE 13
+Demand.optimizeNode:121 ALOAD 0
+Demand.optimizeNode:121 DUP
+Demand.optimizeNode:121 GETFIELD Demand.P D
+Demand.optimizeNode:121 DLOAD 13
+Demand.optimizeNode:121 ALOAD 6
+Demand.optimizeNode:121 ICONST_0
+Demand.optimizeNode:121 DALOAD
+Demand.optimizeNode:121 DMUL
+Demand.optimizeNode:121 DSUB
+Demand.optimizeNode:121 PUTFIELD Demand.P D
+Demand.optimizeNode:122 ALOAD 0
+Demand.optimizeNode:122 DUP
+Demand.optimizeNode:122 GETFIELD Demand.Q D
+Demand.optimizeNode:122 DLOAD 13
+Demand.optimizeNode:122 ALOAD 6
+Demand.optimizeNode:122 ICONST_1
+Demand.optimizeNode:122 DALOAD
+Demand.optimizeNode:122 DMUL
+Demand.optimizeNode:122 DSUB
+Demand.optimizeNode:122 PUTFIELD Demand.Q D
+Demand.optimizeNode:126 ALOAD 0
+Demand.optimizeNode:126 DLOAD 1
+Demand.optimizeNode:126 DLOAD 3
+Demand.optimizeNode:126 ALOAD 5
+Demand.optimizeNode:126 INVOKESPECIAL Demand.findGradientF(DD[D)D
+Demand.optimizeNode:126 DSTORE 15
+Demand.optimizeNode:127 ALOAD 0
+Demand.optimizeNode:127 DLOAD 1
+Demand.optimizeNode:127 DLOAD 3
+Demand.optimizeNode:127 ALOAD 8
+Demand.optimizeNode:127 INVOKESPECIAL Demand.findDDGradF(DD[D)V
+Demand.optimizeNode:128 DCONST_0
+Demand.optimizeNode:128 DSTORE 13
+Demand.optimizeNode:129 ICONST_0
+Demand.optimizeNode:129 ISTORE 17
+Demand.optimizeNode:129 ILOAD 17
+Demand.optimizeNode:129 ICONST_2
+Demand.optimizeNode:129 IF_ICMPGE L4
+Demand.optimizeNode:129 IINC 17 1
+Demand.optimizeNode:130 DLOAD 13
+Demand.optimizeNode:130 ALOAD 5
+Demand.optimizeNode:130 ILOAD 17
+Demand.optimizeNode:130 DALOAD
+Demand.optimizeNode:130 ALOAD 8
+Demand.optimizeNode:130 ILOAD 17
+Demand.optimizeNode:130 DALOAD
+Demand.optimizeNode:130 DMUL
+Demand.optimizeNode:130 DADD
+Demand.optimizeNode:130 DSTORE 13
+Demand.optimizeNode:131 DLOAD 15
+Demand.optimizeNode:131 DLOAD 13
+Demand.optimizeNode:131 INVOKESTATIC java/lang/Math.abs(D)D
+Demand.optimizeNode:131 DDIV
+Demand.optimizeNode:131 DSTORE 15
+Demand.optimizeNode:132 ALOAD 7
+Demand.optimizeNode:132 INVOKESPECIAL Demand.findGradientH([D)D
+Demand.optimizeNode:133 DLOAD 15
+Demand.optimizeNode:133 ALOAD 5
+Demand.optimizeNode:133 ALOAD 7
+Demand.optimizeNode:133 INVOKESPECIAL Demand.makeOrthogonal([D[D)D
+Demand.optimizeNode:133 DMUL
+Demand.optimizeNode:133 DSTORE 15
+Demand.optimizeNode:134 ALOAD 0
+Demand.optimizeNode:134 ALOAD 6
+Demand.optimizeNode:134 INVOKESPECIAL Demand.findGradientG([D)D
+Demand.optimizeNode:135 DCONST_0
+Demand.optimizeNode:135 DSTORE 13
+Demand.optimizeNode:136 ICONST_0
+Demand.optimizeNode:136 ISTORE 17
+Demand.optimizeNode:136 ILOAD 17
+Demand.optimizeNode:136 ICONST_2
+Demand.optimizeNode:136 IF_ICMPGE L6
+Demand.optimizeNode:136 IINC 17 1
+Demand.optimizeNode:137 DLOAD 13
+Demand.optimizeNode:137 ALOAD 5
+Demand.optimizeNode:137 ILOAD 17
+Demand.optimizeNode:137 DALOAD
+Demand.optimizeNode:137 ALOAD 6
+Demand.optimizeNode:137 ILOAD 17
+Demand.optimizeNode:137 DALOAD
+Demand.optimizeNode:137 DMUL
+Demand.optimizeNode:137 DADD
+Demand.optimizeNode:137 DSTORE 13
+Demand.optimizeNode:138 DLOAD 13
+Demand.optimizeNode:138 DCONST_0
+Demand.optimizeNode:138 DCMPL
+Demand.optimizeNode:138 IFLE L7
+Demand.optimizeNode:140 ALOAD 0
+Demand.optimizeNode:140 INVOKESPECIAL Demand.findG()D
+Demand.optimizeNode:140 DNEG
+Demand.optimizeNode:140 DLOAD 13
+Demand.optimizeNode:140 DDIV
+Demand.optimizeNode:140 DSTORE 17
+Demand.optimizeNode:141 DLOAD 15
+Demand.optimizeNode:141 DLOAD 17
+Demand.optimizeNode:141 DCMPL
+Demand.optimizeNode:141 IFLE L7
+Demand.optimizeNode:142 DLOAD 17
+Demand.optimizeNode:142 DSTORE 15
+Demand.optimizeNode:144 ALOAD 0
+Demand.optimizeNode:144 DUP
+Demand.optimizeNode:144 GETFIELD Demand.P D
+Demand.optimizeNode:144 DLOAD 15
+Demand.optimizeNode:144 ALOAD 5
+Demand.optimizeNode:144 ICONST_0
+Demand.optimizeNode:144 DALOAD
+Demand.optimizeNode:144 DMUL
+Demand.optimizeNode:144 DADD
+Demand.optimizeNode:144 PUTFIELD Demand.P D
+Demand.optimizeNode:145 ALOAD 0
+Demand.optimizeNode:145 DUP
+Demand.optimizeNode:145 GETFIELD Demand.Q D
+Demand.optimizeNode:145 DLOAD 15
+Demand.optimizeNode:145 ALOAD 5
+Demand.optimizeNode:145 ICONST_1
+Demand.optimizeNode:145 DALOAD
+Demand.optimizeNode:145 DMUL
+Demand.optimizeNode:145 DADD
+Demand.optimizeNode:145 PUTFIELD Demand.Q D
+Demand.optimizeNode:147 ALOAD 0
+Demand.optimizeNode:147 INVOKESPECIAL Demand.findH()D
+Demand.optimizeNode:147 DSTORE 11
+Demand.optimizeNode:148 ALOAD 0
+Demand.optimizeNode:148 INVOKESPECIAL Demand.findG()D
+Demand.optimizeNode:148 DSTORE 9
+Demand.optimizeNode:149 ALOAD 0
+Demand.optimizeNode:149 DLOAD 1
+Demand.optimizeNode:149 DLOAD 3
+Demand.optimizeNode:149 ALOAD 5
+Demand.optimizeNode:149 INVOKESPECIAL Demand.findGradientF(DD[D)D
+Demand.optimizeNode:150 ALOAD 7
+Demand.optimizeNode:150 INVOKESPECIAL Demand.findGradientH([D)D
+Demand.optimizeNode:151 DLOAD 11
+Demand.optimizeNode:151 INVOKESTATIC java/lang/Math.abs(D)D
+Demand.optimizeNode:151 LDC 1.0E-6
+Demand.optimizeNode:151 DCMPL
+Demand.optimizeNode:151 IFGT L0
+Demand.optimizeNode:151 DLOAD 9
+Demand.optimizeNode:151 LDC 1.0E-6
+Demand.optimizeNode:151 DCMPL
+Demand.optimizeNode:151 IFGT L0
+Demand.optimizeNode:151 DLOAD 9
+Demand.optimizeNode:151 INVOKESTATIC java/lang/Math.abs(D)D
+Demand.optimizeNode:151 LDC 1.0E-6
+Demand.optimizeNode:151 DCMPL
+Demand.optimizeNode:151 IFLE L8
+Demand.optimizeNode:151 ALOAD 5
+Demand.optimizeNode:151 ICONST_0
+Demand.optimizeNode:151 DALOAD
+Demand.optimizeNode:151 ALOAD 7
+Demand.optimizeNode:151 ICONST_1
+Demand.optimizeNode:151 DALOAD
+Demand.optimizeNode:151 DMUL
+Demand.optimizeNode:151 ALOAD 5
+Demand.optimizeNode:151 ICONST_1
+Demand.optimizeNode:151 DALOAD
+Demand.optimizeNode:151 ALOAD 7
+Demand.optimizeNode:151 ICONST_0
+Demand.optimizeNode:151 DALOAD
+Demand.optimizeNode:151 DMUL
+Demand.optimizeNode:151 DSUB
+Demand.optimizeNode:151 INVOKESTATIC java/lang/Math.abs(D)D
+Demand.optimizeNode:151 LDC 1.0E-6
+Demand.optimizeNode:151 DCMPL
+Demand.optimizeNode:151 IFGT L0
+Demand.findG:156 ALOAD 0
+Demand.findG:156 GETFIELD Demand.P D
+Demand.findG:156 ALOAD 0
+Demand.findG:156 GETFIELD Demand.P D
+Demand.findG:156 DMUL
+Demand.findG:156 ALOAD 0
+Demand.findG:156 GETFIELD Demand.Q D
+Demand.findG:156 ALOAD 0
+Demand.findG:156 GETFIELD Demand.Q D
+Demand.findG:156 DMUL
+Demand.findG:156 DADD
+Demand.findG:156 LDC 0.8
+Demand.findG:156 DSUB
+Demand.findG:156 DRETURN
+Demand.findH:161 ALOAD 0
+Demand.findH:161 GETFIELD Demand.P D
+Demand.findH:161 LDC 5.0
+Demand.findH:161 ALOAD 0
+Demand.findH:161 GETFIELD Demand.Q D
+Demand.findH:161 DMUL
+Demand.findH:161 DSUB
+Demand.findH:161 DRETURN
+Demand.findGradientF:166 ALOAD 5
+Demand.findGradientF:166 ICONST_0
+Demand.findGradientF:166 DCONST_1
+Demand.findGradientF:166 DCONST_1
+Demand.findGradientF:166 ALOAD 0
+Demand.findGradientF:166 GETFIELD Demand.P D
+Demand.findGradientF:166 DADD
+Demand.findGradientF:166 DDIV
+Demand.findGradientF:166 DLOAD 1
+Demand.findGradientF:166 DSUB
+Demand.findGradientF:166 DASTORE
+Demand.findGradientF:167 ALOAD 5
+Demand.findGradientF:167 ICONST_1
+Demand.findGradientF:167 DCONST_1
+Demand.findGradientF:167 DCONST_1
+Demand.findGradientF:167 ALOAD 0
+Demand.findGradientF:167 GETFIELD Demand.Q D
+Demand.findGradientF:167 DADD
+Demand.findGradientF:167 DDIV
+Demand.findGradientF:167 DLOAD 3
+Demand.findGradientF:167 DSUB
+Demand.findGradientF:167 DASTORE
+Demand.findGradientF:169 DCONST_0
+Demand.findGradientF:169 DSTORE 6
+Demand.findGradientF:170 ICONST_0
+Demand.findGradientF:170 ISTORE 8
+Demand.findGradientF:170 ILOAD 8
+Demand.findGradientF:170 ICONST_2
+Demand.findGradientF:170 IF_ICMPGE L1
+Demand.findGradientF:170 IINC 8 1
+Demand.findGradientF:171 DLOAD 6
+Demand.findGradientF:171 ALOAD 5
+Demand.findGradientF:171 ILOAD 8
+Demand.findGradientF:171 DALOAD
+Demand.findGradientF:171 ALOAD 5
+Demand.findGradientF:171 ILOAD 8
+Demand.findGradientF:171 DALOAD
+Demand.findGradientF:171 DMUL
+Demand.findGradientF:171 DADD
+Demand.findGradientF:171 DSTORE 6
+Demand.findGradientF:173 DLOAD 6
+Demand.findGradientF:173 INVOKESTATIC java/lang/Math.sqrt(D)D
+Demand.findGradientF:173 DSTORE 6
+Demand.findGradientF:175 ICONST_0
+Demand.findGradientF:175 ISTORE 8
+Demand.findGradientF:175 ILOAD 8
+Demand.findGradientF:175 ICONST_2
+Demand.findGradientF:175 IF_ICMPGE L3
+Demand.findGradientF:175 IINC 8 1
+Demand.findGradientF:176 ALOAD 5
+Demand.findGradientF:176 ILOAD 8
+Demand.findGradientF:176 DUP2
+Demand.findGradientF:176 DALOAD
+Demand.findGradientF:176 DLOAD 6
+Demand.findGradientF:176 DDIV
+Demand.findGradientF:176 DASTORE
+Demand.findGradientF:178 DLOAD 6
+Demand.findGradientF:178 DRETURN
+Demand.findGradientG:183 ALOAD 1
+Demand.findGradientG:183 ICONST_0
+Demand.findGradientG:183 LDC 2.0
+Demand.findGradientG:183 ALOAD 0
+Demand.findGradientG:183 GETFIELD Demand.P D
+Demand.findGradientG:183 DMUL
+Demand.findGradientG:183 DASTORE
+Demand.findGradientG:184 ALOAD 1
+Demand.findGradientG:184 ICONST_1
+Demand.findGradientG:184 LDC 2.0
+Demand.findGradientG:184 ALOAD 0
+Demand.findGradientG:184 GETFIELD Demand.Q D
+Demand.findGradientG:184 DMUL
+Demand.findGradientG:184 DASTORE
+Demand.findGradientG:185 DCONST_0
+Demand.findGradientG:185 DSTORE 2
+Demand.findGradientG:186 ICONST_0
+Demand.findGradientG:186 ISTORE 4
+Demand.findGradientG:186 ILOAD 4
+Demand.findGradientG:186 ICONST_2
+Demand.findGradientG:186 IF_ICMPGE L1
+Demand.findGradientG:186 IINC 4 1
+Demand.findGradientG:187 DLOAD 2
+Demand.findGradientG:187 ALOAD 1
+Demand.findGradientG:187 ILOAD 4
+Demand.findGradientG:187 DALOAD
+Demand.findGradientG:187 ALOAD 1
+Demand.findGradientG:187 ILOAD 4
+Demand.findGradientG:187 DALOAD
+Demand.findGradientG:187 DMUL
+Demand.findGradientG:187 DADD
+Demand.findGradientG:187 DSTORE 2
+Demand.findGradientG:189 DLOAD 2
+Demand.findGradientG:189 INVOKESTATIC java/lang/Math.sqrt(D)D
+Demand.findGradientG:189 DSTORE 2
+Demand.findGradientG:191 ICONST_0
+Demand.findGradientG:191 ISTORE 4
+Demand.findGradientG:191 ILOAD 4
+Demand.findGradientG:191 ICONST_2
+Demand.findGradientG:191 IF_ICMPGE L3
+Demand.findGradientG:191 IINC 4 1
+Demand.findGradientG:192 ALOAD 1
+Demand.findGradientG:192 ILOAD 4
+Demand.findGradientG:192 DUP2
+Demand.findGradientG:192 DALOAD
+Demand.findGradientG:192 DLOAD 2
+Demand.findGradientG:192 DDIV
+Demand.findGradientG:192 DASTORE
+Demand.findGradientG:194 DLOAD 2
+Demand.findGradientG:194 DRETURN
+Demand.findGradientH:199 ALOAD 1
+Demand.findGradientH:199 ICONST_0
+Demand.findGradientH:199 DCONST_1
+Demand.findGradientH:199 DASTORE
+Demand.findGradientH:200 ALOAD 1
+Demand.findGradientH:200 ICONST_1
+Demand.findGradientH:200 LDC -5.0
+Demand.findGradientH:200 DASTORE
+Demand.findGradientH:201 DCONST_0
+Demand.findGradientH:201 DSTORE 2
+Demand.findGradientH:202 ICONST_0
+Demand.findGradientH:202 ISTORE 4
+Demand.findGradientH:202 ILOAD 4
+Demand.findGradientH:202 ICONST_2
+Demand.findGradientH:202 IF_ICMPGE L1
+Demand.findGradientH:202 IINC 4 1
+Demand.findGradientH:203 DLOAD 2
+Demand.findGradientH:203 ALOAD 1
+Demand.findGradientH:203 ILOAD 4
+Demand.findGradientH:203 DALOAD
+Demand.findGradientH:203 ALOAD 1
+Demand.findGradientH:203 ILOAD 4
+Demand.findGradientH:203 DALOAD
+Demand.findGradientH:203 DMUL
+Demand.findGradientH:203 DADD
+Demand.findGradientH:203 DSTORE 2
+Demand.findGradientH:204 DLOAD 2
+Demand.findGradientH:204 INVOKESTATIC java/lang/Math.sqrt(D)D
+Demand.findGradientH:204 DSTORE 2
+Demand.findGradientH:205 ICONST_0
+Demand.findGradientH:205 ISTORE 4
+Demand.findGradientH:205 ILOAD 4
+Demand.findGradientH:205 ICONST_2
+Demand.findGradientH:205 IF_ICMPGE L3
+Demand.findGradientH:205 IINC 4 1
+Demand.findGradientH:206 ALOAD 1
+Demand.findGradientH:206 ILOAD 4
+Demand.findGradientH:206 DUP2
+Demand.findGradientH:206 DALOAD
+Demand.findGradientH:206 DLOAD 2
+Demand.findGradientH:206 DDIV
+Demand.findGradientH:206 DASTORE
+Demand.findGradientH:208 DLOAD 2
+Demand.findGradientH:208 DRETURN
+Demand.findDDGradF:213 DCONST_1
+Demand.findDDGradF:213 ALOAD 0
+Demand.findDDGradF:213 GETFIELD Demand.P D
+Demand.findDDGradF:213 DCONST_1
+Demand.findDDGradF:213 DADD
+Demand.findDDGradF:213 DDIV
+Demand.findDDGradF:213 DSTORE 6
+Demand.findDDGradF:214 DCONST_1
+Demand.findDDGradF:214 ALOAD 0
+Demand.findDDGradF:214 GETFIELD Demand.Q D
+Demand.findDDGradF:214 DCONST_1
+Demand.findDDGradF:214 DADD
+Demand.findDDGradF:214 DDIV
+Demand.findDDGradF:214 DSTORE 8
+Demand.findDDGradF:215 DLOAD 6
+Demand.findDDGradF:215 DLOAD 1
+Demand.findDDGradF:215 DSUB
+Demand.findDDGradF:215 DSTORE 10
+Demand.findDDGradF:216 DLOAD 8
+Demand.findDDGradF:216 DLOAD 3
+Demand.findDDGradF:216 DSUB
+Demand.findDDGradF:216 DSTORE 12
+Demand.findDDGradF:218 DLOAD 10
+Demand.findDDGradF:218 DLOAD 10
+Demand.findDDGradF:218 DMUL
+Demand.findDDGradF:218 DLOAD 12
+Demand.findDDGradF:218 DLOAD 12
+Demand.findDDGradF:218 DMUL
+Demand.findDDGradF:218 DADD
+Demand.findDDGradF:218 INVOKESTATIC java/lang/Math.sqrt(D)D
+Demand.findDDGradF:218 DSTORE 14
+Demand.findDDGradF:220 ALOAD 5
+Demand.findDDGradF:220 ICONST_0
+Demand.findDDGradF:220 DLOAD 6
+Demand.findDDGradF:220 DNEG
+Demand.findDDGradF:220 DLOAD 6
+Demand.findDDGradF:220 DMUL
+Demand.findDDGradF:220 DLOAD 10
+Demand.findDDGradF:220 DMUL
+Demand.findDDGradF:220 DLOAD 14
+Demand.findDDGradF:220 DDIV
+Demand.findDDGradF:220 DASTORE
+Demand.findDDGradF:221 ALOAD 5
+Demand.findDDGradF:221 ICONST_1
+Demand.findDDGradF:221 DLOAD 8
+Demand.findDDGradF:221 DNEG
+Demand.findDDGradF:221 DLOAD 8
+Demand.findDDGradF:221 DMUL
+Demand.findDDGradF:221 DLOAD 12
+Demand.findDDGradF:221 DMUL
+Demand.findDDGradF:221 DLOAD 14
+Demand.findDDGradF:221 DDIV
+Demand.findDDGradF:221 DASTORE
+Demand.makeOrthogonal:226 DCONST_0
+Demand.makeOrthogonal:226 DSTORE 3
+Demand.makeOrthogonal:227 ICONST_0
+Demand.makeOrthogonal:227 ISTORE 5
+Demand.makeOrthogonal:227 ILOAD 5
+Demand.makeOrthogonal:227 ICONST_2
+Demand.makeOrthogonal:227 IF_ICMPGE L1
+Demand.makeOrthogonal:227 IINC 5 1
+Demand.makeOrthogonal:228 DLOAD 3
+Demand.makeOrthogonal:228 ALOAD 1
+Demand.makeOrthogonal:228 ILOAD 5
+Demand.makeOrthogonal:228 DALOAD
+Demand.makeOrthogonal:228 ALOAD 2
+Demand.makeOrthogonal:228 ILOAD 5
+Demand.makeOrthogonal:228 DALOAD
+Demand.makeOrthogonal:228 DMUL
+Demand.makeOrthogonal:228 DADD
+Demand.makeOrthogonal:228 DSTORE 3
+Demand.makeOrthogonal:230 DCONST_0
+Demand.makeOrthogonal:230 DSTORE 5
+Demand.makeOrthogonal:231 ICONST_0
+Demand.makeOrthogonal:231 ISTORE 7
+Demand.makeOrthogonal:231 ILOAD 7
+Demand.makeOrthogonal:231 ICONST_2
+Demand.makeOrthogonal:231 IF_ICMPGE L3
+Demand.makeOrthogonal:231 IINC 7 1
+Demand.makeOrthogonal:233 ALOAD 1
+Demand.makeOrthogonal:233 ILOAD 7
+Demand.makeOrthogonal:233 DUP2
+Demand.makeOrthogonal:233 DALOAD
+Demand.makeOrthogonal:233 DLOAD 3
+Demand.makeOrthogonal:233 ALOAD 2
+Demand.makeOrthogonal:233 ILOAD 7
+Demand.makeOrthogonal:233 DALOAD
+Demand.makeOrthogonal:233 DMUL
+Demand.makeOrthogonal:233 DSUB
+Demand.makeOrthogonal:233 DASTORE
+Demand.makeOrthogonal:234 DLOAD 5
+Demand.makeOrthogonal:234 ALOAD 1
+Demand.makeOrthogonal:234 ILOAD 7
+Demand.makeOrthogonal:234 DALOAD
+Demand.makeOrthogonal:234 ALOAD 1
+Demand.makeOrthogonal:234 ILOAD 7
+Demand.makeOrthogonal:234 DALOAD
+Demand.makeOrthogonal:234 DMUL
+Demand.makeOrthogonal:234 DADD
+Demand.makeOrthogonal:234 DSTORE 5
+Demand.makeOrthogonal:236 DLOAD 5
+Demand.makeOrthogonal:236 INVOKESTATIC java/lang/Math.sqrt(D)D
+Demand.makeOrthogonal:236 DSTORE 5
+Demand.makeOrthogonal:238 ICONST_0
+Demand.makeOrthogonal:238 ISTORE 7
+Demand.makeOrthogonal:238 ILOAD 7
+Demand.makeOrthogonal:238 ICONST_2
+Demand.makeOrthogonal:238 IF_ICMPGE L5
+Demand.makeOrthogonal:238 IINC 7 1
+Demand.makeOrthogonal:239 ALOAD 1
+Demand.makeOrthogonal:239 ILOAD 7
+Demand.makeOrthogonal:239 DUP2
+Demand.makeOrthogonal:239 DALOAD
+Demand.makeOrthogonal:239 DLOAD 5
+Demand.makeOrthogonal:239 DDIV
+Demand.makeOrthogonal:239 DASTORE
+Demand.makeOrthogonal:241 DCONST_1
+Demand.makeOrthogonal:241 DLOAD 3
+Demand.makeOrthogonal:241 DLOAD 3
+Demand.makeOrthogonal:241 DMUL
+Demand.makeOrthogonal:241 DSUB
+Demand.makeOrthogonal:241 DCONST_0
+Demand.makeOrthogonal:241 DCMPG
+Demand.makeOrthogonal:241 IFGE L6
+Demand.makeOrthogonal:244 DCONST_1
+Demand.makeOrthogonal:244 DLOAD 3
+Demand.makeOrthogonal:244 DLOAD 3
+Demand.makeOrthogonal:244 DMUL
+Demand.makeOrthogonal:244 DSUB
+Demand.makeOrthogonal:244 INVOKESTATIC java/lang/Math.sqrt(D)D
+Demand.makeOrthogonal:244 DRETURN
+Lateral.<init>:16 ALOAD 0
+Lateral.<init>:16 DCONST_0
+Lateral.<init>:16 PUTFIELD Lateral.alpha D
+Lateral.<init>:17 ALOAD 0
+Lateral.<init>:17 DCONST_0
+Lateral.<init>:17 PUTFIELD Lateral.beta D
+Lateral.<init>:18 ALOAD 0
+Lateral.<init>:18 LDC 3.3333333333333333E-6
+Lateral.<init>:18 PUTFIELD Lateral.R D
+Lateral.<init>:19 ALOAD 0
+Lateral.<init>:19 LDC 1.0E-6
+Lateral.<init>:19 PUTFIELD Lateral.X D
+Lateral.<init>:37 ALOAD 0
+Lateral.<init>:37 NEW Demand
+Lateral.<init>:37 PUTFIELD Lateral.D LDemand;
+Lateral.<init>:40 ILOAD 1
+Lateral.<init>:40 ICONST_1
+Lateral.<init>:40 IF_ICMPGT L0
+Lateral.<init>:41 ALOAD 0
+Lateral.<init>:41 ACONST_NULL
+Lateral.<init>:41 PUTFIELD Lateral.next_lateral LLateral;
+Lateral.<init>:43 ALOAD 0
+Lateral.<init>:43 NEW Lateral
+Lateral.<init>:43 DUP
+Lateral.<init>:43 ILOAD 1
+Lateral.<init>:43 ICONST_1
+Lateral.<init>:43 ISUB
+Lateral.<init>:43 ILOAD 2
+Lateral.<init>:43 ILOAD 3
+Lateral.<init>:43 INVOKESPECIAL Lateral.<init>(III)V
+Lateral.<init>:43 PUTFIELD Lateral.next_lateral LLateral;
+Lateral.<init>:46 ALOAD 0
+Lateral.<init>:46 NEW Branch
+Lateral.<init>:46 DUP
+Lateral.<init>:46 ILOAD 2
+Lateral.<init>:46 ILOAD 3
+Lateral.<init>:46 INVOKESPECIAL Branch.<init>(II)V
+Lateral.<init>:46 PUTFIELD Lateral.branch LBranch;
+Lateral.compute:60 DLOAD 5
+Lateral.compute:60 ALOAD 0
+Lateral.compute:60 GETFIELD Lateral.alpha D
+Lateral.compute:60 DLOAD 1
+Lateral.compute:60 DLOAD 3
+Lateral.compute:60 ALOAD 0
+Lateral.compute:60 GETFIELD Lateral.X D
+Lateral.compute:60 DMUL
+Lateral.compute:60 ALOAD 0
+Lateral.compute:60 GETFIELD Lateral.R D
+Lateral.compute:60 DDIV
+Lateral.compute:60 DADD
+Lateral.compute:60 DMUL
+Lateral.compute:60 DADD
+Lateral.compute:60 DSTORE 9
+Lateral.compute:61 DLOAD 7
+Lateral.compute:61 ALOAD 0
+Lateral.compute:61 GETFIELD Lateral.beta D
+Lateral.compute:61 DLOAD 3
+Lateral.compute:61 DLOAD 1
+Lateral.compute:61 ALOAD 0
+Lateral.compute:61 GETFIELD Lateral.R D
+Lateral.compute:61 DMUL
+Lateral.compute:61 ALOAD 0
+Lateral.compute:61 GETFIELD Lateral.X D
+Lateral.compute:61 DDIV
+Lateral.compute:61 DADD
+Lateral.compute:61 DMUL
+Lateral.compute:61 DADD
+Lateral.compute:61 DSTORE 11
+Lateral.compute:64 ALOAD 0
+Lateral.compute:64 GETFIELD Lateral.next_lateral LLateral;
+Lateral.compute:64 IFNULL L0
+Lateral.compute:65 ALOAD 0
+Lateral.compute:65 GETFIELD Lateral.next_lateral LLateral;
+Lateral.compute:65 DLOAD 1
+Lateral.compute:65 DLOAD 3
+Lateral.compute:65 DLOAD 9
+Lateral.compute:65 DLOAD 11
+Lateral.compute:65 INVOKEVIRTUAL Lateral.compute(DDDD)LDemand;
+Lateral.compute:65 ASTORE 13
+Lateral.compute:69 ALOAD 0
+Lateral.compute:69 GETFIELD Lateral.branch LBranch;
+Lateral.compute:69 DLOAD 1
+Lateral.compute:69 DLOAD 3
+Lateral.compute:69 DLOAD 9
+Lateral.compute:69 DLOAD 11
+Lateral.compute:69 INVOKEVIRTUAL Branch.compute(DDDD)LDemand;
+Lateral.compute:69 ASTORE 14
+Lateral.compute:71 ALOAD 0
+Lateral.compute:71 GETFIELD Lateral.next_lateral LLateral;
+Lateral.compute:71 IFNULL L2
+Lateral.compute:72 ALOAD 0
+Lateral.compute:72 GETFIELD Lateral.D LDemand;
+Lateral.compute:72 ALOAD 13
+Lateral.compute:72 ALOAD 14
+Lateral.compute:72 INVOKEVIRTUAL Demand.add(LDemand;LDemand;)V
+Lateral.compute:74 ALOAD 0
+Lateral.compute:74 GETFIELD Lateral.D LDemand;
+Lateral.compute:74 ALOAD 14
+Lateral.compute:74 INVOKEVIRTUAL Demand.assign(LDemand;)V
+Lateral.compute:77 ALOAD 0
+Lateral.compute:77 GETFIELD Lateral.R D
+Lateral.compute:77 ALOAD 0
+Lateral.compute:77 GETFIELD Lateral.R D
+Lateral.compute:77 DMUL
+Lateral.compute:77 ALOAD 0
+Lateral.compute:77 GETFIELD Lateral.X D
+Lateral.compute:77 ALOAD 0
+Lateral.compute:77 GETFIELD Lateral.X D
+Lateral.compute:77 DMUL
+Lateral.compute:77 DADD
+Lateral.compute:77 DSTORE 15
+Lateral.compute:78 LDC 2.0
+Lateral.compute:78 ALOAD 0
+Lateral.compute:78 GETFIELD Lateral.R D
+Lateral.compute:78 DMUL
+Lateral.compute:78 ALOAD 0
+Lateral.compute:78 GETFIELD Lateral.X D
+Lateral.compute:78 DMUL
+Lateral.compute:78 ALOAD 0
+Lateral.compute:78 GETFIELD Lateral.D LDemand;
+Lateral.compute:78 GETFIELD Demand.Q D
+Lateral.compute:78 DMUL
+Lateral.compute:78 LDC 2.0
+Lateral.compute:78 ALOAD 0
+Lateral.compute:78 GETFIELD Lateral.X D
+Lateral.compute:78 DMUL
+Lateral.compute:78 ALOAD 0
+Lateral.compute:78 GETFIELD Lateral.X D
+Lateral.compute:78 DMUL
+Lateral.compute:78 ALOAD 0
+Lateral.compute:78 GETFIELD Lateral.D LDemand;
+Lateral.compute:78 GETFIELD Demand.P D
+Lateral.compute:78 DMUL
+Lateral.compute:78 DSUB
+Lateral.compute:78 ALOAD 0
+Lateral.compute:78 GETFIELD Lateral.R D
+Lateral.compute:78 DSUB
+Lateral.compute:78 DSTORE 17
+Lateral.compute:79 ALOAD 0
+Lateral.compute:79 GETFIELD Lateral.R D
+Lateral.compute:79 ALOAD 0
+Lateral.compute:79 GETFIELD Lateral.D LDemand;
+Lateral.compute:79 GETFIELD Demand.Q D
+Lateral.compute:79 DMUL
+Lateral.compute:79 ALOAD 0
+Lateral.compute:79 GETFIELD Lateral.X D
+Lateral.compute:79 ALOAD 0
+Lateral.compute:79 GETFIELD Lateral.D LDemand;
+Lateral.compute:79 GETFIELD Demand.P D
+Lateral.compute:79 DMUL
+Lateral.compute:79 DSUB
+Lateral.compute:79 DSTORE 19
+Lateral.compute:80 DLOAD 19
+Lateral.compute:80 DLOAD 19
+Lateral.compute:80 DMUL
+Lateral.compute:80 ALOAD 0
+Lateral.compute:80 GETFIELD Lateral.R D
+Lateral.compute:80 ALOAD 0
+Lateral.compute:80 GETFIELD Lateral.D LDemand;
+Lateral.compute:80 GETFIELD Demand.P D
+Lateral.compute:80 DMUL
+Lateral.compute:80 DADD
+Lateral.compute:80 DSTORE 19
+Lateral.compute:81 DLOAD 17
+Lateral.compute:81 DNEG
+Lateral.compute:81 DLOAD 17
+Lateral.compute:81 DLOAD 17
+Lateral.compute:81 DMUL
+Lateral.compute:81 LDC 4.0
+Lateral.compute:81 DLOAD 15
+Lateral.compute:81 DMUL
+Lateral.compute:81 DLOAD 19
+Lateral.compute:81 DMUL
+Lateral.compute:81 DSUB
+Lateral.compute:81 INVOKESTATIC java/lang/Math.sqrt(D)D
+Lateral.compute:81 DSUB
+Lateral.compute:81 LDC 2.0
+Lateral.compute:81 DLOAD 15
+Lateral.compute:81 DMUL
+Lateral.compute:81 DDIV
+Lateral.compute:81 DSTORE 21
+Lateral.compute:82 ALOAD 0
+Lateral.compute:82 GETFIELD Lateral.D LDemand;
+Lateral.compute:82 ALOAD 0
+Lateral.compute:82 GETFIELD Lateral.D LDemand;
+Lateral.compute:82 GETFIELD Demand.Q D
+Lateral.compute:82 DLOAD 21
+Lateral.compute:82 ALOAD 0
+Lateral.compute:82 GETFIELD Lateral.D LDemand;
+Lateral.compute:82 GETFIELD Demand.P D
+Lateral.compute:82 DSUB
+Lateral.compute:82 ALOAD 0
+Lateral.compute:82 GETFIELD Lateral.X D
+Lateral.compute:82 DMUL
+Lateral.compute:82 ALOAD 0
+Lateral.compute:82 GETFIELD Lateral.R D
+Lateral.compute:82 DDIV
+Lateral.compute:82 DADD
+Lateral.compute:82 PUTFIELD Demand.Q D
+Lateral.compute:83 ALOAD 0
+Lateral.compute:83 GETFIELD Lateral.D LDemand;
+Lateral.compute:83 DLOAD 21
+Lateral.compute:83 PUTFIELD Demand.P D
+Lateral.compute:86 LDC 2.0
+Lateral.compute:86 ALOAD 0
+Lateral.compute:86 GETFIELD Lateral.R D
+Lateral.compute:86 DMUL
+Lateral.compute:86 ALOAD 0
+Lateral.compute:86 GETFIELD Lateral.D LDemand;
+Lateral.compute:86 GETFIELD Demand.P D
+Lateral.compute:86 DMUL
+Lateral.compute:86 DSTORE 15
+Lateral.compute:87 LDC 2.0
+Lateral.compute:87 ALOAD 0
+Lateral.compute:87 GETFIELD Lateral.X D
+Lateral.compute:87 DMUL
+Lateral.compute:87 ALOAD 0
+Lateral.compute:87 GETFIELD Lateral.D LDemand;
+Lateral.compute:87 GETFIELD Demand.Q D
+Lateral.compute:87 DMUL
+Lateral.compute:87 DSTORE 17
+Lateral.compute:88 ALOAD 0
+Lateral.compute:88 DLOAD 15
+Lateral.compute:88 DCONST_1
+Lateral.compute:88 DLOAD 15
+Lateral.compute:88 DSUB
+Lateral.compute:88 DLOAD 17
+Lateral.compute:88 DSUB
+Lateral.compute:88 DDIV
+Lateral.compute:88 PUTFIELD Lateral.alpha D
+Lateral.compute:89 ALOAD 0
+Lateral.compute:89 DLOAD 17
+Lateral.compute:89 DCONST_1
+Lateral.compute:89 DLOAD 15
+Lateral.compute:89 DSUB
+Lateral.compute:89 DLOAD 17
+Lateral.compute:89 DSUB
+Lateral.compute:89 DDIV
+Lateral.compute:89 PUTFIELD Lateral.beta D
+Lateral.compute:91 ALOAD 0
+Lateral.compute:91 GETFIELD Lateral.D LDemand;
+Lateral.compute:91 ARETURN
+Leaf.<init>:24 ALOAD 0
+Leaf.<init>:24 NEW Demand
+Leaf.<init>:24 DUP
+Leaf.<init>:24 DCONST_1
+Leaf.<init>:24 DCONST_1
+Leaf.<init>:24 INVOKESPECIAL Demand.<init>(DD)V
+Leaf.<init>:24 PUTFIELD Leaf.D LDemand;
+Leaf.compute:33 ALOAD 0
+Leaf.compute:33 GETFIELD Leaf.D LDemand;
+Leaf.compute:33 DLOAD 1
+Leaf.compute:33 DLOAD 3
+Leaf.compute:33 INVOKEVIRTUAL Demand.optimizeNode(DD)V
+Leaf.compute:40 ALOAD 0
+Leaf.compute:40 GETFIELD Leaf.D LDemand;
+Leaf.compute:40 ARETURN
+Power.main:47 NEW Root
+Power.main:47 DUP
+Power.main:47 ICONST_2
+Power.main:47 ICONST_2
+Power.main:47 ICONST_2
+Power.main:47 ICONST_2
+Power.main:47 INVOKESPECIAL Root.<init>(IIII)V
+Power.main:47 ASTORE 3
+Power.main:51 ALOAD 3
+Power.main:51 INVOKEVIRTUAL Root.compute()V
+Power.main:52 ALOAD 3
+Power.main:52 LDC 0.7
+Power.main:52 LDC 0.14
+Power.main:52 INVOKEVIRTUAL Root.nextIter(ZDD)V
+Power.main:56 ALOAD 3
+Power.main:56 INVOKEVIRTUAL Root.compute()V
+Power.main:60 ALOAD 3
+Power.main:60 INVOKEVIRTUAL Root.reachedLimit()Z
+Power.main:60 IFEQ L2
+Power.main:63 ALOAD 3
+Power.main:63 INVOKEVIRTUAL Root.nextIter(Z)V
+Power.main:74 ALOAD 3
+Power.main:74 GETFIELD Root.D LDemand;
+Power.main:74 GETFIELD Demand.P D
+Power.main:74 DSTORE 10
+Root.<init>:14 ALOAD 0
+Root.<init>:14 LDC 0.8
+Root.<init>:14 PUTFIELD Root.theta_R D
+Root.<init>:18 ALOAD 0
+Root.<init>:18 LDC 0.16
+Root.<init>:18 PUTFIELD Root.theta_I D
+Root.<init>:99 ALOAD 0
+Root.<init>:99 NEW Demand
+Root.<init>:99 PUTFIELD Root.D LDemand;
+Root.<init>:102 ALOAD 0
+Root.<init>:102 ILOAD 1
+Root.<init>:102 ANEWARRAY Lateral
+Root.<init>:102 PUTFIELD Root.feeders [LLateral;
+Root.<init>:103 ICONST_0
+Root.<init>:103 ISTORE 5
+Root.<init>:103 ILOAD 5
+Root.<init>:103 ILOAD 1
+Root.<init>:103 IF_ICMPGE L1
+Root.<init>:103 IINC 5 1
+Root.<init>:105 ALOAD 0
+Root.<init>:105 GETFIELD Root.feeders [LLateral;
+Root.<init>:105 ILOAD 5
+Root.<init>:105 NEW Lateral
+Root.<init>:105 DUP
+Root.<init>:105 ILOAD 2
+Root.<init>:105 ILOAD 3
+Root.<init>:105 ILOAD 4
+Root.<init>:105 INVOKESPECIAL Lateral.<init>(III)V
+Root.<init>:105 AASTORE
+Root.reachedLimit:115 ALOAD 0
+Root.reachedLimit:115 GETFIELD Root.D LDemand;
+Root.reachedLimit:115 GETFIELD Demand.P D
+Root.reachedLimit:115 LDC 10000.0
+Root.reachedLimit:115 DDIV
+Root.reachedLimit:115 ALOAD 0
+Root.reachedLimit:115 GETFIELD Root.theta_R D
+Root.reachedLimit:115 DSUB
+Root.reachedLimit:115 INVOKESTATIC java/lang/Math.abs(D)D
+Root.reachedLimit:115 LDC 1.0E-5
+Root.reachedLimit:115 DCMPG
+Root.reachedLimit:115 IFGE L0
+Root.reachedLimit:115 ALOAD 0
+Root.reachedLimit:115 GETFIELD Root.D LDemand;
+Root.reachedLimit:115 GETFIELD Demand.Q D
+Root.reachedLimit:115 LDC 10000.0
+Root.reachedLimit:115 DDIV
+Root.reachedLimit:115 ALOAD 0
+Root.reachedLimit:115 GETFIELD Root.theta_I D
+Root.reachedLimit:115 DSUB
+Root.reachedLimit:115 INVOKESTATIC java/lang/Math.abs(D)D
+Root.reachedLimit:115 LDC 1.0E-5
+Root.reachedLimit:115 DCMPG
+Root.reachedLimit:115 IFGE L0
+Root.reachedLimit:115 ICONST_1
+Root.reachedLimit:115 ICONST_0
+Root.reachedLimit:115 IRETURN
+Root.compute:123 ALOAD 0
+Root.compute:123 GETFIELD Root.D LDemand;
+Root.compute:123 DCONST_0
+Root.compute:123 PUTFIELD Demand.P D
+Root.compute:124 ALOAD 0
+Root.compute:124 GETFIELD Root.D LDemand;
+Root.compute:124 DCONST_0
+Root.compute:124 PUTFIELD Demand.Q D
+Root.compute:125 ICONST_0
+Root.compute:125 ISTORE 1
+Root.compute:125 ILOAD 1
+Root.compute:125 ALOAD 0
+Root.compute:125 GETFIELD Root.feeders [LLateral;
+Root.compute:125 ARRAYLENGTH
+Root.compute:125 IF_ICMPGE L1
+Root.compute:125 IINC 1 1
+Root.compute:127 ALOAD 0
+Root.compute:127 GETFIELD Root.D LDemand;
+Root.compute:127 ALOAD 0
+Root.compute:127 GETFIELD Root.feeders [LLateral;
+Root.compute:127 ILOAD 1
+Root.compute:127 AALOAD
+Root.compute:127 ALOAD 0
+Root.compute:127 GETFIELD Root.theta_R D
+Root.compute:127 ALOAD 0
+Root.compute:127 GETFIELD Root.theta_I D
+Root.compute:127 ALOAD 0
+Root.compute:127 GETFIELD Root.theta_R D
+Root.compute:127 ALOAD 0
+Root.compute:127 GETFIELD Root.theta_I D
+Root.compute:127 INVOKEVIRTUAL Lateral.compute(DDDD)LDemand;
+Root.compute:127 INVOKEVIRTUAL Demand.increment(LDemand;)V
+Root.nextIter:140 ALOAD 0
+Root.nextIter:140 DLOAD 2
+Root.nextIter:140 PUTFIELD Root.theta_R D
+Root.nextIter:141 ALOAD 0
+Root.nextIter:141 DLOAD 4
+Root.nextIter:141 PUTFIELD Root.theta_I D
+Root.nextIter:150 ALOAD 0
+Root.nextIter:150 GETFIELD Root.theta_R D
+Root.nextIter:150 LDC 0.65
+Root.nextIter:150 DSUB
+Root.nextIter:150 LDC 0.01
+Root.nextIter:150 DDIV
+Root.nextIter:150 D2I
+Root.nextIter:150 ISTORE 2
+Root.nextIter:151 ILOAD 2
+Root.nextIter:151 IFGE L0
+Root.nextIter:152 ICONST_0
+Root.nextIter:152 ISTORE 2
+Root.nextIter:157 ALOAD 0
+Root.nextIter:157 GETFIELD Root.theta_R D
+Root.nextIter:157 ALOAD 0
+Root.nextIter:157 GETFIELD Root.D LDemand;
+Root.nextIter:157 GETFIELD Demand.P D
+Root.nextIter:157 LDC 10000.0
+Root.nextIter:157 DDIV
+Root.nextIter:157 DSUB
+Root.nextIter:157 DNEG
+Root.nextIter:157 DCONST_1
+Root.nextIter:157 GETSTATIC Root.map_P [D
+Root.nextIter:157 ILOAD 2
+Root.nextIter:157 ICONST_1
+Root.nextIter:157 IADD
+Root.nextIter:157 DALOAD
+Root.nextIter:157 GETSTATIC Root.map_P [D
+Root.nextIter:157 ILOAD 2
+Root.nextIter:157 DALOAD
+Root.nextIter:157 DSUB
+Root.nextIter:157 LDC 100.0
+Root.nextIter:157 DDIV
+Root.nextIter:157 DSUB
+Root.nextIter:157 DDIV
+Root.nextIter:157 DSTORE 3
+Root.nextIter:159 ALOAD 0
+Root.nextIter:159 GETFIELD Root.theta_I D
+Root.nextIter:159 LDC 0.13
+Root.nextIter:159 DSUB
+Root.nextIter:159 LDC 0.002
+Root.nextIter:159 DDIV
+Root.nextIter:159 D2I
+Root.nextIter:159 ISTORE 2
+Root.nextIter:160 ILOAD 2
+Root.nextIter:160 IFGE L2
+Root.nextIter:161 ICONST_0
+Root.nextIter:161 ISTORE 2
+Root.nextIter:165 ALOAD 0
+Root.nextIter:165 GETFIELD Root.theta_I D
+Root.nextIter:165 ALOAD 0
+Root.nextIter:165 GETFIELD Root.D LDemand;
+Root.nextIter:165 GETFIELD Demand.Q D
+Root.nextIter:165 LDC 10000.0
+Root.nextIter:165 DDIV
+Root.nextIter:165 DSUB
+Root.nextIter:165 DNEG
+Root.nextIter:165 DCONST_1
+Root.nextIter:165 GETSTATIC Root.map_Q [D
+Root.nextIter:165 ILOAD 2
+Root.nextIter:165 ICONST_1
+Root.nextIter:165 IADD
+Root.nextIter:165 DALOAD
+Root.nextIter:165 GETSTATIC Root.map_Q [D
+Root.nextIter:165 ILOAD 2
+Root.nextIter:165 DALOAD
+Root.nextIter:165 DSUB
+Root.nextIter:165 LDC 20.0
+Root.nextIter:165 DDIV
+Root.nextIter:165 DSUB
+Root.nextIter:165 DDIV
+Root.nextIter:165 DSTORE 5
+Root.nextIter:174 ALOAD 0
+Root.nextIter:174 DUP
+Root.nextIter:174 GETFIELD Root.theta_R D
+Root.nextIter:174 DLOAD 3
+Root.nextIter:174 DADD
+Root.nextIter:174 PUTFIELD Root.theta_R D
+Root.nextIter:175 ALOAD 0
+Root.nextIter:175 DUP
+Root.nextIter:175 GETFIELD Root.theta_I D
+Root.nextIter:175 DLOAD 5
+Root.nextIter:175 DADD
+Root.nextIter:175 PUTFIELD Root.theta_I D
+
+Slice consists of 1299 bytecode instructions.
+Computation took 2.02 seconds.

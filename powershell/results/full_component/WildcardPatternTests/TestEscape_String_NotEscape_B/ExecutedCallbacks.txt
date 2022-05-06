@@ -1,0 +1,2 @@
+|||FirstProcess||OTHER|0|||PSTests.Parallel|WildcardPatternTests|||PROPERTY|1|
+|||FirstProcess||OTHER|0|||PSTests.Parallel|WildcardPatternTests|TestEscape_String_NotEscape_B||METHOD|1|

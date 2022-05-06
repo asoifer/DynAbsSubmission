@@ -1,0 +1,2 @@
+BindingTests_ParenthesizedDelegate||2688|1255|901|89.6089293||1.1240446|6849|8051||
+BindingTests_ParenthesizedDelegate||2693|1261|819|89.6089293||1.1300823|6849|8072||

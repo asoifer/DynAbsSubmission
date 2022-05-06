@@ -1,0 +1,8 @@
+|||FirstProcess||OTHER|0|
+|System.Threading|CancellationTokenSource|ctor||METHOD|1|FULL HAVOC
+|Microsoft.PowerShell.Commands|ConvertToJsonContext|ctor|int maxDepth,bool enumsAsStrings,bool compressOutput,System.Threading.CancellationToken cancellationToken,Newtonsoft.Json.StringEscapeHandling stringEscapeHandling,System.Management.Automation.PSCmdlet targetCmdlet|METHOD|1|FULL HAVOC
+|System.Threading|CancellationTokenSource|Cancel||METHOD|1|FULL HAVOC
+|System.Collections|Hashtable|ctor||METHOD|1|FULL HAVOC
+|System.Collections|Hashtable|Add|object key,object? value|METHOD|1|FULL HAVOC
+|Microsoft.PowerShell.Commands|JsonObject|ConvertToJson|object objectToProcess,Microsoft.PowerShell.Commands.JsonObject.ConvertToJsonContext context|METHOD|1|FULL HAVOC
+|PSTests|CustomAssert|Null|object object|METHOD|1|FULL HAVOC

@@ -1,0 +1,4 @@
+BindingTests_NamespaceQualifiedGenericTypeNameWrongArity||2609|1018|715|89.6089293||2.2786631|7422|7195||
+BindingTests_NamespaceQualifiedGenericTypeNameWrongArity||2614|1024|626|89.6089293||2.3242391|7422|7216||
+BindingTests_NamespaceQualifiedGenericTypeNameWrongArity||2617|1024|626|89.6089293||2.3405283|7422|7227||
+BindingTests_NamespaceQualifiedGenericTypeNameWrongArity||2620|1024|626|89.6089293||2.3565151|7422|7238||

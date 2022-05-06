@@ -1,0 +1,37 @@
+|||FirstProcess||OTHER|0|
+|System.Collections.Concurrent|ConcurrentDictionary|ctor||METHOD|1|FULL HAVOC
+|System.Collections.Generic|List|ctor||METHOD|1|Fresh.{Single{System.Array}}.{P}.{RV.?;RO.?}.{[RV, RO, ?]}<EOF>
+|System.Collections.Generic|List|Add|System.Func<object, System.Management.Automation.PSObject.AdapterSet> item|METHOD|1|Null.{}.{R;R.?;R.*.UntilType{System.Array}.OfType{System.Array}.?;P}.{R.?;R.*.UntilType{System.Array}.OfType{System.Array}.?}.{[R.*.UntilType{System.Array}.OfType{System.Array}, P, ?]}<EOF>
+|System.Management.Automation|PSTraceSource|GetTracer|string name,string description,bool traceHeaders|METHOD|1|FULL HAVOC
+|System.Runtime.CompilerServices|ConditionalWeakTable|ctor||METHOD|2|FULL HAVOC
+|System.Collections.ObjectModel|Collection|ctor||METHOD|3|FULL HAVOC
+|System.Collections.ObjectModel|Collection|Add|System.Management.Automation.CollectionEntry<System.Management.Automation.PSMemberInfo> item|METHOD|9|FULL HAVOC
+|System.Management.Automation|CollectionEntry|ctor|System.Management.Automation.CollectionEntry<System.Management.Automation.PSMethodInfo>.GetMembersDelegate getMembers,System.Management.Automation.CollectionEntry<System.Management.Automation.PSMethodInfo>.GetMemberDelegate getMember,System.Management.Automation.CollectionEntry<System.Management.Automation.PSMethodInfo>.GetFirstOrDefaultDelegate getFirstOrDefault,bool shouldReplicateWhenReturning,bool shouldCloneWhenReturning,string collectionNameForTracing|METHOD|2|FULL HAVOC
+|System.Management.Automation|DotNetAdapter|ctor||METHOD|2|FULL HAVOC
+|System.Management.Automation|BaseDotNetAdapterForAdaptedObjects|ctor||METHOD|1|FULL HAVOC
+|System.Management.Automation|PSMemberSetAdapter|ctor||METHOD|1|FULL HAVOC
+|System.Management.Automation|PSObjectAdapter|ctor||METHOD|1|FULL HAVOC
+|Microsoft.PowerShell.Cim|CimInstanceAdapter|ctor||METHOD|1|FULL HAVOC
+|System.Management.Automation|ThirdPartyAdapter|ctor|System.Type adaptedType,System.Management.Automation.PSPropertyAdapter externalAdapter|METHOD|1|FULL HAVOC
+|System.Management.Automation|ManagementObjectAdapter|ctor||METHOD|1|FULL HAVOC
+|System.Management.Automation|ManagementClassApdapter|ctor||METHOD|1|FULL HAVOC
+|System.Management.Automation|DirectoryEntryAdapter|ctor||METHOD|1|FULL HAVOC
+|System.Management.Automation|DataRowViewAdapter|ctor||METHOD|1|FULL HAVOC
+|System.Management.Automation|DataRowAdapter|ctor||METHOD|1|FULL HAVOC
+|System.Management.Automation|XmlNodeAdapter|ctor||METHOD|1|FULL HAVOC
+|System|Object|ctor||METHOD|1|Fresh.{}.{}.{RV.?}.{}<EOF>
+|System.Management.Automation|Diagnostics|Assert|bool condition,string whyThisShouldNeverHappen|METHOD|2|FULL HAVOC
+|System.Management.Automation.Runspaces|LocalPipeline|GetExecutionContextFromTLS||METHOD|3|FULL HAVOC
+|System.Runtime.CompilerServices|ConditionalWeakTable|GetValue|object key,System.Runtime.CompilerServices.ConditionalWeakTable<object, System.Management.Automation.PSMemberInfoInternalCollection<System.Management.Automation.PSMemberInfo>>.CreateValueCallback createValueCallback|METHOD|1|FULL HAVOC
+|System.Management.Automation|PSMemberInfoInternalCollection|MoveNext||PROPERTY|0|
+|System.Linq|Enumerable|Empty||METHOD|1|FULL HAVOC
+|System.Collections.Generic|IEnumerable|GetEnumerator||METHOD|1|FULL HAVOC
+|System.Collections.ObjectModel|Collection|get_Item|int index|METHOD|3|FULL HAVOC
+|System.Management.Automation|GetFirstOrDefaultDelegate|Invoke|System.Management.Automation.PSObject obj,System.Management.Automation.MemberNamePredicate predicate|METHOD|3|FULL HAVOC
+|System|Enum|HasFlag|System.Enum flag|METHOD|1|Null.{}.{R;P}.{}.{}<EOF>
+|System|Object|GetType||METHOD|1|Fresh.{}.{R}.{RV.?}.{}<EOF>
+|System.Collections.Concurrent|ConcurrentDictionary|TryGetValue|System.Type key,System.Management.Automation.PSObject.AdapterSet value|METHOD|1|FULL HAVOC
+|System|Func|Invoke|object arg|METHOD|1|FULL HAVOC
+|System.Collections.Concurrent|ConcurrentDictionary|GetOrAdd|System.Type key,System.Management.Automation.PSObject.AdapterSet value|METHOD|1|FULL HAVOC
+|System.Management.Automation|Adapter|BaseGetFirstMemberOrDefault|object obj,System.Management.Automation.MemberNamePredicate predicate|METHOD|1|FULL HAVOC
+|PSTests|CustomAssert|Null|object object|METHOD|1|FULL HAVOC

@@ -1,0 +1,22 @@
+ExtensionMethods.cs:94
+ExtensionMethods.cs:120
+MshTraceSource.cs:74
+MshTraceSource.cs:111
+MshTraceSource.cs:114
+MshTraceSource.cs:161
+MshTraceSource.cs:163
+MshTraceSource.cs:164
+MshTraceSource.cs:176
+MshTraceSource.cs:197
+MshTraceSource.cs:209
+MshTraceSource.cs:215
+StructuredTraceSource.cs:282
+StructuredTraceSource.cs:283
+StructuredTraceSource.cs:300
+StructuredTraceSource.cs:301
+StructuredTraceSource.cs:1315
+StructuredTraceSource.cs:1421
+StructuredTraceSource.cs:1449
+StructuredTraceSource.cs:1534
+test_ExtensionMethods.cs:15
+---- Last slice: [test_ExtensionMethods.cs - 15]

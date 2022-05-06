@@ -1,0 +1,1 @@
+FileSystemProviderTests_TestGetContentWriter||22954|1008|6|44.8938074||3.3173637|15830|58616||

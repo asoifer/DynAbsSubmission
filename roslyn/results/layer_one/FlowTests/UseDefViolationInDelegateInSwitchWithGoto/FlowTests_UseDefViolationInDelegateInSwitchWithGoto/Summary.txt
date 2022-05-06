@@ -1,0 +1,3 @@
+FlowTests_UseDefViolationInDelegateInSwitchWithGoto||957|456|283|89.6089293||0.3602958|6378|2331||
+FlowTests_UseDefViolationInDelegateInSwitchWithGoto||962|462|199|89.6089293||0.363036|6378|2352||
+FlowTests_UseDefViolationInDelegateInSwitchWithGoto||965|462|199|89.6089293||0.3644197|6378|2363||

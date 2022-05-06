@@ -1,0 +1,16 @@
+|||FirstProcess||OTHER|0|
+|System|Environment|GetFolderPath|System.Environment.SpecialFolder folder|METHOD|2|Null.{}.{R;P}.{}.{}<EOF>
+|System.Collections.Generic|List|ctor||METHOD|1|Fresh.{Single{System.Array}}.{P}.{RV.?;RO.?}.{[RV, RO, ?]}<EOF>
+|System.Collections.Generic|List|Add|string item|METHOD|11|Null.{}.{R;R.?;R.*.UntilType{System.Array}.OfType{System.Array}.?;P}.{R.?;R.*.UntilType{System.Array}.OfType{System.Array}.?}.{[R.*.UntilType{System.Array}.OfType{System.Array}, P, ?]}<EOF>
+|System.Runtime.InteropServices|RuntimeInformation|IsOSPlatform|System.Runtime.InteropServices.OSPlatform osPlatform|METHOD|1|FULL HAVOC
+|Xunit|Skip|IfNot|bool condition,string reason|METHOD|1|FULL HAVOC
+|System.IO|Path|Combine|string path1,string path2|METHOD|1|FULL HAVOC
+|System.Collections.Concurrent|ConcurrentDictionary|ctor||METHOD|2|FULL HAVOC
+|System.Collections.Generic|Dictionary|ctor||METHOD|3|Fresh.{Many{|DictInternal}}.{P}.{RV.?;RO.?}.{[RV;RO, RO, ?], [RO, P, ?]}<EOF>
+|System.Collections.Generic|Dictionary|Add|string key,string value|METHOD|17|Null.{}.{R;R.?;R.?.?.OfKind{DictInternal}.?;P}.{R.?.?.OfKind{DictInternal}.?}.{[R.?.?.OfKind{DictInternal}, P, ?]}<EOF>
+|System.Collections.Generic|HashSet|ctor|System.Collections.Generic.IEqualityComparer<string>? comparer|METHOD|2|Fresh.{Many{|HashSet}}.{P}.{RV.?;RO.?}.{[RV, RO, ?], [RO, P, ?]}<EOF>
+|System.Collections.Generic|HashSet|Add|string item|METHOD|14|FULL HAVOC
+|System.Text|UTF32Encoding|ctor|bool bigEndian,bool byteOrderMark|METHOD|1|FULL HAVOC
+|System.Text|UTF8Encoding|ctor|bool encoderShouldEmitUTF8Identifier|METHOD|1|FULL HAVOC
+|Microsoft.Win32|RegistryKey|OpenSubKey|string name|METHOD|1|FULL HAVOC
+|PSTests|CustomAssert|False|bool condition|METHOD|1|FULL HAVOC

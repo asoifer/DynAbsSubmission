@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<UserConfiguration xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <solutionFiles>
+    <solutionPath>..\Olden\src\CSharp\Perimeter\Perimeter.sln</solutionPath>
+	<instrumentedSolutionPath>..\Olden\output\CSharpCompilation\Perimeter_SLN\Perimeter.sln</instrumentedSolutionPath>
+    <executableProject>Perimeter</executableProject>
+	<MSBuildCompilation>false</MSBuildCompilation>
+  </solutionFiles>
+  <criteria>
+    <mode>Normal</mode>
+	<lines>
+		<FileLine>
+			<file>Perimeter.cs</file>
+			<line>73</line>
+		</FileLine>
+		<FileLine>
+			<file>Perimeter.cs</file>
+			<line>74</line>
+		</FileLine>
+	</lines>
+    <runAutomatically>true</runAutomatically>
+    <fileTraceInput>true</fileTraceInput>
+  </criteria>
+  <results>
+	<name>Perimeter</name>
+	<outputFolder>..\Olden\output\DynAbsResults\Clusters</outputFolder>
+    <resultFile>Results.txt</resultFile>
+	<filteredResultFile>FilteredResults.txt</filteredResultFile>
+	<summaryResultFile>Summary.txt</summaryResultFile>
+	<executedLinesFileForUser>ExecutedLines.txt</executedLinesFileForUser>
+  </results>
+  <customization>
+    <includeControlDependencies>true</includeControlDependencies>
+	<includeAllUses>true</includeAllUses>
+	<staticMode>false</staticMode>
+	<loopsOptimization>false</loopsOptimization>
+	<memoryModel>Clusters</memoryModel>
+  </customization>
+  <instances>
+	<Instance>
+      <parameters>
+        <string>-l 12</string>
+      </parameters>
+	</Instance>
+  </instances>
+</UserConfiguration>

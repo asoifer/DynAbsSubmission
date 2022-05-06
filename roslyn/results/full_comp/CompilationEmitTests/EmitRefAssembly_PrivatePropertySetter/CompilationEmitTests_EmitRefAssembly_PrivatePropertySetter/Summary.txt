@@ -1,0 +1,8 @@
+CompilationEmitTests_EmitRefAssembly_PrivatePropertySetter||186563|10223|7147|222.0905773||403.2532053|16311|510038||
+CompilationEmitTests_EmitRefAssembly_PrivatePropertySetter||186641|10317|15|222.0905773||403.6649972|16311|510234||
+CompilationEmitTests_EmitRefAssembly_PrivatePropertySetter||212404|10394|7324|222.0905773||434.0186421|16311|570191||
+CompilationEmitTests_EmitRefAssembly_PrivatePropertySetter||219019|10892|7647|222.0905773||494.7073788|16311|589558||
+CompilationEmitTests_EmitRefAssembly_PrivatePropertySetter||186563|10223|7147|155.230955||235.570567|16311|510038||
+CompilationEmitTests_EmitRefAssembly_PrivatePropertySetter||186641|10317|15|155.230955||235.7617267|16311|510234||
+CompilationEmitTests_EmitRefAssembly_PrivatePropertySetter||212404|10394|7324|155.230955||254.4847914|16311|570191||
+CompilationEmitTests_EmitRefAssembly_PrivatePropertySetter||219019|10892|7647|155.230955||277.1626584|16311|589558||

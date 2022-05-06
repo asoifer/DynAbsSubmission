@@ -1,0 +1,5 @@
+CompilationEmitTests_WarnAsErrorDoesNotEmit_SpecificDiagnosticOption||1415|912|808|89.6089293||0.6828831|5708|3832||
+CompilationEmitTests_WarnAsErrorDoesNotEmit_SpecificDiagnosticOption||1416|913|808|89.6089293||0.6859587|5708|3835||
+CompilationEmitTests_WarnAsErrorDoesNotEmit_SpecificDiagnosticOption||1417|914|808|89.6089293||0.6888186|5708|3838||
+CompilationEmitTests_WarnAsErrorDoesNotEmit_SpecificDiagnosticOption||1418|915|808|89.6089293||0.6957237|5708|3841||
+CompilationEmitTests_WarnAsErrorDoesNotEmit_SpecificDiagnosticOption||1928|1197|1031|89.6089293||0.8946518|5708|4943||

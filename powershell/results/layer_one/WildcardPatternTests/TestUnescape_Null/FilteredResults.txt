@@ -1,0 +1,4 @@
+regex.cs:332
+regex.cs:334
+test_WildcardPattern.cs:76
+---- Last slice: [test_WildcardPattern.cs - 76]

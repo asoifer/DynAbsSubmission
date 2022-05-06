@@ -1,0 +1,2 @@
+BindingTests_RefReturningDelegateCreation||113357|8522|16|235.1182994||216.6764157|8012|293262||
+BindingTests_RefReturningDelegateCreation||113357|8522|16|163.4935965||107.3115541|8012|293262||

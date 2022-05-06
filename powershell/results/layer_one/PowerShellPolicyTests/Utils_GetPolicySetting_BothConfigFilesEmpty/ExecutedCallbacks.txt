@@ -1,0 +1,4 @@
+|||FirstProcess||OTHER|0|||PSTests.Sequential|PowerShellPolicyFixture|ctor||METHOD|1|
+|||FirstProcess||OTHER|0|||PSTests.Sequential|PowerShellPolicyTests|ctor|PSTests.Sequential.PowerShellPolicyFixture fixture|METHOD|1|
+|||FirstProcess||OTHER|0|||PSTests.Sequential|PowerShellPolicyTests|Utils_GetPolicySetting_BothConfigFilesEmpty||METHOD|1|
+|System.Management.Automation|Utils|GetPolicySetting|System.Management.Automation.Configuration.ConfigScope[] preferenceOrder|METHOD|28|FULL HAVOC||System.Management.Automation.Configuration|PowerShellConfig|GetPowerShellPolicies|System.Management.Automation.Configuration.ConfigScope scope|METHOD|42|

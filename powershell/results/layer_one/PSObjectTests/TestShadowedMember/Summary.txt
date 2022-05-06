@@ -1,0 +1,3 @@
+PSObjectTests_TestShadowedMember||398|276|76|44.8938074||0.0414903|51|862||
+PSObjectTests_TestShadowedMember||400|277|77|44.8938074||0.0420639|51|868||
+PSObjectTests_TestShadowedMember||402|280|78|44.8938074||0.0427734|51|874||

@@ -1,0 +1,10 @@
+CompilationEmitTests_RefAssembly_VerifyTypesAndMembersOnStruct||251|232|227|89.6089293||0.3633547|16894|620||
+CompilationEmitTests_RefAssembly_VerifyTypesAndMembersOnStruct||252|233|6|89.6089293||0.3778726|16894|622||
+CompilationEmitTests_RefAssembly_VerifyTypesAndMembersOnStruct||5291|1029|10|89.6089293||4.0065619|16894|14638||
+CompilationEmitTests_RefAssembly_VerifyTypesAndMembersOnStruct||9149|1043|903|89.6089293||4.9449123|16894|25371||
+CompilationEmitTests_RefAssembly_VerifyTypesAndMembersOnStruct||9405|1056|919|89.6089293||5.0409614|16894|25960||
+CompilationEmitTests_RefAssembly_VerifyTypesAndMembersOnStruct||9508|1109|941|89.6089293||5.0673142|16894|26228||
+CompilationEmitTests_RefAssembly_VerifyTypesAndMembersOnStruct||9584|1113|947|89.6089293||5.0993775|16894|26411||
+CompilationEmitTests_RefAssembly_VerifyTypesAndMembersOnStruct||9660|1114|949|89.6089293||5.1367891|16894|26594||
+CompilationEmitTests_RefAssembly_VerifyTypesAndMembersOnStruct||9761|1115|951|89.6089293||5.1821636|16894|26835||
+CompilationEmitTests_RefAssembly_VerifyTypesAndMembersOnStruct||9852|1118|955|89.6089293||5.2243273|16894|27074||

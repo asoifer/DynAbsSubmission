@@ -1,0 +1,4 @@
+test_WildcardPattern.cs:10
+test_WildcardPattern.cs:41
+test_WildcardPattern.cs:44
+test_WildcardPattern.cs:45

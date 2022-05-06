@@ -1,0 +1,2 @@
+BindingTests_UnimplementedInterfaceSquiggleLocation_InterfaceInheritanceScenario11||1224|821|546|89.6089293||0.4962953|7068|3785||
+BindingTests_UnimplementedInterfaceSquiggleLocation_InterfaceInheritanceScenario11||1229|827|464|89.6089293||0.5084077|7068|3806||

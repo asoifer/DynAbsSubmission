@@ -1,0 +1,6 @@
+CompilationEmitTests_EmitNestedLambdaWithAddPlusOperator||31173|2358|1851|163.4935965||7.4301971|20131|89307||
+CompilationEmitTests_EmitNestedLambdaWithAddPlusOperator||31174|2359|8|163.4935965||7.4549551|20131|89309||
+CompilationEmitTests_EmitNestedLambdaWithAddPlusOperator||250795|11966|11|163.4935965||594.4049896|20131|730210||
+CompilationEmitTests_EmitNestedLambdaWithAddPlusOperator||31173|2358|1851|155.230955||10.5012685|20131|89307||
+CompilationEmitTests_EmitNestedLambdaWithAddPlusOperator||31174|2359|8|155.230955||10.5196369|20131|89309||
+CompilationEmitTests_EmitNestedLambdaWithAddPlusOperator||250795|11966|11|155.230955||583.3604181|20131|730210||

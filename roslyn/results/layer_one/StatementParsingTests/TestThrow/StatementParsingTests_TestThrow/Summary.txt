@@ -1,0 +1,11 @@
+StatementParsingTests_TestThrow||17254|779|262|89.6089293||3.0831695|1390|49991||
+StatementParsingTests_TestThrow||17256|782|264|89.6089293||3.0845215|1390|49999||
+StatementParsingTests_TestThrow||17279|795|270|89.6089293||3.0904455|1390|50068||
+StatementParsingTests_TestThrow||17285|804|5|89.6089293||3.0929411|1390|50090||
+StatementParsingTests_TestThrow||17286|805|262|89.6089293||3.0931194|1390|50091||
+StatementParsingTests_TestThrow||17288|806|277|89.6089293||3.0946774|1390|50097||
+StatementParsingTests_TestThrow||17290|807|278|89.6089293||3.0999024|1390|50102||
+StatementParsingTests_TestThrow||17296|814|284|89.6089293||3.1035715|1390|50122||
+StatementParsingTests_TestThrow||17297|815|285|89.6089293||3.1046411|1390|50125||
+StatementParsingTests_TestThrow||17299|816|285|89.6089293||3.106186|1390|50131||
+StatementParsingTests_TestThrow||17301|817|286|89.6089293||3.107548|1390|50136||

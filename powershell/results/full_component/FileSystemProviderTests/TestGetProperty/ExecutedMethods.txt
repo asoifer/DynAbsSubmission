@@ -1,0 +1,264 @@
+|||FirstProcess||OTHER|0|
+|System.IO|Path|GetTempFileName||METHOD|1|FULL HAVOC
+|System.IO|File|Exists|string path|METHOD|5|FULL HAVOC
+|System.IO|File|Delete|string path|METHOD|3|FULL HAVOC
+|System.IO|File|AppendAllText|string path,string contents|METHOD|1|FULL HAVOC
+|System|Object|ctor||METHOD|93|Fresh.{}.{}.{RV.?}.{}<EOF>
+|System.Threading|ThreadLocal|ctor||METHOD|1|FULL HAVOC
+|System.Collections.Generic|Dictionary|ctor|System.Collections.Generic.IEqualityComparer<string>? comparer|METHOD|121|Fresh.{Many{|DictInternal}}.{P}.{RV.?;RO.?}.{[RV;RO, RO, ?], [RO, P, ?]}<EOF>
+|System|String|IsNullOrEmpty|string? value|METHOD|5439|Null.{}.{R;P}.{}.{}<EOF>
+|System.Collections.Generic|Dictionary|TryGetValue|string key,System.Management.Automation.PSTraceSource value|METHOD|852|FULL HAVOC
+|System.Collections.Generic|Dictionary|ContainsKey|string key|METHOD|110|Null.{}.{R;R.?;R.?.?.OfKind{DictInternal}.?;P}.{}.{}<EOF>
+|System|String|Substring|int startIndex,int length|METHOD|443|Null.{}.{R;P}.{}.{}<EOF>
+|System|Environment|GetEnvironmentVariable|string variable|METHOD|24|Null.{}.{R;P}.{}.{}<EOF>
+|System|String|Equals|string? a,string? b,System.StringComparison comparisonType|METHOD|22324|Null.{}.{R;P}.{}.{}<EOF>
+|System.IO|EnumerationOptions|ctor||METHOD|1|FULL HAVOC
+|System|Version|ctor|int major,int minor|METHOD|19|FULL HAVOC
+|System.Collections|Hashtable|ctor||METHOD|16|FULL HAVOC
+|System.Diagnostics|FileVersionInfo|GetVersionInfo|string fileName|METHOD|1|FULL HAVOC
+|System|String|IndexOf|char value|METHOD|1194|Null.{}.{R;P}.{}.{}<EOF>
+|System|String|Contains|string value|METHOD|96|Null.{}.{R;P}.{}.{}<EOF>
+|System|String|EndsWith|char value|METHOD|43|Null.{}.{R;P}.{}.{}<EOF>
+|System.Text.RegularExpressions|Regex|Match|string input,string pattern|METHOD|1|FULL HAVOC
+|System|Int32|TryParse|string? s,int result|METHOD|3|Null.{}.{R;P}.{}.{}<EOF>
+|System.Collections|Hashtable|Item||PROPERTY|1|FULL HAVOC
+|Microsoft.Win32|RegistryKey|OpenSubKey|string name|METHOD|5|FULL HAVOC
+|Microsoft.Win32|RegistryKey|GetValue|string name|METHOD|1|FULL HAVOC
+|System|String|Trim||METHOD|105|Null.{}.{R;P}.{}.{}<EOF>
+|System|Enum|ToString||METHOD|2|Null.{}.{R;P}.{}.{}<EOF>
+|System|String|ToString||METHOD|1|Null.{}.{R;P}.{}.{}<EOF>
+|System|Guid|NewGuid||METHOD|73|Fresh.{}.{P}.{RV.?}.{}<EOF>
+|System|Environment|GetFolderPath|System.Environment.SpecialFolder folder|METHOD|10|Null.{}.{R;P}.{}.{}<EOF>
+|System.Collections.Generic|List|ctor||METHOD|648|Fresh.{Single{System.Array}}.{P}.{RV.?;RO.?}.{[RV, RO, ?]}<EOF>
+|System.Collections.Generic|List|Add|string item|METHOD|1737|Null.{}.{R;R.?;R.*.UntilType{System.Array}.OfType{System.Array}.?;P}.{R.?;R.*.UntilType{System.Array}.OfType{System.Array}.?}.{[R.*.UntilType{System.Array}.OfType{System.Array}, P, ?]}<EOF>
+|System.Collections.Generic|List|ToArray||METHOD|2|Fresh.{}.{R;R.?;R.*.UntilType{System.Array}.OfType{System.Array}.?}.{RV.?}.{[RV, R.*.UntilType{@RV}.OfType{@RV}, ?]}<EOF>
+|System.IO|Path|Combine|string path1,string path2|METHOD|40|FULL HAVOC
+|System.Collections.Concurrent|ConcurrentDictionary|ctor||METHOD|42|FULL HAVOC
+|System.Collections.Generic|Dictionary|Add|string key,string value|METHOD|999|Null.{}.{R;R.?;R.?.?.OfKind{DictInternal}.?;P}.{R.?.?.OfKind{DictInternal}.?}.{[R.?.?.OfKind{DictInternal}, P, ?]}<EOF>
+|System.Collections.Generic|HashSet|ctor|System.Collections.Generic.IEqualityComparer<string>? comparer|METHOD|30|Fresh.{Many{|HashSet}}.{P}.{RV.?;RO.?}.{[RV, RO, ?], [RO, P, ?]}<EOF>
+|System.Collections.Generic|HashSet|Add|string item|METHOD|296|FULL HAVOC
+|System.Text|UTF32Encoding|ctor|bool bigEndian,bool byteOrderMark|METHOD|1|FULL HAVOC
+|System.Text|UTF8Encoding|ctor|bool encoderShouldEmitUTF8Identifier|METHOD|1|FULL HAVOC
+|System|Attribute|ctor||METHOD|164|FULL HAVOC
+|System.Collections.ObjectModel|Collection|ctor||METHOD|610|FULL HAVOC
+|System.Collections.ObjectModel|Collection|Add|System.Attribute item|METHOD|1825|FULL HAVOC
+|System|TimeSpan|FromMilliseconds|double value|METHOD|4|FULL HAVOC
+|System.Runtime.InteropServices|RuntimeInformation|IsOSPlatform|System.Runtime.InteropServices.OSPlatform osPlatform|METHOD|7|FULL HAVOC
+|System.Runtime.CompilerServices|ConditionalWeakTable|ctor||METHOD|7|FULL HAVOC
+|System.Collections.Generic|SortedDictionary|ctor||METHOD|1|FULL HAVOC
+|System|Lazy|ctor|System.Func<System.Management.Automation.Configuration.ScriptBlockLogging> valueFactory,bool isThreadSafe|METHOD|9|FULL HAVOC
+|System.Management.Automation.Security|WldpNativeMethods|WldpGetLockdownPolicy|System.Management.Automation.Security.SystemPolicy.WLDP_HOST_INFORMATION pHostInformation,uint pdwLockdownState,uint dwFlags|METHOD|1|FULL HAVOC
+|System.IO|Path|GetTempPath||METHOD|2|FULL HAVOC
+|System.IO|Directory|Exists|string path|METHOD|18|FULL HAVOC
+|System.IO|Path|GetRandomFileName||METHOD|2|FULL HAVOC
+|System.IO|File|WriteAllText|string path,string contents|METHOD|2|FULL HAVOC
+|System.Runtime.InteropServices|Marshal|SizeOf|System.Type t|METHOD|1|FULL HAVOC
+|System.Management.Automation.Security|NativeMethods|SaferIdentifyLevel|uint dwNumProperties,System.Management.Automation.Security.SAFER_CODE_PROPERTIES pCodeProperties,System.IntPtr pLevelHandle,string bucket|METHOD|1|FULL HAVOC
+|System.Management.Automation.Security|NativeMethods|SaferComputeTokenFromLevel|System.IntPtr LevelHandle,System.IntPtr InAccessToken,System.IntPtr OutAccessToken,uint dwFlags,System.IntPtr lpReserved|METHOD|1|FULL HAVOC
+|System.Management.Automation.Security|NativeMethods|SaferCloseLevel|System.IntPtr hLevelHandle|METHOD|1|FULL HAVOC
+|System|Nullable|GetValueOrDefault|System.Management.Automation.Security.SystemEnforcementMode defaultValue|METHOD|2|FULL HAVOC
+|System.Text|StringBuilder|ctor|int capacity|METHOD|18|FULL HAVOC
+|System.Text|StringBuilder|Append|char value|METHOD|51|FULL HAVOC
+|System.Text|StringBuilder|ToString||METHOD|27|FULL HAVOC
+|System|String|Concat|string? str0,string? str1,string? str2|METHOD|1|Null.{}.{R;P}.{}.{}<EOF>
+|System.Threading|Interlocked|CompareExchange|System.Management.Automation.Runspaces.InitialSessionStateEntryCollection<System.Management.Automation.Runspaces.SessionStateVariableEntry> location1,System.Management.Automation.Runspaces.InitialSessionStateEntryCollection<System.Management.Automation.Runspaces.SessionStateVariableEntry> value,System.Management.Automation.Runspaces.InitialSessionStateEntryCollection<System.Management.Automation.Runspaces.SessionStateVariableEntry> comparand|METHOD|43|FULL HAVOC
+|System.IO|Path|GetDirectoryName|string? path|METHOD|7|FULL HAVOC
+|System|String|Format|System.IFormatProvider? provider,string format,object? arg0|METHOD|60|Null.{}.{R;P}.{}.{}<EOF>
+|System.Reflection|Assembly|GetName||METHOD|10|FULL HAVOC
+|System.Reflection|AssemblyName|GetPublicKeyToken||METHOD|2|FULL HAVOC
+|System|Byte|ToString|string? format,System.IFormatProvider? provider|METHOD|16|FULL HAVOC
+|System.Collections.Concurrent|ConcurrentDictionary|GetOrAdd|System.Management.Automation.Configuration.ConfigScope key,System.Func<System.Management.Automation.Configuration.ConfigScope, System.Collections.Concurrent.ConcurrentDictionary<string, System.Management.Automation.Configuration.PolicyBase>> valueFactory|METHOD|427|FULL HAVOC
+|System.Collections.Concurrent|ConcurrentDictionary|TryGetValue|string key,System.Management.Automation.Configuration.PolicyBase value|METHOD|24|FULL HAVOC
+|Newtonsoft.Json.Linq|JObject|ctor||METHOD|1|FULL HAVOC
+|Newtonsoft.Json|JsonSerializerSettings|ctor||METHOD|1|FULL HAVOC
+|Newtonsoft.Json|JsonSerializer|Create|Newtonsoft.Json.JsonSerializerSettings? settings|METHOD|1|FULL HAVOC
+|System.Threading|ReaderWriterLockSlim|ctor||METHOD|1|FULL HAVOC
+|System.Threading|ReaderWriterLockSlim|EnterReadLock||METHOD|1|FULL HAVOC
+|System.IO|FileStream|ctor|string path,System.IO.FileMode mode,System.IO.FileAccess access,System.IO.FileShare share|METHOD|1|FULL HAVOC
+|System.IO|StreamReader|ctor|System.IO.Stream stream|METHOD|1|FULL HAVOC
+|Newtonsoft.Json|JsonTextReader|ctor|System.IO.TextReader reader|METHOD|1|FULL HAVOC
+|Newtonsoft.Json|JsonSerializer|Deserialize|Newtonsoft.Json.JsonReader reader|METHOD|1|FULL HAVOC
+|System.Threading|ReaderWriterLockSlim|ExitReadLock||METHOD|1|FULL HAVOC
+|Newtonsoft.Json.Linq|JObject|TryGetValue|string propertyName,System.StringComparison comparison,Newtonsoft.Json.Linq.JToken? value|METHOD|5|FULL HAVOC
+|System.Collections.Generic|IEnumerable|MoveNext||PROPERTY|0|
+|System.Collections.ObjectModel|Collection|GetEnumerator||METHOD|20|FULL HAVOC
+|System.Reflection|AssemblyName|ctor|string assemblyName|METHOD|4|FULL HAVOC
+|System.Reflection|Assembly|Load|System.Reflection.AssemblyName assemblyRef|METHOD|4|FULL HAVOC
+|System.IO|Path|GetFileName|string? path|METHOD|1|FULL HAVOC
+|System|String|Replace|string oldValue,string? newValue|METHOD|212|Null.{}.{R;P}.{}.{}<EOF>
+|System.Management.Automation.Runspaces|SessionStateCmdletEntry|ctor|string name,System.Type implementingType,string helpFileName|METHOD|60|FULL HAVOC
+|System.Management.Automation.Runspaces|SessionStateProviderEntry|ctor|string name,System.Type implementingType,string helpFileName|METHOD|5|FULL HAVOC
+|System.Linq|Enumerable|Where|System.Collections.Generic.IEnumerable<System.Type> source,System.Func<System.Type, bool> predicate|METHOD|2|FULL HAVOC
+|System|Type|IsAssignableFrom|System.Type? c|METHOD|585|FULL HAVOC
+|System|Type|GetConstructor|System.Type[] types|METHOD|571|FULL HAVOC
+|System|Type|IsSubclassOf|System.Type c|METHOD|383|FULL HAVOC
+|System.Linq|Enumerable|FirstOrDefault|System.Collections.Generic.IEnumerable<T> source|METHOD|201|FULL HAVOC
+|||QUERY||OTHER|0|
+|System|String|IndexOfAny|char[] anyOf|METHOD|6|Null.{}.{R;P}.{}.{}<EOF>
+|System|Tuple|ctor|System.Management.Automation.Runspaces.SessionStateCmdletEntry item1,System.Collections.Generic.List<System.Management.Automation.Runspaces.SessionStateAliasEntry> item2|METHOD|61|FULL HAVOC
+|System|String|IsNullOrWhiteSpace|string? value|METHOD|46|Null.{}.{R;P}.{}.{}<EOF>
+|System.IO|Path|IsPathRooted|string? path|METHOD|2|FULL HAVOC
+|System.Management.Automation.Runspaces|InitialSessionStateEntryCollection|get_Item|string name|METHOD|70|FULL HAVOC
+|System.Management.Automation.Runspaces|InitialSessionStateEntryCollection|Item||PROPERTY|70|FULL HAVOC
+|System|String|StartsWith|string value,System.StringComparison comparisonType|METHOD|663|Null.{}.{R;P}.{}.{}<EOF>
+|System|Environment|SetEnvironmentVariable|string variable,string? value|METHOD|5|Null.{}.{R;P}.{}.{}<EOF>
+|System.Collections.Generic|Queue|ctor||METHOD|8|FULL HAVOC
+|System.Threading|ManualResetEventSlim|ctor|bool initialState|METHOD|4|FULL HAVOC
+|System.Collections.Concurrent|ConcurrentStack|ctor||METHOD|8|FULL HAVOC
+|System.Collections.Generic|Stack|ctor||METHOD|46|FULL HAVOC
+|System|Lazy|get_Value||METHOD|1|FULL HAVOC
+|System|Guid|ctor|int a,short b,short c,byte d,byte e,byte f,byte g,byte h,byte i,byte j,byte k|METHOD|4|Fresh.{}.{}.{RV.?}.{}<EOF>
+|System.Collections.Generic|LinkedList|ctor||METHOD|20|FULL HAVOC
+|System.Dynamic|DynamicMetaObjectBinder|ctor||METHOD|2|FULL HAVOC
+|System.Runtime.CompilerServices|CallSiteBinder|CacheTarget|System.Func<System.Runtime.CompilerServices.CallSite, object, object> target|METHOD|13|FULL HAVOC
+|System.Runtime.CompilerServices|CallSite|Create|System.Runtime.CompilerServices.CallSiteBinder binder|METHOD|33|FULL HAVOC
+|System|Func|Invoke|System.Runtime.CompilerServices.CallSite arg1,object arg2|METHOD|55|FULL HAVOC
+|System.Collections|ArrayList|ctor||METHOD|5|Fresh.{Many}.{P}.{RV.?;RO.?}.{[RV, RO, ?]}<EOF>
+|System.Dynamic|ConvertBinder|ctor|System.Type type,bool explicit|METHOD|16|FULL HAVOC
+|System.Collections.Generic|Dictionary|Clear||METHOD|4|FULL HAVOC
+|System|Type|GetHashCode||METHOD|2526|FULL HAVOC
+|System.Management.Automation|CollectionEntry|ctor|System.Management.Automation.CollectionEntry<System.Management.Automation.PSMethodInfo>.GetMembersDelegate getMembers,System.Management.Automation.CollectionEntry<System.Management.Automation.PSMethodInfo>.GetMemberDelegate getMember,System.Management.Automation.CollectionEntry<System.Management.Automation.PSMethodInfo>.GetFirstOrDefaultDelegate getFirstOrDefault,bool shouldReplicateWhenReturning,bool shouldCloneWhenReturning,string collectionNameForTracing|METHOD|2|FULL HAVOC
+|System.Collections.Specialized|HybridDictionary|ctor||METHOD|1|FULL HAVOC
+|System|Object|GetType||METHOD|127|Fresh.{}.{R}.{RV.?}.{}<EOF>
+|System.Management.Automation|PSConverter|Invoke|object valueToConvert,System.Type resultType,bool recurse,System.Management.Automation.PSObject originalValueToConvert,System.IFormatProvider formatProvider,System.Management.Automation.Runspaces.TypeTable backupTable|METHOD|91|FULL HAVOC
+|System.Collections.ObjectModel|Collection|InsertItem|int index,System.Attribute item|METHOD|10|FULL HAVOC
+|System.Management.Automation|VariablePath|ctor|string path|METHOD|59|FULL HAVOC
+|System|Type|GetGenericArguments||METHOD|2|Fresh.{Many{System.Type}}.{R;R.?}.{RV.?;RO.?}.{[RV, RO, ?]}<EOF>
+|System|Type|MakeGenericType|System.Type[] typeArguments|METHOD|1|Fresh.{}.{P;P.?;P.?.?}.{RV.?}.{}<EOF>
+|System.Linq.Expressions|Expression|Parameter|System.Type type,string name|METHOD|4|FULL HAVOC
+|System.Linq.Expressions|Expression|Variable|System.Type type,string name|METHOD|3|FULL HAVOC
+|System|Type|GetMethod|string name,System.Type[] types|METHOD|180|FULL HAVOC
+|System|Type|GetProperty|string name|METHOD|13|FULL HAVOC
+|System|Type|GetField|string name,System.Reflection.BindingFlags bindingAttr|METHOD|10|FULL HAVOC
+|System.Linq.Expressions|Expression|Property|System.Linq.Expressions.Expression expression,System.Reflection.PropertyInfo property|METHOD|4|FULL HAVOC
+|System.Linq.Expressions|Expression|Not|System.Linq.Expressions.Expression expression|METHOD|1|FULL HAVOC
+|System.Linq.Expressions|Expression|Constant|object value|METHOD|23|FULL HAVOC
+|System.Linq.Expressions|Expression|Empty||METHOD|1|FULL HAVOC
+|System.Linq.Expressions|Expression|Call|System.Reflection.MethodInfo method,System.Linq.Expressions.Expression[] arguments|METHOD|3|FULL HAVOC
+|System.Linq.Expressions|Expression|Field|System.Linq.Expressions.Expression expression,System.Reflection.FieldInfo field|METHOD|3|FULL HAVOC
+|System.Linq.Expressions|Expression|Assign|System.Linq.Expressions.Expression left,System.Linq.Expressions.Expression right|METHOD|2|FULL HAVOC
+|System.Linq.Expressions|Expression|Rethrow||METHOD|1|FULL HAVOC
+|System.Linq.Expressions|Expression|Catch|System.Type type,System.Linq.Expressions.Expression body|METHOD|2|FULL HAVOC
+|System.Linq.Expressions|Expression|Block|System.Linq.Expressions.Expression[] expressions|METHOD|1|FULL HAVOC
+|System.Collections.Generic|Stack|Pop||METHOD|396|FULL HAVOC
+|System.Collections|BitArray|ctor|int length|METHOD|5|FULL HAVOC
+|System|Type|GetTypeCode|System.Type? type|METHOD|93|FULL HAVOC
+|System.Linq.Expressions|Expression|Convert|System.Linq.Expressions.Expression expression,System.Type type|METHOD|5|FULL HAVOC
+|System.Management.Automation|MutableTuple|ctor||METHOD|50|FULL HAVOC
+|System|Environment|ExpandEnvironmentVariables|string name|METHOD|4|Null.{}.{R;P}.{}.{}<EOF>
+|System|String|CompareOrdinal|string? strA,string? strB|METHOD|4|Null.{}.{R;P}.{}.{}<EOF>
+|System|String|ToLowerInvariant||METHOD|1|Null.{}.{R;P}.{}.{}<EOF>
+|System|String|Split|char[]? separator,System.StringSplitOptions options|METHOD|80|Null.{}.{R;P}.{}.{}<EOF>
+|System|String|TrimEnd|char trimChar|METHOD|468|Null.{}.{R;P}.{}.{}<EOF>
+|System.Text|StringBuilder|Insert|int index,string? value|METHOD|3|FULL HAVOC
+|System.Linq|Enumerable|Aggregate|System.Collections.Generic.IEnumerable<char> source,int seed,System.Func<int, char, int> func|METHOD|1|FULL HAVOC
+|System.Collections.Generic|List|Clear||METHOD|4|FULL HAVOC
+|System.Diagnostics.Tracing|EventSource|ctor||METHOD|2|FULL HAVOC
+|System.Diagnostics.Tracing|EventSource|IsEnabled||METHOD|5|FULL HAVOC
+|System.Reflection|Assembly|LoadFrom|string assemblyFile|METHOD|2|FULL HAVOC
+|System.Collections.Generic|HashSet|Contains|string item|METHOD|5|FULL HAVOC
+|System.Threading.Tasks|Parallel|Invoke|System.Action[] actions|METHOD|2|FULL HAVOC
+|System.Management.Automation.Language|KeyComparer|ctor||METHOD|1|FULL HAVOC
+|System|Tuple|Create|string item1,System.Type item2,bool item3,bool item4|METHOD|21|FULL HAVOC
+|System.Dynamic|GetMemberBinder|ctor|string name,bool ignoreCase|METHOD|40|FULL HAVOC
+|System|StringComparer|GetHashCode|string obj|METHOD|37|FULL HAVOC
+|System|Boolean|GetHashCode||METHOD|71|FULL HAVOC
+|System.Linq|Enumerable|Any|System.Collections.Generic.IEnumerable<System.Management.Automation.Language.PSGetMemberBinder> source|METHOD|15|FULL HAVOC
+|System.Linq|Enumerable|All|System.Collections.Generic.IEnumerable<System.Management.Automation.Language.PSGetMemberBinder> source,System.Func<System.Management.Automation.Language.PSGetMemberBinder, bool> predicate|METHOD|30|FULL HAVOC
+|System|WeakReference|ctor|System.Management.Automation.Runspaces.TypeTable target|METHOD|2|FULL HAVOC
+|System.Collections.Concurrent|ConcurrentDictionary|Clear||METHOD|14|FULL HAVOC
+|System.Threading|Interlocked|Increment|int location|METHOD|21|FULL HAVOC
+|System.Collections.ObjectModel|Collection|Clear||METHOD|2|FULL HAVOC
+|System.Collections.Concurrent|ConcurrentBag|ctor||METHOD|2|FULL HAVOC
+|System.Threading.Tasks|Parallel|ForEach|System.Collections.Generic.IEnumerable<System.Management.Automation.Runspaces.SessionStateTypeEntry> source,System.Action<System.Management.Automation.Runspaces.SessionStateTypeEntry> body|METHOD|2|FULL HAVOC
+|System.Collections.ObjectModel|Collection|get_Item|int index|METHOD|12|FULL HAVOC
+|System.IO|DriveInfo|GetDrives||METHOD|3|FULL HAVOC
+|System|Convert|ToChar|string value,System.IFormatProvider? provider|METHOD|2|FULL HAVOC
+|System|Char|ToUpperInvariant|char c|METHOD|4|FULL HAVOC
+|System.IO|DriveInfo|ctor|string driveName|METHOD|4|FULL HAVOC
+|System.Collections.ObjectModel|Collection|Contains|string item|METHOD|2|FULL HAVOC
+|System.IO|Directory|GetCurrentDirectory||METHOD|2|FULL HAVOC
+|System|Char|ToString||METHOD|2|FULL HAVOC
+|System.Collections.Generic|LinkedList|AddFirst|T value|METHOD|2|FULL HAVOC
+|System.Collections.Generic|LinkedList|Clear||METHOD|2|FULL HAVOC
+|System|Int32|ToString||METHOD|21|Null.{}.{R;P}.{}.{}<EOF>
+|System|Activator|CreateInstance|System.Type type|METHOD|54|Fresh.{Many}.{P;P.?}.{RV.?;RO.?}.{[RV;RO, RO, ?], [RO, RV, ?]}<EOF>
+|System|MemoryExtensions|AsSpan|string? text|METHOD|440|FULL HAVOC
+|System.IO|Path|Join|System.ReadOnlySpan<char> path1,System.ReadOnlySpan<char> path2|METHOD|220|FULL HAVOC
+|System|String|LastIndexOf|char value|METHOD|370|Null.{}.{R;P}.{}.{}<EOF>
+|System.Collections.Generic|Stack|Push|string item|METHOD|380|FULL HAVOC
+|System|String|Compare|string? strA,string? strB,System.StringComparison comparisonType|METHOD|2407|Null.{}.{R;P}.{}.{}<EOF>
+|System.IO|Directory|GetFileSystemEntries|string path,string searchPattern|METHOD|88|FULL HAVOC
+|System.Linq|Enumerable|First|System.Collections.Generic.IEnumerable<string> source|METHOD|88|IsIn{R.*.OfType{Object};P.*}.{}.{R.?;R.*.?;P.?;P.*.?}.{}.{}<EOF>
+|System.IO|FileInfo|ctor|string fileName|METHOD|29|FULL HAVOC
+|System|Enum|HasFlag|System.Enum flag|METHOD|57|Null.{}.{R;P}.{}.{}<EOF>
+|System.IO|DirectoryInfo|ctor|string path|METHOD|24|Fresh.{}.{P}.{RV.?}.{}<EOF>
+|System.IO|Path|GetPathRoot|string? path|METHOD|26|FULL HAVOC
+|System.Collections.ObjectModel|Collection|Remove|System.Management.Automation.CmdletProviderContext item|METHOD|6|FULL HAVOC
+|Microsoft.PowerShell.Commands|NativeMethods|RtlQueryProcessPlaceholderCompatibilityMode||METHOD|1|FULL HAVOC
+|System.Collections.Generic|Dictionary|get_Item|string key|METHOD|1|FULL HAVOC
+|System.Collections.Generic|List|AddRange|System.Collections.Generic.IEnumerable<System.Management.Automation.PSDriveInfo> collection|METHOD|1|FULL HAVOC
+|Microsoft.PowerShell.Commands|NativeMethods|PathGetDriveNumber|string path|METHOD|2|FULL HAVOC
+|Microsoft.PowerShell.Commands|NativeMethods|WNetGetConnection|string localName,System.Text.StringBuilder remoteName,int remoteNameLength|METHOD|2|FULL HAVOC
+|System|Version|ToString||METHOD|1|FULL HAVOC
+|System|Guid|ToString||METHOD|1|Null.{}.{R;R.?;P}.{}.{}<EOF>
+|System|Environment|GetCommandLineArgs||METHOD|1|Null.{}.{R;P}.{}.{}<EOF>
+|System|String|Join|string? separator,string?[] value|METHOD|4|Null.{}.{R;P}.{}.{}<EOF>
+|System|Convert|ToString|int value,System.IFormatProvider? provider|METHOD|1|FULL HAVOC
+|System|DateTime|ToString|System.IFormatProvider? provider|METHOD|1|FULL HAVOC
+|System.Diagnostics.Eventing|EventProvider|IsEnabled|byte level,long keywords|METHOD|1|FULL HAVOC
+|System.Linq|Enumerable|ToList|System.Collections.Generic.IEnumerable<System.Management.Automation.ProviderInfo> source|METHOD|6|FULL HAVOC
+|System.Collections.Generic|List|get_Item|int index|METHOD|16|IsIn{R.*.UntilType{@RV}.OfType{@RV}}.{}.{R;R.?;R.?.?;P}.{}.{}<EOF>
+|System.Collections.Concurrent|ConcurrentDictionary|ContainsKey|System.Reflection.Assembly key|METHOD|1|FULL HAVOC
+|System.Collections.Specialized|OrderedDictionary|ctor|int capacity,System.Collections.IEqualityComparer comparer|METHOD|490|FULL HAVOC
+|System.Reflection|MethodBase|GetParameters||METHOD|28|FULL HAVOC
+|System.Collections.Specialized|OrderedDictionary|get_Item|object key|METHOD|5015|FULL HAVOC
+|System|Enum|Equals|object? obj|METHOD|80|Null.{}.{R;P}.{}.{}<EOF>
+|System.Collections.Specialized|OrderedDictionary|Remove|object key|METHOD|31|FULL HAVOC
+|System.Management.Automation|PSPropertySet|ctor|string name,System.Collections.Generic.List<string> referencedPropertyNameList|METHOD|326|FULL HAVOC
+|System|Type|IsInstanceOfType|object? o|METHOD|166|FULL HAVOC
+|System.Management.Automation.Language|Tokenizer|NextToken||METHOD|2|FULL HAVOC
+|System.Text|StringBuilder|Clear||METHOD|1|FULL HAVOC
+|System.Collections.Generic|Queue|Enqueue|System.Text.StringBuilder item|METHOD|1|FULL HAVOC
+|System|Char|IsLetterOrDigit|char c|METHOD|49|FULL HAVOC
+|System|Tuple|GetHashCode||METHOD|1|FULL HAVOC
+|System|Int32|GetHashCode||METHOD|1|Null.{}.{R;P}.{}.{}<EOF>
+|System|Object|ReferenceEquals|object? objA,object? objB|METHOD|1|Null.{}.{R;P}.{}.{}<EOF>
+|System|Enum|Parse|System.Type enumType,string value|METHOD|9|Null.{}.{R;P}.{}.{}<EOF>
+|System|Convert|ToInt64|object? value,System.IFormatProvider? provider|METHOD|9|FULL HAVOC
+|System|Convert|ToUInt64|object? value,System.IFormatProvider? provider|METHOD|9|FULL HAVOC
+|System|Array|IndexOf|System.Array array,object? value|METHOD|9|FULL HAVOC
+|System.Linq|Enumerable|ToArray|System.Collections.Generic.IEnumerable<System.Management.Automation.LanguagePrimitives.ConversionTypePair> source|METHOD|1|FULL HAVOC
+|System.Collections.Concurrent|ConcurrentDictionary|TryAdd|string key,object value|METHOD|1|FULL HAVOC
+|System.Runtime.CompilerServices|ConditionalWeakTable|TryGetValue|object key,System.Management.Automation.PSMemberInfoInternalCollection<System.Management.Automation.PSMemberInfo> value|METHOD|10|FULL HAVOC
+|System.Runtime.CompilerServices|ConditionalWeakTable|GetValue|object key,System.Runtime.CompilerServices.ConditionalWeakTable<object, System.Management.Automation.PSMemberInfoInternalCollection<System.Management.Automation.PSMemberInfo>>.CreateValueCallback createValueCallback|METHOD|3|FULL HAVOC
+|System.Management.Automation|PSMemberInfoCollection|MoveNext||PROPERTY|0|
+|System.Management.Automation|PSMemberInfoInternalCollection|MoveNext||PROPERTY|0|
+|System.Linq|Enumerable|OfType|System.Collections.IEnumerable source|METHOD|2|FULL HAVOC
+|System.Collections.Generic|List|GetEnumerator||METHOD|2|FULL HAVOC
+|System.Management.Automation|GetMembersDelegate|Invoke|System.Management.Automation.PSObject obj|METHOD|4|FULL HAVOC
+|System.Linq|Enumerable|Empty||METHOD|4|FULL HAVOC
+|System.Collections.Generic|IEnumerable|GetEnumerator||METHOD|4|FULL HAVOC
+|System|Type|GetProperties|System.Reflection.BindingFlags bindingAttr|METHOD|3|Fresh.{Many{System.Reflection.PropertyInfo}}.{R;R.?}.{RV.?;RO.?}.{[RV, RO, ?]}<EOF>
+|System|Type|GetInterfaces||METHOD|2|FULL HAVOC
+|System|Type|GetFields|System.Reflection.BindingFlags bindingAttr|METHOD|2|FULL HAVOC
+|System.Collections.Generic|IEnumerable|ctor||PROPERTY|2|Fresh.{}.{P}.{RV.?}.{[RV, P, ?]}<EOF>
+|System.Collections.Generic|IEnumerable|Add||PROPERTY|5|Null.{}.{P}.{R.?}.{[R, P, ?]}<EOF>
+|System|Array|Empty||METHOD|1|FULL HAVOC
+|System.Collections.ObjectModel|ReadOnlyCollection|ctor|System.Collections.Generic.IList<string> list|METHOD|2|FULL HAVOC
+|System.Management.Automation|GetEnumerableDelegate|Invoke|object obj|METHOD|1|FULL HAVOC
+|System|Convert|GetTypeCode|object? value|METHOD|1|FULL HAVOC
+|System|Object|ToString||METHOD|1|Null.{}.{R}.{}.{}<EOF>
+|System.Management.Automation|PSMemberInfoCollection|get_Item|string name|METHOD|1|FULL HAVOC
+|System.Management.Automation|PSMemberInfoCollection|Item||PROPERTY|1|FULL HAVOC
+|System.Management.Automation|GetMemberDelegate|Invoke|System.Management.Automation.PSObject obj,string name|METHOD|6|FULL HAVOC
+|System.Reflection|PropertyInfo|GetIndexParameters||METHOD|15|FULL HAVOC
+|System.Reflection|PropertyInfo|GetGetMethod|bool nonPublic|METHOD|16|FULL HAVOC
+|System.Reflection|PropertyInfo|GetSetMethod|bool nonPublic|METHOD|16|FULL HAVOC
+|System.Reflection|MemberInfo|GetCustomAttributes|System.Type attributeType,bool inherit|METHOD|1|FULL HAVOC
+|System.Management.Automation|SetterDelegate|Invoke|object instance,object setValue|METHOD|1|FULL HAVOC
+|System.Linq.Expressions|Expression|Lambda|System.Linq.Expressions.Expression body,System.Linq.Expressions.ParameterExpression[] parameters|METHOD|2|FULL HAVOC
+|System.Linq.Expressions|Expression|Compile||METHOD|2|FULL HAVOC
+|System.Management.Automation|GetterDelegate|Invoke|object instance|METHOD|2|FULL HAVOC
+|Microsoft.PowerShell.Commands|FileSystemProvider|GetProperty|string path,System.Collections.ObjectModel.Collection<string> providerSpecificPickList|METHOD|1|FULL HAVOC
+|PSTests|CustomAssert|False|bool condition|METHOD|1|FULL HAVOC

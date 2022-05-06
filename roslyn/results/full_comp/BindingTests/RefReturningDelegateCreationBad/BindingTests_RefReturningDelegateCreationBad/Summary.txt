@@ -1,0 +1,10 @@
+BindingTests_RefReturningDelegateCreationBad||63491|6163|4714|235.1182994||124.1144711|10682|168700||
+BindingTests_RefReturningDelegateCreationBad||126653|9844|7160|235.1182994||337.7978375|10682|332200||
+BindingTests_RefReturningDelegateCreationBad||126660|9852|7080|235.1182994||337.9850011|10682|332227||
+BindingTests_RefReturningDelegateCreationBad||148037|9862|7210|235.1182994||436.5423455|10682|392206||
+BindingTests_RefReturningDelegateCreationBad||148044|9862|7120|235.1182994||436.6999681|10682|392233||
+BindingTests_RefReturningDelegateCreationBad||63491|6163|4714|163.4935965||41.7420007|10682|168700||
+BindingTests_RefReturningDelegateCreationBad||126653|9844|7160|163.4935965||158.0921436|10682|332200||
+BindingTests_RefReturningDelegateCreationBad||126660|9852|7080|163.4935965||158.204847|10682|332227||
+BindingTests_RefReturningDelegateCreationBad||148037|9862|7210|163.4935965||205.335067|10682|392206||
+BindingTests_RefReturningDelegateCreationBad||148044|9862|7120|163.4935965||205.4317292|10682|392233||
