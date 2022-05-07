@@ -16,8 +16,8 @@ namespace DynAbs
         Solution UserSolution;
         Solution InstrumentedSolution;
         bool ReturnInstrumentedSolution;
-        static string FileTraceClientLocation = @"C:\Users\alexd\Desktop\Slicer\DynAbs\src\DynAbs.Tracing.FileTraceClient\bin\Debug\DynAbs.Tracing.FileTraceClient.dll";
-        const string ResGenPath = @"C:\Users\alexd\Desktop\Slicer\netslicer\src\Slicer\ResGen.exe";
+        static string FileTraceClientLocation = @"C:\Users\XXX\Desktop\Slicer\DynAbs\src\DynAbs.Tracing.FileTraceClient\bin\Debug\DynAbs.Tracing.FileTraceClient.dll";
+        const string ResGenPath = @"C:\Users\XXX\Desktop\Slicer\netslicer\src\Slicer\ResGen.exe";
 
 
         public SourceCompiler(UserConfiguration userConfiguration, Solution userSolution, Solution instrumentedSolution = null, bool returnInstrumentedSolution = true)
@@ -129,12 +129,12 @@ namespace DynAbs
                         {
                             // TODO-NETCORE: Reemplazar con ref a un csproj
                             var traceFiles = new HashSet<string>() {
-                                @"C:\Users\alexd\Desktop\Slicer\DynAbs\src\DynAbs.Tracing\TraceType.cs",
-                                @"C:\Users\alexd\Desktop\Slicer\DynAbs\src\DynAbs.Tracing\TracerGlobals.cs",
-                                @"C:\Users\alexd\Desktop\Slicer\DynAbs\src\DynAbs.Tracing\ITracerClient.cs",
-                                @"C:\Users\alexd\Desktop\Slicer\DynAbs\src\DynAbs.Tracing\TraceSender.cs",
-                                @"C:\Users\alexd\Desktop\Slicer\DynAbs\src\DynAbs.Tracing.FileTraceClient\FileTracerClient.cs",
-                                @"C:\Users\alexd\Desktop\Slicer\DynAbs\src\DynAbs.Tracing.FileTraceClient\FileTraceSender.cs",
+                                @"C:\Users\XXX\Desktop\Slicer\DynAbs\src\DynAbs.Tracing\TraceType.cs",
+                                @"C:\Users\XXX\Desktop\Slicer\DynAbs\src\DynAbs.Tracing\TracerGlobals.cs",
+                                @"C:\Users\XXX\Desktop\Slicer\DynAbs\src\DynAbs.Tracing\ITracerClient.cs",
+                                @"C:\Users\XXX\Desktop\Slicer\DynAbs\src\DynAbs.Tracing\TraceSender.cs",
+                                @"C:\Users\XXX\Desktop\Slicer\DynAbs\src\DynAbs.Tracing.FileTraceClient\FileTracerClient.cs",
+                                @"C:\Users\XXX\Desktop\Slicer\DynAbs\src\DynAbs.Tracing.FileTraceClient\FileTraceSender.cs",
                             };
                             var basePathForFiles = Path.GetDirectoryName(newProjectFilePath);
                             foreach (var traceFile in traceFiles)

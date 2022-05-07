@@ -584,7 +584,7 @@ namespace DynAbs
         static int noCounter = 0;
         public static void SaveConditionalAccessExpression(SyntaxNode sn, SyntaxNode instrumented, Dictionary<int, MethodDeclarationSyntax> newMethods)
         {
-            var folder = @"C:\Users\alexd\Desktop\CondAccess";
+            var folder = @"C:\Users\XXX\Desktop\CondAccess";
             var file = sn.SyntaxTree.FilePath;
             var allContainers = sn.GetAllContainers();
             var fullFileName = Guid.NewGuid() + ".txt";

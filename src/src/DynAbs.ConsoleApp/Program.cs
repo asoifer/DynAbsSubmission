@@ -107,7 +107,7 @@ namespace SliceConsole
                 //else if (local_mode == ConsoleMode.MultipleFiles)
                 //{
                 //    // Powershell
-                //    var traceFilesFolder = @"C:\Users\lafhis\Desktop\Slicer\Powershell\TodoPowershell\Trazas2020\TestHost\";
+                //    var traceFilesFolder = @"C:\Users\XXX\Desktop\Slicer\Powershell\TodoPowershell\Trazas2020\TestHost\";
                 //    var orchestrator = new Orchestrator(userConfiguration);
                 //    orchestrator.UserInteraction = false;
 
@@ -252,7 +252,7 @@ namespace SliceConsole
                 foreach (var targetProject in userConfiguration.targetProjects.excluded)
                     for (var i = 0; i < targetProject.files?.Length; i++)
                     {
-                        if (targetProject.files[i].name == @"C:\Users\alexd\Desktop\Slicer\Roslyn\src\src\Compilers\CSharp\Portable\Compilation\CSharpCompilation.cs")
+                        if (targetProject.files[i].name == @"C:\Users\XXX\Desktop\Slicer\Roslyn\src\src\Compilers\CSharp\Portable\Compilation\CSharpCompilation.cs")
                             ;
                         targetProject.files[i].skip = !(folders.Any(x => targetProject.files[i].name.Contains(x)));
                     }
@@ -317,240 +317,240 @@ namespace SliceConsole
         {
             // ROSLYN
             {
-                @"C:\Users\alexd\Desktop\Slicer\Roslyn\config\aut\BindingTests", new List<string>()
+                @"C:\Users\XXX\Desktop\Slicer\Roslyn\config\aut\BindingTests", new List<string>()
                 {
-                    @"C:\Users\alexd\Desktop\Slicer\Roslyn\src\src\Compilers\CSharp\Test",
-                    @"C:\Users\alexd\Desktop\Slicer\Roslyn\src\src\Compilers\Test",
-                    @"C:\Users\alexd\Desktop\Slicer\Roslyn\src\src\Test",
-                    @"C:\Users\alexd\Desktop\Slicer\Roslyn\src\eng\config\test",
-                    @"C:\Users\alexd\Desktop\Slicer\Roslyn\src\src\Compilers\CSharp\Portable\Binder"
+                    @"C:\Users\XXX\Desktop\Slicer\Roslyn\src\src\Compilers\CSharp\Test",
+                    @"C:\Users\XXX\Desktop\Slicer\Roslyn\src\src\Compilers\Test",
+                    @"C:\Users\XXX\Desktop\Slicer\Roslyn\src\src\Test",
+                    @"C:\Users\XXX\Desktop\Slicer\Roslyn\src\eng\config\test",
+                    @"C:\Users\XXX\Desktop\Slicer\Roslyn\src\src\Compilers\CSharp\Portable\Binder"
                 }
             },
             {
-                @"C:\Users\alexd\Desktop\Slicer\Roslyn\config\aut\CompilationEmitTests", new List<string>()
+                @"C:\Users\XXX\Desktop\Slicer\Roslyn\config\aut\CompilationEmitTests", new List<string>()
                 {
-                    @"C:\Users\alexd\Desktop\Slicer\Roslyn\src\src\Compilers\CSharp\Test",
-                    @"C:\Users\alexd\Desktop\Slicer\Roslyn\src\src\Compilers\Test",
-                    @"C:\Users\alexd\Desktop\Slicer\Roslyn\src\src\Test",
-                    @"C:\Users\alexd\Desktop\Slicer\Roslyn\src\eng\config\test",
-                    @"C:\Users\alexd\Desktop\Slicer\Roslyn\src\src\Compilers\CSharp\Portable\Compilation",
-                    @"C:\Users\alexd\Desktop\Slicer\Roslyn\src\src\Compilers\CSharp\Portable\Compiler",
+                    @"C:\Users\XXX\Desktop\Slicer\Roslyn\src\src\Compilers\CSharp\Test",
+                    @"C:\Users\XXX\Desktop\Slicer\Roslyn\src\src\Compilers\Test",
+                    @"C:\Users\XXX\Desktop\Slicer\Roslyn\src\src\Test",
+                    @"C:\Users\XXX\Desktop\Slicer\Roslyn\src\eng\config\test",
+                    @"C:\Users\XXX\Desktop\Slicer\Roslyn\src\src\Compilers\CSharp\Portable\Compilation",
+                    @"C:\Users\XXX\Desktop\Slicer\Roslyn\src\src\Compilers\CSharp\Portable\Compiler",
 
-                    @"C:\Users\alexd\Desktop\Slicer\Roslyn\src\src\Compilers\CSharp\Portable\Emitter\EditAndContinue",
-                    @"C:\Users\alexd\Desktop\Slicer\Roslyn\src\src\Compilers\CSharp\Portable\Emitter\NoPia",
-                    @"C:\Users\alexd\Desktop\Slicer\Roslyn\src\src\Compilers\CSharp\Portable\Emitter\Model\TypeMemberReference.cs",
-                    @"C:\Users\alexd\Desktop\Slicer\Roslyn\src\src\Compilers\CSharp\Portable\Emitter\Model\SpecializedNestedTypeReference.cs",
-                    @"C:\Users\alexd\Desktop\Slicer\Roslyn\src\src\Compilers\CSharp\Portable\Emitter\Model\SpecializedMethodReference.cs",
-                    @"C:\Users\alexd\Desktop\Slicer\Roslyn\src\src\Compilers\CSharp\Portable\Emitter\Model\SpecializedGenericNestedTypeInstanceReference.cs",
-                    @"C:\Users\alexd\Desktop\Slicer\Roslyn\src\src\Compilers\CSharp\Portable\Emitter\Model\SpecializedGenericMethodInstanceReference.cs",
-                    @"C:\Users\alexd\Desktop\Slicer\Roslyn\src\src\Compilers\CSharp\Portable\Emitter\Model\SpecializedFieldReference.cs",
-                    @"C:\Users\alexd\Desktop\Slicer\Roslyn\src\src\Compilers\CSharp\Portable\Emitter\Model\PENetModuleBuilder.cs",
-                    @"C:\Users\alexd\Desktop\Slicer\Roslyn\src\src\Compilers\CSharp\Portable\Emitter\Model\PEModuleBuilder.cs",
-                    @"C:\Users\alexd\Desktop\Slicer\Roslyn\src\src\Compilers\CSharp\Portable\Emitter\Model\PEAssemblyBuilder.cs",
-                    @"C:\Users\alexd\Desktop\Slicer\Roslyn\src\src\Compilers\CSharp\Portable\Emitter\Model\ParameterTypeInformation.cs",
-                    @"C:\Users\alexd\Desktop\Slicer\Roslyn\src\src\Compilers\CSharp\Portable\Emitter\Model\NamedTypeReference.cs",
-                    @"C:\Users\alexd\Desktop\Slicer\Roslyn\src\src\Compilers\CSharp\Portable\Emitter\Model\ModuleReference.cs",
-                    @"C:\Users\alexd\Desktop\Slicer\Roslyn\src\src\Compilers\CSharp\Portable\Emitter\Model\MethodReference.cs",
-                    @"C:\Users\alexd\Desktop\Slicer\Roslyn\src\src\Compilers\CSharp\Portable\Emitter\Model\GenericTypeInstanceReference.cs",
-                    @"C:\Users\alexd\Desktop\Slicer\Roslyn\src\src\Compilers\CSharp\Portable\Emitter\Model\GenericNestedTypeInstanceReference.cs",
-                    @"C:\Users\alexd\Desktop\Slicer\Roslyn\src\src\Compilers\CSharp\Portable\Emitter\Model\GenericNamespaceTypeInstanceReference.cs",
-                    @"C:\Users\alexd\Desktop\Slicer\Roslyn\src\src\Compilers\CSharp\Portable\Emitter\Model\GenericMethodInstanceReference.cs",
-                    @"C:\Users\alexd\Desktop\Slicer\Roslyn\src\src\Compilers\CSharp\Portable\Emitter\Model\ExpandedVarargsMethodReference.cs",
-                    @"C:\Users\alexd\Desktop\Slicer\Roslyn\src\src\Compilers\CSharp\Portable\Emitter\Model\AssemblyReference.cs",
+                    @"C:\Users\XXX\Desktop\Slicer\Roslyn\src\src\Compilers\CSharp\Portable\Emitter\EditAndContinue",
+                    @"C:\Users\XXX\Desktop\Slicer\Roslyn\src\src\Compilers\CSharp\Portable\Emitter\NoPia",
+                    @"C:\Users\XXX\Desktop\Slicer\Roslyn\src\src\Compilers\CSharp\Portable\Emitter\Model\TypeMemberReference.cs",
+                    @"C:\Users\XXX\Desktop\Slicer\Roslyn\src\src\Compilers\CSharp\Portable\Emitter\Model\SpecializedNestedTypeReference.cs",
+                    @"C:\Users\XXX\Desktop\Slicer\Roslyn\src\src\Compilers\CSharp\Portable\Emitter\Model\SpecializedMethodReference.cs",
+                    @"C:\Users\XXX\Desktop\Slicer\Roslyn\src\src\Compilers\CSharp\Portable\Emitter\Model\SpecializedGenericNestedTypeInstanceReference.cs",
+                    @"C:\Users\XXX\Desktop\Slicer\Roslyn\src\src\Compilers\CSharp\Portable\Emitter\Model\SpecializedGenericMethodInstanceReference.cs",
+                    @"C:\Users\XXX\Desktop\Slicer\Roslyn\src\src\Compilers\CSharp\Portable\Emitter\Model\SpecializedFieldReference.cs",
+                    @"C:\Users\XXX\Desktop\Slicer\Roslyn\src\src\Compilers\CSharp\Portable\Emitter\Model\PENetModuleBuilder.cs",
+                    @"C:\Users\XXX\Desktop\Slicer\Roslyn\src\src\Compilers\CSharp\Portable\Emitter\Model\PEModuleBuilder.cs",
+                    @"C:\Users\XXX\Desktop\Slicer\Roslyn\src\src\Compilers\CSharp\Portable\Emitter\Model\PEAssemblyBuilder.cs",
+                    @"C:\Users\XXX\Desktop\Slicer\Roslyn\src\src\Compilers\CSharp\Portable\Emitter\Model\ParameterTypeInformation.cs",
+                    @"C:\Users\XXX\Desktop\Slicer\Roslyn\src\src\Compilers\CSharp\Portable\Emitter\Model\NamedTypeReference.cs",
+                    @"C:\Users\XXX\Desktop\Slicer\Roslyn\src\src\Compilers\CSharp\Portable\Emitter\Model\ModuleReference.cs",
+                    @"C:\Users\XXX\Desktop\Slicer\Roslyn\src\src\Compilers\CSharp\Portable\Emitter\Model\MethodReference.cs",
+                    @"C:\Users\XXX\Desktop\Slicer\Roslyn\src\src\Compilers\CSharp\Portable\Emitter\Model\GenericTypeInstanceReference.cs",
+                    @"C:\Users\XXX\Desktop\Slicer\Roslyn\src\src\Compilers\CSharp\Portable\Emitter\Model\GenericNestedTypeInstanceReference.cs",
+                    @"C:\Users\XXX\Desktop\Slicer\Roslyn\src\src\Compilers\CSharp\Portable\Emitter\Model\GenericNamespaceTypeInstanceReference.cs",
+                    @"C:\Users\XXX\Desktop\Slicer\Roslyn\src\src\Compilers\CSharp\Portable\Emitter\Model\GenericMethodInstanceReference.cs",
+                    @"C:\Users\XXX\Desktop\Slicer\Roslyn\src\src\Compilers\CSharp\Portable\Emitter\Model\ExpandedVarargsMethodReference.cs",
+                    @"C:\Users\XXX\Desktop\Slicer\Roslyn\src\src\Compilers\CSharp\Portable\Emitter\Model\AssemblyReference.cs",
                 }
             },
             {
-                @"C:\Users\alexd\Desktop\Slicer\Roslyn\config\aut\FlowTests", new List<string>()
+                @"C:\Users\XXX\Desktop\Slicer\Roslyn\config\aut\FlowTests", new List<string>()
                 {
-                    @"C:\Users\alexd\Desktop\Slicer\Roslyn\src\src\Compilers\CSharp\Test",
-                    @"C:\Users\alexd\Desktop\Slicer\Roslyn\src\src\Compilers\Test",
-                    @"C:\Users\alexd\Desktop\Slicer\Roslyn\src\src\Test",
-                    @"C:\Users\alexd\Desktop\Slicer\Roslyn\src\eng\config\test",
-                    @"C:\Users\alexd\Desktop\Slicer\Roslyn\src\src\Compilers\CSharp\Portable\FlowAnalysis"
+                    @"C:\Users\XXX\Desktop\Slicer\Roslyn\src\src\Compilers\CSharp\Test",
+                    @"C:\Users\XXX\Desktop\Slicer\Roslyn\src\src\Compilers\Test",
+                    @"C:\Users\XXX\Desktop\Slicer\Roslyn\src\src\Test",
+                    @"C:\Users\XXX\Desktop\Slicer\Roslyn\src\eng\config\test",
+                    @"C:\Users\XXX\Desktop\Slicer\Roslyn\src\src\Compilers\CSharp\Portable\FlowAnalysis"
                 }
             },
             {
-                @"C:\Users\alexd\Desktop\Slicer\Roslyn\config\aut\PDBTests", new List<string>()
+                @"C:\Users\XXX\Desktop\Slicer\Roslyn\config\aut\PDBTests", new List<string>()
                 {
-                    @"C:\Users\alexd\Desktop\Slicer\Roslyn\src\src\Compilers\CSharp\Test",
-                    @"C:\Users\alexd\Desktop\Slicer\Roslyn\src\src\Compilers\Test",
-                    @"C:\Users\alexd\Desktop\Slicer\Roslyn\src\src\Test",
-                    @"C:\Users\alexd\Desktop\Slicer\Roslyn\src\eng\config\test",
-                    @"C:\Users\alexd\Desktop\Slicer\Roslyn\src\src\Compilers\CSharp\Portable\Binder",
-                    @"C:\Users\alexd\Desktop\Slicer\Roslyn\src\src\Compilers\CSharp\Portable\Symbols",
-                    @"C:\Users\alexd\Desktop\Slicer\Roslyn\src\src\Compilers\CSharp\Portable\SymbolDisplay",
-                    @"C:\Users\alexd\Desktop\Slicer\Roslyn\src\src\Compilers\CSharp\Portable\Compilation\CSharpCompilation.cs",
-                    @"C:\Users\alexd\Desktop\Slicer\Roslyn\src\src\Compilers\CSharp\Portable\Emitter\Model\TypeParameterSymbolAdapter.cs",
-                    @"C:\Users\alexd\Desktop\Slicer\Roslyn\src\src\Compilers\CSharp\Portable\Emitter\Model\SynthesizedPrivateImplementationDetailsStaticConstructor.cs",
-                    @"C:\Users\alexd\Desktop\Slicer\Roslyn\src\src\Compilers\CSharp\Portable\Emitter\Model\SourceAssemblySymbolAdapter.cs",
-                    @"C:\Users\alexd\Desktop\Slicer\Roslyn\src\src\Compilers\CSharp\Portable\Emitter\Model\PropertySymbolAdapter.cs",
-                    @"C:\Users\alexd\Desktop\Slicer\Roslyn\src\src\Compilers\CSharp\Portable\Emitter\Model\PointerTypeSymbolAdapter.cs",
-                    @"C:\Users\alexd\Desktop\Slicer\Roslyn\src\src\Compilers\CSharp\Portable\Emitter\Model\ParameterSymbolAdapter.cs",
-                    @"C:\Users\alexd\Desktop\Slicer\Roslyn\src\src\Compilers\CSharp\Portable\Emitter\Model\NamespaceSymbolAdapter.cs",
-                    @"C:\Users\alexd\Desktop\Slicer\Roslyn\src\src\Compilers\CSharp\Portable\Emitter\Model\NamedTypeSymbolAdapter.cs",
-                    @"C:\Users\alexd\Desktop\Slicer\Roslyn\src\src\Compilers\CSharp\Portable\Emitter\Model\SymbolAdapter.cs",
-                    @"C:\Users\alexd\Desktop\Slicer\Roslyn\src\src\Compilers\CSharp\Portable\Emitter\Model\MethodSymbolAdapter.cs",
-                    @"C:\Users\alexd\Desktop\Slicer\Roslyn\src\src\Compilers\CSharp\Portable\Emitter\Model\FunctionPointerTypeSymbolAdapter.cs",
-                    @"C:\Users\alexd\Desktop\Slicer\Roslyn\src\src\Compilers\CSharp\Portable\Emitter\Model\FieldSymbolAdapter.cs",
-                    @"C:\Users\alexd\Desktop\Slicer\Roslyn\src\src\Compilers\CSharp\Portable\Emitter\Model\EventSymbolAdapter.cs",
-                    @"C:\Users\alexd\Desktop\Slicer\Roslyn\src\src\Compilers\CSharp\Portable\Emitter\Model\CustomModifierAdapter.cs",
-                    @"C:\Users\alexd\Desktop\Slicer\Roslyn\src\src\Compilers\CSharp\Portable\Emitter\Model\AttributeDataAdapter.cs",
-                    @"C:\Users\alexd\Desktop\Slicer\Roslyn\src\src\Compilers\CSharp\Portable\Emitter\Model\ArrayTypeSymbolAdapter.cs",
+                    @"C:\Users\XXX\Desktop\Slicer\Roslyn\src\src\Compilers\CSharp\Test",
+                    @"C:\Users\XXX\Desktop\Slicer\Roslyn\src\src\Compilers\Test",
+                    @"C:\Users\XXX\Desktop\Slicer\Roslyn\src\src\Test",
+                    @"C:\Users\XXX\Desktop\Slicer\Roslyn\src\eng\config\test",
+                    @"C:\Users\XXX\Desktop\Slicer\Roslyn\src\src\Compilers\CSharp\Portable\Binder",
+                    @"C:\Users\XXX\Desktop\Slicer\Roslyn\src\src\Compilers\CSharp\Portable\Symbols",
+                    @"C:\Users\XXX\Desktop\Slicer\Roslyn\src\src\Compilers\CSharp\Portable\SymbolDisplay",
+                    @"C:\Users\XXX\Desktop\Slicer\Roslyn\src\src\Compilers\CSharp\Portable\Compilation\CSharpCompilation.cs",
+                    @"C:\Users\XXX\Desktop\Slicer\Roslyn\src\src\Compilers\CSharp\Portable\Emitter\Model\TypeParameterSymbolAdapter.cs",
+                    @"C:\Users\XXX\Desktop\Slicer\Roslyn\src\src\Compilers\CSharp\Portable\Emitter\Model\SynthesizedPrivateImplementationDetailsStaticConstructor.cs",
+                    @"C:\Users\XXX\Desktop\Slicer\Roslyn\src\src\Compilers\CSharp\Portable\Emitter\Model\SourceAssemblySymbolAdapter.cs",
+                    @"C:\Users\XXX\Desktop\Slicer\Roslyn\src\src\Compilers\CSharp\Portable\Emitter\Model\PropertySymbolAdapter.cs",
+                    @"C:\Users\XXX\Desktop\Slicer\Roslyn\src\src\Compilers\CSharp\Portable\Emitter\Model\PointerTypeSymbolAdapter.cs",
+                    @"C:\Users\XXX\Desktop\Slicer\Roslyn\src\src\Compilers\CSharp\Portable\Emitter\Model\ParameterSymbolAdapter.cs",
+                    @"C:\Users\XXX\Desktop\Slicer\Roslyn\src\src\Compilers\CSharp\Portable\Emitter\Model\NamespaceSymbolAdapter.cs",
+                    @"C:\Users\XXX\Desktop\Slicer\Roslyn\src\src\Compilers\CSharp\Portable\Emitter\Model\NamedTypeSymbolAdapter.cs",
+                    @"C:\Users\XXX\Desktop\Slicer\Roslyn\src\src\Compilers\CSharp\Portable\Emitter\Model\SymbolAdapter.cs",
+                    @"C:\Users\XXX\Desktop\Slicer\Roslyn\src\src\Compilers\CSharp\Portable\Emitter\Model\MethodSymbolAdapter.cs",
+                    @"C:\Users\XXX\Desktop\Slicer\Roslyn\src\src\Compilers\CSharp\Portable\Emitter\Model\FunctionPointerTypeSymbolAdapter.cs",
+                    @"C:\Users\XXX\Desktop\Slicer\Roslyn\src\src\Compilers\CSharp\Portable\Emitter\Model\FieldSymbolAdapter.cs",
+                    @"C:\Users\XXX\Desktop\Slicer\Roslyn\src\src\Compilers\CSharp\Portable\Emitter\Model\EventSymbolAdapter.cs",
+                    @"C:\Users\XXX\Desktop\Slicer\Roslyn\src\src\Compilers\CSharp\Portable\Emitter\Model\CustomModifierAdapter.cs",
+                    @"C:\Users\XXX\Desktop\Slicer\Roslyn\src\src\Compilers\CSharp\Portable\Emitter\Model\AttributeDataAdapter.cs",
+                    @"C:\Users\XXX\Desktop\Slicer\Roslyn\src\src\Compilers\CSharp\Portable\Emitter\Model\ArrayTypeSymbolAdapter.cs",
                 }
             },
             {
-                @"C:\Users\alexd\Desktop\Slicer\Roslyn\config\aut\StatementParsingTests", new List<string>()
+                @"C:\Users\XXX\Desktop\Slicer\Roslyn\config\aut\StatementParsingTests", new List<string>()
                 {
-                    @"C:\Users\alexd\Desktop\Slicer\Roslyn\src\src\Compilers\CSharp\Test",
-                    @"C:\Users\alexd\Desktop\Slicer\Roslyn\src\src\Compilers\Test",
-                    @"C:\Users\alexd\Desktop\Slicer\Roslyn\src\src\Test",
-                    @"C:\Users\alexd\Desktop\Slicer\Roslyn\src\eng\config\test",
-                    @"C:\Users\alexd\Desktop\Slicer\Roslyn\src\src\Compilers\CSharp\Portable\Parser",
-                    @"C:\Users\alexd\Desktop\Slicer\Roslyn\src\src\Compilers\CSharp\Portable\Syntax"
+                    @"C:\Users\XXX\Desktop\Slicer\Roslyn\src\src\Compilers\CSharp\Test",
+                    @"C:\Users\XXX\Desktop\Slicer\Roslyn\src\src\Compilers\Test",
+                    @"C:\Users\XXX\Desktop\Slicer\Roslyn\src\src\Test",
+                    @"C:\Users\XXX\Desktop\Slicer\Roslyn\src\eng\config\test",
+                    @"C:\Users\XXX\Desktop\Slicer\Roslyn\src\src\Compilers\CSharp\Portable\Parser",
+                    @"C:\Users\XXX\Desktop\Slicer\Roslyn\src\src\Compilers\CSharp\Portable\Syntax"
                 }
             },
             {
-                @"C:\Users\alexd\Desktop\Slicer\Roslyn\config\aut\TypeTests", new List<string>()
+                @"C:\Users\XXX\Desktop\Slicer\Roslyn\config\aut\TypeTests", new List<string>()
                 {
-                    @"C:\Users\alexd\Desktop\Slicer\Roslyn\src\src\Compilers\CSharp\Test",
-                    @"C:\Users\alexd\Desktop\Slicer\Roslyn\src\src\Compilers\Test",
-                    @"C:\Users\alexd\Desktop\Slicer\Roslyn\src\src\Test",
-                    @"C:\Users\alexd\Desktop\Slicer\Roslyn\src\eng\config\test",
-                    @"C:\Users\alexd\Desktop\Slicer\Roslyn\src\src\Compilers\CSharp\Portable\Binder",
-                    @"C:\Users\alexd\Desktop\Slicer\Roslyn\src\src\Compilers\CSharp\Portable\Symbols",
-                    @"C:\Users\alexd\Desktop\Slicer\Roslyn\src\src\Compilers\CSharp\Portable\SymbolDisplay",
-                    @"C:\Users\alexd\Desktop\Slicer\Roslyn\src\src\Compilers\CSharp\Portable\Compilation\CSharpCompilation.cs",
-                    @"C:\Users\alexd\Desktop\Slicer\Roslyn\src\src\Compilers\CSharp\Portable\Emitter\Model\TypeParameterSymbolAdapter.cs",
-                    @"C:\Users\alexd\Desktop\Slicer\Roslyn\src\src\Compilers\CSharp\Portable\Emitter\Model\SynthesizedPrivateImplementationDetailsStaticConstructor.cs",
-                    @"C:\Users\alexd\Desktop\Slicer\Roslyn\src\src\Compilers\CSharp\Portable\Emitter\Model\SourceAssemblySymbolAdapter.cs",
-                    @"C:\Users\alexd\Desktop\Slicer\Roslyn\src\src\Compilers\CSharp\Portable\Emitter\Model\PropertySymbolAdapter.cs",
-                    @"C:\Users\alexd\Desktop\Slicer\Roslyn\src\src\Compilers\CSharp\Portable\Emitter\Model\PointerTypeSymbolAdapter.cs",
-                    @"C:\Users\alexd\Desktop\Slicer\Roslyn\src\src\Compilers\CSharp\Portable\Emitter\Model\ParameterSymbolAdapter.cs",
-                    @"C:\Users\alexd\Desktop\Slicer\Roslyn\src\src\Compilers\CSharp\Portable\Emitter\Model\NamespaceSymbolAdapter.cs",
-                    @"C:\Users\alexd\Desktop\Slicer\Roslyn\src\src\Compilers\CSharp\Portable\Emitter\Model\NamedTypeSymbolAdapter.cs",
-                    @"C:\Users\alexd\Desktop\Slicer\Roslyn\src\src\Compilers\CSharp\Portable\Emitter\Model\SymbolAdapter.cs",
-                    @"C:\Users\alexd\Desktop\Slicer\Roslyn\src\src\Compilers\CSharp\Portable\Emitter\Model\MethodSymbolAdapter.cs",
-                    @"C:\Users\alexd\Desktop\Slicer\Roslyn\src\src\Compilers\CSharp\Portable\Emitter\Model\FunctionPointerTypeSymbolAdapter.cs",
-                    @"C:\Users\alexd\Desktop\Slicer\Roslyn\src\src\Compilers\CSharp\Portable\Emitter\Model\FieldSymbolAdapter.cs",
-                    @"C:\Users\alexd\Desktop\Slicer\Roslyn\src\src\Compilers\CSharp\Portable\Emitter\Model\EventSymbolAdapter.cs",
-                    @"C:\Users\alexd\Desktop\Slicer\Roslyn\src\src\Compilers\CSharp\Portable\Emitter\Model\CustomModifierAdapter.cs",
-                    @"C:\Users\alexd\Desktop\Slicer\Roslyn\src\src\Compilers\CSharp\Portable\Emitter\Model\AttributeDataAdapter.cs",
-                    @"C:\Users\alexd\Desktop\Slicer\Roslyn\src\src\Compilers\CSharp\Portable\Emitter\Model\ArrayTypeSymbolAdapter.cs",
+                    @"C:\Users\XXX\Desktop\Slicer\Roslyn\src\src\Compilers\CSharp\Test",
+                    @"C:\Users\XXX\Desktop\Slicer\Roslyn\src\src\Compilers\Test",
+                    @"C:\Users\XXX\Desktop\Slicer\Roslyn\src\src\Test",
+                    @"C:\Users\XXX\Desktop\Slicer\Roslyn\src\eng\config\test",
+                    @"C:\Users\XXX\Desktop\Slicer\Roslyn\src\src\Compilers\CSharp\Portable\Binder",
+                    @"C:\Users\XXX\Desktop\Slicer\Roslyn\src\src\Compilers\CSharp\Portable\Symbols",
+                    @"C:\Users\XXX\Desktop\Slicer\Roslyn\src\src\Compilers\CSharp\Portable\SymbolDisplay",
+                    @"C:\Users\XXX\Desktop\Slicer\Roslyn\src\src\Compilers\CSharp\Portable\Compilation\CSharpCompilation.cs",
+                    @"C:\Users\XXX\Desktop\Slicer\Roslyn\src\src\Compilers\CSharp\Portable\Emitter\Model\TypeParameterSymbolAdapter.cs",
+                    @"C:\Users\XXX\Desktop\Slicer\Roslyn\src\src\Compilers\CSharp\Portable\Emitter\Model\SynthesizedPrivateImplementationDetailsStaticConstructor.cs",
+                    @"C:\Users\XXX\Desktop\Slicer\Roslyn\src\src\Compilers\CSharp\Portable\Emitter\Model\SourceAssemblySymbolAdapter.cs",
+                    @"C:\Users\XXX\Desktop\Slicer\Roslyn\src\src\Compilers\CSharp\Portable\Emitter\Model\PropertySymbolAdapter.cs",
+                    @"C:\Users\XXX\Desktop\Slicer\Roslyn\src\src\Compilers\CSharp\Portable\Emitter\Model\PointerTypeSymbolAdapter.cs",
+                    @"C:\Users\XXX\Desktop\Slicer\Roslyn\src\src\Compilers\CSharp\Portable\Emitter\Model\ParameterSymbolAdapter.cs",
+                    @"C:\Users\XXX\Desktop\Slicer\Roslyn\src\src\Compilers\CSharp\Portable\Emitter\Model\NamespaceSymbolAdapter.cs",
+                    @"C:\Users\XXX\Desktop\Slicer\Roslyn\src\src\Compilers\CSharp\Portable\Emitter\Model\NamedTypeSymbolAdapter.cs",
+                    @"C:\Users\XXX\Desktop\Slicer\Roslyn\src\src\Compilers\CSharp\Portable\Emitter\Model\SymbolAdapter.cs",
+                    @"C:\Users\XXX\Desktop\Slicer\Roslyn\src\src\Compilers\CSharp\Portable\Emitter\Model\MethodSymbolAdapter.cs",
+                    @"C:\Users\XXX\Desktop\Slicer\Roslyn\src\src\Compilers\CSharp\Portable\Emitter\Model\FunctionPointerTypeSymbolAdapter.cs",
+                    @"C:\Users\XXX\Desktop\Slicer\Roslyn\src\src\Compilers\CSharp\Portable\Emitter\Model\FieldSymbolAdapter.cs",
+                    @"C:\Users\XXX\Desktop\Slicer\Roslyn\src\src\Compilers\CSharp\Portable\Emitter\Model\EventSymbolAdapter.cs",
+                    @"C:\Users\XXX\Desktop\Slicer\Roslyn\src\src\Compilers\CSharp\Portable\Emitter\Model\CustomModifierAdapter.cs",
+                    @"C:\Users\XXX\Desktop\Slicer\Roslyn\src\src\Compilers\CSharp\Portable\Emitter\Model\AttributeDataAdapter.cs",
+                    @"C:\Users\XXX\Desktop\Slicer\Roslyn\src\src\Compilers\CSharp\Portable\Emitter\Model\ArrayTypeSymbolAdapter.cs",
                 }
             },
 
             // POWERSHELL
             { 
-                @"C:\Users\alexd\Desktop\Slicer\Powershell\config\tests\Binders", new List<string>()
+                @"C:\Users\XXX\Desktop\Slicer\Powershell\config\tests\Binders", new List<string>()
                 {
-                    @"C:\Users\alexd\Desktop\Slicer\Powershell\src\test\xUnit",
-                    @"C:\Users\alexd\Desktop\Slicer\Powershell\src\src\System.Management.Automation\engine\runtime"
+                    @"C:\Users\XXX\Desktop\Slicer\Powershell\src\test\xUnit",
+                    @"C:\Users\XXX\Desktop\Slicer\Powershell\src\src\System.Management.Automation\engine\runtime"
                 }
             },
             {
-                @"C:\Users\alexd\Desktop\Slicer\Powershell\config\tests\CorePsPlatform", new List<string>()
+                @"C:\Users\XXX\Desktop\Slicer\Powershell\config\tests\CorePsPlatform", new List<string>()
                 {
-                    @"C:\Users\alexd\Desktop\Slicer\Powershell\src\test\xUnit",
-                    @"C:\Users\alexd\Desktop\Slicer\Powershell\src\src\System.Management.Automation\CoreCLR"
+                    @"C:\Users\XXX\Desktop\Slicer\Powershell\src\test\xUnit",
+                    @"C:\Users\XXX\Desktop\Slicer\Powershell\src\src\System.Management.Automation\CoreCLR"
                 }
             },
             {
-                @"C:\Users\alexd\Desktop\Slicer\Powershell\config\tests\ExtensionMethods", new List<string>()
+                @"C:\Users\XXX\Desktop\Slicer\Powershell\config\tests\ExtensionMethods", new List<string>()
                 {
-                    @"C:\Users\alexd\Desktop\Slicer\Powershell\src\test\xUnit",
-                    @"C:\Users\alexd\Desktop\Slicer\Powershell\src\src\System.Management.Automation\utils",
-                    @"C:\Users\alexd\Desktop\Slicer\Powershell\src\src\System.Management.Automation\engine\utils.cs",
+                    @"C:\Users\XXX\Desktop\Slicer\Powershell\src\test\xUnit",
+                    @"C:\Users\XXX\Desktop\Slicer\Powershell\src\src\System.Management.Automation\utils",
+                    @"C:\Users\XXX\Desktop\Slicer\Powershell\src\src\System.Management.Automation\engine\utils.cs",
                 }
             },
             {
-                @"C:\Users\alexd\Desktop\Slicer\Powershell\config\tests\FileSystemProvider", new List<string>()
+                @"C:\Users\XXX\Desktop\Slicer\Powershell\config\tests\FileSystemProvider", new List<string>()
                 {
-                    @"C:\Users\alexd\Desktop\Slicer\Powershell\src\test\xUnit",
-                    @"C:\Users\alexd\Desktop\Slicer\Powershell\src\src\System.Management.Automation\namespaces",
-                    @"C:\Users\alexd\Desktop\Slicer\Powershell\src\src\System.Management.Automation\engine\SessionStateNavigation.cs"
+                    @"C:\Users\XXX\Desktop\Slicer\Powershell\src\test\xUnit",
+                    @"C:\Users\XXX\Desktop\Slicer\Powershell\src\src\System.Management.Automation\namespaces",
+                    @"C:\Users\XXX\Desktop\Slicer\Powershell\src\src\System.Management.Automation\engine\SessionStateNavigation.cs"
                 }
             },
             {
-                @"C:\Users\alexd\Desktop\Slicer\Powershell\config\tests\MshSnapinInfo", new List<string>()
+                @"C:\Users\XXX\Desktop\Slicer\Powershell\config\tests\MshSnapinInfo", new List<string>()
                 {
-                    @"C:\Users\alexd\Desktop\Slicer\Powershell\src\test\xUnit",
-                    @"C:\Users\alexd\Desktop\Slicer\Powershell\src\src\System.Management.Automation\singleshell"
+                    @"C:\Users\XXX\Desktop\Slicer\Powershell\src\test\xUnit",
+                    @"C:\Users\XXX\Desktop\Slicer\Powershell\src\src\System.Management.Automation\singleshell"
                 }
             },
             {
-                @"C:\Users\alexd\Desktop\Slicer\Powershell\config\tests\NamedPipe", new List<string>()
+                @"C:\Users\XXX\Desktop\Slicer\Powershell\config\tests\NamedPipe", new List<string>()
                 {
-                    @"C:\Users\alexd\Desktop\Slicer\Powershell\src\test\xUnit",
-                    @"C:\Users\alexd\Desktop\Slicer\Powershell\src\src\System.Management.Automation\engine\remoting"
+                    @"C:\Users\XXX\Desktop\Slicer\Powershell\src\test\xUnit",
+                    @"C:\Users\XXX\Desktop\Slicer\Powershell\src\src\System.Management.Automation\engine\remoting"
                 }
             },
             {
-                @"C:\Users\alexd\Desktop\Slicer\Powershell\config\tests\PowerShellAPI", new List<string>()
+                @"C:\Users\XXX\Desktop\Slicer\Powershell\config\tests\PowerShellAPI", new List<string>()
                 {
-                    @"C:\Users\alexd\Desktop\Slicer\Powershell\src\test\xUnit",
-                    @"C:\Users\alexd\Desktop\Slicer\Powershell\src\src\System.Management.Automation\engine\hostifaces",
-                    @"C:\Users\alexd\Desktop\Slicer\Powershell\src\src\System.Management.Automation\engine\MshObject.cs",
-                    @"C:\Users\alexd\Desktop\Slicer\Powershell\src\src\System.Management.Automation\engine\AutomationNull.cs"
+                    @"C:\Users\XXX\Desktop\Slicer\Powershell\src\test\xUnit",
+                    @"C:\Users\XXX\Desktop\Slicer\Powershell\src\src\System.Management.Automation\engine\hostifaces",
+                    @"C:\Users\XXX\Desktop\Slicer\Powershell\src\src\System.Management.Automation\engine\MshObject.cs",
+                    @"C:\Users\XXX\Desktop\Slicer\Powershell\src\src\System.Management.Automation\engine\AutomationNull.cs"
                 }
             },
             {
-                @"C:\Users\alexd\Desktop\Slicer\Powershell\config\tests\PSConfiguration", new List<string>()
+                @"C:\Users\XXX\Desktop\Slicer\Powershell\config\tests\PSConfiguration", new List<string>()
                 {
-                    @"C:\Users\alexd\Desktop\Slicer\Powershell\src\test\xUnit",
-                    @"C:\Users\alexd\Desktop\Slicer\Powershell\src\src\System.Management.Automation\engine\PSConfiguration.cs"
+                    @"C:\Users\XXX\Desktop\Slicer\Powershell\src\test\xUnit",
+                    @"C:\Users\XXX\Desktop\Slicer\Powershell\src\src\System.Management.Automation\engine\PSConfiguration.cs"
                 }
             },
             {
-                @"C:\Users\alexd\Desktop\Slicer\Powershell\config\tests\PSObject", new List<string>()
+                @"C:\Users\XXX\Desktop\Slicer\Powershell\config\tests\PSObject", new List<string>()
                 {
-                    @"C:\Users\alexd\Desktop\Slicer\Powershell\src\test\xUnit",
-                    @"C:\Users\alexd\Desktop\Slicer\Powershell\src\src\System.Management.Automation\engine\MshObject.cs",
-                    @"C:\Users\alexd\Desktop\Slicer\Powershell\src\src\System.Management.Automation\engine\MshMemberInfo.cs",
-                    @"C:\Users\alexd\Desktop\Slicer\Powershell\src\src\System.Management.Automation\engine\AutomationNull.cs"
+                    @"C:\Users\XXX\Desktop\Slicer\Powershell\src\test\xUnit",
+                    @"C:\Users\XXX\Desktop\Slicer\Powershell\src\src\System.Management.Automation\engine\MshObject.cs",
+                    @"C:\Users\XXX\Desktop\Slicer\Powershell\src\src\System.Management.Automation\engine\MshMemberInfo.cs",
+                    @"C:\Users\XXX\Desktop\Slicer\Powershell\src\src\System.Management.Automation\engine\AutomationNull.cs"
                 }
             },
             {
-                @"C:\Users\alexd\Desktop\Slicer\Powershell\config\tests\PSVersionInfo", new List<string>()
+                @"C:\Users\XXX\Desktop\Slicer\Powershell\config\tests\PSVersionInfo", new List<string>()
                 {
-                    @"C:\Users\alexd\Desktop\Slicer\Powershell\src\test\xUnit",
-                    @"C:\Users\alexd\Desktop\Slicer\Powershell\src\src\System.Management.Automation\engine"
+                    @"C:\Users\XXX\Desktop\Slicer\Powershell\src\test\xUnit",
+                    @"C:\Users\XXX\Desktop\Slicer\Powershell\src\src\System.Management.Automation\engine"
                 }
             },
             {
-                @"C:\Users\alexd\Desktop\Slicer\Powershell\config\tests\Runspace", new List<string>()
+                @"C:\Users\XXX\Desktop\Slicer\Powershell\config\tests\Runspace", new List<string>()
                 {
-                    @"C:\Users\alexd\Desktop\Slicer\Powershell\src\test\xUnit",
-                    @"C:\Users\alexd\Desktop\Slicer\Powershell\src\src\System.Management.Automation\engine\hostifaces",
-                    @"C:\Users\alexd\Desktop\Slicer\Powershell\src\src\System.Management.Automation\engine\runtime",
-                    @"C:\Users\alexd\Desktop\Slicer\Powershell\src\src\System.Management.Automation\engine\lang\scriptblock.cs"
+                    @"C:\Users\XXX\Desktop\Slicer\Powershell\src\test\xUnit",
+                    @"C:\Users\XXX\Desktop\Slicer\Powershell\src\src\System.Management.Automation\engine\hostifaces",
+                    @"C:\Users\XXX\Desktop\Slicer\Powershell\src\src\System.Management.Automation\engine\runtime",
+                    @"C:\Users\XXX\Desktop\Slicer\Powershell\src\src\System.Management.Automation\engine\lang\scriptblock.cs"
                 }
             },
             {
-                @"C:\Users\alexd\Desktop\Slicer\Powershell\config\tests\SecuritySupport", new List<string>()
+                @"C:\Users\XXX\Desktop\Slicer\Powershell\config\tests\SecuritySupport", new List<string>()
                 {
-                    @"C:\Users\alexd\Desktop\Slicer\Powershell\src\test\xUnit",
-                    @"C:\Users\alexd\Desktop\Slicer\Powershell\src\src\System.Management.Automation\security"
+                    @"C:\Users\XXX\Desktop\Slicer\Powershell\src\test\xUnit",
+                    @"C:\Users\XXX\Desktop\Slicer\Powershell\src\src\System.Management.Automation\security"
                 }
             },
             {
-                @"C:\Users\alexd\Desktop\Slicer\Powershell\config\tests\SessionState", new List<string>()
+                @"C:\Users\XXX\Desktop\Slicer\Powershell\config\tests\SessionState", new List<string>()
                 {
-                    @"C:\Users\alexd\Desktop\Slicer\Powershell\src\test\xUnit",
-                    @"C:\Users\alexd\Desktop\Slicer\Powershell\src\src\System.Management.Automation\engine"
+                    @"C:\Users\XXX\Desktop\Slicer\Powershell\src\test\xUnit",
+                    @"C:\Users\XXX\Desktop\Slicer\Powershell\src\src\System.Management.Automation\engine"
                 }
             },
             {
-                @"C:\Users\alexd\Desktop\Slicer\Powershell\config\tests\Utils", new List<string>()
+                @"C:\Users\XXX\Desktop\Slicer\Powershell\config\tests\Utils", new List<string>()
                 {
-                    @"C:\Users\alexd\Desktop\Slicer\Powershell\src\test\xUnit",
-                    @"C:\Users\alexd\Desktop\Slicer\Powershell\src\src\System.Management.Automation\engine\utils.cs"
+                    @"C:\Users\XXX\Desktop\Slicer\Powershell\src\test\xUnit",
+                    @"C:\Users\XXX\Desktop\Slicer\Powershell\src\src\System.Management.Automation\engine\utils.cs"
                 }
             },
             {
-                @"C:\Users\alexd\Desktop\Slicer\Powershell\config\tests\WildcardPattern", new List<string>()
+                @"C:\Users\XXX\Desktop\Slicer\Powershell\config\tests\WildcardPattern", new List<string>()
                 {
-                    @"C:\Users\alexd\Desktop\Slicer\Powershell\src\test\xUnit",
-                    @"C:\Users\alexd\Desktop\Slicer\Powershell\src\src\System.Management.Automation\engine\regex.cs"
+                    @"C:\Users\XXX\Desktop\Slicer\Powershell\src\test\xUnit",
+                    @"C:\Users\XXX\Desktop\Slicer\Powershell\src\src\System.Management.Automation\engine\regex.cs"
                 }
             }
         };

@@ -33,6 +33,6 @@ namespace DynAbs
         public const string DefaultKind = "Default";
 
         // Temp path for debugging purposes
-        public const string TempPath = @"C:\Users\alexd\Desktop\Slicer\Varios\temp";
+        public const string TempPath = @"C:\Users\XXX\Desktop\Slicer\Varios\temp";
     }
 }
